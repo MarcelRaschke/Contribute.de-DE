@@ -8,11 +8,11 @@ ms.date: 01/04/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 62c4b234f23b470ffea33cacdfc469fbd7e526bd
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="install-content-authoring-tools"></a>Installieren von Tools für die Inhaltsentwicklung
 
@@ -22,9 +22,9 @@ Dieser Artikel beschreibt die Schritte, die erforderlich sind, um Git-Clienttool
 > * Installieren von [Visual Studio Code](https://code.visualstudio.com/)
 
 >[!IMPORTANT]
-> Wenn Sie nur geringfügige Änderungen an einem Artikel vornehmen, müssen Sie die in diesem Artikel erläuterten Schritte *nicht* durchführen und können direkt mit dem Workflow für [geringfügige oder seltene Änderungen](light-workflow.md) fortfahren.
+> Wenn Sie nur geringfügige Änderungen an einem Artikel vornehmen, müssen Sie die in diesem Artikel erläuterten Schritte *nicht* durchführen und können direkt mit dem Workflow für [schnelle Änderungen](index.md#quick-edits-to-existing-documents) fortfahren.
 >
-> Wichtige Mitwirkende sollten diese Schritte ausführen, da ihnen dadurch die Verwendung des [Workflows für größere Änderungen oder Änderungen mit langer Ausführungszeit](full-workflow.md) ermöglicht wird. Auch wenn Sie über Schreibberechtigungen im Hauptrepository verfügen, *wird ausdrücklich empfohlen, das Repository zu forken und zu klonen (dies wird in diesem Leitfaden vorausgesetzt)*, damit Sie über die Schreib- bzw. Leseberechtigungen verfügen, um vorgeschlagene Änderungen in Ihrem Fork zu speichern.
+> Wichtige Mitwirkende sollten diese Schritte ausführen, da ihnen dadurch die Verwendung des [Workflows für größere Änderungen oder Änderungen mit langer Ausführungszeit](how-to-write-workflows-major.md) ermöglicht wird. Auch wenn Sie über Schreibberechtigungen im Hauptrepository verfügen, *wird ausdrücklich empfohlen, das Repository zu forken und zu klonen (dies wird in diesem Leitfaden vorausgesetzt)*, damit Sie über die Schreib- bzw. Leseberechtigungen verfügen, um vorgeschlagene Änderungen in Ihrem Fork zu speichern.
 
 ## <a name="install-git-client-tools-on-windows"></a>Installieren der Git-Clienttools unter Windows
 
