@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Grundlegende Informationen zu Git und GitHub für die Dokumentation
 
@@ -80,7 +80,7 @@ Der Einfachheit halber enthält das Stammverzeichnis jedes Repositorys üblicher
 
 Ein *Pull Request* stellt eine praktische Methode für einen Mitwirkenden dar, um eine Reihe von Änderungen vorzuschlagen, die auf den Standardbranch angewendet werden sollen. Die Änderungen, auch als *Commits* bezeichnet, werden im Branch eines Mitwirkenden gespeichert, wodurch GitHub die Auswirkungen der *Zusammenführung* zuerst im Standardbranch modellieren kann. Ein Pull Request dient auch als Methode, um dem Mitwirkenden Feedback über einen Build- bzw. Validierungsprozess bereitzustellen, dem Prüfer des Pull Requests. Damit sollen vor der Zusammenführung der Änderungen im Standardbranch mögliche Probleme oder Fragen behoben bzw. geklärt werden.
 
-Es gibt zwei Möglichkeiten, über einen Pull Request mitzuwirken, deren Anwendung davon abhängig ist, wie groß die Veränderungen sind, die Sie vorschlagen möchten. Dies wird weiter unten in den Abschnitten zum [GitHub-Workflow](light-workflow.md) dieses Leitfadens ausführlicher beschrieben.
+Es gibt zwei Möglichkeiten, über einen Pull Request mitzuwirken, deren Anwendung davon abhängig ist, wie groß die Veränderungen sind, die Sie vorschlagen möchten. Dies wird weiter unten in den Abschnitten zum [GitHub-Workflow](how-to-write-workflows-major.md) dieses Leitfadens ausführlicher beschrieben.
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->
