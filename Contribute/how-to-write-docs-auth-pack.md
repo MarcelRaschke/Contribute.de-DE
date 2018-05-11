@@ -1,19 +1,18 @@
 ---
 title: Pack zur Dokumenterstellung für VS Code
-description: VS Code-Erweiterungspaket zur vereinfachten Markdown-Dokumenterstellung für docs.microsoft.com
+description: In diesem Artikel wird das VS Code-Erweiterungspaket zur vereinfachten Markdown-Erstellung für docs.microsoft.com beschrieben.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pack zur Dokumenterstellung für VS Code
 
@@ -87,7 +86,7 @@ Die Symbolleiste zur Dokumenterstellung aus dem Erweiterungscode „Gauntlet“ 
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-- [DocFX Preview]: MacOS und Linux: Die Vorschau wird von DocFX Preview nicht korrekt gestartet (die Standardvorschau für diese Plattformen lautet „VS Code Markdown-Vorschau“).
-- [DocFX Preview]: Alle Plattformen: Ein Teil der Syntax, z.B. XRef-Links (Querverweise) zu APIs, wird in der Vorschau nicht korrekt gerendert, wodurch in einigen Fällen Lücken im Inhalt entstehen.
-- [External bookmarks]: Linux: Die Dateiliste wird angezeigt, jedoch keine Überschriften, die ausgewählt werden können.
-- [Includes]: Linux: Die Dateiliste wird angezeigt, doch nach der Auswahl wird kein Link hinzugefügt.
+- DocFX Preview: Unter macOS und Linux wird die Vorschau von DocFX Preview nicht korrekt gestartet (die Standardvorschau für diese Plattformen lautet „VS Code Markdown-Vorschau“).
+- DocFX Preview: Auf allen Plattformen wird ein Teil der Syntax, z.B. XRef-Links (Querverweise) zu APIs in der Vorschau nicht korrekt gerendert, wodurch in einigen Fällen Lücken im Inhalt entstehen.
+- Externe Lesezeichen: Unter Linux wird die Dateiliste angezeigt, jedoch keine Überschriften, die ausgewählt werden können.
+- Includes: Unter Linux wird die Dateiliste angezeigt, doch nach der Auswahl wird kein Link hinzugefügt.

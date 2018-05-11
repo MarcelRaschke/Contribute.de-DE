@@ -8,11 +8,11 @@ ms.date: 01/18/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: d9c7211641fb05aaca8a76e10c7216ff61a5d23c
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: f702d0d29ee7dc9c69cb26b79bf6283d91b6b6bc
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Lokales Einrichten von Git für die Dokumentation
 
@@ -27,7 +27,7 @@ Sie müssen folgende Einrichtungsaktivitäten nur einmal ausführen, um mit der 
 > * Konfigurieren des Upstreamremotewerts
 
 > [!IMPORTANT]
-> Wenn Sie nur kleine Änderungen an einem Artikel vornehmen, müssen Sie die Schritte in dieser Anleitung *nicht durchführen*. Sie können direkt mit dem [Workflow für geringfügige oder selten vorkommende Änderungen](light-workflow.md) fortfahren.
+> Wenn Sie nur kleine Änderungen an einem Artikel vornehmen, müssen Sie die Schritte in dieser Anleitung *nicht durchführen*. Sie können direkt mit dem [Workflow für schnelle Änderungen](index.md#quick-edits-to-existing-documents) fortfahren.
 >
 
 ## <a name="overview"></a>Übersicht
@@ -46,7 +46,7 @@ Die Dokumentation, die auf [docs.microsoft.com](https://docs.microsoft.com) geho
 
 1. Wenn Sie nicht sicher sind, welches Repository Sie verwenden sollen, öffnen Sie den Artikel auf „docs.microsoft.com“ mit Ihrem Webbrowser. Klicken Sie auf den Link **Bearbeiten** (Bleistiftsymbol) oben rechts im Artikel.
 
-   ![Klicken Sie auf „Bearbeiten“, um das Repository und den Dateispeicherort zu ermitteln.](media/edit-article.png)
+   ![Klicken Sie auf „Bearbeiten“, um das Repository und den Dateispeicherort zu ermitteln.](media/index/edit-article.png)
 
 2. Dieser Link leitet Sie zum github.com-Speicherort für die entsprechende Markdowndatei im richtigen Repository weiter. Beachten Sie die URL, die den Namen des Repositorys angibt.
 
