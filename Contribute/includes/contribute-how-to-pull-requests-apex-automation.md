@@ -1,0 +1,9 @@
+Durch die Kommentarautomatisierung können Benutzer mit Leserechten (Benutzer, die keine Schreibrechte für ein Repository haben) eine Aktion mit Schreibrechten durchführen, indem Sie die entsprechende Bezeichnung einem Pull Request zuweisen. Wenn Sie in einem Repository arbeiten, in dem die Kommentarautomatisierung implementiert wurde, verwenden Sie die Hashtagkommentare, die in der folgenden Tabelle aufgeführt sind, um Bezeichnungen zuzuweisen, zu ändern, oder um einen Pull Request zu schließen. Microsoft-Mitarbeiter werden auch per E-Mail über die Überprüfung und Freigabe öffentlicher Repository-Pull Requests informiert, wenn Änderungen für Artikel vorgeschlagen werden, für die Sie der Autor sind.
+
+
+| Hashtagkommentar | Funktionsbeschreibung | Repository-Verfügbarkeit |
+| --- | --- | --- |
+| #sign-off |Wenn der Autor eines Artikels den Kommentar **#sign-off** in den Kommentarstream tippt, wird die Bezeichnung **ready-to-merge** zugewiesen. Diese Bezeichnung lässt die Bearbeiter im Repository wissen, wann ein Pull Request zur Überprüfung bzw. zum Zusammenführen bereit ist. |Öffentlich und privat |
+| #sign-off |Wenn ein Mitwirkender, der *nicht* der aufgelistete Autor ist, versucht, einen öffentlichen Pull Request mithilfe des Kommentars **#sign-off** zu genehmigen, wird eine Nachricht an den Pull Request geleitet, mit der Information, dass nur der Autor die Bezeichnung zuweisen kann. |Öffentlich |
+| #hold-off |Autoren können **#hold-off** in einen PR-Kommentar eingeben, um die Bezeichnung **ready-to-merge** zu entfernen, im Fall, dass sie ihre Meinung geändert oder einen Fehler gemacht haben. Im privaten Repository wird die Bezeichnung **do-not-merge** zugewiesen. |Öffentlich und privat |
+| #please-close |Autoren können **#please-close** in den Kommentarstream eingeben, um den Pull Request zu schließen, wenn sie sich dazu entscheiden, die Änderungen nicht zusammenzuführen. |Öffentlich |
