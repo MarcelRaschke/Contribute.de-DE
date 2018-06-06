@@ -9,10 +9,11 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469392"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Stil und Sprache der Dokumentation: Schnellstart
 
