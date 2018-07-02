@@ -1,19 +1,13 @@
 ---
 title: Verwenden von Links in der Dokumentation
 description: Dieser Artikel enthält Anleitungen zum Erstellen von Links, die auf Inhalte von docs.microsoft.com verweisen.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469530"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239724"
 ---
 # <a name="using-links-in-documentation"></a>Verwenden von Links in der Dokumentation
 In diesem Artikel erfahren Sie, wie Sie Links von Seiten verwenden, die auf docs.microsoft.com gehostet werden. Links können mit wenigen unterschiedlichen Konventionen auf einfache Weise in Markdown eingefügt werden. Benutzer werden über Links auf Inhalte derselben Seite, von benachbarten Seiten oder von externen Websites und URLs verwiesen.
@@ -63,7 +57,10 @@ Verwenden Sie zum Erstellen eines Inlinelinks in einem technischen Dokumentation
   `[link text](../directory/article-name.md)`
 
 - Einem Artikel wird ein Link zwischen verschiedenen Dokumentationssätzen hinzugefügt (auch wenn sie zum selben Repository gehören): `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> In keinem der oben stehenden Beispiele wird `~/` als Teil des Links verwendet. Wenn Sie einen Link zu einem Pfad hinzufügen, der sich am Stamm des Repositorys befindet, beginnen Sie mit `/`. Wenn Sie ein `~/` einfügen, wird dadurch beim Navigieren in den Quellrepositorys auf GitHub ein ungültiger Link erstellt. Wenn der Pfad mit `/` beginnt, kann der Link ordnungsgemäß aufgelöst werden.
+
 ## <a name="links-to-anchors"></a>Links zu Verankerungen
 
 Sie müssen keine Anker erstellen. Sie werden automatisch bei der Veröffentlichung aller H2-Überschriften generiert. Sie müssen lediglich Links zu den H2-Abschnitten erstellen.

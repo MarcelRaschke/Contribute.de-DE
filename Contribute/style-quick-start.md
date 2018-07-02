@@ -1,19 +1,13 @@
 ---
 title: 'Styleguide zur Dokumentation: Schnellstart'
 description: Dieser Artikel ist ein kurz gefasster Stilleitfaden, der nur die wichtigsten Themen für den Einstieg in die Mitwirkung an docs.microsoft.com enthält.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469392"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239601"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Stil und Sprache der Dokumentation: Schnellstart
 
@@ -56,5 +50,6 @@ Unsere technischen Artikel werden in mehrere Sprachen übersetzt, und einige wer
 ## <a name="localized-documentation"></a>Lokalisierte Dokumentation
 
 - Wenn Sie an der lokalisierten Dokumentation mitwirken, finden Sie wichtige Informationen im [Microsoft-Sprachenportal](https://www.microsoft.com/Language/Default.aspx).
-- Um Lokalisierungsrichtlinien, Informationen zum Sprachstil und zur Sprachverwendung in technischen Publikationen sowie Informationen zu marktspezifischen Datumsformaten zu erhalten, laden Sie den [Styleguide](https://www.microsoft.com/Language/StyleGuides.aspx) in Ihrer Sprache herunter.
-- Um lokalisierte Microsoft-Terminologie zu finden, suchen Sie nach [produktspezifischer genehmigter Terminologie](https://www.microsoft.com/Language/Search.aspx), oder laden Sie die [Microsoft-Terminologiesammlung](https://www.microsoft.com/Language/Terminology.aspx) in Ihrer Sprache herunter.
+- Um Lokalisierungsrichtlinien, Informationen zum Sprachstil und zur Sprachverwendung in technischen Publikationen sowie Informationen zu marktspezifischen Datumsformaten zu erhalten, laden Sie den [Styleguide](https://www.microsoft.com/Language/StyleGuides) in Ihrer Sprache herunter.
+- Um lokalisierte Microsoft-Terminologie zu finden, suchen Sie nach [produktspezifischer genehmigter Terminologie](https://www.microsoft.com/Language/Default.aspx), oder laden Sie die [Microsoft-Terminologiesammlung](https://www.microsoft.com/Language/Terminology.aspx) in Ihrer Sprache herunter.
+- Mehr dazu erfahren Sie im [Abschnitt zur Lokalisierung](https://docs.microsoft.com/style-guide/global-communications/) im Microsoft Style Guide.
