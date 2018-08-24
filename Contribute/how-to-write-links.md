@@ -2,12 +2,12 @@
 title: Verwenden von Links in der Dokumentation
 description: Dieser Artikel enthält Anleitungen zum Erstellen von Links, die auf Inhalte von docs.microsoft.com verweisen.
 ms.date: 06/29/2017
-ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: dad0460cfb36594c17cef1b079c5fc14191f56f7
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239724"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251445"
 ---
 # <a name="using-links-in-documentation"></a>Verwenden von Links in der Dokumentation
 In diesem Artikel erfahren Sie, wie Sie Links von Seiten verwenden, die auf docs.microsoft.com gehostet werden. Links können mit wenigen unterschiedlichen Konventionen auf einfache Weise in Markdown eingefügt werden. Benutzer werden über Links auf Inhalte derselben Seite, von benachbarten Seiten oder von externen Websites und URLs verwiesen.
@@ -148,12 +148,12 @@ Struktur der URL:
 
 Der Teil &lt;moniker-name&gt; ist optional. Wenn dieser ausgelassen wird, werden Sie zur aktuellen Version des Inhalts weitergeleitet. Der Teil &lt;service-name&gt; ist eines der Beispiele, das in den folgenden Basis-URLs gezeigt wird:
 
-- Inhalt von Azure PowerShell (AzureRM): https://docs.microsoft.com/powershell/azure/
-- Inhalt von Azure PowerShell (ASM): https://docs.microsoft.com/powershell/azure/ _servicemanagement_
-- Inhalt von Azure Active Directory-PowerShell (Azure AD): https://docs.microsoft.com/powershell/azure/ _active-directory_
-- Azure Service Fabric-PowerShell: https://docs.microsoft.com/powershell/azure/_service-fabric_
-- Azure Information Protection-PowerShell: https://docs.microsoft.com/powershell/azure/_aip_
-- Azure PowerShell für Aufträge für die elastische Datenbank: https://docs.microsoft.com/powershell/azure/_elasticdbjobs_
+- Inhalt von Azure PowerShell (AzureRM): [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
+- Inhalt von Azure PowerShell (ASM): [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)
+- Inhalt von Azure Active Directory PowerShell (Azure AD): [https://docs.microsoft.com/powershell/azure/_active-directory_](https://docs.microsoft.com/powershell/azure/active-directory)
+- Azure Service Fabric PowerShell: [https://docs.microsoft.com/powershell/azure/_service-fabric_](https://docs.microsoft.com/powershell/azure/service-fabric)
+- Azure Information Protection PowerShell: [https://docs.microsoft.com/powershell/azure/_aip_](https://docs.microsoft.com/powershell/azure/aip)
+- Azure PowerShell für Aufträge für die elastische Datenbank: [https://docs.microsoft.com/powershell/azure/_elasticdbjobs_](https://docs.microsoft.com/powershell/azure/elasticdbjobs)
 
 Wenn Sie diese URLs verwenden, werden Sie zur aktuellen Version des Inhalts umgeleitet. Auf diese Weise müssen Sie keinen Versionsmoniker angeben. Sie müssen bei Versionsänderungen auch keine Links zu konzeptionellen Inhalten aktualisieren.
 

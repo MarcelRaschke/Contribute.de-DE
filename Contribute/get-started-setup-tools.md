@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238918"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251452"
 ---
 # <a name="install-content-authoring-tools"></a>Installieren von Tools für die Inhaltsentwicklung
 
 Dieser Artikel beschreibt die Schritte, die erforderlich sind, um Git-Clienttools und Visual Studio Code interaktiv zu installieren.
 > [!div class="checklist"]
-> * Installieren von [Git für Windows](https://git-scm.com/download/win)
+> * Installieren von [Git](https://git-scm.com/)
 > * Installieren von [Visual Studio Code](https://code.visualstudio.com/)
 > * Installieren von [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
@@ -25,9 +25,13 @@ Dieser Artikel beschreibt die Schritte, die erforderlich sind, um Git-Clienttool
 >
 > Wichtige Mitwirkende sollten diese Schritte ausführen, da ihnen dadurch die Verwendung des [Workflows für größere Änderungen oder Änderungen mit langer Ausführungszeit](how-to-write-workflows-major.md) ermöglicht wird. Auch wenn Sie über Schreibberechtigungen im Hauptrepository verfügen, *wird ausdrücklich empfohlen, das Repository zu forken und zu klonen (dies wird in diesem Leitfaden vorausgesetzt)*, damit Sie über die Schreib- bzw. Leseberechtigungen verfügen, um vorgeschlagene Änderungen in Ihrem Fork zu speichern.
 
-## <a name="install-git-client-tools-on-windows"></a>Installieren der Git-Clienttools unter Windows
+## <a name="install-git-client-tools"></a>Installieren der Git-Clienttools 
 
- Installieren Sie die aktuelle Version der [Git-Clienttools von Software Freedom](https://git-scm.com/download/). Die Installation umfasst das Versionskontrollsystem von Git sowie Git Bash, die Befehlszeilen-App, die Sie zur Interaktion mit Ihrem lokalen Git-Repository verwenden.
+ Installieren Sie die aktuelle Version der [Git-Clienttools von Software Freedom](https://git-scm.com/download/) für Ihre Plattform. 
+
+* [Git für Windows](https://git-scm.com/download/win): Diese Installation umfasst das Versionskontrollsystem von Git sowie Git Bash, die Befehlszeilen-App, die Sie zur Interaktion mit Ihrem lokalen Git-Repository verwenden.
+* Git für Mac ist Teil der Xcode Command Line Tools. Führen Sie einfach `git` über die Befehlszeile aus. Sie werden ggf. aufgefordert, die Befehlszeilentools zu installieren. Sie können auch [Git für Mac](https://git-scm.com/download/mac) von Software Freedom Conservancy herunterladen.
+* [Git für Linux und Unix](https://git-scm.com/download/linux)
 
 Wenn Sie eine grafische Benutzeroberfläche (Graphical User Interface, GUI) gegenüber einer Befehlszeilenschnittstelle (Command-Line Interface, CLI) vorziehen, finden Sie einige gängige Optionen auf der [Seite zu GUI Clients von Software Freedom Conservancy](https://git-scm.com/downloads/guis), unter [GitHub Desktop auf GitHub](https://desktop.github.com/) oder [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx).
 

@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239767"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251467"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
 Willkommen beim Leitfaden für Mitwirkende an unserer Dokumentation auf [docs.microsoft.com](https://docs.microsoft.com).
 
-Einige unserer Dokumentationen sind Open Source und werden auf GitHub gehostet. Immer mehr Teams steigen auf dieses Modell um. Auch Dokumentationen, die nicht vollständig Open Source sind, verfügen über öffentliche Repositorys, in denen Sie gerne Pull Requests erstellen können. Dadurch wird die Kommunikation zwischen Produktingenieuren, den Inhaltsteams und unseren Kunden effizienter gestaltet und allgemein verbessert. Durch diese Art, gemeinsam zu arbeiten, ergeben sich mehrere Vorteile:
+Einige unserer Dokumentationen sind Open Source und werden auf GitHub gehostet. Immer mehr Teams bei Microsoft steigen auf dieses Modell um. Auch Dokumentationen, die nicht vollständig Open Source sind, verfügen über öffentliche Repositorys, in denen Sie gerne Pull Requests erstellen können. Dadurch wird die Kommunikation zwischen Produktingenieuren, den Inhaltsteams und unseren Kunden effizienter gestaltet und allgemein verbessert. Durch diese Art, gemeinsam zu arbeiten, ergeben sich mehrere Vorteile:
 
 - Durch die öffentliche Planung von Open-Source-Repositorys erhalten wir Feedback zu benötigten Dokumentationen.
 - Durch die öffentliche Prüfung in Open-Source-Repositorys können wir mit dem ersten Release den bestmöglichen Inhalt veröffentlichen.

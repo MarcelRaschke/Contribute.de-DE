@@ -2,22 +2,22 @@
 title: 'Styleguide zur Dokumentation: Schnellstart'
 description: Dieser Artikel ist ein kurz gefasster Stilleitfaden, der nur die wichtigsten Themen für den Einstieg in die Mitwirkung an docs.microsoft.com enthält.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239601"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243021"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Stil und Sprache der Dokumentation: Schnellstart
 
-Sie benötigen nur sehr wenig Zeit, um diesen Schnellstart zu lesen, erhalten aber einen Überblick darüber, wie Sie die wichtigsten Vorgaben für Dokumentationen anwenden, wenn Sie Artikel für docs.microsoft.com schreiben. Dieser Leitfaden gilt, wenn Sie eine neue Dokumentation erstellen oder eine vorhandene Dokumentation aktualisieren.
+Bei diesem Schnellstart handelt es sich um einen kompakten Leitfaden zum Schreiben von technischen Inhalten für die Veröffentlichung auf „docs.microsoft.com“. Dieser Leitfaden gilt, wenn Sie eine neue Dokumentation erstellen oder eine vorhandene Dokumentation aktualisieren.
 
-Dies sind die Mindestanforderungen:
+Best Practices:
 
 - Prüfen Sie die Rechtschreibung und Grammatik in Ihren Artikeln, auch wenn das bedeutet, dass Sie die Inhalte zuvor kopieren und in eine Word-Datei einfügen müssen.
 - Schlagen Sie einen freundlichen Tonfall an, so als würden Sie sich mit jemandem unterhalten.
-- Schreiben Sie einfache Sätze. Diese sind einfacher zu verstehen und lassen leichter übersetzen – sowohl von Menschen als auch von Maschinen.
+- Schreiben Sie einfache Sätze. Leicht verständliche Sätze ermöglichen es dem Leser, den von Ihnen freigegebenen Leitfaden schnell nachzuvollziehen und zu nutzen.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Verwenden der Microsoft-Prinzipien zur Sprache
 
