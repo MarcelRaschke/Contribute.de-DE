@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251467"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308891"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
@@ -31,7 +31,7 @@ Die Benutzeroberfläche auf [docs.microsoft.com](https://docs.microsoft.com) bez
 
 ## <a name="quick-edits-to-existing-documents"></a>Schnelle Änderungen an vorhandenen Dokumentationen
 
-Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumentationen. Trotz aller Bemühungen finden sich immer wieder geringfügige grammatische und orthografische Fehler in unseren Dokumentationen. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen. Fast jeder Artikel verfügt wie in der folgenden Grafik dargestellt über die Schaltfläche „Bearbeiten“. Wenn Sie auf **Bearbeiten** klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet.
+Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumentationen. Trotz aller Bemühungen finden sich immer wieder geringfügige grammatische und orthografische Fehler in unseren Dokumentationen. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen. Fast jeder Artikel verfügt wie in der folgenden Grafik dargestellt über die Schaltfläche „Bearbeiten“. Wenn Sie auf **Bearbeiten** (oder die lokalisierte Entsprechung) klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet.
 
 ![Ort des Links „Bearbeiten“](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Wenn Sie alle gewünschten Änderungen vorgenommen haben, scrollen Sie auf der S
 
 ![Änderungen vorschlagen](./media/index/submit-pull-request.png)
 
+Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie in der oberen Abbildung auf **Dateiänderung vorschlagen** geklickt haben, müssten Sie zu einer neuen Seite gelangt sein, die folgender Abbildung entspricht:
+
+![Pull Request erstellen](media/index/create-pull-request.png)
+
+Klicken Sie auf **Pull Request erstellen**, geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie erneut auf **Pull Request erstellen**.
+
 Das ist alles! Das Inhaltsteams sieht sich Ihren PR an und führt ihn ggf. zusammen. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
 
 Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubID\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
@@ -53,6 +59,12 @@ Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für 
 Wir verwenden PRs für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der `master`-Branch geschützt, damit Änderungen als PRs vorgeschlagen werden.
 
 Das Bearbeiten im Browser eignet sich am besten für geringfügige oder seltene Änderungen. Wenn Sie umfangreichere Änderungen vornehmen oder erweiterte Git-Features verwenden (z.B die Branchverwaltung oder erweiterte Auflösung von Mergekonflikten), müssen Sie [einen Fork für das Repository erstellen und lokal arbeiten](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Falls aktiviert, können Sie einen Artikel in einer **beliebigen Sprache** bearbeiten und, je nach Typ der Bearbeitung, geschieht Folgendes:
+> 1. jede genehmigte linguistische Änderung verbessert auch unser Machine Translation-Modul
+> 2. jede Bearbeitung, die den Inhalt des Artikels signifikant ändert, wird intern behandelt, um eine Änderung desselben Artikels in Englisch zu übermitteln, sodass sie bei Genehmigung in allen Sprachen lokalisiert wird.
+> Die von Ihnen vorgeschlagenen Verbesserungen haben also nicht nur positive Auswirkungen auf Artikel in Ihrer eigenen, sondern in allen verfügbaren Sprachen.
 
 ## <a name="review-open-prs"></a>Prüfen offener PRs
 
