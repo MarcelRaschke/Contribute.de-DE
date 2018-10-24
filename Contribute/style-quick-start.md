@@ -2,12 +2,12 @@
 title: 'Styleguide zur Dokumentation: Schnellstart'
 description: Dieser Artikel ist ein kurz gefasster Stilleitfaden, der nur die wichtigsten Themen für den Einstieg in die Mitwirkung an docs.microsoft.com enthält.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243021"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084397"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Stil und Sprache der Dokumentation: Schnellstart
 
@@ -15,7 +15,7 @@ Bei diesem Schnellstart handelt es sich um einen kompakten Leitfaden zum Schreib
 
 Best Practices:
 
-- Prüfen Sie die Rechtschreibung und Grammatik in Ihren Artikeln, auch wenn das bedeutet, dass Sie die Inhalte zuvor kopieren und in eine Word-Datei einfügen müssen.
+- Prüfen Sie die Rechtschreibung und Grammatik in Ihren Artikeln, auch wenn das bedeutet, dass Sie die Inhalte zuvor kopieren und zur Prüfung in eine Microsoft Word-Datei einfügen müssen.
 - Schlagen Sie einen freundlichen Tonfall an, so als würden Sie sich mit jemandem unterhalten.
 - Schreiben Sie einfache Sätze. Leicht verständliche Sätze ermöglichen es dem Leser, den von Ihnen freigegebenen Leitfaden schnell nachzuvollziehen und zu nutzen.
 
@@ -45,11 +45,11 @@ Unsere technischen Artikel werden in mehrere Sprachen übersetzt, und einige wer
 - Fügen Sie bei Schritten mit Codeausschnitten Informationen zum Schritt als Kommentar in den Code ein. Dadurch muss der Benutzer weniger Text lesen. Die wichtigsten Informationen werden in das Codeprojekt kopiert, damit Benutzer auch später noch wissen, wozu der Code dient.
 - Befolgen Sie die Rechtschreibregeln gemäß Duden (empfohlene Schreibweise).
 - Verwenden Sie die etablierte Microsoft-Terminologie.
-- Verwenden Sie „wie folgt“ oder „nachfolgend“ in jedem Satz, der einer Liste oder einem Codeausschnitt vorangeht.
+- Weitere Richtlinien finden Sie im [Microsoft-Leitfaden zum Schreibstil](https://docs.microsoft.com/style-guide/welcome).
 
 ## <a name="localized-documentation"></a>Lokalisierte Dokumentation
 
 - Wenn Sie an der lokalisierten Dokumentation mitwirken, finden Sie wichtige Informationen im [Microsoft-Sprachenportal](https://www.microsoft.com/Language/Default.aspx).
 - Um Lokalisierungsrichtlinien, Informationen zum Sprachstil und zur Sprachverwendung in technischen Publikationen sowie Informationen zu marktspezifischen Datumsformaten zu erhalten, laden Sie den [Styleguide](https://www.microsoft.com/Language/StyleGuides) in Ihrer Sprache herunter.
 - Um lokalisierte Microsoft-Terminologie zu finden, suchen Sie nach [produktspezifischer genehmigter Terminologie](https://www.microsoft.com/Language/Default.aspx), oder laden Sie die [Microsoft-Terminologiesammlung](https://www.microsoft.com/Language/Terminology.aspx) in Ihrer Sprache herunter.
-- Mehr dazu erfahren Sie im [Abschnitt zur Lokalisierung](https://docs.microsoft.com/style-guide/global-communications/) im Microsoft Style Guide.
+- Weitere Informationen zur Lokalisierung finden Sie im Abschnitt „Globale Kommunikation“ im [Microsoft-Leitfaden zum Schreibstil](https://docs.microsoft.com/style-guide/global-communications).
