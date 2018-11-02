@@ -8,20 +8,20 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805739"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Schnellstartanleitung: Festlegen eines Geheimnisses und Abrufen des Geheimnisses aus Azure Key Vault mithilfe der Azure CLI
 
-In dieser Schnellstartanleitung erfahren Sie, wie Sie ein Geheimnis in Key Vault speichern und es über eine Web-App abrufen. Um den Wert des Geheimnisses anzuzeigen, müssen Sie die folgenden Schritte in Azure ausführen. Diese Schnellstartanleitung verwendet Node.js und verwaltete Dienstidentitäten (Managed Service Identities, MSIs)
+In dieser Schnellstartanleitung erfahren Sie, wie Sie ein Geheimnis in Key Vault speichern und es über eine Web-App abrufen. Um den Wert des Geheimnisses anzuzeigen, müssen Sie die folgenden Schritte in Azure ausführen. In diesem Schnellstart werden Node.js und verwaltete Dienstidentitäten (managed service identities, MSIs) verwendet.
 
 > [!div class="checklist"]
 > * Erstellen Sie eine Key Vault-Instanz.
-> * Speichern Sie ein Geheimnis in Key Vault.
+> * Speichern eines Geheimnisses im Schlüsseltresor
 > * Rufen Sie ein Geheimnis aus Key Vault ab.
 > * Erstellen Sie eine Azure-Webanwendung.
 > * [Aktivieren Sie verwaltete Dienstidentitäten](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview).
@@ -30,16 +30,19 @@ In dieser Schnellstartanleitung erfahren Sie, wie Sie ein Geheimnis in Key Vault
 Bevor Sie fortfahren, stellen Sie sicher, dass Sie mit den [grundlegenden Konzepte](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts) vertraut sind.
 
 > [!NOTE]
-> Sie müssen mit ein paar Konzepten vertraut sein, um zu verstehen, warum das folgende Tutorial die empfohlene Vorgehensweise ist. Key Vault ist ein zentrales Repository zum programmgesteuerten Speichern von Geheimnissen. Dafür müssen sich Anwendungen oder Benutzer jedoch zuerst bei Key Vault authentifizieren, d.h. sie müssen ein Geheimnis angeben. Aus Sicherheitsgründen muss das erste Geheimnis außerdem regelmäßig rotiert werden. Dank der [verwalteten Dienstidentität](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) erhalten in Azure ausgeführte Anwendungen jedoch eine Identität, die automatisch von Azure verwaltet wird. Das macht die **Einführung von Geheimnissen weniger problematisch**, da Benutzer/Anwendungen die empfohlene Vorgehensweise verwenden können und sich nicht um die Rotation des ersten Geheimnisses kümmern müssen.
+> Sie müssen mit ein paar Konzepten vertraut sein, um zu verstehen, warum das folgende Tutorial die empfohlene Vorgehensweise ist. Key Vault ist ein zentrales Repository zum programmgesteuerten Speichern von Geheimnissen. Dafür müssen sich Anwendungen oder Benutzer jedoch zuerst bei Key Vault authentifizieren, d.h. sie müssen ein Geheimnis angeben. Aus Sicherheitsgründen muss das erste Geheimnis außerdem regelmäßig rotiert werden. Dank der [MSI](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview) erhalten in Azure ausgeführte Anwendungen jedoch eine Identität, die automatisch von Azure verwaltet wird. Das macht die **Einführung von Geheimnissen weniger problematisch**, da Benutzer/Anwendungen die empfohlene Vorgehensweise verwenden können und sich nicht um die Rotation des ersten Geheimnisses kümmern müssen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node.js](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 Version 15.7.3 oder höher](https://www.microsoft.com/net/download/windows) mit den folgenden Workloads:
   * ASP.NET und Webentwicklung
   * Plattformübergreifende .NET Core-Entwicklung
-* [.NET Core 2.1 SDK oder höher](https://www.microsoft.com/net/download/windows) ::: zone-end
+* [.NET Core 2.1 SDK oder höher](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([Download](https://git-scm.com/downloads)).
 * Ein Azure-Abonnement. Wenn Sie kein Azure-Abonnement besitzen, können Sie ein [kostenloses Konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) erstellen, bevor Sie beginnen.
 * [Azure-Befehlszeilenschnittstelle](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest), Version 2.0.4 oder höher. Diese Version ist für Windows, Mac und Linux verfügbar.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Installieren von Abhängigkeiten
 
-Im Folgenden installieren wir die Abhängigkeiten. Führen Sie die folgenden Befehle aus: cd key-vault-node-quickstart npm install
+Im Folgenden installieren wir die Abhängigkeiten. Führen Sie die folgenden Befehle aus:
+
+    cd key-vault-node-quickstart
+    npm install
 
 Dieses Projekt verwendet zwei Node-Module:
 
@@ -119,14 +125,14 @@ Dieses Projekt verwendet zwei Node-Module:
 
 ## <a name="publish-the-web-application-to-azure"></a>Veröffentlichen der Webanwendung in Azure
 
-Im Folgenden finden Sie die Schritte, die erforderlich sind.
+Im Folgenden finden Sie die erforderlichen Schritte zum Veröffentlichen der Anwendung in Azure.
 
 * Der erste Schritt besteht darin, einen [Azure App Service](https://azure.microsoft.com/services/app-service/)-Plan zu erstellen. In diesem Plan können Sie mehrere Web-Apps speichern.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Als Nächstes erstellen Sie eine Web-App. Ersetzen Sie im folgenden Beispiel <app_name> durch einen global eindeutigen App-Namen (gültige Zeichen sind a–z, 0–9 und -). Die Runtime ist auf NODE|6.9 festgelegt. Führen Sie zum Anzeigen aller unterstützten Runtimes den folgenden Befehl aus: az webapp list-runtimes.
+* Als Nächstes erstellen Sie eine Web-App. Ersetzen Sie im folgenden Beispiel <app_name> durch einen global eindeutigen App-Namen (gültige Zeichen sind a–z, 0–9 und -). Die Runtime ist auf NODE|6.9 festgelegt. Führen Sie `az webapp list-runtimes` aus, um alle unterstützten Runtimes anzuzeigen.
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -238,7 +244,8 @@ Stellen Sie sicher, dass Sie den Namen <YourKeyVaultName> durch Ihren Tresorname
 
 ::: zone-end
 
-::: zone pivot="dotnet" Wenn Sie die Anwendung nun ausführen, sollte der Wert des Geheimnisses abgerufen werden.
+::: zone pivot="dotnet"
+Wenn Sie die Anwendung nun ausführen, sollte der Wert des Geheimnisses abgerufen werden.
 ::: zone-end
 
 ## <a name="next-steps"></a>Nächste Schritte
@@ -247,10 +254,12 @@ Stellen Sie sicher, dass Sie den Namen <YourKeyVaultName> durch Ihren Tresorname
 * [Azure Key Vault – Startseite](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault – Dokumentation](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK für Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [REST-API-Referenz für Azure](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [REST-API-Referenz für Azure](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Azure Key Vault – Startseite](https://azure.microsoft.com/services/key-vault/)
 * [Azure Key Vault – Dokumentation](https://docs.microsoft.com/azure/key-vault/)
 * [Azure SDK für .NET](https://github.com/Azure/azure-sdk-for-net)
-* [REST-API-Referenz für Azure](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [REST-API-Referenz für Azure](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

@@ -2,12 +2,12 @@
 title: Grundlegende Informationen zu Git und GitHub für die Dokumentation
 description: In diesem Artikel erhalten Sie einen Überblick über Git und das GitHub-Repository, die Organisation des Inhalts und die für docs.microsoft.com verwendeten Namenskonventionen.
 ms.date: 06/30/2017
-ms.openlocfilehash: 8a116067fdd7d031c560abfb7055236e0bfb1a3d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805698"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Grundlegende Informationen zu Git und GitHub für die Dokumentation
 
@@ -30,8 +30,8 @@ Git basiert ebenfalls auf einer mehrstufigen Struktur zur Speicherung und Verwal
 
 Mit Git aktualisieren und bearbeiten Mitwirkende Repositorys auf der lokalen und der GitHub-Ebene:
 
-- Lokal durch Tools wie die Git Bash-Konsole, die Git-Befehle zur Verwaltung lokaler Repositorys und Kommunikation mit GitHub-Repositorys
-- Über die Website [www.github.com](https://www.github.com), die Git integriert, um Beiträge abzugleichen, die in das Hauptrepository zurückgeführt wurden
+- Lokal mit Tools wie der Git Bash-Konsole, die Git-Befehle für die Verwaltung lokaler Repositorys und die Kommunikation mit GitHub-Repositorys unterstützt.
+- Über die Website [www.github.com](https://www.github.com), welche Git zum Verwalten des Abgleichs von Beiträgen integriert, die an das Hauptrepository zurückgeführt werden.
 
 ## <a name="github"></a>GitHub
 
@@ -46,7 +46,7 @@ Alle Workflows beginnen und enden auf GitHub-Ebene, auf der das Hauptrepository 
 
 Wie zuvor bereits erwähnt wurde, stellt der Standard- bzw. Masterbranch eines Projekts die aktuelle Version der Projektinhalte dar. Der Inhalt im Masterbranch (und in den daraus erstellten Branches) wird mit der Organisation der Artikel auf den entsprechenden Dokumentationsseiten abgestimmt. Unterverzeichnisse werden zur Trennung von ähnlichen Inhalten (z.B. Diensten), Medieninhalten (z.B. Bilddateien) und „Include“-Dateien verwendet, die eine Wiederverwendung der Inhalte ermöglichen.
 
-Üblicherweise finden Sie ein `articles`-Hauptverzeichnis des Repositorystamms. Das Artikelverzeichnis enthält einige Unterverzeichnisse. Artikel in den Unterverzeichnissen werden als Markdowndateien mit *MD*-Erweiterung formatiert. Einige Repositorys, die verschiedene Dienste unterstützen, umfassen ein generisches `/articles`-Unterverzeichnis, z.B. das Repository [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs). Bei anderen Repositorys wird möglicherweise ein dienstspezifischer Name verwendet, z.B. das Repository [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs) mit `/IntuneDocs`.
+Üblicherweise finden Sie ein `articles`-Hauptverzeichnis des Repositorystamms. Das Artikelverzeichnis enthält einige Unterverzeichnisse. Artikel in den Unterverzeichnissen werden als Markdowndateien mit *MD*-Erweiterung formatiert. Einige Repositorys, die mehrere Dienste unterstützen, verwenden ein generisches `/articles`-Unterverzeichnis, z.B. das Repository [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs). Andere verwenden möglicherweise einen dienstspezifischen Namen, z.B. das Repository [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs), das `/IntuneDocs` verwendet.
 
 Im Stamm dieses Verzeichnisses finden Sie allgemeine Artikel, die mit dem allgemeinen Dienst oder Produkt im Zusammenhang stehen. Zudem können Sie üblicherweise weitere Unterverzeichnisse finden, die zu Features bzw. Diensten oder allgemeinen Szenarios passen. Azure-Artikel zu virtuellen Computern befinden sich beispielsweise im Unterverzeichnis `/virtual-machines`, während die Intune-Artikel im Bereich „Understand and Explore“ („Verstehen und Erkunden“) im Unterverzeichnis `/understand-explore` enthalten sind.
 

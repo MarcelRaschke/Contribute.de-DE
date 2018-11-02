@@ -3,14 +3,13 @@ title: Lokales Einrichten eines Git-Repositorys
 description: Dieser Artikel enthält Anweisungen zum Erstellen eines lokalen Git-Repositorys und zum Mitwirken an der Dokumentation, einschließlich des Fork- und Klonvorgangs.
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805675"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Lokales Einrichten von Git für die Dokumentation
 
@@ -30,7 +29,7 @@ Sie müssen folgende Einrichtungsaktivitäten nur einmal ausführen, um mit der 
 
 ## <a name="overview"></a>Übersicht
 
-Um an der Dokumentationswebsite von Microsoft mitzuwirken, können Sie Markdowndateien lokal erstellen und bearbeiten, indem Sie das entsprechende Dokumentationsrepository klonen. Microsoft fordert, dass Sie das entsprechende Repository in Ihr eigenes GitHub-Konto forken, damit Sie dort über Lese-/Schreibberechtigungen verfügen, um Ihre Änderungsvorschläge zu speichern. Dann verwenden Sie Pullanforderungen, um die Änderungen in das schreibgeschützte gemeinsam genutzte Zentralrepository zu mergen.
+Um an der Dokumentationswebsite von Microsoft mitzuwirken, können Sie Markdowndateien lokal erstellen und bearbeiten, indem Sie das entsprechende Dokumentationsrepository klonen. Microsoft erfordert, dass Sie das entsprechende Repository in Ihr eigenes GitHub-Konto forken, damit Sie dort über Lese-/Schreibberechtigungen verfügen, um Ihre Änderungsvorschläge zu speichern. Dann verwenden Sie Pullanforderungen, um die Änderungen in das schreibgeschützte gemeinsam genutzte Zentralrepository zu mergen.
 
 ![GitHub-Dreieck](./media/git-and-github-initial-setup.png)
 
@@ -60,7 +59,7 @@ Die Dokumentation, die auf [docs.microsoft.com](https://docs.microsoft.com) geho
 ## <a name="fork-the-repository"></a>Forken des Repositorys
 Mit dem entsprechenden Repository können Sie mithilfe der GitHub-Website eine Verzweigung des Repositorys in Ihrem GitHub-Konto erstellen.
 
-Sie benötigen eine persönliche Verzweigung, da alle Hauptrepositorys für die Dokumentation schreibgeschützten Zugriff bieten. Das bedeutet, dass Sie keine direkten Änderungen am Inhalt der Repositorys vornehmen können. Um Änderungen vornehmen zu können, müssen Sie einen [Pull Request](git-github-fundamentals.md#pull-requests) von der Verzweigung an das Hauptrepository senden. Zur Vereinfachung dieses Vorgangs müssen Sie zuerst eine eigene Kopie des Repositorys erstellen, in dem Sie über Schreibzugriff verfügen. Eine GitHub-*Verzweigung* wird zu diesem Zweck erstellt.
+Ein persönlicher Fork ist erforderlich, da alle Hauptrepositorys für die Kommunikation nur schreibgeschützten Zugriff bieten. Um Änderungen vornehmen zu können, müssen Sie einen [Pull Request](git-github-fundamentals.md#pull-requests) von der Verzweigung an das Hauptrepository senden. Zur Vereinfachung dieses Vorgangs müssen Sie zuerst eine eigene Kopie des Repositorys erstellen, in dem Sie über Schreibzugriff verfügen. Eine GitHub-*Verzweigung* wird zu diesem Zweck erstellt.
 
 1. Wechseln Sie zur GitHub-Seite des Hauptrepositorys, und klicken Sie oben rechts auf die Schaltfläche **Verzweigung**.
 
@@ -84,7 +83,7 @@ Erstellen Sie einen lokalen Ordner, der lokal eine Kopie des Repositorys enthäl
 
    Geben Sie zum Bestimmen des aktuellen Verzeichnisses bei der $-Eingabeaufforderung `pwd` ein. 
 
-3. Wechseln Sie in das Verzeichnis des Ordners, den Sie zum lokalen Hosten des Repositorys erstellt haben. Beachten Sie, dass in Git Bash wie unter Linux üblich Schrägstriche für Ordnerpfade verwendet anstatt umgekehrter Schrägstriche.
+3. Wechseln Sie in das Verzeichnis des Ordners, den Sie zum lokalen Hosten des Repositorys erstellt haben. Beachten Sie, dass in Git Bash die in Linux üblichen Schrägstriche anstelle von umgekehrten Schrägstrichen für Ordnerpfade verwendet werden.
 
    Beispiel: `cd /c/docs/ ` oder `cd ~/Documents/docs/`.
 

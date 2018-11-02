@@ -2,18 +2,18 @@
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805723"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
-Docs.Microsoft.Com-Artikel sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden.
+Artikel auf [docs.microsoft.com](http://docs.microsoft.com) sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden.
 
-Da Dokumentationsinhalte in GitHub gespeichert werden, können sie ein als Superset von Markdown bezeichnetes [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) verwenden, das zusätzliche Funktionalität für gängige Formatierungsanforderungen bietet. Außerdem implementiert Open Publishing Services (OPS) „Markdig Markdown Parser“. Markdig weist eine hohe Kompatibilität mit GitHub Flavored Markdown (GFM) auf und verfügt über Möglichkeiten zur Aktivierung von dokumentationsspezifischen Funktionen.
+Da Dokumentationsinhalte auf GitHub gespeichert werden, können sie ein als Superset von Markdown bezeichnetes [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) verwenden, das zusätzliche Funktionalität für gängige Formatierungsanforderungen bietet. Außerdem implementiert Open Publishing Services (OPS) „Markdig Markdown Parser“. Markdig weist eine hohe Kompatibilität mit GFM auf und verfügt über Möglichkeiten zur Aktivierung von dokumentationsspezifischen Features.
 
 * Markdig ist ein schneller, leistungsstarker und mit CommonMark kompatibler erweiterbarer Markdown-Prozessor für .NET.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Da Dokumentationsinhalte in GitHub gespeichert werden, können sie ein als Super
 Um eine Überschrift zu erstellen, verwenden Sie ein Rautenzeichen (#) wie folgt:
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Fetter und kursiver Text
@@ -38,19 +38,19 @@ Um eine Überschrift zu erstellen, verwenden Sie ein Rautenzeichen (#) wie folgt
 Um Text **fett** zu formatieren, schließen Sie ihn in vier Sternchen ein:
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Um Text *kursiv* zu formatieren, schließen Sie ihn in zwei Sternchen ein:
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Um Text ***fett und kursiv*** zu formatieren, schließen Sie ihn in sechs Sternchen ein:
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Listen
@@ -107,16 +107,16 @@ Um eine Liste in einer anderen zu verschachteln, rücken Sie die untergeordneten
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 so gerendert:
 
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 
 ### <a name="tables"></a>Tables
@@ -145,11 +145,11 @@ so gerendert:
 
 Weitere Informationen zum Erstellen von Tabellen finden Sie unter:
 
-- Abschnitt zur Markdig-[Tabellenumbruchfunktion](#table-wrapping), die bei der Formatierung breiter Tabellen hilfreich sein kann
-- [Organizing information with tables](https://help.github.com/articles/organizing-information-with-tables/) (Organisieren von Daten mit Tabellen) von GitHub
-- Die [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)-Web-App (Markdowntabellengenerator)
-- [Markdown Cheatsheet von Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [Markdown Extra von Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table)
+- Dem Abschnitt zum [Tabellenumbruchfeature](#table-wrapping) von Markdig, das bei der Formatierung breiter Tabellen hilfreich sein kann
+- [Organizing information with tables (Organisieren von Daten mit Tabellen)](https://help.github.com/articles/organizing-information-with-tables/) von GitHub
+- Der Web-App [Markdown Tables Generator (Markdowntabellengenerator)](https://www.tablesgenerator.com/markdown_tables)
+- [Adam Pritchard's Markdown Cheatsheet (Cheatsheet für Markdown von Adam Pritchard)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
+- [Michel Fortin's Markdown Extra (Markdown Extra von Michel Fortin)](https://michelf.ca/projects/php-markdown/extra/#table)
 - [Convert HTML tables to Markdown (Konvertieren von HTML-Tabellen in Markdown)](https://jmalarcon.github.io/markdowntables/)
 
 ### <a name="links"></a>Links
@@ -161,7 +161,7 @@ Die Markdownsyntax für einen Inlinelink besteht aus dem `[link text]`-Anteil, d
 Weitere Informationen zur Verknüpfung finden Sie hier:
 
 - Das Handbuch [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax#link) enthält nähere Informationen zur grundlegenden Unterstützung von Verknüpfungen durch Markdown.
-- Der Abschnitt [Links](how-to-write-links.md) dieses Handbuchs enthält nähere Informationen zur zusätzlichen von Markdig bereitgestellten Verknüpfungssyntax.
+- Der Abschnitt [Links](how-to-write-links.md) dieses Handbuchs enthält ausführliche Informationen zur zusätzlichen von Markdig bereitgestellten Verknüpfungssyntax.
 
 ### <a name="code-snippets"></a>Codeausschnitte
 
@@ -212,6 +212,7 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig unterstützt über die Codeausschnitterweiterung die erweiterte Einbezie
 Alternativtext, der Unterstriche enthält, wird nicht korrekt gerendert. Verwenden Sie beispielsweise anstelle von
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 diese Möglichkeit zur Umgehung von Unterstrichen:
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrophe und Anführungszeichen
 
-Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s.
+Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden.
+Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s.
 
 Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 
@@ -358,14 +360,15 @@ Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 
 ### <a name="angle-brackets"></a>Geschweifte Klammern
 
-Wenn Sie in Ihrer Datei geschweifte Klammern im Text (nicht Code) verwenden, z.B. zur Bezeichnung eines Platzhalters, müssen Sie die geschweiften Klammern manuell codieren. Andernfalls interpretiert Markdown sie als HTML-Tag.
+Spitze Klammern werden häufig zum Kennzeichnen eines Platzhalters verwendet. Wenn Sie dies im Text nutzen (nicht im Code), müssen Sie die spitzen Klammern codieren. Andernfalls interpretiert Markdown sie als HTML-Tag.
 
 Codieren Sie `<script name>` z.B. als `&lt;script name&gt;`.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch:
 
 ### <a name="markdown-resources"></a>Markdownressourcen
 
 - [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax) (Einführung)
 - [Cheatsheet zur Markdown-Dokumentation](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [Getting started with writing and formatting on GitHub](https://help.github.com/articles/markdown-basics/) (Erste Schritte: Schreiben und Formatieren auf GitHub) Grundlegendes zu Markdown
+- [The Markdown Guide (Das Markdown-Handbuch)](https://www.markdownguide.org/)

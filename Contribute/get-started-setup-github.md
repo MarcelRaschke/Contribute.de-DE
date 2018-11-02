@@ -2,18 +2,18 @@
 title: Schritte zum Einrichten eines GitHub-Kontos
 description: In diesem Artikel werden Sie durch den Vorgang zum Einrichten eines GitHub-Kontos geführt, das erforderlich ist, um an Inhalten von docs.microsoft.com mitzuwirken.
 ms.date: 02/27/2018
-ms.openlocfilehash: 15fa7c11090a5c4faefe38d00d273e92c231329b
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805489"
 ---
 # <a name="github-account-setup"></a>Einrichten eines GitHub-Kontos
 
 ## <a name="set-up-your-github-account"></a>Einrichten eines GitHub-Kontos
 
-Sie müssen Ihr eigenes GitHub-Konto einrichten, um an technischen Dokumentationsinhalten mitwirken zu können. Die meisten Schritte müssen Sie dabei praktischerweise nur einmal durchführen.
+Sie müssen Ihr eigenes GitHub-Konto einrichten, um an technischen Dokumentationsinhalten mitwirken zu können. Diese Schritte müssen Sie in der Regel jedoch nur einmal durchführen.
 
 ### <a name="1-create-a-github-account-and-set-up-your-profile"></a>1. Erstellen eines GitHub-Kontos und Einrichten des Profils
 

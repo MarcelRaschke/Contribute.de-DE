@@ -1,20 +1,19 @@
 ---
-title: Pack zur Dokumenterstellung für VS Code
-description: In diesem Artikel wird das VS Code-Erweiterungspaket zur vereinfachten Markdown-Erstellung für docs.microsoft.com beschrieben.
+title: Docs Authoring Pack für Visual Studio Code
+description: In diesem Artikel wird das Visual Studio Code-Erweiterungspaket zur vereinfachten Markdown-Dokumenterstellung für docs.microsoft.com beschrieben.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805652"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pack zur Dokumenterstellung für VS Code
 
-Das Pack zur Dokumenterstellung ist eine Sammlung von VS Code-Erweiterungen zum vereinfachten Erstellen von Dokumenten für docs.microsoft.com. Das Pack kann im [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) heruntergeladen werden und enthält die folgenden Erweiterungen:
+Das Docs Authoring Pack (Pack zur Dokumenterstellung) ist eine Sammlung von Visual Studio Code-Erweiterungen zum vereinfachten Erstellen von Dokumenten für docs.microsoft.com. Das Pack kann im [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) heruntergeladen werden und enthält die folgenden Erweiterungen:
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): Beliebter Markdownlinter von David Anson, der die Nutzung bewährter Methoden durch Markdown sicherstellt.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Eine vollständige Offline-Rechtschreibprüfung von Street Side Software.
@@ -103,7 +102,7 @@ Die Erweiterung „Templates“ unterstützt drei dynamische Metadatenfelder: �
 |----------|---------------|
 |author    |Ihre GitHub-ID, sofern in Ihrer VS Code-Einstellungendatei angegeben.|
 |ms.author |Ihr Microsoft-Alias, sofern in Ihrer VS Code-Einstellungendatei angegeben. Wenn Sie kein Microsoft-Mitarbeiter sind, geben Sie hier nichts an.|
-|ms.date   |Das aktuelle Datum im Docs-unterstützten Format, MM/TT/JJJJ. Beachten Sie, dass das Datum nicht automatisch aktualisiert wird, wenn Sie die Datei anschließend aktualisieren – Sie müssen dies manuell aktualisieren, um die Aktualität des Artikels anzuzeigen.|
+|ms.date   |Das aktuelle Datum im Docs-unterstützten Format, MM/TT/JJJJ. Beachten Sie, dass das Datum nicht automatisch aktualisiert wird, wenn Sie die Datei anschließend aktualisieren. Sie müssen den Wert „ms.date“ manuell aktualisieren, um das neueste Veröffentlichungsdatum auf der Website „docs.microsoft.com“ anzugeben.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>So legen Sie „author“ (GitHub-ID) und/oder „ms.author“ (Microsoft-Alias) fest
 
