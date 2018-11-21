@@ -11,6 +11,11 @@
 ## [Stil und Sprache – Schnellstart](style-quick-start.md)
 ## [Links](how-to-write-links.md)
 ## [Docs Authoring Pack (Pack zur Dokumenterstellung)](how-to-write-docs-auth-pack.md)
+# Dokumentationsspezifische Leitfäden
+## [.NET-Dokumentation](dotnet-contribute.md)
+### [Mitwirken an der .NET-Dokumentation](dotnet-contribute-process.md)
+### [Schreibkonventionen für die .NET-Dokumentation](dotnet-style-guide.md)
+### [Richtlinien für Sprache und Stil](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content

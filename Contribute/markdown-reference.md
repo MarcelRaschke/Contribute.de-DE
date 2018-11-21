@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805913"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609543"
 ---
 # <a name="markdown-reference-for-ops"></a>Markdownreferenz für OPS
 
-Markdown ist eine schlanke Markupsprache mit Nur-Text-Formatierungssyntax. OPS unterstützt den CommonMark-Standard für Markdown sowie einige Markdownerweiterungen, die umfangreicheren Inhalt auf docs.microsoft.com bereitstellen können. In diesem Artikel werden die wichtigsten Konzepte bezüglich Markdown in OPS für doc.microsoft.com in alphabetischer Reihenfolge erläutert.
+Markdown ist eine schlanke Markupsprache mit Nur-Text-Formatierungssyntax. Open Publishing Service (OPS) unterstützt den CommonMark-Standard für Markdown sowie einige Markdownerweiterungen, die umfangreicheren Inhalt auf docs.microsoft.com bereitstellen können. In diesem Artikel werden die wichtigsten Konzepte bezüglich Markdown in OPS für doc.microsoft.com in alphabetischer Reihenfolge erläutert.
 
 Sie können Markdown in einem beliebigen Text-Editor schreiben. Wenn Sie einen Editor verwenden möchten, der das Einfügen von Markdownstandardsyntax und von benutzerdefinierten OPS-Erweiterungen unterstützt, wird [VS Code](https://code.visualstudio.com/) mit installiertem [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) empfohlen.
 

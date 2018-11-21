@@ -2,12 +2,12 @@
 title: GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 description: In diesem Artikel erfahren Sie, wie Sie den Beitragsworkflow für größere Änderungen bei der Mitwirkung an docs.microsoft.com-Artikeln verwenden.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239823"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609403"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 
@@ -31,7 +31,7 @@ Bevor Sie beginnen, betrachten wir einige der in diesem Workflow verwendeten Git
 | Name | Beschreibung |
 |-----------|-------------|
 |Fork|Wird beim Verweis auf eine Kopie des GitHub-Repositorys normalerweise als Substantiv verwendet. Praktisch ist ein Fork einfach ein anderes Repository. Aber das Besondere daran ist, dass GitHub eine Verbindung zurück zum Haupt-/übergeordneten Repository aufrechterhält. Der Begriff wird manchmal als Verb verwendet, wie in „Sie müssen zuerst das Repositorys forken“.|
-|Remote|Eine benannte Verbindung mit einem Remoterepository, wie ein „Origin“- oder „Uppstreamremote“. Git bezeichnet diese als „Remotes“, weil sie zum Verweis auf ein Repository verwendet werden, das auf einem anderen Computer gehostet wird. In diesem Workflow ist ein Remote immer ein GitHub-Repository.|
+|Remote|Eine benannte Verbindung mit einem Remoterepository, wie ein „Origin“- oder „Uppstreamremote“. Git bezeichnet diese als „Remotes“, weil sie zum Verweis auf ein Repository verwendet wird, das auf einem anderen Computer gehostet wird. In diesem Workflow ist ein Remote immer ein GitHub-Repository.|
 |Origin|Der Name der Verbindung zwischen Ihrem lokalen Repository und dem Repository, von dem es geklont wurde. In diesem Workflow stellt Origin die Verbindung mit Ihrem Fork dar. Er wird manchmal als Moniker für das Ursprungsrepository selbst verwendet, wie in „Denken Sie daran, Ihre Änderungen an Origin zu pushen“.|
 |Upstream|Wie Originremote ist Upstream eine benannte Verbindung mit einem anderen Repository. In diesem Workflow stellt Upstream die Verbindung zwischen Ihrem lokalen Repository und dem Hauptrepository dar, aus dem Ihr Fork erstellt wurde. Der Begriff wird manchmal als Moniker für das Upstreamrepository selbst verwendet, wie in „Denken Sie daran, Ihre Änderungen vom Upstream zu pullen.“|
 

@@ -5,6 +5,6 @@ Microsoft, Windows, Microsoft Azure und/oder andere Microsoft-Produkte und -Dien
 Die Lizenzen für dieses Projekt gewähren Ihnen keinerlei Rechte für die Verwendung von Namen, Logos oder Marken von Microsoft.
 Microsofts allgemeine Markenrichtlinien finden Sie unter http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Informationen zum Datenschutz finden Sie unter https://privacy.microsoft.com/en-us/.
+Informationen zum Datenschutz finden Sie unter https://privacy.microsoft.com/.
 
 Microsoft und alle Mitwirkenden behalten sich sämtliche anderen Rechte vor, entweder kraft ihrer Urheberrechte, Patente oder Marken bzw. stillschweigend, durch Rechtsverwirkung oder anderweitig.

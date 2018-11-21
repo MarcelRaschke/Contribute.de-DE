@@ -4,12 +4,12 @@ description: Dieser Artikel enthält eine Liste der empfohlenen Ressourcen für 
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: d45e395c19a0619e0c73f7ad0a3858e0e48098c6
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239578"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609566"
 ---
 # <a name="additional-git-and-github-resources"></a>Zusätzliche Git- und GitHub-Ressourcen
 
@@ -20,8 +20,9 @@ Wenn Sie mit Git oder GitHub noch nicht vertraut sind, können Ihnen diese Resso
 - [Git-Grundlagen](https://go.microsoft.com/fwlink/?linkid=853939): Eine grundlegende Übersicht über die Funktionsweise von Git.
 - [E-Book „Pro Git“ (Web)](https://go.microsoft.com/fwlink/?linkid=853940): Eine umfassende Git-Referenz im HTML-Format.
 - [E-Book „Pro Git“ (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): Der gleiche Inhalt wie im vorherigen Link im PDF-Format.
-- [Learn Git – Codecademy-Kurs](https://www.codecademy.com/learn/learn-git): Git-Tutorial von Codecademy.
+- [Learn Git – Codecademy-Kurs:](https://www.codecademy.com/learn/learn-git) Git-Tutorial von Codecademy.
 - [Try Git – Code School-Kurs](https://www.codeschool.com/courses/try-git): Git-Tutorial von Code School.
+- [How to Use Git and GitHub – Udacity-Kurs:](https://www.udacity.com/course/how-to-use-git-and-github--ud775) Tutorial für Git und GitHub von Udacity
 
 ## <a name="github-resources"></a>GitHub-Ressourcen
 
@@ -31,3 +32,4 @@ Wenn Sie mit Git oder GitHub noch nicht vertraut sind, können Ihnen diese Resso
 - [GitHub-Lernressourcen](https://help.github.com/articles/git-and-github-learning-resources/): Weitere nützliche GitHub-Ressourcen.
 - [GitHub-Schulungen](https://services.github.com/training/): Eine Liste der Tutorials und Schulungsangebote von GitHub.
 - [Glossar](https://help.github.com/articles/github-glossary): Ein praktisches Glossar mit Begriffen rund um Git und GitHub.
+- [Student Developer Pack von GitHub:](https://education.github.com/pack) Damit erhalten Schüler und Studenten kostenlosen Zugriff auf die besten Entwicklertools.

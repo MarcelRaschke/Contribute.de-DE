@@ -2,12 +2,12 @@
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805723"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609520"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
@@ -33,6 +33,14 @@ Um eine Überschrift zu erstellen, verwenden Sie ein Rautenzeichen (#) wie folgt
 #### This is heading 4
 ```
 
+Überschriften sollten im ATX-Format verfasst werden. Verwenden Sie also 1–6 Rautezeichen (#) am Anfang der Zeile, um eine Überschrift zu kennzeichnen. Diese entsprechen den HTML-Überschriftenebenen H1 bis H6. Oben sehen Sie Beispiele für Überschriften von der ersten bis zur vierten Ebene.
+
+Es darf **nur eine** Überschrift auf der ersten Ebene (H1) in Ihrem Artikel geben. Diese wird als Titel der Seite verwendet.
+
+Wenn Ihre Überschrift auf `#` endet, müssen Sie ein weiteres `#`-Zeichen hinzufügen, damit der Titel ordnungsgemäß gerendert wird. Beispiel: `# Async Programming in F# #`.
+
+Überschriften auf der zweiten Ebene generieren das Inhaltsverzeichnis auf der Seite, das unter „In diesem Artikel“ neben dem Titel angezeigt wird.
+
 ### <a name="bold-and-italic-text"></a>Fetter und kursiver Text
 
 Um Text **fett** zu formatieren, schließen Sie ihn in vier Sternchen ein:
@@ -52,6 +60,18 @@ Um Text ***fett und kursiv*** zu formatieren, schließen Sie ihn in sechs Sternc
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Blockzitate
+
+Blockzitate werden mit dem `>`-Zeichen generiert:
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+Das vorherige Beispiel wird wie folgt gerendert:
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ### <a name="lists"></a>Listen
 
@@ -93,8 +113,8 @@ Um eine geordnete/schrittweise Liste zu formatieren, verwenden Sie entsprechende
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 so gerendert:
@@ -108,8 +128,8 @@ Um eine Liste in einer anderen zu verschachteln, rücken Sie die untergeordneten
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 so gerendert:
@@ -118,6 +138,8 @@ so gerendert:
    1. Sub-instruction
    2. Sub-instruction
 2. Second instruction
+
+Wir haben für alle Einträge „1.“ verwendet. Dadurch ist es leichter, Änderungen zu prüfen, wenn durch diese Schritte hinzugefügt oder entfernt werden.
 
 ### <a name="tables"></a>Tables
 
@@ -194,6 +216,8 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# im Browser|csharp-interactive|
+|Konsole|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |VSTS-CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+Die Markdownbezeichnung `csharp-interactive` gibt C# als Sprache an. Die Beispiele können über den Browser ausgeführt werden. Diese Ausschnitt werden in einem Docker-Container kompiliert und ausgeführt. Die Ergebnisse dieser Ausführung werden im Browserfenster des Benutzers angezeigt.
 
 #### <a name="example-c"></a>Beispiel: C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Darstellung__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Sie können aus vier Notizzetteltypen auswählen, um die Aufmerksamkeit auf best
 
 Generell sollten Notizzettel sparsam verwendet werden, da sie eine empfindliche Unterbrechung darstellen können. Sie unterstützen zwar Codeblöcke, Bilder, Listen und Links, halten Sie sie aber trotzdem möglichst unkompliziert.
 
+Beispiele:
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+Diese werden wie folgt gerendert:
+
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+
 ### <a name="includes"></a>Einbeziehungen
 
 Wenn wiederverwendbarer Text oder Bilddateien in Artikeldateien einbezogen werden müssen, können Sie über die Markdig-Dateieinbeziehungsfunktion einen Verweis auf die Includedatei verwenden. Diese Funktion weist OPS an, die jeweilige Datei zur Erstellungszeit in Ihre Artikeldatei einzubeziehen, sodass sie ein Teil des veröffentlichten Artikels ist. Um das Wiederverwenden von Inhalt zu erleichtern, können Sie drei Einbeziehungstypen verwenden:
@@ -317,13 +373,29 @@ Die Anforderungen und Überlegungen zu Einbeziehungen lauten wie folgt:
 - Geben Sie Medien wie reguläre Artikel nicht zur gemeinsamen Nutzung durch Includedateien frei. Verwenden Sie eine separate Datei mit einem eindeutigen Namen für jede Einbeziehung und jeden Artikel. Speichern Sie die Mediendatei in dem Medienordner, der der Einbeziehung zugeordnet ist.
 - Verwenden Sie eine Einbeziehung nicht als ausschließlichen Inhalt eines Artikels.  Einbeziehungen sind als Ergänzung des übrigen Artikelinhalts gedacht.
 
+Beispiel:
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Selektoren
 
 Verwenden Sie Selektoren in technischen Artikeln, wenn Sie mehrere Varianten des gleichen Artikels erstellen, um Implementierungsunterschiede einzelner Technologien bzw. Plattformen zu berücksichtigen. Dies gilt in der Regel am meisten für unsere Inhalte für mobile Plattformen, die sich an Entwickler richten. Es gibt derzeit zwei unterschiedliche Selektortypen in Markdig: einen einfachen und einen Mehrfachselektor.
 
 Da derselbe Markdownselektor in jedem Artikel der Auswahl erwähnt wird, wird empfohlen, dass Sie den Selektor Ihres Artikels in einer Einbeziehung platzieren. Dann können Sie auf diese Einbeziehung in allen Artikeln, die denselben Selektor verwenden, verweisen.
 
-### <a name="code-snippets"></a>Codeausschnitte
+Hier ist ein Beispielselektor dargestellt:
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+In der [Azure-Dokumentation](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic) können Sie sich die Selektoren in Aktion ansehen.
+
+### <a name="code-includes"></a>Einschließen von Code
 
 Markdig unterstützt über die Codeausschnitterweiterung die erweiterte Einbeziehung von Code in einen Artikel. DFM bietet erweitertes Rendern, das auf GFM-Funktionen wie Programmieren der Sprachauswahl und farbiger Syntaxmarkierung sowie netten Funktionen wie den folgenden basiert:
 
@@ -348,8 +420,7 @@ diese Möglichkeit zur Umgehung von Unterstrichen:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrophe und Anführungszeichen
 
-Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden.
-Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s.
+Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s.
 
 Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 
