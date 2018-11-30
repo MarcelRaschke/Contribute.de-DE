@@ -4,12 +4,12 @@ description: Dieser Artikel enthält eine Liste der empfohlenen Ressourcen für 
 author: billwagner
 ms.author: wiwagn
 manager: wpickett
-ms.openlocfilehash: bf12947d0956a5ee2953d74840afe3060425074d
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4c29bfd09f17e32624ee3fc484424c4fe8d3b68e
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609566"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299635"
 ---
 # <a name="additional-git-and-github-resources"></a>Zusätzliche Git- und GitHub-Ressourcen
 
@@ -20,8 +20,8 @@ Wenn Sie mit Git oder GitHub noch nicht vertraut sind, können Ihnen diese Resso
 - [Git-Grundlagen](https://go.microsoft.com/fwlink/?linkid=853939): Eine grundlegende Übersicht über die Funktionsweise von Git.
 - [E-Book „Pro Git“ (Web)](https://go.microsoft.com/fwlink/?linkid=853940): Eine umfassende Git-Referenz im HTML-Format.
 - [E-Book „Pro Git“ (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf): Der gleiche Inhalt wie im vorherigen Link im PDF-Format.
-- [Learn Git – Codecademy-Kurs:](https://www.codecademy.com/learn/learn-git) Git-Tutorial von Codecademy.
-- [Try Git – Code School-Kurs](https://www.codeschool.com/courses/try-git): Git-Tutorial von Code School.
+- [Learn Git – Codecademy-Kurs](https://www.codecademy.com/learn/learn-git): Git-Tutorial von Codecademy.
+- [Code School: Git Real auf Pluralsight](https://www.pluralsight.com/courses/code-school-git-real): Git-Tutorial von Code School auf der Pluralsight-Website.
 - [How to Use Git and GitHub – Udacity-Kurs:](https://www.udacity.com/course/how-to-use-git-and-github--ud775) Tutorial für Git und GitHub von Udacity
 
 ## <a name="github-resources"></a>GitHub-Ressourcen
