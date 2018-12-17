@@ -2,12 +2,12 @@
 title: Mitwirken an Repositorys der .NET-Dokumentation
 description: In diesem Artikel erhalten Sie eine Einführung in das Mitwirken an den Repositorys der .NET-Dokumentation. Sie lernen die verwendeten Repositorys, die Vorgehensweise für das Ordnen von Inhalten und die Richtlinien für das Verwalten von Codebeispielen und anderen Ressourcen kennen.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609760"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245847"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Mitwirken an der .NET-Dokumentation
 
@@ -131,6 +131,7 @@ So erstellen Sie ein Beispiel:
 2. Schreiben Sie einen Artikel, der die Konzepte erläutert, die in Ihrem Beispiel veranschaulicht werden (z.B. `docs/standard/linq/where-clause.md`).
 3. Schreiben Sie Ihr Beispiel (z.B. `WhereClause-Sample1.cs`).
 4. Erstellen Sie die Datei „Program.cs“ mit einem Haupteinstiegspunkt, der Ihr Beispiel aufruft. Wenn diese bereits vorhanden ist, fügen Sie den Aufruf zum Beispiel hinzu:
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ So erstellen Sie ein Beispiel:
         }
     }
     ```
+
 Codeausschnitte oder Beispiele für .NET Core werden mithilfe der .NET Core-CLI erstellt, die mit dem [.NET Core SDK](https://www.microsoft.com/net/download) installiert werden kann. So können Sie ein Beispiel erstellen und ausführen:
 
 1. Navigieren Sie zum Ordner des Beispiels, und führen Sie „dotnet build“ aus, um diesen auf Fehler zu überprüfen:

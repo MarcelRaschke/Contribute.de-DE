@@ -2,12 +2,12 @@
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609520"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245893"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
@@ -282,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __Darstellung__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -304,7 +304,7 @@ CREATE TABLE T1 (
 GFM wird in Dokumentationsartikeln für die meisten Formatierungsaufgaben wie Absätze, Links, Listen und Überschriften verwendet. Zur weitergehenden Formatierung von Artikeln können folgende Markdig-Funktionen verwendet werden:
 
 - Notizzettel
-- Einbeziehungen
+- Includedateien
 - Selektoren
 - Eingebettete Videos
 - Codeausschnitte/-beispiele
@@ -352,26 +352,26 @@ Diese werden wie folgt gerendert:
 > [!IMPORTANT]
 > This is IMPORTANT
 
-### <a name="includes"></a>Einbeziehungen
+### <a name="include-files"></a>Includedateien
 
-Wenn wiederverwendbarer Text oder Bilddateien in Artikeldateien einbezogen werden müssen, können Sie über die Markdig-Dateieinbeziehungsfunktion einen Verweis auf die Includedatei verwenden. Diese Funktion weist OPS an, die jeweilige Datei zur Erstellungszeit in Ihre Artikeldatei einzubeziehen, sodass sie ein Teil des veröffentlichten Artikels ist. Um das Wiederverwenden von Inhalt zu erleichtern, können Sie drei Einbeziehungstypen verwenden:
+Wenn wiederverwendbarer Text oder Bilddateien in Artikeldateien einbezogen werden müssen, können Sie über die Markdig-Dateieinbeziehungsfunktion einen Verweis auf die Includedatei verwenden. Diese Funktion weist OPS an, die jeweilige Datei zur Erstellungszeit in Ihre Artikeldatei einzubeziehen, sodass sie ein Teil des veröffentlichten Artikels ist. Um das Wiederverwenden von Inhalt zu erleichtern, können Sie drei Arten von Includeverweisen verwenden:
 
 - Inline: Verwenden Sie einen häufig verwendeten Textausschnitt inline innerhalb eines anderen Satzes wieder.
 - Block: Verwenden Sie eine gesamte Markdowndatei als ein im Abschnitt eines Artikels geschachtelten Block wieder.
 - Bilder: So wird die Standardeinbeziehung von Bildern in Dokumente implementiert.
 
-Inline- oder Blockeinbeziehungen sind einfache Markdowndateien (.md). Sie können jeglichen gültigen Markdowncode enthalten. Alle Markdownincludedateien sollten im Stamm des Repositorys in einem [gemeinsamen `/includes`-Unterverzeichnis](git-github-fundamentals.md#includes-subdirectory) gespeichert werden. Bei Veröffentlichung des Artikels wird die einbezogene Datei nahtlos integriert.
+Inline- oder Blockincludedateien sind einfache Markdowndateien (.md). Sie können jeglichen gültigen Markdowncode enthalten. Alle Markdownincludedateien sollten im Stamm des Repositorys in einem [gemeinsamen `/includes`-Unterverzeichnis](git-github-fundamentals.md#includes-subdirectory) gespeichert werden. Bei Veröffentlichung des Artikels wird die einbezogene Datei nahtlos integriert.
 
-Die Anforderungen und Überlegungen zu Einbeziehungen lauten wie folgt:
+Die Anforderungen und Überlegungen zu Includedateien lauten wie folgt:
 
-- Verwenden Sie stets dann Einbeziehungen, wenn der gleiche Text in verschiedenen Artikeln enthalten sein soll.
-- Verwenden Sie Blockeinbeziehungen für umfangreiche Inhaltsmengen, d.h. ein oder zwei Absätze, ein gemeinsames Verfahren oder ein gemeinsamer Abschnitt. Verwenden Sie sie nicht für Inhalte, die kleiner sind als ein Satz.
-- Einbeziehungen werden in der GitHub-Ansicht Ihres Artikels nicht gerendert, da sie von Markdig-Erweiterungen abhängig sind. Sie werden erst nach der Veröffentlichung gerendert.
-- Stellen Sie sicher, dass sämtlicher Text in einer Einbeziehung in vollständigen Sätzen oder Ausdrücken geschrieben ist, die nicht vom vorhergehenden oder nachfolgenden Text in dem Artikel, der auf die Einbeziehung verweist, abhängig sind. Wenn Sie diese Vorgabe ignorieren, wird eine unübersetzbare Zeichenfolge im Artikel erstellt und damit die Lokalisierung beeinträchtigt.
-- Betten Sie keine Einbeziehungen in andere Einbeziehungen ein. Sie werden nicht unterstützt.
-- Platzieren Sie Mediendateien in einem Medienordner, der für das Includeunterverzeichnis bestimmt ist (z.B. der Ordner `<repo>`/includes/media). Der Stamm des Medienverzeichnisses darf keine Bilder enthalten. Wenn das Includeverzeichnis keine Bilder enthält, ist kein entsprechendes Medienverzeichnis erforderlich.
-- Geben Sie Medien wie reguläre Artikel nicht zur gemeinsamen Nutzung durch Includedateien frei. Verwenden Sie eine separate Datei mit einem eindeutigen Namen für jede Einbeziehung und jeden Artikel. Speichern Sie die Mediendatei in dem Medienordner, der der Einbeziehung zugeordnet ist.
-- Verwenden Sie eine Einbeziehung nicht als ausschließlichen Inhalt eines Artikels.  Einbeziehungen sind als Ergänzung des übrigen Artikelinhalts gedacht.
+- Verwenden Sie stets dann eine Includedatei, wenn der gleiche Text in verschiedenen Artikeln enthalten sein soll.
+- Verwenden Sie einen Blockincludeverweis für umfangreiche Inhaltsmengen, d.h. für ein oder zwei Absätze, ein gemeinsames Verfahren oder einen gemeinsamen Abschnitt. Verwenden Sie sie nicht für Inhalte, die kleiner sind als ein Satz.
+- Includeverweise werden in der GitHub-Ansicht Ihres Artikels nicht gerendert, da sie von Markdig-Erweiterungen abhängig sind. Sie werden erst nach der Veröffentlichung gerendert.
+- Stellen Sie sicher, dass sämtlicher Text in einer Includedatei in vollständigen Sätzen oder Ausdrücken geschrieben ist, die nicht vom vorhergehenden oder nachfolgenden Text in dem Artikel, der auf die Includedatei verweist, abhängig sind. Wenn Sie diese Vorgabe ignorieren, wird eine unübersetzbare Zeichenfolge im Artikel erstellt und damit die Lokalisierung beeinträchtigt.
+- Betten Sie keine Includeverweise in andere Includedateien ein. Sie werden nicht unterstützt.
+- Platzieren Sie Mediendateien in einem Medienordner, der für das Includeunterverzeichnis bestimmt ist (z.B. der Ordner `<repo>`/includes/media). Der Stamm des Medienverzeichnisses darf keine Bilder enthalten. Wenn die Includedatei keine Bilder enthält, ist kein entsprechendes Medienverzeichnis erforderlich.
+- Geben Sie Medien wie reguläre Artikel nicht zur gemeinsamen Nutzung durch Includedateien frei. Verwenden Sie eine separate Datei mit einem eindeutigen Namen für jede Includedatei und jeden Artikel. Speichern Sie die Mediendatei in dem Medienordner, der der Includedatei zugeordnet ist.
+- Verwenden Sie eine Includedatei nicht als ausschließlichen Inhalt eines Artikels.  Includedateien sind als Ergänzung des übrigen Artikelinhalts gedacht.
 
 Beispiel:
 
@@ -383,7 +383,7 @@ Beispiel:
 
 Verwenden Sie Selektoren in technischen Artikeln, wenn Sie mehrere Varianten des gleichen Artikels erstellen, um Implementierungsunterschiede einzelner Technologien bzw. Plattformen zu berücksichtigen. Dies gilt in der Regel am meisten für unsere Inhalte für mobile Plattformen, die sich an Entwickler richten. Es gibt derzeit zwei unterschiedliche Selektortypen in Markdig: einen einfachen und einen Mehrfachselektor.
 
-Da derselbe Markdownselektor in jedem Artikel der Auswahl erwähnt wird, wird empfohlen, dass Sie den Selektor Ihres Artikels in einer Einbeziehung platzieren. Dann können Sie auf diese Einbeziehung in allen Artikeln, die denselben Selektor verwenden, verweisen.
+Da derselbe Markdownselektor in jedem Artikel der Auswahl erwähnt wird, wird empfohlen, dass Sie den Selektor Ihres Artikels in einer Includedatei platzieren. Dann können Sie auf diese Includedatei in allen Artikeln, die denselben Selektor verwenden, verweisen.
 
 Hier ist ein Beispielselektor dargestellt:
 
@@ -395,7 +395,7 @@ Hier ist ein Beispielselektor dargestellt:
 
 In der [Azure-Dokumentation](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic) können Sie sich die Selektoren in Aktion ansehen.
 
-### <a name="code-includes"></a>Einschließen von Code
+### <a name="code-include-references"></a>Codeincludeverweise
 
 Markdig unterstützt über die Codeausschnitterweiterung die erweiterte Einbeziehung von Code in einen Artikel. DFM bietet erweitertes Rendern, das auf GFM-Funktionen wie Programmieren der Sprachauswahl und farbiger Syntaxmarkierung sowie netten Funktionen wie den folgenden basiert:
 
@@ -420,7 +420,7 @@ diese Möglichkeit zur Umgehung von Unterstrichen:
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrophe und Anführungszeichen
 
-Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s.
+Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s
 
 Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 
