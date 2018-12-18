@@ -1,6 +1,6 @@
 ---
-title: Markdownreferenz für OPS und docs.microsoft.com
-description: Der OPS-Plattformleitfaden für die Erweiterungen für Markdown und DocFX Flavored Markdown (DFM).
+title: Markdownreferenz für docs.microsoft.com
+description: Der Markdownleitfaden für die Dokumentationsplattform
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609543"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245870"
 ---
-# <a name="markdown-reference-for-ops"></a>Markdownreferenz für OPS
+# <a name="markdown-reference"></a>Markdownreferenz
 
-Markdown ist eine schlanke Markupsprache mit Nur-Text-Formatierungssyntax. Open Publishing Service (OPS) unterstützt den CommonMark-Standard für Markdown sowie einige Markdownerweiterungen, die umfangreicheren Inhalt auf docs.microsoft.com bereitstellen können. In diesem Artikel werden die wichtigsten Konzepte bezüglich Markdown in OPS für doc.microsoft.com in alphabetischer Reihenfolge erläutert.
+Markdown ist eine schlanke Markupsprache mit Nur-Text-Formatierungssyntax. Die Dokumentationsplattform unterstützt den CommonMark-Standard für Markdown sowie einige Markdownerweiterungen, die umfangreicheren Inhalt auf docs.microsoft.com bereitstellen können. In diesem Artikel werden die wichtigsten Konzepte bezüglich Markdown für doc.microsoft.com in alphabetischer Reihenfolge erläutert.
 
-Sie können Markdown in einem beliebigen Text-Editor schreiben. Wenn Sie einen Editor verwenden möchten, der das Einfügen von Markdownstandardsyntax und von benutzerdefinierten OPS-Erweiterungen unterstützt, wird [VS Code](https://code.visualstudio.com/) mit installiertem [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) empfohlen.
+Sie können Markdown in einem beliebigen Text-Editor schreiben. Wenn Sie einen Editor verwenden möchten, der das Einfügen von Markdownstandardsyntax und von benutzerdefinierten Dokumentationserweiterungen unterstützt, wird [VS Code](https://code.visualstudio.com/) mit installiertem [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) empfohlen.
 
-OPS wurde in Markdig für alle neuen Repositorys standardisiert. Ältere Repositorys werden zu Markdig migriert. Unter [https://babelmark.github.io/](https://babelmark.github.io/) können Sie das Rendern von Markdown in Markdig und mit anderen Engines testen.
+Microsoft-Dokumentation nutzt die Markdown-Engine von Markdig. Unter [https://babelmark.github.io/](https://babelmark.github.io/) können Sie das Rendern von Markdown in Markdig und mit anderen Engines testen.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Warnungen (Hinweis, Tipp, Wichtig, Achtung, Warnung)
 
-Damit werden OPS-spezifische Markdownerweiterungen angewiesen, Blockzitate zu erzeugen, die auf docs.microsoft.com mit anderen Hintergrundfarben und Symbolen gerendert werden, die den Inhalt hervorheben. Die folgenden Warnungstypen werden unterstützt:
+Damit wird eine Markdownerweiterungen für Microsoft-Dokumentation angewiesen, Blockzitate zu erzeugen, die auf docs.microsoft.com mit anderen Hintergrundfarben und Symbolen gerendert werden, die den Inhalt hervorheben. Die folgenden Warnungstypen werden unterstützt:
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ Sie können Codeausschnitte in Ihre Markdowndatei einbetten:
 
 ## <a name="headings"></a>Überschriften
 
-OPS unterstützt sechs Markdownüberschriftenebenen:
+Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS unterstützt sechs Markdownüberschriftenebenen:
 
 ## <a name="html"></a>HTML
 
-Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung über OPS nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige wenige Werte sind davon ausgenommen). <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Microsoft-Dokumentation nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen). <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>Bilder
 
@@ -116,7 +116,7 @@ Sie können die Unterstützung für andere Bildtypen hinzufügen, indem Sie sie 
 
 ## <a name="links"></a>Links
 
-In den meisten Fällen verwendet OPS Standardmarkdownlinks zu anderen Dateien und Seiten. Die Linktypen werden weiter unten erläutert.
+In den meisten Fällen verwendet Microsoft-Dokumentation Standardmarkdownlinks zu anderen Dateien und Seiten. Die Linktypen werden weiter unten erläutert.
 
 > [!TIP]
 > Mit dem Docs Authoring Pack für VS Code können Sie relative Links und Lesezeichenlinks problemlos einfügen, ohne sich um den Pfad Gedanken machen zu müssen.
@@ -132,7 +132,7 @@ In den meisten Fällen verwendet OPS Standardmarkdownlinks zu anderen Dateien un
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>Relative Links im gleichen Docset
 
-Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verhältnis zur aktuellen Datei steht. In OPS können Sie einen relativen Pfad verwenden, um einen Link zu einer anderen Datei im gleichen Docset einzufügen. Die Syntax für einen relativen Pfad sieht wie folgt aus:
+Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verhältnis zur aktuellen Datei steht. Auf Microsoft-Dokumentation können Sie einen relativen Pfad verwenden, um einen Link zu einer anderen Datei im gleichen Docset einzufügen. Die Syntax für einen relativen Pfad sieht wie folgt aus:
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verh�
 
 - Der relative Pfad wird während des Builds aufgelöst. Auch die Erweiterung „.md“ wird entfernt.
 - Sie können „../“ verwenden, um einen Link zu einer Datei im übergeordneten Ordner zu erstellen. Diese Datei muss sich allerdings im gleichen Docset befinden. Sie können „../“ nicht zum Erstellen eines Links zu einer Datei in einem anderen Docset verwenden.
-- OPS unterstützt zudem eine Sonderform von relativen Pfaden, die mit „~“ beginnt (z.B. ~/foo/bar.md). Diese Syntax gibt eine Datei an, die abhängig vom Stammordner eines Docsets ist. Diese Art von Pfad wird ebenfalls während des Erstellungsvorgangs überprüft und aufgelöst.
+- Microsoft-Dokumentation unterstützt zudem eine Sonderform von relativen Pfaden, die mit „~“ beginnt (z.B. ~/foo/bar.md). Diese Syntax gibt eine Datei an, die abhängig vom Stammordner eines Docsets ist. Diese Art von Pfad wird ebenfalls während des Erstellungsvorgangs überprüft und aufgelöst.
 
 > [!IMPORTANT]
 > Beziehen Sie die Erweiterung mit in den relativen Pfad ein. Der Build prüft das Vorhandensein der Zieldatei dieses relativen Pfads. Wenn der relative Pfad keine Erweiterung enthält, ist es wahrscheinlich, dass der Build einen fehlerhaften Link meldet. Verwenden Sie z.B. Folgendes:
@@ -153,7 +153,7 @@ Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verh�
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>Absolute Links zu anderen Dateien in OPS
+### <a name="site-relative-links-to-other-files-on-docs"></a>Links relativ zur Website zu anderen Dateien auf Microsoft-Dokumentation
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Für eine nummerierte Liste können Sie für alle Punkte Einsen verwenden. Diese werden bei der Veröffentlichung als aufsteigende Zahlenfolge gerendert. Für eine bessere Lesbarkeit der Quelle können Sie Ihre Listen inkrementieren.
 
-Verwenden Sie keine Buchstaben für Listen, auch nicht für geschachtelte Listen. Diese werden nicht fehlerfrei gerendert, wenn sie über OPS veröffentlicht werden. Geschachtelte nummerierte Listen werden mit Kleinbuchstaben gerendert, wenn sie veröffentlicht werden. Beispiel:
+Verwenden Sie keine Buchstaben für Listen, auch nicht für geschachtelte Listen. Diese werden nicht fehlerfrei gerendert, wenn sie auf der Seite von Microsoft-Dokumentation veröffentlicht werden. Geschachtelte nummerierte Listen werden mit Kleinbuchstaben gerendert, wenn sie veröffentlicht werden. Beispiel:
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Dieser Code wird wie folgt gerendert:
 > - [(Xamarin iOS | JavaScript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | JavaScript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>Tables
 
 Die einfachste Möglichkeit zum Erstellen einer Tabelle in Markdown ist die Verwendung von senkrechten Strichen und Unterstrichen. Fügen Sie unter der ersten Zeile Unterstriche ein, um eine Standardtabelle mit Kopfzeile zu erstellen:
@@ -535,13 +527,13 @@ HTML-Tabellen werden für docs.microsoft.com nicht empfohlen. Sie können in der
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Einbetten von Videos in eine Markdownseite
 
-Momentan unterstützt OPS Videos, die auf einer der folgenden Plattformen veröffentlicht wurden:
+Momentan unterstützt Microsoft-Dokumentation Videos, die auf einer der folgenden Plattformen veröffentlicht wurden:
 
 - YouTube
 - Channel 9
 - OnePlayer von Microsoft
 
-Sie können mit der folgenden Syntax ein Video einbetten, das von OPS gerendert wird.
+Sie können mit der folgenden Syntax ein Video einbetten, das von Microsoft-Dokumentation gerendert wird.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]
