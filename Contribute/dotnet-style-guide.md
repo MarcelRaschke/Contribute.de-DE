@@ -230,11 +230,11 @@ Für Listen ist eine benutzerdefinierte Formatvorlage verfügbar. Sie können Li
 Dies wird wie folgt dargestellt:
 
 > [!div class="checklist"]
-> * How to create a .NET Core app (Erstellen einer .NET Core-App)
-> * How to add a reference to the Microsoft.XmlSerializer.Generator package (Hinzufügen eines Verweises zum Microsoft.XmlSerializer.Generator-Paket)
-> * How to edit your MyApp.csproj to add dependencies (Bearbeiten Ihrer MyApp.csproj-Datei zum Hinzufügen von Abhängigkeiten)
-> * How to add a class and an XmlSerializer (Hinzufügen von „XmlSerializer“ und einer Klasse)
-> * How to build and run the application (Erstellen und Ausführen der Anwendung)
+> * Erstellen einer .NET Core-App
+> * Hinzufügen eines Verweises zum Microsoft.XmlSerializer.Generator-Paket
+> * Bearbeiten Ihrer MyApp.csproj-Datei zum Hinzufügen von Abhängigkeiten
+> * Hinzufügen von „XmlSerializer“ und einer Klasse
+> * Erstellen und Ausführen der Anwendung
 
 Ein Beispiel der Liste mit Häkchen finden Sie in dieser [.NET Core-Dokumentation](https://docs.microsoft.com/dotnet/core/additional-tools/xml-serializer-generator).
 
