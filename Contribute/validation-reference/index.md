@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084528"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712784"
 ---
-# <a name="docs-pr-validation-service"></a>Docs PR-Überprüfungsdienst
+# <a name="docs-validation-reference"></a>Referenz zur Validierung von Dokumentationsartikeln
 
-Der Docs PR-Überprüfungsdienst ist eine GitHub-App, die Gültigkeitsprüfungsregeln für die Dateien in einem PR (Pull Request) ausführt.
+Die Artikel in diesem Abschnitt enthalten Informationen zu Fehlern, Warnungen und Vorschlägen, die angezeigt werden könnten, wenn Sie einen PR an ein „docs.microsoft.com“-Repository senden, oder beim Erstellen eines Repositorys zum Veröffentlichen in „docs.microsoft.com“.
 
-Wenn der Überprüfungsdienst für ein Repository aktiviert ist, werden Sie das folgende Verhalten beobachten:
+Beachten Sie, dass nicht alle Probleme in allen Repositorys aktiviert werden; manche sind für bestimmte Inhaltsgruppen spezifisch. Beheben Sie die in Ihrem Buildbericht aufgelisteten Probleme, nicht jedes in dieser Referenz beschriebene Problem.
 
-1. Sie senden einen PR.
-1. Im GitHub-Kommentar, der den Status Ihres PRs anzeigt, wird der Status der für das Repository aktivierten „Überprüfungen“ angezeigt. Beachten Sie, dass in diesem Beispiel zwei Überprüfungen aktiviert sind, „Commit Validation“ und „OpenPublishing.Build“:
-
-   ![Fehler bei einigen Überprüfungen](media/validation-failed.png)
-
-   Die „Build“-Überprüfung kann erfolgreich sein, selbst wenn die „Commit Validation“-Überprüfung fehlschlägt.
-
-1. Klicken Sie auf **Details**, um weitere Informationen zu erhalten.
-1. Auf der Details-Seite werden alle fehlgeschlagenen Gültigkeitsüberprüfungen mit Information zur Problembehandlung angezeigt:
-
-   ![Validierungsmeldung](media/validation-details.png)
-
-Die Liste der derzeit im Dienst verfügbaren Gültigkeiten finden Sie links im Inhaltsverzeichnis dieses Artikels.
+Beachten Sie auch, dass diese Referenz nicht vollständig ist – neue Artikel werden hinzugefügt und von Buildbericht-Fehlercodes fortlaufend verknüpft. Obwohl Buildberichte öffentlich sind, sind einige der zum Beheben einiger Probleme erforderlichen Informationen nicht außerhalb von Microsoft verfügbar. Wenn Sie keine Dokumentation zu einem Fehler oder einer Warnung finden, wenn die Meldung oder Dokumentation nicht klar ist, oder wenn Sie ein Mitwirkender sind, der kein Mitarbeiter von Microsoft ist, und nicht auf zusätzliche Informationen zugreifen können, reichen Sie über die Schaltfläche für Dokumentationsfeedback unten eine GitHub-Anfrage ein.

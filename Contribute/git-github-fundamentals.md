@@ -2,12 +2,12 @@
 title: Grundlegende Informationen zu Git und GitHub für die Dokumentation
 description: In diesem Artikel erhalten Sie einen Überblick über Git und das GitHub-Repository, die Organisation des Inhalts und die für docs.microsoft.com verwendeten Namenskonventionen.
 ms.date: 06/30/2017
-ms.openlocfilehash: 05c758845007f859382014166e88fd9614cdb873
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805698"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712876"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Grundlegende Informationen zu Git und GitHub für die Dokumentation
 
@@ -25,7 +25,7 @@ Wenn Ihnen die Arbeit mit zentralen Versionskontrollsystemen (z.B. Team Foundati
 
 Git basiert ebenfalls auf einer mehrstufigen Struktur zur Speicherung und Verwaltung von Inhalten für ein Projekt:
 
-- *Repository*: Dies ist die größte Speichereinheit. Ein Repository enthält mindestens einen Branch.
+- *Repository*: Das *Repository* ist die größte Speichereinheit. Ein Repository enthält mindestens einen Branch.
 - *Branch*: Diese Speichereinheit enthält die Dateien und Ordner, die den gesamten Inhalt eines Projekts bilden. Branches werden zur Trennung der Streams (in der Regel als Versionen bezeichnet) verwendet. Beiträge werden immer für einen bestimmten Branch erstellt und diesem zugeordnet. Alle Repositorys enthalten einen Standardbranch, der in der Regel als „Masterbranch“ bezeichnet wird, und mindestens einen Branch, der mit dem Masterbranch zusammengeführt werden soll. Der Masterbranch dient für das Projekt als aktuelle und allgemeingültige Version. Er ist der übergeordnete Branch, aus dem alle anderen Branches in dem Repository erstellt werden.
 
 Mit Git aktualisieren und bearbeiten Mitwirkende Repositorys auf der lokalen und der GitHub-Ebene:
@@ -58,7 +58,7 @@ Jedes Artikelverzeichnis enthält ein Unterverzeichnis `/media` für entsprechen
 
 Wenn es wiederverwendbaren Inhalt gibt, der von mindestens einem Artikeln genutzt wird, wird dieser im Unterverzeichnis `/includes` des `articles`-Hauptartikelverzeichnisses abgelegt. In einer Markdowndatei, die die Includedatei verwenden soll, wird die entsprechende Markdownerweiterung „include“ an die Stelle platziert, an der auf die Includedatei verwiesen werden soll.
 
-Weitere Anweisungen finden Sie unter [Vorgehensweise zum Verwenden von Markdown: Includes](how-to-write-use-markdown.md#includes).
+Weitere Anleitungen finden Sie unter [Verwenden von Markdown für das Schreiben von Dokumentationsartikeln: Includedateien](how-to-write-use-markdown.md#include-files).
 
 ### <a name="markdown-file-template"></a>Markdowndateivorlage
 

@@ -1,24 +1,19 @@
 ---
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
-ms.date: 07/13/2017
-ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
-ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
+ms.date: 01/29/2019
+ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53615833"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887296"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
 Artikel auf [docs.microsoft.com](http://docs.microsoft.com) sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden.
 
-Da Dokumentationsinhalte auf GitHub gespeichert werden, können sie ein als Superset von Markdown bezeichnetes [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) verwenden, das zusätzliche Funktionalität für gängige Formatierungsanforderungen bietet. Außerdem implementiert Open Publishing Services (OPS) „Markdig Markdown Parser“. Markdig weist eine hohe Kompatibilität mit GFM auf und verfügt über Möglichkeiten zur Aktivierung von dokumentationsspezifischen Features.
-
-* Markdig ist ein schneller, leistungsstarker und mit CommonMark kompatibler erweiterbarer Markdown-Prozessor für .NET.
-* https://github.com/lunet-io/markdig
-* Bessere Unterstützung durch die Community
-* Bessere Unterstützung für Standards
+Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS), was mit [CommonMark](https://commonmark.org/) konformes Markdown unterstützt, das durch [Markdig](https://github.com/lunet-io/markdig) analysiert wird und auch [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) unterstützt. Diese Markdowntypen sind an meisten konform mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), da die meisten Dokumentationsartikel in GitHub gespeichert werden und dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
 
 ## <a name="markdown-basics"></a>Grundlegendes zu Markdown
 
@@ -220,6 +215,7 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |Konsole|console|
 |CSHTML|cshtml|
 |DAX|dax|
+|Docker|dockerfile|
 |F#|fsharp|
 |Go|go|
 |HTML|html|
@@ -227,8 +223,8 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |Java|java|
 |JavaScript|javascript|
 |JSON|json|
+|Kusto-Abfragesprache|kusto|
 |Markdown|md|
-|NodeJS|nodejs|
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
@@ -243,7 +239,6 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |Swift|swift|
 |TypeScript|typescript|
 |VB|vb|
-|VSTS-CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
 
