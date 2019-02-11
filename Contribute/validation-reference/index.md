@@ -1,29 +1,17 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: fa048980afcf3c50f7d990f9c88064df6ee5ebb5
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: 5488ba364ea561a732357bcebf9bf66039c26542
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084528"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712784"
 ---
-# <a name="docs-pr-validation-service"></a><span data-ttu-id="676ed-101">Docs PR-Überprüfungsdienst</span><span class="sxs-lookup"><span data-stu-id="676ed-101">Docs PR validation service</span></span>
+# <a name="docs-validation-reference"></a><span data-ttu-id="39bef-101">Referenz zur Validierung von Dokumentationsartikeln</span><span class="sxs-lookup"><span data-stu-id="39bef-101">Docs validation reference</span></span>
 
-<span data-ttu-id="676ed-102">Der Docs PR-Überprüfungsdienst ist eine GitHub-App, die Gültigkeitsprüfungsregeln für die Dateien in einem PR (Pull Request) ausführt.</span><span class="sxs-lookup"><span data-stu-id="676ed-102">The Docs PR validation service is a GitHub app that runs validation rules on the files in a PR.</span></span>
+<span data-ttu-id="39bef-102">Die Artikel in diesem Abschnitt enthalten Informationen zu Fehlern, Warnungen und Vorschlägen, die angezeigt werden könnten, wenn Sie einen PR an ein „docs.microsoft.com“-Repository senden, oder beim Erstellen eines Repositorys zum Veröffentlichen in „docs.microsoft.com“.</span><span class="sxs-lookup"><span data-stu-id="39bef-102">The articles in this section provide information about Errors, Warnings, and Suggestions you might see when submitting a PR to a docs.microsoft.com repo, or when building a repo to publish to docs.microsoft.com.</span></span>
 
-<span data-ttu-id="676ed-103">Wenn der Überprüfungsdienst für ein Repository aktiviert ist, werden Sie das folgende Verhalten beobachten:</span><span class="sxs-lookup"><span data-stu-id="676ed-103">When the validation service is enabled on a repo, you'll see the following behavior:</span></span>
+<span data-ttu-id="39bef-103">Beachten Sie, dass nicht alle Probleme in allen Repositorys aktiviert werden; manche sind für bestimmte Inhaltsgruppen spezifisch.</span><span class="sxs-lookup"><span data-stu-id="39bef-103">Note that not all issues will be enabled on all repos; some are specific to certain content sets.</span></span> <span data-ttu-id="39bef-104">Beheben Sie die in Ihrem Buildbericht aufgelisteten Probleme, nicht jedes in dieser Referenz beschriebene Problem.</span><span class="sxs-lookup"><span data-stu-id="39bef-104">Fix the issues listed in your build report, not every issue described in this reference.</span></span>
 
-1. <span data-ttu-id="676ed-104">Sie senden einen PR.</span><span class="sxs-lookup"><span data-stu-id="676ed-104">You submit a PR.</span></span>
-1. <span data-ttu-id="676ed-105">Im GitHub-Kommentar, der den Status Ihres PRs anzeigt, wird der Status der für das Repository aktivierten „Überprüfungen“ angezeigt.</span><span class="sxs-lookup"><span data-stu-id="676ed-105">In the GitHub comment that indicates the status of your PR, you'll see the status of "checks" enabled on the repo.</span></span> <span data-ttu-id="676ed-106">Beachten Sie, dass in diesem Beispiel zwei Überprüfungen aktiviert sind, „Commit Validation“ und „OpenPublishing.Build“:</span><span class="sxs-lookup"><span data-stu-id="676ed-106">Note that in this example, there are two checks enabled, "Commit Validation" and "OpenPublishing.Build":</span></span>
-
-   ![Fehler bei einigen Überprüfungen](media/validation-failed.png)
-
-   <span data-ttu-id="676ed-108">Die „Build“-Überprüfung kann erfolgreich sein, selbst wenn die „Commit Validation“-Überprüfung fehlschlägt.</span><span class="sxs-lookup"><span data-stu-id="676ed-108">Build can pass even if commit validation fails.</span></span>
-
-1. <span data-ttu-id="676ed-109">Klicken Sie auf **Details**, um weitere Informationen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="676ed-109">Click **Details** for more information.</span></span>
-1. <span data-ttu-id="676ed-110">Auf der Details-Seite werden alle fehlgeschlagenen Gültigkeitsüberprüfungen mit Information zur Problembehandlung angezeigt:</span><span class="sxs-lookup"><span data-stu-id="676ed-110">On the Details page, you'll see all the validation checks that failed, with information about how to fix the issues:</span></span>
-
-   ![Validierungsmeldung](media/validation-details.png)
-
-<span data-ttu-id="676ed-112">Die Liste der derzeit im Dienst verfügbaren Gültigkeiten finden Sie links im Inhaltsverzeichnis dieses Artikels.</span><span class="sxs-lookup"><span data-stu-id="676ed-112">See the left-hand TOC of this article for the list of validations currently in the service.</span></span>
+<span data-ttu-id="39bef-105">Beachten Sie auch, dass diese Referenz nicht vollständig ist – neue Artikel werden hinzugefügt und von Buildbericht-Fehlercodes fortlaufend verknüpft.</span><span class="sxs-lookup"><span data-stu-id="39bef-105">Also note that this reference is not complete - new articles will be added and linked from build report error codes as an ongoing effort.</span></span> <span data-ttu-id="39bef-106">Obwohl Buildberichte öffentlich sind, sind einige der zum Beheben einiger Probleme erforderlichen Informationen nicht außerhalb von Microsoft verfügbar.</span><span class="sxs-lookup"><span data-stu-id="39bef-106">Although build reports are public, some of the information required to fix some issues is not available outside of Microsoft.</span></span> <span data-ttu-id="39bef-107">Wenn Sie keine Dokumentation zu einem Fehler oder einer Warnung finden, wenn die Meldung oder Dokumentation nicht klar ist, oder wenn Sie ein Mitwirkender sind, der kein Mitarbeiter von Microsoft ist, und nicht auf zusätzliche Informationen zugreifen können, reichen Sie über die Schaltfläche für Dokumentationsfeedback unten eine GitHub-Anfrage ein.</span><span class="sxs-lookup"><span data-stu-id="39bef-107">If you can't find documentation for an Error or Warning, if the message or documentation isn't clear, or if you're a non-Microsoft contributor and can't access additional information, use the documentation feedback button below to file a GitHub issue.</span></span>

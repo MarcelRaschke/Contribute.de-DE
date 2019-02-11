@@ -16,6 +16,7 @@
 ### [Mitwirken an der .NET-Dokumentation](dotnet-contribute-process.md)
 ### [Schreibkonventionen für die .NET-Dokumentation](dotnet-style-guide.md)
 ### [Richtlinien für Sprache und Stil](dotnet-voice-tone.md)
+### [Pull Request-Überprüfungsprozess](dotnet-pr-review.md)
 # [Zusätzliche Ressourcen](additional-resources.md)
 
 <!--
