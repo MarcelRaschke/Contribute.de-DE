@@ -1,19 +1,17 @@
 ---
 title: Markdownreferenz für docs.microsoft.com
-description: Der Markdownleitfaden für die Dokumentationsplattform
+description: Lernen Sie die in der Microsoft-Dokumentation-Plattform verwendeten Markdownfeatures und -syntax kennen.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-audience: internal,external
-ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245870"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712945"
 ---
 # <a name="markdown-reference"></a>Markdownreferenz
 
@@ -581,8 +579,8 @@ Es wird empfohlen, neue Videos folgendermaßen hochzuladen:
     1. Einen Link zur MP4-Datei des Videos (wenn Sie nicht wissen, wo Sie die Datei speichern sollen, können Sie sie vorübergehend hier speichern: `\\scratch2\scratch\apex`). MP4-Dateien sollten mindestens eine Auflösung von 720p haben.
     1. Eine Beschreibung des Videos.
 1. Übermitteln (speichern) Sie die Aufgabe.
-1. Das Video wird innerhalb von zwei Werktagen hochgeladen. Der Link, den Sie zur Einbettung benötigen, wird in der Arbeitsaufgabe platziert. Dann wird die Arbeitsaufgabe *wieder Ihnen zugewiesen*.
-1. Sie können die Arbeitsaufgabe schließen, sobald Sie den Link kopiert haben.
+1. Das Video wird innerhalb von zwei Werktagen hochgeladen. Der Link, den Sie zur Einbettung benötigen, wird im Arbeitselement platziert. Dann wird das Arbeitselement *wieder Ihnen zugewiesen*.
+1. Sie können das Arbeitselement schließen, sobald Sie den Link kopiert haben.
 1. Der Videolink kann dann mit der folgenden Syntax in Ihrem Beitrag eingefügt werden:
 
    ```markdown
