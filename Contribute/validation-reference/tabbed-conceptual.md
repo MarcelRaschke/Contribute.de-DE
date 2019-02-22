@@ -17,7 +17,7 @@ Optional abhängige Registerkarte:
 
 Beispiel eines Registerkartenabschnitts mit einer Ebene mit zwei Registerkarten und dem Abschlusszeichen für die Registerkartengruppe (---):
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
