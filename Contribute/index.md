@@ -1,22 +1,16 @@
 ---
 title: 'Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht'
-description: In diesem Leitfaden erfahren Sie, wie Sie an der Dokumentationswebsite von Microsoft unter docs.microsoft.com mitwirken können.
+description: 'In diesem Leitfaden erfahren Sie, wie Sie an der Dokumentationswebsite von Microsoft unter docs.microsoft.com mitwirken können.'
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
-ms.date: 04/17/2018
-ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712853"
+ms.date: 02/19/2019
 ---
+
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
 Willkommen beim Leitfaden für Mitwirkende an unserer Dokumentation auf [docs.microsoft.com](https://docs.microsoft.com).
 
-Einige unserer Dokumentationen sind Open Source und werden auf GitHub gehostet. Immer mehr Teams bei Microsoft steigen auf dieses Modell um. Auch Dokumentationen, die nicht vollständig Open Source sind, verfügen über öffentliche Repositorys, in denen Sie gerne Pull Requests erstellen können. Dadurch wird die Kommunikation zwischen Produktingenieuren, den Inhaltsteams und unseren Kunden effizienter gestaltet und allgemein verbessert. Durch diese Art, gemeinsam zu arbeiten, ergeben sich mehrere Vorteile:
+Einige der Dokumentationssammlungen von Microsoft sind Open-Source und werden auf GitHub gehostet. Einige Dokumentationssammlungen sind nicht vollständig Open-Source, viele von Ihnen verfügen aber über öffentliche Repositorys, in denen Sie gerne Pull Requests vornehmen können. Dadurch wird die Kommunikation zwischen Produktingenieuren, den Inhaltsteams und unseren Kunden effizienter gestaltet und allgemein verbessert. Durch diese Art, gemeinsam zu arbeiten, ergeben sich mehrere Vorteile:
 
 - Durch die öffentliche Planung von Open-Source-Repositorys erhalten wir Feedback zu benötigten Dokumentationen.
 - Durch die öffentliche Prüfung in Open-Source-Repositorys können wir mit dem ersten Release den bestmöglichen Inhalt veröffentlichen.
@@ -31,34 +25,34 @@ Die Benutzeroberfläche auf [docs.microsoft.com](https://docs.microsoft.com) bez
 
 ## <a name="quick-edits-to-existing-documents"></a>Schnelle Änderungen an vorhandenen Dokumentationen
 
-Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumentationen. Trotz aller Bemühungen finden sich immer wieder geringfügige grammatische und orthografische Fehler in unseren Dokumentationen. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen. Fast jeder Artikel verfügt wie in der folgenden Grafik dargestellt über die Schaltfläche „Bearbeiten“. Wenn Sie auf **Bearbeiten** (oder die lokalisierte Entsprechung) klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet.
+Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumentationen. Trotz aller Bemühungen finden sich immer wieder geringfügige grammatische und orthografische Fehler in unseren Dokumentationen. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen, wenn diese Option verfügbar ist.
 
-![Ort des Links „Bearbeiten“](./media/index/edit-article.png)
+1. Einige Seiten der Dokumentation ermöglichen es Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** (oder die lokalisierte Entsprechung) klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** (Stiftsymbol) fehlt, bedeutet dies, dass die Dokumentationsseite nicht für Änderungen verfügbar ist.
 
-Klicken Sie dann wie unten dargestellt auf das Stiftsymbol.
+   ![Ort des Links „Bearbeiten“](./media/index/edit-article.png)
 
-![Ort des Bleistiftsymbols](./media/index/edit-icon.png)
+2. Klicken Sie anschließend auf das Stiftsymbol, um den Artikel wie gezeigt zu bearbeiten. Wenn das Stiftsymbol ausgegraut ist, müssen Sie sich mit Ihrem GitHub-Konto anmelden oder ein neues Konto erstellen. 
 
-> [!NOTE]
-> Wenn das Stiftsymbol ausgegraut ist, müssen Sie sich mit Ihrem GitHub-Konto anmelden oder ein neues Konto erstellen.
+   ![Ort des Bleistiftsymbols](./media/index/edit-icon.png)
 
-Nehmen Sie im Web-Editor die Änderungen vor. Sie können auf die Registerkarte **Preview changes** (Vorschau der Änderungen) klicken, um sich das Format Ihrer Änderungen anzusehen.
 
-Wenn Sie alle gewünschten Änderungen vorgenommen haben, scrollen Sie auf der Seite ganz nach unten. Geben Sie einen Titel und eine Beschreibung für Ihren PR ein, und klicken Sie wie unten dargestellt auf **Propose file change** (Dateiänderung vorschlagen):
+3. Nehmen Sie im Web-Editor die Änderungen vor. Klicken Sie auf die Registerkarte **Preview changes** (Vorschau der Änderungen), um sich das Format Ihrer Änderungen anzusehen.
 
-![Änderungen vorschlagen](./media/index/submit-pull-request.png)
+4. Wenn Sie alle gewünschten Änderungen vorgenommen haben, scrollen Sie auf der Seite ganz nach unten. Geben Sie einen Titel und eine Beschreibung für Ihre Änderungen ein, und klicken Sie wie unten dargestellt auf **Propose file change** (Dateiänderung vorschlagen):
 
-Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie in der oberen Abbildung auf **Dateiänderung vorschlagen** geklickt haben, müssten Sie zu einer neuen Seite gelangt sein, die folgender Abbildung entspricht:
+   ![Propose file change (Dateiänderung vorschlagen)](./media/index/submit-pull-request.png)
 
-![Pull Request erstellen](media/index/create-pull-request.png)
+5. Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie in der oberen Abbildung auf **Dateiänderung vorschlagen** geklickt haben, müssten Sie zu einer neuen Seite gelangt sein, die folgender Abbildung entspricht:
 
-Klicken Sie auf **Pull Request erstellen**, geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie erneut auf **Pull Request erstellen**.
+   ![Pull Request erstellen](media/index/create-pull-request.png)
 
-Das ist alles! Das Inhaltsteams sieht sich Ihren PR an und führt ihn ggf. zusammen. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
+   Klicken Sie auf **Pull Request erstellen**, geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie erneut auf **Pull Request erstellen**.
+
+6. Das ist alles! Das Inhaltsteams sieht sich Ihren PR an und führt ihn ggf. zusammen. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
 
 Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubID\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
 
-Wir verwenden PRs für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der `master`-Branch geschützt, damit Änderungen als PRs vorgeschlagen werden.
+Wir verwenden Pull Requests für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der `master`-Branch geschützt, damit Änderungen als Pull Requests vorgeschlagen werden.
 
 Das Bearbeiten im Browser eignet sich am besten für geringfügige oder seltene Änderungen. Wenn Sie umfangreichere Änderungen vornehmen oder erweiterte Git-Features verwenden (z.B die Branchverwaltung oder erweiterte Auflösung von Mergekonflikten), müssen Sie [einen Fork für das Repository erstellen und lokal arbeiten](how-to-write-workflows-major.md).
 
@@ -75,6 +69,8 @@ Sie können neue Artikel vor der Veröffentlichung lesen, indem Sie sich die akt
 ## <a name="create-quality-issues"></a>Erstellen nützlicher Tickets
 
 Unsere Dokumentationen können fortlaufend geändert und verbessert werden. Mit nützlichen Tickets können wir uns immer auf das konzentrieren, was für die Community am wichtigsten ist. Je ausführlicher die Informationen im Tickets, desto nützlicher ist dieses für uns. Sagen Sie uns, welche Informationen Sie gesucht haben. Nennen Sie uns die Suchbegriffe, die Sie verwendet haben. Wenn Sie nicht beginnen können, sagen Sie uns, wie Sie sich mit neuen Technologien vertraut machen möchten.
+
+Viele der Dokumentationsseiten von Microsoft weisen unten auf der Seite einen Abschnitt **Feedback** auf, in dem Sie auf **Produktfeedback** oder **Inhaltsfeedback** klicken können, um Probleme nachzuverfolgen, die spezifisch für diesen Artikel sind.
 
 Durch Tickets erfahren wir, wo Verbesserungsbedarf besteht. Das Inhaltsteam reagiert dann auf diese Tickets mit Veränderungsvorschlägen und holt Ihre Meinung dazu ein. Nachdem wir einen Entwurf veröffentlicht haben, können Sie [den PR prüfen](#review-open-prs).
 
