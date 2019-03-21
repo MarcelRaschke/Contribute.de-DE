@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: e7b10f3f146ee33cd00bcd31d16b01e8d99f7134
-ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
+ms.openlocfilehash: 8fdb09cb09a6be7e94490c0e3b6744c3ecb97d25
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56431667"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987742"
 ---
 # <a name="ms-topic-invalid"></a>ms-topic-invalid
 
@@ -27,7 +27,7 @@ ms.locfileid: "56431667"
 
 Fügen Sie einen gültigen Wert für `ms.topic` hinzu, der den Artikeltyp angibt.
 
-Gültige Werte finden Sie auf dieser [Microsoft-internen Website](https://docsmetadatatool.azurewebsites.net/whitelists).
+Gültige Werte finden Sie auf dieser [Microsoft-internen Website](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
