@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987812"
+---
 # <a name="tabbed-conceptual"></a>Konzeptdarstellungen im Registerkartenformat
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ Es gelten die folgenden Überprüfungen für die Registerkartensyntax:
 - Es ist nur eine Abhängigkeitsebene zulässig.
 - Es dürfen nicht weniger als zwei Registerkarten vorhanden sein.
 - Es dürfen nicht mehr als vier Registerkarten vorhanden sein.
-- Registerkarten müssen sich auf der Whitelist befinden.
+- Registerkarten müssen genehmigt werden.
 - Registerkarten- bzw. ID-Paare müssen gültig sein.
 - In einer Registerkartengruppe darf die gleiche Registerkarten-ID nicht mehrfach vorkommen.
 
-## <a name="tab-whitelist"></a>Registerkartenwhitelist
+## <a name="approved-tabs"></a>Genehmigte Registerkarten
 
-Die folgenden Registerkartennamen- und Registerkarten-ID-Paare befinden sich auf der Whitelist. IDs von abhängigen Registerkarten werden nicht gekoppelt, müssen jedoch gemäß der Spalte „Registerkarten-ID“ gültig sein. Bei den Werten wird Groß- und Kleinschreibung unterschieden.
+Die folgenden Paare aus Registerkartenname und Registerkarten-ID wurden genehmigt. IDs von abhängigen Registerkarten werden nicht gekoppelt, müssen jedoch gemäß der Spalte „Registerkarten-ID“ gültig sein. Bei den Werten wird Groß- und Kleinschreibung unterschieden.
 
 |Registerkartenname              |Registerkarten-ID            |
 |----------------------|------------------|

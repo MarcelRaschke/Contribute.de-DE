@@ -12,9 +12,9 @@ Willkommen beim Leitfaden für Mitwirkende an unserer Dokumentation auf [docs.mi
 
 Einige der Dokumentationssammlungen von Microsoft sind Open-Source und werden auf GitHub gehostet. Einige Dokumentationssammlungen sind nicht vollständig Open-Source, viele von Ihnen verfügen aber über öffentliche Repositorys, in denen Sie gerne Pull Requests vornehmen können. Dadurch wird die Kommunikation zwischen Produktingenieuren, den Inhaltsteams und unseren Kunden effizienter gestaltet und allgemein verbessert. Durch diese Art, gemeinsam zu arbeiten, ergeben sich mehrere Vorteile:
 
-- Durch die öffentliche Planung von Open-Source-Repositorys erhalten wir Feedback zu benötigten Dokumentationen.
-- Durch die öffentliche Prüfung in Open-Source-Repositorys können wir mit dem ersten Release den bestmöglichen Inhalt veröffentlichen.
-- Durch das öffentliche Aktualisieren von Open-Source-Repositorys können wir Inhalt kontinuierlich verbessern.
+- Durch die _öffentliche Planung_ in Open Source-Repositorys erhalten wir Feedback zu benötigten Dokumentationen.
+- Durch die _öffentliche Prüfung_ in Open Source-Repositorys können wir mit dem ersten Release den bestmöglichen Inhalt veröffentlichen.
+- Durch _öffentliche Updates_ in Open Source-Repositorys können wir Inhalt kontinuierlich verbessern.
 
 Die Benutzeroberfläche auf [docs.microsoft.com](https://docs.microsoft.com) bezieht [GitHub](https://github.com)-Workflows direkt ein, um den Prozess noch einfacher zu gestalten. Beginnen Sie mit dem [Bearbeiten des angezeigten Dokuments](#quick-edits-to-existing-documents). Alternativ können Sie [neue Artikel prüfen](#review-open-prs) oder [nützliche Tickets erstellen](#create-quality-issues).
 
@@ -25,9 +25,9 @@ Die Benutzeroberfläche auf [docs.microsoft.com](https://docs.microsoft.com) bez
 
 ## <a name="quick-edits-to-existing-documents"></a>Schnelle Änderungen an vorhandenen Dokumentationen
 
-Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumentationen. Trotz aller Bemühungen finden sich immer wieder geringfügige grammatische und orthografische Fehler in unseren Dokumentationen. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen, wenn diese Option verfügbar ist.
+Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumentationen. Trotz aller Bemühungen kommt es zu _geringfügigen_ Grammatik- und Rechtschreibfehlern in unseren Dokumentationen. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen, wenn diese Option verfügbar ist.
 
-1. Einige Seiten der Dokumentation ermöglichen es Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** (oder die lokalisierte Entsprechung) klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** (Stiftsymbol) fehlt, bedeutet dies, dass die Dokumentationsseite nicht für Änderungen verfügbar ist.
+1. Einige Seiten der Dokumentation ermöglichen es Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** (Stiftsymbol ohne Text) fehlt, bedeutet dies, dass die Dokumentationsseite nicht bearbeitet werden kann.
 
    ![Ort des Links „Bearbeiten“](./media/index/edit-article.png)
 
@@ -46,7 +46,7 @@ Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehler
 
    ![Pull Request erstellen](media/index/create-pull-request.png)
 
-   Klicken Sie auf **Pull Request erstellen**, geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie erneut auf **Pull Request erstellen**.
+   Klicken Sie auf **Pull Request erstellen**, geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie erneut auf **Pull Request erstellen**. (Wenn Sie neu bei GitHub sind, finden Sie unter [About Pull Requests (Über Pull Requests)](https://help.github.com/en/articles/about-pull-requests) wichtige Informationen zum Einstieg.)
 
 6. Das ist alles! Das Inhaltsteams sieht sich Ihren PR an und führt ihn ggf. zusammen. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
 
@@ -59,7 +59,7 @@ Das Bearbeiten im Browser eignet sich am besten für geringfügige oder seltene 
 > [!NOTE]
 > Falls aktiviert, können Sie einen Artikel in einer **beliebigen Sprache** bearbeiten und, je nach Typ der Bearbeitung, geschieht Folgendes:
 > 1. jede genehmigte linguistische Änderung verbessert auch unser Machine Translation-Modul
-> 2. jede Bearbeitung, die den Inhalt des Artikels signifikant ändert, wird intern behandelt, um eine Änderung desselben Artikels in Englisch zu übermitteln, sodass sie bei Genehmigung in allen Sprachen lokalisiert wird.
+> 2. Jede Bearbeitung, die den Inhalt des Artikels signifikant ändert, wird intern verarbeitet, um eine Änderung desselben Artikels in Englisch zu übermitteln, sodass sie bei Genehmigung in allen Sprachen lokalisiert wird.
 > Die von Ihnen vorgeschlagenen Verbesserungen haben also nicht nur positive Auswirkungen auf Artikel in Ihrer eigenen, sondern in allen verfügbaren Sprachen.
 
 ## <a name="review-open-prs"></a>Prüfen offener PRs
@@ -72,7 +72,7 @@ Unsere Dokumentationen können fortlaufend geändert und verbessert werden. Mit 
 
 Viele der Dokumentationsseiten von Microsoft weisen unten auf der Seite einen Abschnitt **Feedback** auf, in dem Sie auf **Produktfeedback** oder **Inhaltsfeedback** klicken können, um Probleme nachzuverfolgen, die spezifisch für diesen Artikel sind.
 
-Durch Tickets erfahren wir, wo Verbesserungsbedarf besteht. Das Inhaltsteam reagiert dann auf diese Tickets mit Veränderungsvorschlägen und holt Ihre Meinung dazu ein. Nachdem wir einen Entwurf veröffentlicht haben, können Sie [den PR prüfen](#review-open-prs).
+Durch Tickets erfahren wir, wo Verbesserungsbedarf besteht. Das Inhaltsteam reagiert dann auf diese Tickets mit Veränderungsvorschlägen und holt Ihre Meinung dazu ein. Nachdem wir einen Entwurf veröffentlicht haben, können Sie [den PR prüfen](#review-open-PRs).
 
 ## <a name="get-more-involved"></a>Beteiligen Sie sich
 

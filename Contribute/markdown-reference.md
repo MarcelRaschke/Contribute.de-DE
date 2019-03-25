@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712945"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987880"
 ---
 # <a name="markdown-reference"></a>Markdownreferenz
 
@@ -90,7 +90,7 @@ Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 
 ## <a name="html"></a>HTML
 
-Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Microsoft-Dokumentation nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen). <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Microsoft-Dokumentation nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen).
 
 ## <a name="images"></a>Bilder
 
@@ -110,7 +110,7 @@ Bilder sollten in einem `/media`-Ordner in Ihrem Docset gespeichert werden. Die 
 - .jpg
 - .png
 
-Sie können die Unterstützung für andere Bildtypen hinzufügen, indem Sie sie als Ressourcen zur Datei „docfx.json“<!--add link to reference when available--> für Ihr Docset hinzufügen.
+Andere Bildtypen werden unterstützt, wenn Sie diese als Ressourcen zur „docfx.json“-Datei<!--add link to reference when available--> für Ihr Docset hinzufügen.
 
 ## <a name="links"></a>Links
 
@@ -169,7 +169,7 @@ Ein URL-basierter Link zu einer anderen Webseite (muss „https://“ enthalten)
 
 ### <a name="bookmark-links"></a>Lesezeichenlinks
 
-Lesezeichenlinks zu Überschriften in einer anderen Datei im gleichen Repository:
+Lesezeichenlink zu Überschriften in einer anderen Datei im gleichen Repository. Beispiel:
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Lesezeichenlink zu einer Überschrift in der aktuellen Datei:
 [Managed Disks](#managed-disks)
 ```
 
-Verwenden Sie eine Raute, und geben Sie dann die Überschrift ohne Interpunktion und mit Bindestrichen statt Leerzeichen ein.
+Verwenden Sie ein Rautenzeichen (`#`) gefolgt von der Überschrift. So ändern Sie den Text der Überschrift in Linktext:
+- Verwenden Sie nur Kleinbuchstaben.
+- Entfernen Sie alle Satzzeichen.
+- Ersetzen Sie Leerzeichen durch Bindestriche.
+
+Wenn die Überschrift beispielsweise „2.2 Security concerns“ lautet, entspricht der Linktext des Lesezeichens „#22-security-concerns“.
 
 ### <a name="explicit-anchor-links"></a>Explizite Ankerlinks
 
@@ -230,7 +235,7 @@ Beispiele:
 - `<xref:System.String?displayProperty=nameWithType>` wird als „System.String“ gerendert.
 - `[String class](xref:System.String)` wird als „String class“ gerendert.
 
-Im Moment gibt es keine einfache Möglichkeit, die UIDs zu suchen. <!-- ? -->Sie können die UID am besten finden, indem Sie sich die Quelle der API-Seite ansehen, zu der Sie einen Link erstellen möchten, und dann den Wert „ms.assetid“ suchen. Einzelne Überladungswerte werden in der Quelle nicht angezeigt. Wir erarbeiten ein besseres System für die Zukunft.
+Im Moment gibt es keine einfache Möglichkeit, die UIDs zu suchen. <!-- ? -->Die beste Möglichkeit, die UID für eine API zu suchen, ist die Anzeige der Quelle für die API-Seite, zu der Sie eine Verknüpfung herstellen möchten, und den Wert „ms.assetid“ zu suchen. Einzelne Überladungswerte werden in der Quelle nicht angezeigt. Wir erarbeiten ein besseres System für die Zukunft.
 
 Wenn die UID die Sonderzeichen \`, \# oder \* enthält, muss der UID-Wert als `%60`, `%23` und `%2A` im HTML-Format codiert werden. Manchmal sehen Sie die Codierung mit Klammern, aber dies ist nicht erforderlich.
 
@@ -336,7 +341,8 @@ Sie können für nächste Schritte jede unterstützte Linkart verwenden, auch ei
 
 ## <a name="section-definition"></a>Definition von Abschnitten
 
-<!-- more info about this would be helpful! --> Es kann sein, dass Sie die Abschnitte festlegen müssen. Diese Syntax wird in den meisten Fällen für Codetabellen verwendet.
+<!-- more info about this would be helpful! -->
+Gelegentlich müssen Sie Abschnitte definieren. Diese Syntax wird in den meisten Fällen für Codetabellen verwendet.
 Sehen Sie sich folgendes Beispiel an:
 
 ````
@@ -360,7 +366,8 @@ Dieser blockquote-Markdowntext wird folgendermaßen gerendert:
 
 ## <a name="selectors"></a>Selektoren
 
-<!-- could be more clear! --> Sie können einen Selektor verwenden, wenn Sie für denselben Artikel verschiedene Seiten verlinken möchten. Dann können die Leser zwischen diesen Seiten wechseln.
+<!-- could be more clear! -->
+Sie können einen Selektor verwenden, wenn Sie für denselben Artikel verschiedene Seiten verbinden möchten. Dann können die Leser zwischen diesen Seiten wechseln.
 
 > [!NOTE]
 > Diese Erweiterung funktioniert in docs.microsoft.com und MSDN unterschiedlich. <!-- should we keep info about MSDN? If so say how they differ?-->
