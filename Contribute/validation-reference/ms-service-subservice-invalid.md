@@ -6,18 +6,18 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 7dee18e7b902b660a8071bcb4a0dee21c19f4f7f
-ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.openlocfilehash: 3f165d16eed7e937c7db912a9c5e0ee0809e3031
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57987637"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637297"
 ---
 # <a name="ms-service-and-subservice-invalid"></a>ms-service-and-subservice-invalid
 
-**Bald verfügbar!**
+[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
-## <a name="warning"></a>Warnung
+## <a name="suggestion"></a>Vorschlag
 
 `Invalid value for ms.service: '{value}'.`
 

@@ -6,16 +6,14 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/19/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 8cee25b07e5bd1e019f8d270888eff73292d8e7c
-ms.sourcegitcommit: ae71ca811c143deb6214147c7eea8704444a6093
+ms.openlocfilehash: f8c2825801392e8ff1114e6abd08518a59ee8087
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56465114"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637320"
 ---
 # <a name="multiple-values"></a>multiple-values
-
-**Bald verfügbar!**
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
