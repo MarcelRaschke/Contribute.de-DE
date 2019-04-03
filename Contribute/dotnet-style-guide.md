@@ -2,12 +2,12 @@
 title: Vorlage und Spickzettel für .NET-Artikel
 description: In diesem Artikel ist eine praktische Vorlage enthalten, die Sie zum Erstellen neuer Artikel für die Repositorys der .NET-Dokumentation verwenden können.
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712922"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653618"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metadaten und Markdownvorlage für .NET-Dokumentationen
 
@@ -132,7 +132,7 @@ Sie können den Code mithilfe der folgenden Syntax einfügen:
 ```
 
 * `-<language>` (*optional*, aber *empfohlen*)
-  * Sprache des referenzierten Codeausschnitts. Eine Liste der unterstützten Werte finden Sie unter [Supported languages (Unterstützte Sprachen)](#supported-languages).
+  * Sprache des referenzierten Codeausschnitts.
 
 * `<name>` (*optional*)
   * Name des Codeausschnitts. Er wirkt sich nicht auf die HTML-Ausgabe aus, Sie können ihn jedoch verwenden, um die Lesbarkeit Ihrer Markdownquelle zu verbessern.
