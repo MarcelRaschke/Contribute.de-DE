@@ -1,19 +1,18 @@
 ---
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887296"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637481"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
-Artikel auf [docs.microsoft.com](http://docs.microsoft.com) sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden.
+Artikel auf [docs.microsoft.com](http://docs.microsoft.com) sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden. Die „docs.microsoft.com“-Website verwendet die [Markdig-Variante](#markdown-flavor) von Markdown.
 
-Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS), was mit [CommonMark](https://commonmark.org/) konformes Markdown unterstützt, das durch [Markdig](https://github.com/lunet-io/markdig) analysiert wird und auch [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) unterstützt. Diese Markdowntypen sind an meisten konform mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), da die meisten Dokumentationsartikel in GitHub gespeichert werden und dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
 
 ## <a name="markdown-basics"></a>Grundlegendes zu Markdown
 
@@ -162,7 +161,6 @@ so gerendert:
 
 Weitere Informationen zum Erstellen von Tabellen finden Sie unter:
 
-- Dem Abschnitt zum [Tabellenumbruchfeature](#table-wrapping) von Markdig, das bei der Formatierung breiter Tabellen hilfreich sein kann
 - [Organizing information with tables (Organisieren von Daten mit Tabellen)](https://help.github.com/articles/organizing-information-with-tables/) von GitHub
 - Der Web-App [Markdown Tables Generator (Markdowntabellengenerator)](https://www.tablesgenerator.com/markdown_tables)
 - [Adam Pritchard's Markdown Cheatsheet (Cheatsheet für Markdown von Adam Pritchard)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -207,6 +205,7 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 Spitze Klammern werden häufig zum Kennzeichnen eines Platzhalters verwendet. Wenn Sie dies im Text nutzen (nicht im Code), müssen Sie die spitzen Klammern codieren. Andernfalls interpretiert Markdown sie als HTML-Tag.
 
 Codieren Sie `<script name>` z.B. als `&lt;script name&gt;`.
+
+## <a name="markdown-flavor"></a>Markdown-Variante
+
+Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS). Dadurch wird [CommonMark](https://commonmark.org/)-konformes Markdown unterstützt, das durch die [Markdig](https://github.com/lunet-io/markdig)-Engine analysiert wird. Diese Markdownvariante ist meistens mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) kompatibel, da die meisten Dokumentationen auf GitHub gespeichert und auch dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
 
 ## <a name="see-also"></a>Siehe auch:
 

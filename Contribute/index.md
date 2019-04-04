@@ -1,16 +1,21 @@
 ---
 title: 'Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht'
-description: 'In diesem Leitfaden erfahren Sie, wie Sie an der Dokumentationswebsite von Microsoft unter docs.microsoft.com mitwirken können.'
+description: In diesem Leitfaden erfahren Sie, wie Sie an der Dokumentationswebsite von Microsoft unter docs.microsoft.com mitwirken können.
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653503"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
 Willkommen beim Leitfaden für Mitwirkende an unserer Dokumentation auf [docs.microsoft.com](https://docs.microsoft.com).
 
-Einige der Dokumentationssammlungen von Microsoft sind Open-Source und werden auf GitHub gehostet. Einige Dokumentationssammlungen sind nicht vollständig Open-Source, viele von Ihnen verfügen aber über öffentliche Repositorys, in denen Sie gerne Pull Requests vornehmen können. Dadurch wird die Kommunikation zwischen Produktingenieuren, den Inhaltsteams und unseren Kunden effizienter gestaltet und allgemein verbessert. Durch diese Art, gemeinsam zu arbeiten, ergeben sich mehrere Vorteile:
+Einige der Dokumentationssammlungen von Microsoft sind Open-Source und werden auf GitHub gehostet. Nicht alle Dokumentationssammlungen sind vollständig frei verfügbar. Für viele gibt es aber öffentliche Repositorys, in denen Sie über Pull Requests vorgeschlagene Änderungen vornehmen können. Dieser Open Source-Ansatz optimiert und verbessert die Kommunikation zwischen Produkttechnikern, Inhaltsteams und Kunden. Außerdem bietet er weitere Vorteile:
 
 - Durch die _öffentliche Planung_ in Open Source-Repositorys erhalten wir Feedback zu benötigten Dokumentationen.
 - Durch die _öffentliche Prüfung_ in Open Source-Repositorys können wir mit dem ersten Release den bestmöglichen Inhalt veröffentlichen.
@@ -72,7 +77,7 @@ Unsere Dokumentationen können fortlaufend geändert und verbessert werden. Mit 
 
 Viele der Dokumentationsseiten von Microsoft weisen unten auf der Seite einen Abschnitt **Feedback** auf, in dem Sie auf **Produktfeedback** oder **Inhaltsfeedback** klicken können, um Probleme nachzuverfolgen, die spezifisch für diesen Artikel sind.
 
-Durch Tickets erfahren wir, wo Verbesserungsbedarf besteht. Das Inhaltsteam reagiert dann auf diese Tickets mit Veränderungsvorschlägen und holt Ihre Meinung dazu ein. Nachdem wir einen Entwurf veröffentlicht haben, können Sie [den PR prüfen](#review-open-PRs).
+Durch Tickets erfahren wir, wo Verbesserungsbedarf besteht. Das Inhaltsteam reagiert dann auf diese Tickets mit Veränderungsvorschlägen und holt Ihre Meinung dazu ein. Nachdem wir einen Entwurf veröffentlicht haben, können Sie [den PR prüfen](#review-open-prs).
 
 ## <a name="get-more-involved"></a>Beteiligen Sie sich
 
