@@ -4,17 +4,17 @@ description: Dieser Artikel enthält Anleitungen zum Erstellen von Links, die au
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.openlocfilehash: 464c6b2ae8976252828d73390f9cbeea67f4e3ce
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887250"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637550"
 ---
 # <a name="using-links-in-documentation"></a>Verwenden von Links in der Dokumentation
 In diesem Artikel erfahren Sie, wie Sie Links von Seiten verwenden, die auf docs.microsoft.com gehostet werden. Links können mit wenigen unterschiedlichen Konventionen auf einfache Weise in Markdown eingefügt werden. Benutzer werden über Links auf Inhalte derselben Seite, von benachbarten Seiten oder von externen Websites und URLs verwiesen.
 
-Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS), was mit [CommonMark](https://commonmark.org/) konformes Markdown unterstützt, das durch [Markdig](https://github.com/lunet-io/markdig) analysiert wird und auch [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/) unterstützt. Diese Markdowntypen sind an meisten konform mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), da die meisten Dokumentationsartikel in GitHub gespeichert werden und dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
+Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS). Dadurch wird [CommonMark](https://commonmark.org/)-konformes Markdown unterstützt, das durch die [Markdig](https://github.com/lunet-io/markdig)-Engine analysiert wird. Diese Markdownvariante ist meistens mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) kompatibel, da die meisten Dokumentationen auf GitHub gespeichert und auch dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
 
 > [!IMPORTANT]
 > Alle Links müssen sicher sein (`https` statt `http`), sofern das Ziel dies unterstützt (dies sollte meistens der Fall sein).
