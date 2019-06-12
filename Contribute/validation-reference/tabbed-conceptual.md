@@ -1,30 +1,31 @@
 ---
 ms.date: 03/29/2019
-ms.openlocfilehash: 4e07ecf777f1361e21343b7b80f59ad9c5e86b3e
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+title: Konzeptdarstellungen im Registerkartenformat
+ms.openlocfilehash: 3d6f38c1659297182a8bd50bf52b9853bd21b2c8
+ms.sourcegitcommit: 1e53d17639277bebd89b2e7cabeb45bdad526354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653411"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66841300"
 ---
-# <a name="tabbed-conceptual"></a><span data-ttu-id="341b6-101">Konzeptdarstellungen im Registerkartenformat</span><span class="sxs-lookup"><span data-stu-id="341b6-101">Tabbed conceptual</span></span>
+# <a name="tabbed-conceptual"></a><span data-ttu-id="12efe-102">Konzeptdarstellungen im Registerkartenformat</span><span class="sxs-lookup"><span data-stu-id="12efe-102">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="341b6-102">Die Syntax für Konzeptdarstellungen im Registerkartenformat ist veraltet. Es sollten also keine neuen Registerkarten hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="341b6-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="341b6-103">Die in diesem Artikel beschriebenen Überprüfungen gelten für Inhalte, die Konzeptdarstellungen im Registerkartenformat so lange verwenden dürfen, bis die Ersatzfunktion verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="341b6-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="12efe-103">Die Syntax für Konzeptdarstellungen im Registerkartenformat ist veraltet. Es sollten also keine neuen Registerkarten hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="12efe-103">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="12efe-104">Die in diesem Artikel beschriebenen Überprüfungen gelten für Inhalte, die Konzeptdarstellungen im Registerkartenformat so lange verwenden dürfen, bis die Ersatzfunktion verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="12efe-104">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="341b6-104">Registerkartensyntax</span><span class="sxs-lookup"><span data-stu-id="341b6-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="12efe-105">Registerkartensyntax</span><span class="sxs-lookup"><span data-stu-id="12efe-105">Tab syntax</span></span>
 
-<span data-ttu-id="341b6-105">Die Syntax für Registerkarten sieht wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="341b6-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="12efe-106">Die Syntax für Registerkarten sieht wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="12efe-106">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="341b6-106">Registerkarte mit einer Ebene:</span><span class="sxs-lookup"><span data-stu-id="341b6-106">Single level tab:</span></span>
+<span data-ttu-id="12efe-107">Registerkarte mit einer Ebene:</span><span class="sxs-lookup"><span data-stu-id="12efe-107">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="341b6-107">Optional abhängige Registerkarte:</span><span class="sxs-lookup"><span data-stu-id="341b6-107">Optional dependent tab:</span></span>
+<span data-ttu-id="12efe-108">Optional abhängige Registerkarte:</span><span class="sxs-lookup"><span data-stu-id="12efe-108">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="341b6-108">Beispiel eines Registerkartenabschnitts mit einer Ebene mit zwei Registerkarten und dem Abschlusszeichen für die Registerkartengruppe (---):</span><span class="sxs-lookup"><span data-stu-id="341b6-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="12efe-109">Beispiel eines Registerkartenabschnitts mit einer Ebene mit zwei Registerkarten und dem Abschlusszeichen für die Registerkartengruppe (---):</span><span class="sxs-lookup"><span data-stu-id="12efe-109">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
 ```markdown
 # [Linux](#tab/linux)
@@ -38,7 +39,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="341b6-109">Registerkarten können optional sekundäre Registerkarten oder Registerkarten für Abhängigkeiten enthalten.</span><span class="sxs-lookup"><span data-stu-id="341b6-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="341b6-110">Dadurch werden Registerkarten von der Auswahl in einer anderen Registerkartenreihe abhängig.</span><span class="sxs-lookup"><span data-stu-id="341b6-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="341b6-111">Hier sehen Sie ein Beispiel:</span><span class="sxs-lookup"><span data-stu-id="341b6-111">Here's an example:</span></span>
+<span data-ttu-id="12efe-110">Registerkarten können optional sekundäre Registerkarten oder Registerkarten für Abhängigkeiten enthalten.</span><span class="sxs-lookup"><span data-stu-id="12efe-110">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="12efe-111">Dadurch werden Registerkarten von der Auswahl in einer anderen Registerkartenreihe abhängig.</span><span class="sxs-lookup"><span data-stu-id="12efe-111">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="12efe-112">Hier sehen Sie ein Beispiel:</span><span class="sxs-lookup"><span data-stu-id="12efe-112">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -60,22 +61,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="341b6-112">Es gelten die folgenden Überprüfungen für die Registerkartensyntax:</span><span class="sxs-lookup"><span data-stu-id="341b6-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="12efe-113">Es gelten die folgenden Überprüfungen für die Registerkartensyntax:</span><span class="sxs-lookup"><span data-stu-id="12efe-113">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="341b6-113">Die Registerkartensyntax muss richtig sein.</span><span class="sxs-lookup"><span data-stu-id="341b6-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="341b6-114">Abhängige Registerkarten müssen in einer vorherigen Registerkartengruppe definiert worden sein.</span><span class="sxs-lookup"><span data-stu-id="341b6-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="341b6-115">Es ist nur eine Abhängigkeitsebene zulässig.</span><span class="sxs-lookup"><span data-stu-id="341b6-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="341b6-116">Es dürfen nicht weniger als zwei Registerkarten vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="341b6-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="341b6-117">Es dürfen nicht mehr als vier Registerkarten vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="341b6-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="341b6-118">Registerkarten müssen genehmigt werden.</span><span class="sxs-lookup"><span data-stu-id="341b6-118">Tabs must be approved.</span></span>
-- <span data-ttu-id="341b6-119">Registerkarten- bzw. ID-Paare müssen gültig sein.</span><span class="sxs-lookup"><span data-stu-id="341b6-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="341b6-120">In einer Registerkartengruppe darf die gleiche Registerkarten-ID nicht mehrfach vorkommen.</span><span class="sxs-lookup"><span data-stu-id="341b6-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="12efe-114">Die Registerkartensyntax muss richtig sein.</span><span class="sxs-lookup"><span data-stu-id="12efe-114">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="12efe-115">Abhängige Registerkarten müssen in einer vorherigen Registerkartengruppe definiert worden sein.</span><span class="sxs-lookup"><span data-stu-id="12efe-115">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="12efe-116">Es ist nur eine Abhängigkeitsebene zulässig.</span><span class="sxs-lookup"><span data-stu-id="12efe-116">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="12efe-117">Es dürfen nicht weniger als zwei Registerkarten vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="12efe-117">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="12efe-118">Es dürfen nicht mehr als vier Registerkarten vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="12efe-118">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="12efe-119">Registerkarten müssen genehmigt werden.</span><span class="sxs-lookup"><span data-stu-id="12efe-119">Tabs must be approved.</span></span>
+- <span data-ttu-id="12efe-120">Registerkarten- bzw. ID-Paare müssen gültig sein.</span><span class="sxs-lookup"><span data-stu-id="12efe-120">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="12efe-121">In einer Registerkartengruppe darf die gleiche Registerkarten-ID nicht mehrfach vorkommen.</span><span class="sxs-lookup"><span data-stu-id="12efe-121">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="approved-tabs"></a><span data-ttu-id="341b6-121">Genehmigte Registerkarten</span><span class="sxs-lookup"><span data-stu-id="341b6-121">Approved tabs</span></span>
+## <a name="approved-tabs"></a><span data-ttu-id="12efe-122">Genehmigte Registerkarten</span><span class="sxs-lookup"><span data-stu-id="12efe-122">Approved tabs</span></span>
 
-<span data-ttu-id="341b6-122">Die folgenden Paare aus Registerkartenname und Registerkarten-ID wurden genehmigt.</span><span class="sxs-lookup"><span data-stu-id="341b6-122">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="341b6-123">IDs von abhängigen Registerkarten werden nicht gekoppelt, müssen jedoch gemäß der Spalte „Registerkarten-ID“ gültig sein.</span><span class="sxs-lookup"><span data-stu-id="341b6-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="341b6-124">Bei den Werten wird Groß- und Kleinschreibung unterschieden.</span><span class="sxs-lookup"><span data-stu-id="341b6-124">The values are case-sensitive</span></span>
+<span data-ttu-id="12efe-123">Die folgenden Paare aus Registerkartenname und Registerkarten-ID wurden genehmigt.</span><span class="sxs-lookup"><span data-stu-id="12efe-123">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="12efe-124">IDs von abhängigen Registerkarten werden nicht gekoppelt, müssen jedoch gemäß der Spalte „Registerkarten-ID“ gültig sein.</span><span class="sxs-lookup"><span data-stu-id="12efe-124">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="12efe-125">Bei den Werten wird Groß- und Kleinschreibung unterschieden.</span><span class="sxs-lookup"><span data-stu-id="12efe-125">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="341b6-125">Registerkartenname</span><span class="sxs-lookup"><span data-stu-id="341b6-125">Tab name</span></span>              |<span data-ttu-id="341b6-126">Registerkarten-ID</span><span class="sxs-lookup"><span data-stu-id="341b6-126">Tab ID</span></span>            |
+|<span data-ttu-id="12efe-126">Registerkartenname</span><span class="sxs-lookup"><span data-stu-id="12efe-126">Tab name</span></span>              |<span data-ttu-id="12efe-127">Registerkarten-ID</span><span class="sxs-lookup"><span data-stu-id="12efe-127">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|
