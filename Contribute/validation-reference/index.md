@@ -2,12 +2,13 @@
 author: meganbradley
 ms.author: mbradley
 ms.date: 03/29/2019
-ms.openlocfilehash: a854a835dc13da81e8b121f0ef0e0aa73cc8cb6c
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+title: Indexseite zur Validierungsreferenz
+ms.openlocfilehash: e6e3622cbfd650f74f11a080926ce2b5c9e576b6
+ms.sourcegitcommit: 1e53d17639277bebd89b2e7cabeb45bdad526354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653457"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66841312"
 ---
 # <a name="docs-validation-reference"></a>Referenz zur Validierung von Dokumentationsartikeln
 
