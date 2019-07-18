@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/28/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 6d6c77b9b378865913e2055abf2b64ccba8ca482
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 1ae01c34ea60cec30698d7e11264d05c3f398d1c
+ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58636722"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791558"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
@@ -23,7 +23,7 @@ ms.locfileid: "58636722"
 
 ## <a name="resolution"></a>Lösung
 
-Überprüfen Sie, dass es sich bei dem Wert `ms.author` um einen gültigen Microsoft-Alias handelt. Wenn der Alias eine Verteilerliste ist, muss dieser sich ebenfalls auf der Zulassungsliste befinden.
+Überprüfen Sie, ob es sich bei dem Wert `ms.author` um den gültigen Microsoft-Alias des aktuellen Autors handelt. Wenn der Alias eine Verteilerliste ist, muss dieser sich ebenfalls auf der Zulassungsliste befinden.
 
 Gültige Werte für Verteilerlisten finden Sie auf dieser [internen Microsoft-Website](https://docsmetadatatool.azurewebsites.net/allowlists).
 
