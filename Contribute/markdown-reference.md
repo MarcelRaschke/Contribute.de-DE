@@ -508,9 +508,9 @@ Dieser Code wird wie folgt gerendert:
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Yes|Führt das Installationsprogramm ohne Benutzeroberfläche und Eingabeaufforderungen aus.|
-> |NoRestart|/norestart|No|Suppresses any attempts to restart. Standardmäßig lässt die Benutzeroberfläche einen Neustart bestätigen.|
-> |Help|/help|No|Provides help and quick reference. Zeigt die korrekte Verwendung des Setupbefehls einschließlich einer Liste aller Optionen und Verhalten an.|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 ### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
 
