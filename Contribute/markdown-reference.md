@@ -45,19 +45,19 @@ Damit wird eine Markdownerweiterungen für Microsoft-Dokumentation angewiesen, B
 Diese Warnungen sehen auf docs.microsoft.com folgendermaßen aus:
 
 > [!NOTE]
-> Informationen, die der Benutzer lesen sollte, wenn er den Artikel überfliegt.
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> Weiterführende Informationen, durch die der Benutzer erfolgreicher arbeiten kann.
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> Wichtige Informationen, die für die erfolgreiche Arbeit des Benutzers essentiell sind.
+> Essential information required for user success.
 
 > [!CAUTION]
-> Mögliche negative Auswirkungen einer Aktion.
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> Gefährliche Folgen einer Aktion.
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>Codeausschnitte
 
