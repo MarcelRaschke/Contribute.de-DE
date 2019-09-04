@@ -6,18 +6,16 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: ae2a28993671255a9ffd4503eebdbee404e52373
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: bb352552c133a77ec003bb54f3ab0f3bddfa1be6
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637274"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236260"
 ---
 # <a name="ms-date-missing"></a>ms-date-missing
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>Vorschlag
+## <a name="warning"></a>Warnung
 
 `Missing attribute: ms.date. A freshness date is required for this content. Add a date in format MM/DD/YYYY.`
 
