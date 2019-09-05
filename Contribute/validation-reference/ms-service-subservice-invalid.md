@@ -6,30 +6,28 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 3f165d16eed7e937c7db912a9c5e0ee0809e3031
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a6059d592212b271780344a086ee68c7133e15cd
+ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637297"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236511"
 ---
-# <a name="ms-service-and-subservice-invalid"></a><span data-ttu-id="e6a72-103">ms-service-and-subservice-invalid</span><span class="sxs-lookup"><span data-stu-id="e6a72-103">ms-service-and-subservice-invalid</span></span>
+# <a name="ms-service-and-subservice-invalid"></a><span data-ttu-id="300fd-103">ms-service-and-subservice-invalid</span><span class="sxs-lookup"><span data-stu-id="300fd-103">ms-service-and-subservice-invalid</span></span>
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a><span data-ttu-id="e6a72-104">Vorschlag</span><span class="sxs-lookup"><span data-stu-id="e6a72-104">Suggestion</span></span>
+## <a name="warning"></a><span data-ttu-id="300fd-104">Warnung</span><span class="sxs-lookup"><span data-stu-id="300fd-104">Warning</span></span>
 
 `Invalid value for ms.service: '{value}'.`
 
 `Invalid value for ms.subservice: '{value}' is not valid with ms.service value '{value}'.`
 
-<span data-ttu-id="e6a72-105">Geben Sie mit `ms.service` Clouddienste an.</span><span class="sxs-lookup"><span data-stu-id="e6a72-105">Use `ms.service` to specify cloud services.</span></span> <span data-ttu-id="e6a72-106">Um detailliertere Informationen zu `ms.service` anzugeben, können Sie optional `ms.subservice` angeben.</span><span class="sxs-lookup"><span data-stu-id="e6a72-106">To specify more detailed information about `ms.service`, you can optionally specify `ms.subservice`.</span></span> <span data-ttu-id="e6a72-107">Die Werte für `ms.service` und `ms.subservice` müssen ein gültiges Paar sein.</span><span class="sxs-lookup"><span data-stu-id="e6a72-107">The values for `ms.service` and `ms.subservice` must be a valid pair.</span></span> <span data-ttu-id="e6a72-108">Entweder ist Ihr `ms.service`-Wert ungültig, oder Ihr `ms.subservice`-Wert bildet mit Ihrem `ms.service` kein gültiges Paar.</span><span class="sxs-lookup"><span data-stu-id="e6a72-108">Either your `ms.service` value is invalid, or your `ms.subservice` value is not a valid pair with your `ms.service`.</span></span>
+<span data-ttu-id="300fd-105">Geben Sie mit `ms.service` Clouddienste an.</span><span class="sxs-lookup"><span data-stu-id="300fd-105">Use `ms.service` to specify cloud services.</span></span> <span data-ttu-id="300fd-106">Um detailliertere Informationen zu `ms.service` anzugeben, können Sie optional `ms.subservice` angeben.</span><span class="sxs-lookup"><span data-stu-id="300fd-106">To specify more detailed information about `ms.service`, you can optionally specify `ms.subservice`.</span></span> <span data-ttu-id="300fd-107">Die Werte für `ms.service` und `ms.subservice` müssen ein gültiges Paar sein.</span><span class="sxs-lookup"><span data-stu-id="300fd-107">The values for `ms.service` and `ms.subservice` must be a valid pair.</span></span> <span data-ttu-id="300fd-108">Entweder ist Ihr `ms.service`-Wert ungültig, oder Ihr `ms.subservice`-Wert bildet mit Ihrem `ms.service` kein gültiges Paar.</span><span class="sxs-lookup"><span data-stu-id="300fd-108">Either your `ms.service` value is invalid, or your `ms.subservice` value is not a valid pair with your `ms.service`.</span></span>
 
-## <a name="resolution"></a><span data-ttu-id="e6a72-109">Lösung</span><span class="sxs-lookup"><span data-stu-id="e6a72-109">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="300fd-109">Lösung</span><span class="sxs-lookup"><span data-stu-id="300fd-109">Resolution</span></span>
 
-<span data-ttu-id="e6a72-110">Bestätigen Sie, dass Ihr `ms.service`-Wert für Ihren Artikel richtig ist.</span><span class="sxs-lookup"><span data-stu-id="e6a72-110">Confirm that your `ms.service` value is correct for your article.</span></span> <span data-ttu-id="e6a72-111">Wählen Sie dann einen gültigen `ms.subservice`-Wert aus.</span><span class="sxs-lookup"><span data-stu-id="e6a72-111">Then choose a valid `ms.subservice` value.</span></span>
+<span data-ttu-id="300fd-110">Bestätigen Sie, dass Ihr `ms.service`-Wert für Ihren Artikel richtig ist.</span><span class="sxs-lookup"><span data-stu-id="300fd-110">Confirm that your `ms.service` value is correct for your article.</span></span> <span data-ttu-id="300fd-111">Wählen Sie dann einen gültigen `ms.subservice`-Wert aus.</span><span class="sxs-lookup"><span data-stu-id="300fd-111">Then choose a valid `ms.subservice` value.</span></span>
 
-<span data-ttu-id="e6a72-112">Gültige Werte finden Sie auf dieser [Microsoft-internen Website](https://docsmetadatatool.azurewebsites.net/allowlists).</span><span class="sxs-lookup"><span data-stu-id="e6a72-112">Valid values can be found on [this Microsoft-internal site](https://docsmetadatatool.azurewebsites.net/allowlists).</span></span>
+<span data-ttu-id="300fd-112">Gültige Werte finden Sie auf dieser [Microsoft-internen Website](https://docsmetadatatool.azurewebsites.net/allowlists).</span><span class="sxs-lookup"><span data-stu-id="300fd-112">Valid values can be found on [this Microsoft-internal site](https://docsmetadatatool.azurewebsites.net/allowlists).</span></span> <span data-ttu-id="300fd-113">[Gehen Sie folgendermaßen vor](https://review.docs.microsoft.com/help/contribute/metadata-changes?branch=master), um neue Werte anzufordern.</span><span class="sxs-lookup"><span data-stu-id="300fd-113">To request new values, follow [this process](https://review.docs.microsoft.com/help/contribute/metadata-changes?branch=master).</span></span>
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
