@@ -4,14 +4,14 @@ description: Erklärung und Lösung zu Problemen beim Erstellen von Dokumentatio
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 2/26/2019
+ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: af4145b4f6be07f07a22842e6ded279e8390b054
-ms.sourcegitcommit: 1311ccbbf38312bfe6947082870bc9e90d38c986
+ms.openlocfilehash: 1a41dbc8efc5ba6cadbec3ee9f17cbc6c64ab116
+ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791583"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70848618"
 ---
 # <a name="author-not-found"></a>author-not-found
 
