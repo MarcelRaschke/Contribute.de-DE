@@ -4,24 +4,24 @@ description: Erklärung und Lösung zu Problemen beim Erstellen von Dokumentatio
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 2f34a0e510d7d006c598ae163217a117a72f1de2
-ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
+ms.openlocfilehash: 46cd047253fc7fbfdf92b0c5a6d690e041262b02
+ms.sourcegitcommit: 89ec9772d9cc8281c633833c6fa51f629e9cd566
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236163"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70895443"
 ---
-# <a name="ms-date-invalid"></a><span data-ttu-id="735fc-103">ms-date-invalid</span><span class="sxs-lookup"><span data-stu-id="735fc-103">ms-date-invalid</span></span>
+# <a name="ms-date-invalid"></a><span data-ttu-id="c6d31-103">ms-date-invalid</span><span class="sxs-lookup"><span data-stu-id="c6d31-103">ms-date-invalid</span></span>
 
-## <a name="warning"></a><span data-ttu-id="735fc-104">Warnung</span><span class="sxs-lookup"><span data-stu-id="735fc-104">Warning</span></span>
+## <a name="warning"></a><span data-ttu-id="c6d31-104">Warnung</span><span class="sxs-lookup"><span data-stu-id="c6d31-104">Warning</span></span>
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY, no more than five days from today.`
 
-## <a name="resolution"></a><span data-ttu-id="735fc-105">Lösung</span><span class="sxs-lookup"><span data-stu-id="735fc-105">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="c6d31-105">Lösung</span><span class="sxs-lookup"><span data-stu-id="c6d31-105">Resolution</span></span>
 
-<span data-ttu-id="735fc-106">Bestätigen Sie, dass der Artikel ohne Brüche im Inhalt aktuell ist, und fügen Sie ein gültiges Datum im Format MM/TT/JJJJ hinzu:</span><span class="sxs-lookup"><span data-stu-id="735fc-106">Confirm that the article is up-to-date with no broken content, then add a valid date in the format MM/DD/YYYY:</span></span>
+<span data-ttu-id="c6d31-106">Bestätigen Sie, dass der Artikel ohne Brüche im Inhalt aktuell ist, und fügen Sie ein gültiges Datum im Format MM/TT/JJJJ hinzu:</span><span class="sxs-lookup"><span data-stu-id="c6d31-106">Confirm that the article is up-to-date with no broken content, then add a valid date in the format MM/DD/YYYY:</span></span>
 
 ```yml
 ---
