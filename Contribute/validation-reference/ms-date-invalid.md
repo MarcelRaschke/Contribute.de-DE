@@ -4,20 +4,20 @@ description: Erklärung und Lösung zu Problemen beim Erstellen von Dokumentatio
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 1/15/2019
+ms.date: 09/10/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 2f34a0e510d7d006c598ae163217a117a72f1de2
-ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
+ms.openlocfilehash: 46cd047253fc7fbfdf92b0c5a6d690e041262b02
+ms.sourcegitcommit: 89ec9772d9cc8281c633833c6fa51f629e9cd566
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236163"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70895443"
 ---
 # <a name="ms-date-invalid"></a>ms-date-invalid
 
 ## <a name="warning"></a>Warnung
 
-`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY.`
+`Invalid value for ms.date: '{value}'. Must be a date in format MM/DD/YYYY, no more than five days from today.`
 
 ## <a name="resolution"></a>Lösung
 
