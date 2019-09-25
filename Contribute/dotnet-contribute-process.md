@@ -2,12 +2,12 @@
 title: Mitwirken an Repositorys der .NET-Dokumentation
 description: In diesem Artikel erhalten Sie eine Einführung in das Mitwirken an den Repositorys der .NET-Dokumentation. Sie lernen die verwendeten Repositorys, die Vorgehensweise für das Ordnen von Inhalten und die Richtlinien für das Verwalten von Codebeispielen und anderen Ressourcen kennen.
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637504"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247326"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Mitwirken an der .NET-Dokumentation
 
@@ -94,7 +94,7 @@ Der Code in unserem Repository wird folgendermaßen kategorisiert:
 Der Code befindet sich im Repository [dotnet/samples](https://github.com/dotnet/samples). Wir arbeiten an einer Lösung, damit die Struktur des Ordners „samples“ zukünftig der Struktur des Ordners „docs“ entspricht. Es gibt folgende Standards zu beachten:
 
 - Der Ordner *snippets* auf oberster Ebene enthält Codeausschnitte für kleine, präzise Beispiele.
-- Beispiele für API-Referenzen werden in einem Ordner gespeichert, der folgendem Muster entspricht: *snippets/\<Sprache>/api/\<Namespace>/\<API-Name>*.
+- Beispiele für API-Referenzen werden in einem Ordner gespeichert, der folgendem Muster entspricht: *snippets/\<Sprache>/api/\<Namespace>/\<API-Name>* .
 - Die anderen Ordner auf oberster Ebene entsprechen den Ordnern, die sich im Repository *docs* auf oberster Ebene befinden. Das Repository „docs“ enthält beispielsweise den Ordner *machine-learning/tutorials*, und die Beispiele für diese Tutorials für das maschinelle Lernen befinden sich im Ordner *samples/machine-learning/tutorials*.
 
 Außerdem sollten alle Beispiele, die sich in den Ordnern *core* und *standard* befinden, auf allen Plattformen, die .NET Core unterstützt, erstellt und ausgeführt werden können. Dies wird durch unser CI-Buildsystem erzwungen. Der Ordner *framework* auf oberster Ebene enthält Beispiele, die nur unter Windows erstellt und überprüft werden.
@@ -103,7 +103,7 @@ Beispielprojekte sollten dem Szenario entsprechend auf so vielen Plattformen wie
 
 Wir arbeiten an einem CI-System für jeden Code. Wenn Sie Beispiele aktualisieren, sollten Sie sicherstellen, dass jedes Update Teil eines erstellbaren Projekts ist. Fügen Sie den Beispielen im Idealfall auch Tests auf Richtigkeit hinzu.
 
-Jedes vollständige Beispiel sollte die Datei *readme.md* enthalten. In dieser Datei sollte eine kurze Beschreibung des Beispiels enthalten sein (ein bis zwei Absätze). Die Datei *readme.md* soll den Lesern vermitteln, was sie durch dieses Beispiel lernen können. Die Datei *readme.md* sollte ebenfalls einen Link zur Dokumentation auf der Website der [.NET-Dokumentation](https://docs.microsoft.com/dotnet/welcome) enthalten. Wenn Sie festlegen möchten, wo eine bestimmte Datei im Repository dieser Website zugeordnet wird, ersetzen Sie `/docs` im Repositorypfad durch `http://docs.microsoft.com/dotnet`.
+Jedes vollständige Beispiel sollte die Datei *readme.md* enthalten. In dieser Datei sollte eine kurze Beschreibung des Beispiels enthalten sein (ein bis zwei Absätze). Die Datei *readme.md* soll den Lesern vermitteln, was sie durch dieses Beispiel lernen können. Die Datei *readme.md* sollte ebenfalls einen Link zur Dokumentation auf der Website der [.NET-Dokumentation](https://docs.microsoft.com/dotnet/welcome) enthalten. Wenn Sie festlegen möchten, wo eine bestimmte Datei im Repository dieser Website zugeordnet wird, ersetzen Sie `/docs` im Repositorypfad durch `https://docs.microsoft.com/dotnet`.
 
 Ihr Artikel sollte zudem Links zum Beispiel enthalten. Der Link sollte direkt zu dem Ordner auf GitHub führen, in dem sich das Beispiel befindet.
 
@@ -158,7 +158,7 @@ Codeausschnitte oder Beispiele für .NET Core werden mithilfe der .NET Core-CLI 
     dotnet run
     ```
 
-3. Fügen Sie die Datei „readme.md“ zum Stammverzeichnis Ihres Beispiels hinzu. 
+3. Fügen Sie die Datei „readme.md“ zum Stammverzeichnis Ihres Beispiels hinzu.
 
    Diese sollte eine kurze Beschreibung des Codes und einen Verweis auf den Artikel enthalten, zu dem das Beispiel gehört.
 

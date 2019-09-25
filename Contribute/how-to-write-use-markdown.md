@@ -2,16 +2,16 @@
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
 ms.date: 03/26/2019
-ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
-ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
+ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373112"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247336"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
-Artikel auf [docs.microsoft.com](http://docs.microsoft.com) sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden. Die „docs.microsoft.com“-Website verwendet die [Markdig-Variante](#markdown-flavor) von Markdown.
+Artikel auf [docs.microsoft.com](https://docs.microsoft.com) sind in einer leichten Markupsprache namens [Markdown](https://daringfireball.net/projects/markdown/) geschrieben, die sowohl einfach zu lesen als auch zu erlernen ist. Darum ist sie schnell zu einem Branchenstandard geworden. Die „docs.microsoft.com“-Website verwendet die [Markdig-Variante](#markdown-flavor) von Markdown.
 
 
 ## <a name="markdown-basics"></a>Grundlegendes zu Markdown
