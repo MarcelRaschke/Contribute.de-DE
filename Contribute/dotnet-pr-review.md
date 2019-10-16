@@ -1,13 +1,16 @@
 ---
 title: Pull Request-Überprüfungsprozess für .NET-Dokumentationsartikel
 description: Für die .NET-Dokumentationsartikel sind die PR-Zusammenführungswebhooks nicht aktiviert. In diesem Artikel wird der PR-Prozess für diese Repositorys beschrieben.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 01/04/2019
-ms.openlocfilehash: f710e330e31e56887d43030290d5aa6a5c62961b
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 80877a93dc410454c939bcd5be5588861682ed11
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653595"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288534"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Pull Request-Überprüfungsprozess für die Repositorys der .NET-Dokumentationsartikel
 

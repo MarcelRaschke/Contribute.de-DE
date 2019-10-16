@@ -1,13 +1,16 @@
 ---
 title: Grundlegende Informationen zu Git und GitHub für die Dokumentation
 description: In diesem Artikel erhalten Sie einen Überblick über Git und das GitHub-Repository, die Organisation des Inhalts und die für docs.microsoft.com verwendeten Namenskonventionen.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712876"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288448"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Grundlegende Informationen zu Git und GitHub für die Dokumentation
 
@@ -65,7 +68,7 @@ Weitere Anleitungen finden Sie unter [Verwenden von Markdown für das Schreiben 
 Der Einfachheit halber enthält das Stammverzeichnis jedes Repositorys üblicherweise eine Markdownvorlagendatei namens `template.md`. Sie können diese Vorlagendatei als Ausgangsdatei nutzen, wenn Sie einen neuen Artikel für die Übermittlung an das Repository erstellen müssen. Die Datei enthält Folgendes:
 
 - Einen **Metadatenheader** am Anfang der Datei, der durch zwei Zeilen mit drei Bindestrichen getrennt wird. Er enthält die verschiedenen Tags, die zur Nachverfolgung von Informationen verwendet werden, die im Zusammenhang mit dem Artikel stehen. Metadaten zu Artikeln sind Voraussetzungen für bestimmte Funktionen wie die Zuordnung von Autoren und Mitwirkenden, die Brotkrümelnavigation und Beschreibungen von Artikeln. Zudem enthalten Sie SEO-Optimierungen und Vorgänge zur Berichterstattung, die Microsoft verwendet, um die Leistung eines Inhalts zu bewerten. Daher spielen die Metadaten eine wichtige Rolle.
-- Den **Abschnitt „Metadaten“**, in dem die verschiedenen Metadatentags und Werte beschrieben werden. Wenn Sie nicht sicher sind, welche Werte in den Metadatenabschnitt gehören, können Sie sie leer lassen oder mit einem führenden Hashtag (#) kommentieren. Der Prüfer des Pull Requests für das Repository überprüft bzw. vervollständigt diese anschließend.
+- Den **Abschnitt „Metadaten“** , in dem die verschiedenen Metadatentags und Werte beschrieben werden. Wenn Sie nicht sicher sind, welche Werte in den Metadatenabschnitt gehören, können Sie sie leer lassen oder mit einem führenden Hashtag (#) kommentieren. Der Prüfer des Pull Requests für das Repository überprüft bzw. vervollständigt diese anschließend.
 - Verschiedene **Beispiele für die Verwendung des Markdownformats** zum Formatieren der Elemente eines Artikels.
 - Allgemeine **Anweisungen für die Verwendung von Markdownerweiterungen**, die für verschiedene Arten von Benachrichtigungen verwendet werden können
 - Beispiele für das **Einbetten von Videos** mithilfe eines IFrames

@@ -1,13 +1,16 @@
 ---
 title: Mitwirken an Repositorys der .NET-Dokumentation
 description: In diesem Artikel erhalten Sie eine Einführung in das Mitwirken an den Repositorys der .NET-Dokumentation. Sie lernen die verwendeten Repositorys, die Vorgehensweise für das Ordnen von Inhalten und die Richtlinien für das Verwalten von Codebeispielen und anderen Ressourcen kennen.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247326"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288348"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Mitwirken an der .NET-Dokumentation
 
