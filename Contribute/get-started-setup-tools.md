@@ -1,16 +1,18 @@
 ---
 title: Installieren von Tools für die Inhaltsentwicklung
 description: In diesem Artikel werden das Herunterladen und Installieren der Clienttools erläutert, die Sie für Git und das Bearbeiten von Markdowndateien benötigen.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609389"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288557"
 ---
 # <a name="install-content-authoring-tools"></a>Installieren von Tools für die Inhaltsentwicklung
 
@@ -23,7 +25,7 @@ Dieser Artikel beschreibt die Schritte, die erforderlich sind, um Git-Clienttool
 >[!IMPORTANT]
 > Wenn Sie nur geringfügige Änderungen an einem Artikel vornehmen, müssen Sie die in diesem Artikel erläuterten Schritte *nicht* durchführen und können direkt mit dem Workflow für [schnelle Änderungen](index.md#quick-edits-to-existing-documents) fortfahren.
 >
-> Wichtige Mitwirkende sollten diese Schritte ausführen, da ihnen dadurch die Verwendung des [Workflows für größere Änderungen oder Änderungen mit langer Ausführungszeit](how-to-write-workflows-major.md) ermöglicht wird. Auch wenn Sie über Schreibberechtigungen im Hauptrepository verfügen, *wird ausdrücklich empfohlen, das Repository zu forken und zu klonen (dies wird in diesem Leitfaden vorausgesetzt)*, damit Sie über die Schreib- bzw. Leseberechtigungen verfügen, um vorgeschlagene Änderungen in Ihrem Fork zu speichern.
+> Wichtige Mitwirkende sollten diese Schritte ausführen, da ihnen dadurch die Verwendung des [Workflows für größere Änderungen oder Änderungen mit langer Ausführungszeit](how-to-write-workflows-major.md) ermöglicht wird. Auch wenn Sie über Schreibberechtigungen im Hauptrepository verfügen, *wird ausdrücklich empfohlen, das Repository zu forken und zu klonen (dies wird in diesem Leitfaden vorausgesetzt)* , damit Sie über die Schreib- bzw. Leseberechtigungen verfügen, um vorgeschlagene Änderungen in Ihrem Fork zu speichern.
 
 ## <a name="install-git-client-tools"></a>Installieren der Git-Clienttools 
 
@@ -39,7 +41,7 @@ Befolgen Sie die Anweisungen für die Installation und Konfiguration für Ihren 
 
 Im nächsten Artikel geht es um das [Einrichten eines lokalen Git-Repositorys](get-started-setup-local.md).
 
-   Hier finden Sie weitere Git-Ressourcen (in englischer Sprache): [Git-Terminologie](https://help.github.com/articles/github-glossary) | [Git-Grundlagen](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Lernressourcen für Git und GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
+   Weitere Git-Ressourcen sind hier verfügbar: [Git-Terminologie](https://help.github.com/articles/github-glossary) | [Git-Grundlagen](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Git und GitHub lernen](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>Grundlegendes zu Markdown-Editoren
 

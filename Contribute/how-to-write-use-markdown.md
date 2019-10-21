@@ -1,13 +1,16 @@
 ---
 title: Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 description: Dieser Artikel enthält grundlegende Informationen und Verweise zu Markdown, das als Sprache zum Schreiben von docs.microsoft.com-Artikeln verwendet wird.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247336"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288425"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
@@ -291,10 +294,10 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a>OPS: benutzerdefinierte Markdownerweiterungen
+## <a name="docs-custom-markdown-extensions"></a>Benutzerdefinierte Markdownerweiterungen in Docs
 
 > [!NOTE]
-> In Open Publishing Services (OPS) ist der Markdig-Parser für Markdown implementiert, der eine hohe Kompatibilität mit GitHub Flavored Markdown (GFM) aufweist. Markdig fügt Funktionen über Markuperweiterungen hinzu. Daher sind einige ausgewählte Artikel aus dem vollständigen OPS-Erstellungshandbuch als Referenz in diesem Handbuch enthalten. (Sehen Sie sich beispielsweise „Markdig- und Markdown-Erweiterungen“ und „Codeausschnitte“ im Inhaltsverzeichnis an.)
+> Docs.Microsoft.com (Docs) implementiert einen Markdig-Parser für Markdown, der eine hohe Kompatibilität mit GitHub Flavored Markdown (GFM) aufweist. Markdig fügt Funktionen über Markuperweiterungen hinzu. Daher sind einige ausgewählte Artikel aus dem vollständigen OPS-Erstellungshandbuch als Referenz in diesem Handbuch enthalten. (Sehen Sie sich beispielsweise „Markdig- und Markdown-Erweiterungen“ und „Codeausschnitte“ im Inhaltsverzeichnis an.)
 
 GFM wird in Dokumentationsartikeln für die meisten Formatierungsaufgaben wie Absätze, Links, Listen und Überschriften verwendet. Zur weitergehenden Formatierung von Artikeln können folgende Markdig-Funktionen verwendet werden:
 
@@ -432,7 +435,7 @@ Codieren Sie `<script name>` z.B. als `&lt;script name&gt;`.
 
 ## <a name="markdown-flavor"></a>Markdown-Variante
 
-Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS). Dadurch wird [CommonMark](https://commonmark.org/)-konformes Markdown unterstützt, das durch die [Markdig](https://github.com/lunet-io/markdig)-Engine analysiert wird. Diese Markdownvariante ist meistens mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) kompatibel, da die meisten Dokumentationen auf GitHub gespeichert und auch dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
+Das Back-End der Website „docs.microsoft.com“ unterstützt ein kompatibles [CommonMark](https://commonmark.org/)-Markdown, das von der [Markdig](https://github.com/lunet-io/markdig)-Analyse-Engine analysiert wird. Diese Markdownvariante ist meistens mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) kompatibel, da die meisten Dokumentationen auf GitHub gespeichert und auch dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
 
 ## <a name="see-also"></a>Siehe auch:
 

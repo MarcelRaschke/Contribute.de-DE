@@ -1,20 +1,23 @@
 ---
 title: GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 description: In diesem Artikel erfahren Sie, wie Sie den Beitragsworkflow für größere Änderungen bei der Mitwirkung an docs.microsoft.com-Artikeln verwenden.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
+ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609403"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310292"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 
 > [!IMPORTANT]
 > Für alle Repositorys, die in „docs.microsoft.com“ veröffentlichen, gilt der Verhaltenskodex von [Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/) oder von [.NET Foundation](https://dotnetfoundation.org/code-of-conduct) (beide in englischer Sprache). Weitere Informationen finden Sie in den [häufig gestellten Fragen zum Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/faq/). Wenden Sie sich mit Ihren Fragen oder Kommentaren alternativ an [opencode@microsoft.com](mailto:opencode@microsoft.com) oder [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org).<br>
 >
-> Kleinere Korrekturen oder Klarstellungen zu Dokumentation und Codebeispielen in öffentlichen Repositorys werden durch die [docs.microsoft.com - Nutzungsbestimmungen](https://docs.microsoft.com/legal/termsofuse) abgedeckt. Neue oder signifikante Änderungen haben einen Kommentar im Pull Request zur Folge, in dem Sie gebeten werden, online eine Lizenzvereinbarung für Beiträge (Contribution License Agreement, CLA) zu akzeptieren. Dies gilt, wenn Sie kein Mitarbeiter von Microsoft sind. Sie müssen das Onlineformular ausfüllen, damit wir Ihren Pull Request zusammenführen können.
+> Für kleinere Korrekturen oder Klarstellungen zu Dokumentation und Codebeispielen in öffentlichen Repositorys gelten die [Nutzungsbestimmungen zu docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Neue oder signifikante Änderungen haben einen Kommentar im Pull Request zur Folge, in dem Sie gebeten werden, online eine Lizenzvereinbarung für Beiträge (Contribution License Agreement, CLA) zu akzeptieren. Dies gilt, wenn Sie kein Mitarbeiter von Microsoft sind. Sie müssen das Onlineformular ausfüllen, damit wir Ihren Pull Request zusammenführen können.
 
 ## <a name="overview"></a>Übersicht
 
@@ -59,4 +62,4 @@ Nun erstellen wir einen neuen Arbeitsbranch in Ihrem lokalen Repository, um die 
 
 Das ist alles! Sie haben einen Beitrag zum Inhalt von docs.microsoft.com geleistet!
 
-- Fahren Sie mit dem Abschnitt zu Schreibgrundlagen fort, um u.a. mehr über Themen wie Markdown und Markdownerweiterungssyntax zu erfahren.
+- Navigieren Sie zum Artikel [Schreibgrundlagen](how-to-write-use-markdown.md), um mehr über Themen wie Markdown und Markdownerweiterungen zu erfahren.

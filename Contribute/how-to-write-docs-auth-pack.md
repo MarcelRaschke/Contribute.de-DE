@@ -1,15 +1,18 @@
 ---
 title: Docs Authoring Pack für Visual Studio Code
 description: In diesem Artikel wird das Visual Studio Code-Erweiterungspaket zur vereinfachten Markdown-Dokumenterstellung für docs.microsoft.com beschrieben.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805652"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288330"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pack zur Dokumenterstellung für VS Code
 
@@ -17,9 +20,9 @@ Das Docs Authoring Pack (Pack zur Dokumenterstellung) ist eine Sammlung von Visu
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint): Beliebter Markdownlinter von David Anson, der die Nutzung bewährter Methoden durch Markdown sicherstellt.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Eine vollständige Offline-Rechtschreibprüfung von Street Side Software.
-- [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview): Verwendet das docs.microsoft.com-CSS für präzisere Markdown-Vorschau inklusive benutzerdefinierten Markdowns.
-- [Docs Markdown:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) Stellt Unterstützung bei der Markdown-Dokumenterstellung von docs.microsoft.com-Inhalten im Open Publishing System (OPS) bereit, einschließlich Basic-Support für Markdown sowie Unterstützung für benutzerdefinierte Markdownsyntax in OPS. Die weiteren Abschnitte dieses Themas behandeln die Erweiterung „Docs Markdown“.
-- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates): Ermöglicht Benutzern die Anwendung von Markdown-Entwurfsinhalt auf neue Dateien.
+- [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview): Verwendet das docs.microsoft.com-CSS für präzisere Markdownvorschau inklusive benutzerdefinierten Markdowns.
+- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown): Stellt Unterstützung bei der Markdowndokumenterstellung von docs.microsoft.com-Inhalten im Open Publishing System (OPS) bereit, einschließlich Basic-Support für Markdown sowie Unterstützung für benutzerdefinierte Markdownsyntax in OPS. Die weiteren Abschnitte dieses Themas behandeln die Erweiterung „Docs Markdown“.
+- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates): Ermöglicht Benutzern die Anwendung von Markdownentwurfsinhalt auf neue Dateien.
 
 ## <a name="prerequisites-and-assumptions"></a>Voraussetzungen und Annahmen
 
@@ -31,7 +34,7 @@ Ein Teil der von der Erweiterung unterstützten Syntax, wie z.B. Warnungen und C
 
 Drücken Sie `ALT+M`, um auf das Docs Markdown-Menü zuzugreifen. Klicken Sie auf die gewünschte Funktion, oder verwenden Sie dazu die NACH-OBEN-/NACH-UNTEN-TASTEN. Sie können zum Filtern auch mit der Eingabe des Namens beginnen und `ENTER` drücken, sobald die gewünschte Funktion im Menü hervorgehoben wird. Folgende Funktionen sind verfügbar:
 
-|Funktion     |Beschreibung           |
+|Funktion     |Description           |
 |-------------|----------------------|
 |Vorschau      |Mithilfe der Erweiterung „Docs Preview“ wird das aktive Thema in einem Vorschaufenster parallel angezeigt. Diese Option ist nur verfügbar, wenn „Docs Preview“ installiert ist.|
 |Fett         |Text wird **fett** formatiert.|

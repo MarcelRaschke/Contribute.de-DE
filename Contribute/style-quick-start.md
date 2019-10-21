@@ -1,13 +1,16 @@
 ---
 title: 'Styleguide zur Dokumentation: Schnellstart'
 description: Dieser Artikel ist ein kurz gefasster Stilleitfaden, der nur die wichtigsten Themen für den Einstieg in die Mitwirkung an docs.microsoft.com enthält.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 07/25/2017
-ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 28c10e52db304b599e1b4f5cf40acc2f886971ff
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805580"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288659"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Stil und Sprache der Dokumentation: Schnellstart
 
@@ -23,11 +26,11 @@ Best Practices:
 
 Versuchen Sie immer, sich an diese Prinzipien zu halten, wenn Sie technische Inhalte für [docs.microsoft.com](https://docs.microsoft.com) verfassen. Das ist vielleicht nicht immer möglich, aber Sie sollten es jederzeit versuchen!
 
-- **Konzentrieren Sie sich auf das Ziel**: Kunden haben einen bestimmten Zweck im Sinn, wenn sie unsere Dokumentation lesen. Bevor Sie mit dem Schreiben beginnen, legen Sie genau fest, wer der Kunde ist und welche Aufgabe er erledigen möchte. Schreiben Sie Ihren Artikel dann so, dass Sie diesem bestimmten Kunden dabei helfen, diese bestimmte Aufgabe auszuführen.
+- **Konzentrieren Sie sich auf die Absicht**: Kunden verfolgen ein bestimmtes Ziel, wenn sie unsere Dokumentation lesen. Bevor Sie mit dem Schreiben beginnen, legen Sie genau fest, wer der Kunde ist und welche Aufgabe er erledigen möchte. Schreiben Sie Ihren Artikel dann so, dass Sie diesem bestimmten Kunden dabei helfen, diese bestimmte Aufgabe auszuführen.
 - **Verwenden Sie alltägliche Begriffe**: Versuchen Sie, in der Sprache Ihrer Kunden zu schreiben. Verwenden Sie eine informelle Sprache, aber verzichten Sie dabei nicht auf Fachbegriffe. Geben Sie Beispiele, um neue Konzepte zu erklären.
-- **Achten Sie auf Knappheit**: Verzichten Sie auf überflüssige Wörter. Seien Sie positiv, und verwenden Sie nicht übermäßig viele Füllwörter. Schreiben Sie kurze, knappe Sätze. Behalten Sie den roten Faden Ihres Artikels im Auge. Wenn eine Aufgabe ein Qualifizierungsmerkmal hat, setzen Sie dieses an den Anfang des Satzes oder Absatzes. Begrenzen Sie Fußnoten auf ein Minimum. Verwenden Sie einen Screenshot, wenn Sie sich damit ausschweifende Erläuterungen sparen können.
-- **Vereinfachen Sie das Überfliegen Ihres Artikels**: Erläutern Sie die wichtigsten Sachverhalte zuerst. Verwenden Sie Abschnitte, um komplexe Vorgänge in kleinere, leichter nachvollziehbare Gruppen von Schritten zu unterteilen. (Vorgänge, die aus mehr als zwölf Schritten bestehen, sind möglicherweise zu komplex.) Verwenden Sie einen Screenshot, wenn Sie damit Klarheit schaffen können.
-- **Seien Sie einfühlsam**: Vermitteln Sie Hilfsbereitschaft, und beschränken Sie Gewährleistungshinweise auf ein Minimum. Streichen Sie Abschnitte, die Kunden entmutigen könnten. Konzentrieren Sie sich darauf, was dem Kunden wichtig ist. Halten Sie keine technische Vorlesung.
+- **Schreiben Sie kurz und präzise**: Verzichten Sie auf überflüssige Wörter. Seien Sie positiv, und verwenden Sie nicht übermäßig viele Füllwörter. Schreiben Sie kurze, knappe Sätze. Behalten Sie den roten Faden Ihres Artikels im Auge. Wenn eine Aufgabe ein Qualifizierungsmerkmal hat, setzen Sie dieses an den Anfang des Satzes oder Absatzes. Begrenzen Sie Fußnoten auf ein Minimum. Verwenden Sie einen Screenshot, wenn Sie sich damit ausschweifende Erläuterungen sparen können.
+- **Gestalten Sie Ihren Artikel übersichtlich**: Erwähnen Sie die wichtigsten Punkte zuerst. Verwenden Sie Abschnitte, um komplexe Vorgänge in kleinere, leichter nachvollziehbare Gruppen von Schritten zu unterteilen. (Vorgänge, die aus mehr als zwölf Schritten bestehen, sind möglicherweise zu komplex.) Verwenden Sie einen Screenshot, wenn Sie damit Klarheit schaffen können.
+- **Seien Sie einfühlsam**: Vermitteln Sie im Artikel Hilfsbereitschaft, und beschränken Sie Gewährleistungshinweise auf ein Minimum. Streichen Sie Abschnitte, die Kunden entmutigen könnten. Konzentrieren Sie sich darauf, was dem Kunden wichtig ist. Halten Sie keine technische Vorlesung.
 
 ## <a name="consider-localization-and-machine-translation"></a>Einbeziehen von Lokalisierung und Maschinenübersetzung
 
@@ -35,9 +38,9 @@ Unsere technischen Artikel werden in mehrere Sprachen übersetzt, und einige wer
 
 - **Stellen Sie sicher, dass Ihr Artikel keine Grammatik-, Rechtschreib- oder Zeichensetzungsfehler enthält**: Dies ist eine grundlegende Anforderung. Einige Markdown-Editoren (wie Markdown Pad 2.0) bieten eine einfache Rechtschreibprüfung. Es empfiehlt sich jedoch, die HTML-Ausgabe des Inhalts in Word zu kopieren, das über eine umfangreichere Rechtschreib- und Grammatikprüfung verfügt.
 - **Stellen Sie sicher, dass Ihre Sätze so kurz wie möglich sind**: Übermäßig komplexe oder verschachtelte Sätze erschweren die Übersetzung. Teilen Sie Sätze auf, wenn dies möglich ist, ohne sich zu wiederholen oder komisch zu klingen. Artikel sollten nicht in unnatürlicher Sprache geschrieben werden.
-- **Verwenden Sie eine einfache und konsistente Satzkonstruktion**: Konsistenz ist besser für die Übersetzung. Vermeiden Sie Einschübe und Nebenbemerkungen, und stellen Sie das Subjekt so weit wie möglich an den Anfang des Satzes. Sehen Sie sich einige veröffentlichte Artikel an. Wenn Sie einen Artikel finden, der in einem leicht lesbaren Stil geschrieben ist, verwenden Sie ihn als Vorlage.
+- **Verwenden Sie einen einfachen und einheitlichen Satzbau**: Einheitliche Sätze erleichtern die Übersetzung. Vermeiden Sie Einschübe und Nebenbemerkungen, und stellen Sie das Subjekt so weit wie möglich an den Anfang des Satzes. Sehen Sie sich einige veröffentlichte Artikel an. Wenn Sie einen Artikel finden, der in einem leicht lesbaren Stil geschrieben ist, verwenden Sie ihn als Vorlage.
 - **Verwenden Sie konsistente Formulierungen und Schreibweisen**: Auch hier ist Konsistenz das A und O. Befolgen Sie die Rechtschreibregeln gemäß Duden (empfohlene Schreibweise).
-- **Lassen Sie keine „unbedeutenden“ Wörter aus**: Manche Wörter werden als unbedeutend angesehen, weil sie im Kontext verstanden werden (z.B. Artikel). Diese sind für die Maschinenübersetzung jedoch wichtig. Schließen Sie sie unbedingt mit ein.
+- **Lassen Sie keine „kleinen“ Wörter aus**: Manche Wörter werden als unbedeutend angesehen, weil sie im Kontext verstanden werden (z. B. Artikel). Diese sind für die maschinelle Übersetzung jedoch unerlässlich. Schließen Sie sie unbedingt mit ein.
 
 ## <a name="other-style-and-voice-issues-to-watch-for"></a>Weitere zu beachtende Stil- und Sprachfragen
 
