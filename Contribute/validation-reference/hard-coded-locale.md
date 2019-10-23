@@ -4,18 +4,21 @@ description: Erklärung und Lösung zu Problemen beim Erstellen von Dokumentatio
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 10/18/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: eb9ae17673b3da5f921139d88cc9af469423c9c3
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 0fbc7634e00202fdfdf607b9504744a6d9846792
+ms.sourcegitcommit: 836d4d6127fabb5569ffc0809db5fb25e46038b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310327"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72590863"
 ---
 # <a name="hard-coded-locale"></a>hard-coded-locale
 
-## <a name="warning"></a>Warnung
+> [!IMPORTANT]
+> Diese Regel war anfänglich als „Vorschlag“ aktiviert, um Inhaltsteams Zeit zu geben, die Auswirkung abzuschätzen und einen Plan zum Bereinigen ihrer Repositorys zu entwickeln. **Ab dem 20.12.2019 erfolgt eine Hochstufung zu einer „Warnung“** .
+
+## <a name="suggestion"></a>Vorschlag
 
 `Link '{URL}' contains locale code '{code}'. For localizability, remove '{code}' from links to Microsoft sites.`
 
