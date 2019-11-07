@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288308"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592562"
 ---
 # <a name="markdown-reference"></a>Markdownreferenz
 
@@ -26,7 +26,7 @@ Microsoft-Dokumentation nutzt die Markdown-Engine von Markdig. Unter [https://ba
 
 Damit wird eine Markdownerweiterungen für Microsoft-Dokumentation angewiesen, Blockzitate zu erzeugen, die auf docs.microsoft.com mit anderen Hintergrundfarben und Symbolen gerendert werden, die den Inhalt hervorheben. Die folgenden Warnungstypen werden unterstützt:
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Damit wird eine Markdownerweiterungen für Microsoft-Dokumentation angewiesen, B
 
 Diese Warnungen sehen auf docs.microsoft.com folgendermaßen aus:
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![Hier wird dargestellt, wie Warnungen im vorherigen Beispiel auf der veröffentlichten Dokumentationsseite mit unterschiedlichen Symbolen und Farben aussieht.](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>Codeausschnitte
 
 Sie können Codeausschnitte in Ihre Markdowndatei einbetten:
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ Sie können Codeausschnitte in Ihre Markdowndatei einbetten:
 
 Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichun
 
 Verwenden Sie zum Einbetten eines Bilds die folgende Syntax:
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ In den meisten Fällen verwendet Microsoft-Dokumentation Standardmarkdownlinks z
 
 Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verhältnis zur aktuellen Datei steht. Auf Microsoft-Dokumentation können Sie einen relativen Pfad verwenden, um einen Link zu einer anderen Datei im gleichen Docset einzufügen. Die Syntax für einen relativen Pfad sieht wie folgt aus:
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verh�
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>Links relativ zur Website zu anderen Dateien auf Microsoft-Dokumentation
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ Beziehen Sie nicht die Erweiterung (.md) ein. Dadurch wird ein Link zur Linux-Ü
 
 ### <a name="links-to-external-sites"></a>Links zu externen Websites
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Ein URL-basierter Link zu einer anderen Webseite (muss „https://“ enthalten)
 
 Lesezeichenlink zu Überschriften in einer anderen Datei im gleichen Repository. Beispiel:
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 Lesezeichenlink zu einer Überschrift in der aktuellen Datei:
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -197,7 +184,7 @@ Explizite Ankerlinks mit dem HTML-Tag `<a>` **sind nicht erforderlich und werden
 
 Verwenden Sie die folgende Syntax, um Links zu expliziten Ankern herzustellen:
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Für eine nummerierte Liste können Sie für alle Punkte Einsen verwenden. Diese
 
 Verwenden Sie keine Buchstaben für Listen, auch nicht für geschachtelte Listen. Diese werden nicht fehlerfrei gerendert, wenn sie auf der Seite von Microsoft-Dokumentation veröffentlicht werden. Geschachtelte nummerierte Listen werden mit Kleinbuchstaben gerendert, wenn sie veröffentlicht werden. Beispiel:
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Dies wird wie folgt gerendert:
 
 Verwenden Sie für eine Liste mit Aufzählungszeichen `-` gefolgt von einem Leerzeichen am Anfang jeder Zeile:
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Dies wird wie folgt gerendert:
 
 Checklisten können (nur) auf docs.microsoft.com mit einer benutzerdefinierten Markdownerweiterung verwendet werden:
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ Sie können eine benutzerdefinierte Erweiterung verwenden, um eine Schaltfläche
 
 Die Syntax sieht wie folgt aus:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 Beispiel:
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ Dieser Code wird wie folgt gerendert:
 
 Die einfachste Möglichkeit zum Erstellen einer Tabelle in Markdown ist die Verwendung von senkrechten Strichen und Unterstrichen. Fügen Sie unter der ersten Zeile Unterstriche ein, um eine Standardtabelle mit Kopfzeile zu erstellen:
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Dies wird wie folgt gerendert:
 
 Sie können eine Tabelle auch ohne Kopfzeile erstellen. Mit folgendem Code können Sie z.B. eine Liste mit mehreren Spalten erstellen:
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Dieser Code wird folgendermaßen gerendert:
 
 Sie können die Spalten mithilfe von Doppelpunkten ausrichten:
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Wenn Sie eine Tabelle in Markdown erstellen, kann diese in den rechten Navigatio
 
 Im Folgenden finden Sie ein Markdownbeispiel einer Tabelle mit drei Zeilen, die von einem `div`-Element mit dem Klassennamen `mx-tdBreakAll` umschlossen wird.
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ Momentan unterstützt Microsoft-Dokumentation Videos, die auf einer der folgende
 
 Sie können mit der folgenden Syntax ein Video einbetten, das von Microsoft-Dokumentation gerendert wird.
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 Beispiel:
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -591,6 +578,6 @@ Es wird empfohlen, neue Videos folgendermaßen hochzuladen:
 1. Sie können das Arbeitselement schließen, sobald Sie den Link kopiert haben.
 1. Der Videolink kann dann mit der folgenden Syntax in Ihrem Beitrag eingefügt werden:
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```

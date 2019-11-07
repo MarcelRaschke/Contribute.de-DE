@@ -6,24 +6,42 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 6/5/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: bb58c472371c429002cf5b35b7d6157ffb28b5cd
-ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
+ms.openlocfilehash: 9f8074d3746ea375e29704853c82f48d95273cdc
+ms.sourcegitcommit: 55624c641bea5367bcfa08655c085bc950e8beae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68817417"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73166747"
 ---
 # <a name="validation-timeout"></a>validation-timeout
 
 ## <a name="warning"></a>Warnung
 
-`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or rebuild your branch via Docs Portal (requires admin permissions). If you need admin help or if you continue to see this message, file an issue via https://SiteHelp.`
+`The call to the validation service timed out and validation was not completed. This happens when there's an issue with the service and continuing to retry the call could cause build delays. You might have content issues that were not reported. To retry validation, close and re-open your PR, or force a full build of your branch via https://ops.microsoft.com. Note that forcing a full build requires admin permissions to the repo. If you don’t know who your repo admin is, or if you continue to see this message after a forced build, file an issue via https://SiteHelp.`
 
 Gelegentlich verhindern vorübergehende Probleme beim Validierungsdienst (z.B. ein fehlerhafter Serverzustand), dass der Dienst bei der Erstellung von Dokumentationsartikeln erfolgreich aufgerufen wird. Nach mehreren Versuchen erfolgt ein Timeout für den Aufruf, und die Validierung wird abgebrochen, um Verzögerungen bei der Erstellung und eine Blockierung der Buildpipeline zu vermeiden.
 
 ## <a name="resolution"></a>Lösung
 
-Schließen Sie den PR, und öffnen Sie ihn noch mal, oder führen Sie einen manuellen Buildvorgang über das Docs-Portal durch (nur für Repositoryadministratoren). Häufig erledigen sich Dienstprobleme nach dem ersten Wiederholungsversuch von selbst. Wenn Sie die Hilfe eines Administrators benötigen oder die Meldung weiterhin erhalten, erstellen Sie ein Issue über [https://SiteHelp](https://SiteHelp), wenn Sie Microsoft-Mitarbeiter sind, oder erwähnen Sie in Ihrem PR den Autor eines Artikels mithilfe des @-Zeichens, um Unterstützung zu erhalten, wenn Sie ein externer Mitwirkender sind.
+Versuchen Sie, Ihren Pull Request zu schließen und nochmals zu öffnen, oder erzwingen Sie einen vollständigen Build über das [Docs-Portal](https://ops.microsoft.com/#/). Häufig erledigen sich Dienstprobleme nach dem ersten Wiederholungsversuch von selbst.
+
+Beachten Sie, dass Sie ein Repositoryadministrator sein müssen, um einen Build über das Docs-Portal zu erzwingen. Wenn Sie nicht wissen, wer Ihr Repositoryadministrator ist oder Sie die Meldung nach einem erzwungenen Build weiterhin erhalten, erstellen Sie ein Issue über [https://SiteHelp](https://SiteHelp), wenn Sie Microsoft-Mitarbeiter sind, oder erwähnen Sie in Ihrem PR den Autor eines Artikels mithilfe des @-Zeichens, um Unterstützung zu erhalten, wenn Sie ein externer Mitwirkender sind.
+
+Wenn Sie ein Repositoryadministrator sind, können Sie wie folgt einen vollständigen Build erzwingen:
+
+1. Navigieren Sie zum [Docs-Portal](https://ops.microsoft.com/#/), und melden Sie sich an.
+1. Sie finden Ihr Repository, indem Sie es in linken oberen Ecke suchen und dann auswählen.
+
+   :::image type="content" source="media/find-repo.png" alt-text="Repositorysuche über das Suchfeld im Docs-Portal":::
+1. Klicken Sie auf der Registerkarte **Buildverlauf** auf **+ Manual Publish** (Manuelle Veröffentlichung).
+1. Wählen Sie den Branch aus, der die Warnung erhält, z. B. „Master“.
+1. Behalten Sie für das Ziel die Standardeinstellung **Docs-Website** bei.
+1. Aktivieren Sie das Kontrollkästchen **Veröffentlichung erzwingen**.
+1. Klicken Sie auf **Veröffentlichen**.
+
+   :::image type="content" source="media/force-build.png" alt-text="Schritte zum Erzwingen eines vollständigen Builds":::
+
+So wird ein vollständiger Build auf dem Branch erzwungen.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

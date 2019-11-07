@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288425"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592456"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
@@ -23,7 +23,7 @@ Artikel auf [docs.microsoft.com](https://docs.microsoft.com) sind in einer leich
 
 Um eine Überschrift zu erstellen, verwenden Sie ein Rautenzeichen (#) wie folgt:
 
-```markdown
+```md
 # This is heading 1
 ## This is heading 2
 ### This is heading 3
@@ -42,19 +42,19 @@ Wenn Ihre Überschrift auf `#` endet, müssen Sie ein weiteres `#`-Zeichen hinzu
 
 Um Text **fett** zu formatieren, schließen Sie ihn in vier Sternchen ein:
 
-```markdown
+```md
 This text is **bold**.
 ```
 
 Um Text *kursiv* zu formatieren, schließen Sie ihn in zwei Sternchen ein:
 
-```markdown
+```md
 This text is *italic*.
 ```
 
 Um Text ***fett und kursiv*** zu formatieren, schließen Sie ihn in sechs Sternchen ein:
 
-```markdown
+```md
 This is text is both ***bold and italic***.
 ```
 
@@ -62,7 +62,7 @@ This is text is both ***bold and italic***.
 
 Blockzitate werden mit dem `>`-Zeichen generiert:
 
-```markdown
+```md
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 ```
 
@@ -76,7 +76,7 @@ Das vorherige Beispiel wird wie folgt gerendert:
 
 Um eine ungeordnete Liste/Liste mit Aufzählungszeichen zu formatieren, können Sie entweder Sternchen oder Gedankenstriche verwenden. Beispielsweise wird das folgende Markdown:
 
-```markdown
+```md
 - List item 1
 - List item 2
 - List item 3
@@ -90,7 +90,7 @@ so gerendert:
 
 Um eine Liste in einer anderen zu verschachteln, rücken Sie die untergeordneten Listenelemente ein. Beispielsweise wird das folgende Markdown:
 
-```markdown
+```md
 - List item 1
   - List item A
   - List item B
@@ -108,7 +108,7 @@ so gerendert:
 
 Um eine geordnete/schrittweise Liste zu formatieren, verwenden Sie entsprechende Zahlen. Beispielsweise wird das folgende Markdown:
 
-```markdown
+```md
 1. First instruction
 1. Second instruction
 1. Third instruction
@@ -122,7 +122,7 @@ so gerendert:
 
 Um eine Liste in einer anderen zu verschachteln, rücken Sie die untergeordneten Listenelemente ein. Beispielsweise wird das folgende Markdown:
 
-```markdown
+```md
 1. First instruction
    1. Sub-instruction
    1. Sub-instruction
@@ -144,7 +144,7 @@ Tabellen sind nicht Teil der Markdownkernspezifikation, werden jedoch von GFM un
 
 Beispielsweise wird das folgende Markdown:
 
-```markdown
+```md
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
@@ -322,33 +322,26 @@ Generell sollten Notizzettel sparsam verwendet werden, da sie eine empfindliche 
 
 Beispiele:
 
-```markdown
+```md
 > [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
 ```
 
-Diese werden wie folgt gerendert:
+Diese Warnungen sehen auf docs.microsoft.com folgendermaßen aus:
 
-> [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
-
-> [!TIP]
-> This is a TIP
-
-> [!IMPORTANT]
-> This is IMPORTANT
+![Hier wird dargestellt, wie Warnungen im vorherigen Beispiel auf der veröffentlichten Dokumentationsseite mit unterschiedlichen Symbolen und Farben aussieht.](media/alerts-rendering.png)
 
 ### <a name="include-files"></a>Includedateien
 
@@ -373,7 +366,7 @@ Die Anforderungen und Überlegungen zu Includedateien lauten wie folgt:
 
 Beispiel:
 
-```markdown
+```md
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
 ```
 
@@ -385,7 +378,7 @@ Da derselbe Markdownselektor in jedem Artikel der Auswahl erwähnt wird, wird em
 
 Hier ist ein Beispielselektor dargestellt:
 
-```markdown
+```md
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/with-visual-studio.md)
@@ -406,13 +399,13 @@ Markdig unterstützt über die Codeausschnitterweiterung die erweiterte Einbezie
 
 Alternativtext, der Unterstriche enthält, wird nicht korrekt gerendert. Verwenden Sie beispielsweise anstelle von
 
-```markdown
+```md
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 diese Möglichkeit zur Umgehung von Unterstrichen:
 
-```markdown
+```md
 ![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
