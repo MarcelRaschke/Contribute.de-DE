@@ -4,20 +4,18 @@ description: Erklärung und Lösung zu Problemen beim Erstellen von Dokumentatio
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 11/25/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 691d72a3aee9204ba3fe55a398e954c7719f3680
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: d0b3ab2206d66ff68a967d7868353b5b399da80a
+ms.sourcegitcommit: 423d9b8145a11426c91f45510b2d77319838eb27
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848555"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74528812"
 ---
 # <a name="h1-empty"></a>h1-empty
 
-[!INCLUDE [suggestion-note](includes/suggestion-note.md)]
-
-## <a name="suggestion"></a>Vorschlag
+## <a name="warning"></a>Warnung
 
 `H1 is required. Add content to your top-level heading.`
 
