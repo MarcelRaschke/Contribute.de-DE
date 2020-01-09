@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592562"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188260"
 ---
 # <a name="markdown-reference"></a>Markdownreferenz
 
@@ -73,7 +73,7 @@ Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 - Jede Markdowndatei darf lediglich eine H1 aufweisen.
 - Die H1 muss nach dem YML-Metadatenblock der erste Inhalt in der Datei sein.
 - H2s werden automatisch rechts in einem Navigationsmenü der veröffentlichten Datei angezeigt. Dies gilt nicht für Überschriften auf niedrigeren Ebenen. Verwenden Sie H2s an sinnvollen Stellen, damit Leser gut durch Ihre Artikel navigieren können.
-- HTML-Überschriften, wie z.B. `<h1>`, werden nicht empfohlen und führen in einigen Fällen zu Buildwarnungen.
+- HTML-Überschriften, wie z. B. `<h1>`, werden nicht empfohlen und führen in einigen Fällen zu Buildwarnungen.
 - Über [Lesezeichenlinks](#bookmark-links) können Sie Links zu einzelnen Überschriften einer Datei einfügen.
 
 ## <a name="html"></a>HTML
@@ -178,7 +178,7 @@ Wenn die Überschrift beispielsweise „2.2 Security concerns“ lautet, entspri
 
 ### <a name="explicit-anchor-links"></a>Explizite Ankerlinks
 
-Explizite Ankerlinks mit dem HTML-Tag `<a>` **sind nicht erforderlich und werden nicht empfohlen** (Ausnahmen: im Hub und auf der Landing Page). Verwenden Sie Lesezeichenlinks wie oben beschrieben in allgemeinen Markdowndateien. Verwenden Sie für den Hub und die Landing Page Anker. Orientieren Sie sich dafür an folgendem Format:
+Explizite Ankerlinks mit dem HTML-Tag `<a>`**sind nicht erforderlich und werden nicht empfohlen** (Ausnahmen: im Hub und auf der Landing Page). Verwenden Sie Lesezeichenlinks wie oben beschrieben in allgemeinen Markdowndateien. Verwenden Sie für den Hub und die Landing Page Anker. Orientieren Sie sich dafür an folgendem Format:
 
 `## <a id="AnchorText"> </a>Header text` oder `## <a name="AnchorText"> </a>Header text`
 

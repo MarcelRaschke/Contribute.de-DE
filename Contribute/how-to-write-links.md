@@ -7,15 +7,16 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288566"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188342"
 ---
-# <a name="using-links-in-documentation"></a>Verwenden von Links in der Dokumentation
-In diesem Artikel erfahren Sie, wie Sie Links von Seiten verwenden, die auf docs.microsoft.com gehostet werden. Links können mit wenigen unterschiedlichen Konventionen auf einfache Weise in Markdown eingefügt werden. Benutzer werden über Links auf Inhalte derselben Seite, von benachbarten Seiten oder von externen Websites und URLs verwiesen.
+# <a name="use-links-in-documentation"></a>Verwenden von Links in der Dokumentation
+
+In diesem Artikel erfahren Sie, wie Sie Links von Seiten verwenden, die auf docs.microsoft.com gehostet werden. Links können mit wenigen unterschiedlichen Konventionen auf einfache Weise in Markdown eingefügt werden. Benutzer werden über Links auf Inhalte derselben Seite, auf benachbarten Seiten oder auf externen Websites und URLs verwiesen.
 
 Das Back-End der Website „docs.microsoft.com“ nutzt Open Publishing Services (OPS). Dadurch wird [CommonMark](https://commonmark.org/)-konformes Markdown unterstützt, das durch die [Markdig](https://github.com/lunet-io/markdig)-Engine analysiert wird. Diese Markdownvariante ist meistens mit [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/) kompatibel, da die meisten Dokumentationen auf GitHub gespeichert und auch dort bearbeitet werden können. Weitere Funktionalität wird über Markdown-Erweiterungen hinzugefügt.
 
@@ -43,28 +44,35 @@ Die im Linktext verwendeten Begriffe sollten benutzerfreundlich sein. Das bedeut
 
 ## <a name="links-from-one-article-to-another"></a>Links in einem Artikel zum anderen Artikel
 
-Verwenden Sie zum Erstellen eines Inlinelinks in einem technischen Dokumentationsartikel zu einem anderen technischen Dokumentationsartikel innerhalb desselben Dokumentationssatzes die folgende Linksyntax:
+Verwenden Sie zum Erstellen eines Inlinelinks in einem technischen Dokumentationsartikel zu einem anderen technischen Dokumentationsartikel innerhalb desselben *Dokumentationssatzes* die folgende Linksyntax:
 
-- Einem Artikel in einem Verzeichnis wird ein Link zu einem anderen Artikel im selben Verzeichnis hinzugefügt:
+- Einem Artikel wird ein Link zu einem anderen Artikel im selben Verzeichnis hinzugefügt:
 
   `[link text](article-name.md)`
 
-- Einem Artikel in einem Unterverzeichnis wird ein Link zu einem Artikel im Stammverzeichnis hinzugefügt:
+- Ein Artikel verweist auf einen Artikel im übergeordneten Verzeichnis des aktuellen Verzeichnisses:
 
   `[link text](../article-name.md)`
 
-- Einem Artikel im Stammverzeichnis wird ein Link in einem Artikel in einem Unterverzeichnis hinzugefügt:
+- Ein Artikel verweist auf einen Artikel in einem Unterverzeichnis des aktuellen Verzeichnisses:
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- Einem Artikel in einem Unterverzeichnis wird ein Link zu einem Artikel in einem anderen Unterverzeichnis hinzugefügt:
+- Ein Artikel verweist auf einen Artikel in einem Unterverzeichnis des übergeordneten Verzeichnisses des aktuellen Verzeichnisses:
 
   `[link text](../directory/article-name.md)`
 
-- Einem Artikel wird ein Link zwischen verschiedenen Dokumentationssätzen hinzugefügt (auch wenn sie zum selben Repository gehören):  `[link text](./directory/article-name)`
+> [!NOTE]
+> In keinem der oben stehenden Beispiele wird `~/` als Teil des Links verwendet. Wenn Sie auf einen absoluten Pfad verweisen möchten, der im Stammverzeichnis des Repositorys beginnt, beginnen Sie den Link mit `/`. Wenn Sie ein `~/` einfügen, wird dadurch beim Navigieren in den Quellrepositorys auf GitHub ein ungültiger Link erstellt. Wenn der Pfad mit `/` beginnt, kann der Link ordnungsgemäß aufgelöst werden.
 
-> [!IMPORTANT]
-> In keinem der oben stehenden Beispiele wird `~/` als Teil des Links verwendet. Wenn Sie einen Link zu einem Pfad hinzufügen, der sich am Stamm des Repositorys befindet, beginnen Sie mit `/`. Wenn Sie ein `~/` einfügen, wird dadurch beim Navigieren in den Quellrepositorys auf GitHub ein ungültiger Link erstellt. Wenn der Pfad mit `/` beginnt, kann der Link ordnungsgemäß aufgelöst werden.
+Wenn Sie auf einen Artikel in einem anderen Dokumentationssatz verweisen möchten, verwenden Sie die folgende Syntax (auch wenn sich die Dateien im selben Repository befinden sollten):
+
+`[link text](/docset-root/directory/article-name)`
+   
+Wenn beispielsweise ein Artikel, dessen Stamm-URL `https://docs.microsoft.com/dotnet` lautet, auf einen Artikel verweist, dessen Stamm-URL `https://docs.microsoft.com/visualstudio` ist, sähe der Link so aus: `[link text](/visualstudio/directory/article-name)`.
+
+> [!TIP]
+> Artikel im selben *Dokumentationssatz* besitzen das gleiche URL-Fragment nach „docs.microsoft.com“. `https://docs.microsoft.com/dotnet/core/get-started` und `https://docs.microsoft.com/dotnet/framework/install` befinden sich z. B. im selben Dokumentationssatz, aber `https://docs.microsoft.com/dotnet/core/get-started` und `https://docs.microsoft.com/visualstudio/whats-new` befinden sich in verschiedenen Dokumentationssätzen.
 
 ## <a name="links-to-anchors"></a>Links zu Verankerungen
 
@@ -75,12 +83,7 @@ Sie müssen keine Anker erstellen. Sie werden automatisch bei der Veröffentlich
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- So erstellen Sie einen Link zu einer Verankerung in einem anderen Artikel desselben Unterverzeichnisses
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- So erstellen Sie einen Link zu einer Verankerung in einem anderen Dienstunterverzeichnis
+- So erstellen Sie einen Link zu einer Verankerung in einem anderen Artikel:
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
@@ -147,10 +150,6 @@ Um eine ideale Benutzererfahrung sicherzustellen, sollten Benutzer so selten wie
 - **Nächste Schritte**: Im Abschnitt „Nächste Schritte“ können Sie beispielsweise einen Link zu einem Blog von einem MVP hinzufügen. Auch hier müssen Benutzer lediglich darauf hingewiesen werden, dass sie im Begriff sind, die Website zu verlassen.
 - **Rechtliche Hinweise**: Durch die **Nutzungsbedingungen** in der Fußzeile jeder „ms.com“-Seite sind wir in Bezug auf **Links zu Websites von Drittanbietern** rechtlich geschützt.
 
-## <a name="links-to-msdn-or-technet"></a>Links zu MSDN oder TechNet
-
-Wenn Sie Links zu Websites von MSDN oder TechNet hinzufügen müssen, verwenden Sie den vollständigen Link zum Thema, und entfernen Sie das Sprachgebietsschema „en-us“ im Link.
-
 ## <a name="links-to-azure-powershell-reference-content"></a>Link zu weiterführenden Azure PowerShell-Inhalten
 
 Seit November 2016 wurden verschiedene Änderungen an weiterführenden Azure PowerShell-Inhalten vorgenommen. Beachten Sie beim Erstellen von Links zu diesen Inhalten aus anderen Artikeln auf der Website „docs.microsoft.com“ die folgenden Richtlinien.
@@ -174,18 +173,15 @@ Der Teil `<moniker-name>` ist optional. Wenn dieser ausgelassen wird, werden Sie
 
 Wenn Sie diese URLs verwenden, werden Sie zur aktuellen Version des Inhalts umgeleitet. Auf diese Weise müssen Sie keinen Versionsmoniker angeben. Sie müssen bei Versionsänderungen auch keine Links zu konzeptionellen Inhalten aktualisieren.
 
-Um den richtigen Link zu erstellen, suchen Sie nach der Seite, für die Sie einen Link in Ihren Browser einfügen möchten, und kopieren Sie die URL.
-Entfernen Sie dann `https://docs.microsoft.com` und die Gebietsschemainformationen.
-
-Wenn Sie einen Link aus einem Inhaltsverzeichnis hinzufügen, müssen Sie die vollständige URL ohne Gebietsschemaangabe verwenden.
+Um den richtigen Link zu erstellen, suchen Sie nach der Seite, für die Sie einen Link in Ihren Browser einfügen möchten, kopieren Sie die URL, und entfernen Sie den Gebietsschemacode, z. B. **en-us**.
 
 Beispiel für Markdown:
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```
