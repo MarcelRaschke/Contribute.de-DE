@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 1552ecc3e17e52439a7faa72973813099ce4d253
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288330"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188310"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pack zur Dokumenterstellung für VS Code
 
@@ -34,7 +34,7 @@ Ein Teil der von der Erweiterung unterstützten Syntax, wie z.B. Warnungen und C
 
 Drücken Sie `ALT+M`, um auf das Docs Markdown-Menü zuzugreifen. Klicken Sie auf die gewünschte Funktion, oder verwenden Sie dazu die NACH-OBEN-/NACH-UNTEN-TASTEN. Sie können zum Filtern auch mit der Eingabe des Namens beginnen und `ENTER` drücken, sobald die gewünschte Funktion im Menü hervorgehoben wird. Folgende Funktionen sind verfügbar:
 
-|Funktion     |Description           |
+|Funktion     |Beschreibung           |
 |-------------|----------------------|
 |Vorschau      |Mithilfe der Erweiterung „Docs Preview“ wird das aktive Thema in einem Vorschaufenster parallel angezeigt. Diese Option ist nur verfügbar, wenn „Docs Preview“ installiert ist.|
 |Fett         |Text wird **fett** formatiert.|

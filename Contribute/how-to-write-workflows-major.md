@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310292"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188247"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 
@@ -54,7 +54,55 @@ Mit der Isolation zugehöriger Änderungen in einem bestimmten Branch können Si
 >[!TIP]
 >Änderungen im Masterbranch vorzunehmen, ist *keine* bewährte Methode. Stellen Sie sich vor, Sie wurden den Masterbranch verwenden, um mehrere Änderungen für die Freigabe von Features zu einem bestimmten Zeitpunkt einzuführen. Sie schließen die Änderungen ab und warten auf ihre Freigabe. Dann erhalten Sie in der Zwischenzeit die dringende Anfrage, ein Problem zu beheben, also nehmen Sie die Änderung in einer Datei im Masterbranch vor und veröffentlichen dann die Änderung. In diesem Beispiel veröffentlichen Sie unabsichtlich die Problembehebung *und* die Änderungen, die Sie zur Freigabe zu einem bestimmten Datum zurückgehalten haben.
 
-Nun erstellen wir einen neuen Arbeitsbranch in Ihrem lokalen Repository, um die von Ihnen vorgeschlagenen Änderungen zu erfassen. Jeder Git-Client ist anders, informieren Sie sich also in der Hilfe über die Anforderungen für Ihren bevorzugten Client. Eine Übersicht über den Prozess finden Sie im GitHub-Leitfaden unter [GitHub-Flow](https://guides.github.com/introduction/flow/) (in englischer Sprache).
+Nun erstellen wir einen neuen Arbeitsbranch in Ihrem lokalen Repository, um die von Ihnen vorgeschlagenen Änderungen zu erfassen. Wenn Sie Git Bash eingerichtet haben (Informationen finden Sie unter [Installieren von Tools für die Inhaltsentwicklung](get-started-setup-tools.md)), können Sie einen neuen Branch erstellen und diesen mit nur einem Befehl innerhalb Ihres geklonten Repositorys „auschecken“:
+
+````
+git checkout -b "branchname"
+````
+
+Jeder Git-Client ist anders, informieren Sie sich also in der Hilfe über die Anforderungen für Ihren bevorzugten Client. Eine Übersicht über den Prozess finden Sie im GitHub-Leitfaden unter [GitHub-Flow](https://guides.github.com/introduction/flow/) (in englischer Sprache).
+
+## <a name="making-your-changes"></a>Durchführen von Änderungen
+
+Da Sie nun eine Kopie („Klon“) des Microsoft-Repositorys besitzen und Sie einen Branch erstellt haben, können Sie nun in einem Text- oder Markdown-Editor beliebige Änderungen durchführen, von denen Sie denken, dass sie für die Community vorteilhaft sein könnten. Weitere Informationen hierzu finden Sie auf der Seite [Installieren von Tools für die Inhaltsentwicklung](get-started-setup-tools.md).  Sie können Ihre Änderungen lokal speichern und müssen sie nicht an Microsoft übermitteln, wenn Sie noch nicht fertig sind.
+
+## <a name="saving-changes-to-your-repository"></a>Speichern von Änderungen in Ihrem Repository
+
+Bevor Sie Ihre Änderungen an den Autor übermitteln, müssen Sie sie zunächst in Ihrem GitHub-Repository speichern.  Da sich alle Tools voneinander unterscheiden, sind nur ein paar einfache Schritte nötig, wenn Sie die Git Bash-Befehlszeile verwenden.
+
+Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _bereitstellen_, sodass diese committet werden.  Dies kann folgendermaßen geschehen:
+
+````
+git add --all
+````
+
+Als Nächstes müssen Sie Ihre gespeicherten Änderungen in Ihr lokales Repository übernehmen.  Dies kann in Git Bash durchgeführt werden, indem Folgendes ausgeführt wird:
+
+````
+git commit -m "Short Description of Changes Made"
+````
+
+Nachdem Sie diesen Branch auf Ihrem lokalen Computer erstellt haben, müssen Sie schließlich die Verzweigung in Ihrem GitHub.com-Konto darüber informieren.  Wenn Sie Git Bash verwenden, kann dies folgendermaßen durchgeführt werden:
+
+````
+git push --set-upstream origin <branchname>
+````
+
+Sie haben es geschafft.  Ihr Code ist nun in Ihrem GitHub-Repository verfügbar, und Sie können damit nun einen Pull Request erstellen.  
+
+>[!TIP]
+> Obwohl Ihre Änderungen in Ihrem persönlichen GitHub-Konto sichtbar werden, wenn Sie sie mithilfe von Push übertragen, besteht keine Regel, dass Sie sofort einen Pull Request übermitteln müssen.  Wenn Sie zu einem späteren Zeitpunkt zurückkehren möchten, um zusätzliche Anpassungen vorzunehmen, ist das ebenfalls in Ordnung.
+
+Müssen Sie etwas beheben, das Sie übermittelt haben?  Kein Problem.  Führen Sie Ihre Änderungen einfach im selben Branch durch, und führen Sie noch mal einen Commit und einen Pushvorgang durch (der Upstreamserver muss für nachfolgende Pushvorgänge vom selben Branch nicht festgelegt werden).
+
+Müssen Sie darüber hinaus weitere Änderungen durchführen?  Wechseln Sie zurück zum Masterbranch, und führen Sie einen Checkout auf einen anderen neuen Branch durch. Mit Git Bash ist alles ganz einfach:
+
+````
+git checkout master
+git checkout -b "branchname"
+````
+
+Sie befinden sich nun in einem neuen Branch und sind nun auf dem besten Weg, ein wichtiger Mitwirkender zu werden.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 

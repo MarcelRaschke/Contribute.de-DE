@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592456"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188284"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
@@ -196,7 +196,7 @@ Mit umzäunten Codeblöcken können Sie mühelos die Hervorhebung von Syntax fü
     ...
     ```
 
-Der Alias nach den anfänglichen drei „`“-Zeichen definiert die zu verwendende Syntaxhervorhebung. Die folgende Liste enthält in Dokumentationsinhalten gebräuchliche Programmiersprachen und die zugehörigen Kennzeichnungen:
+Der Alias nach den anfänglichen drei „\`“-Zeichen definiert die zu verwendende Syntaxhervorhebung. Die folgende Liste enthält in Dokumentationsinhalten gebräuchliche Programmiersprachen und die zugehörigen Kennzeichnungen:
 
 Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meisten über Sprachhervorhebung.
 
@@ -230,6 +230,7 @@ Diese Sprachen verfügen über Unterstützung für den Anzeigenamen und die meis
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps (Punkt als Dezimaltrennzeichen)|powerapps-dot|
 |PowerApps (Komma als Dezimaltrennzeichen)|powerapps-comma|
 |PowerShell|powershell|
