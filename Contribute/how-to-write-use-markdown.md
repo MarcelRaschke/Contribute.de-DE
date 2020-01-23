@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188284"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111069"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Verwenden von Markdown für das Schreiben von Dokumentationsartikeln
 
@@ -389,10 +389,312 @@ In der [Azure-Dokumentation](https://docs.microsoft.com/azure/expressroute/expre
 
 ### <a name="code-include-references"></a>Codeincludeverweise
 
-Markdig unterstützt über die Codeausschnitterweiterung die erweiterte Einbeziehung von Code in einen Artikel. DFM bietet erweitertes Rendern, das auf GFM-Funktionen wie Programmieren der Sprachauswahl und farbiger Syntaxmarkierung sowie netten Funktionen wie den folgenden basiert:
+Mit der Markdownerweiterung für Codeausschnitte in der Dokumentation können Sie Codebeispiele in Ihre Artikel einbetten und diese mit sprachspezifischer Syntaxfärbung darstellen. Sie können Code aus dem aktuellen oder einem anderen Repository verwenden. Im Folgenden finden Sie einen Überblick über die Verwendung des Features mit dem [Authoring Pack für docs.microsoft.com](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack). In Visual Studio Code können Sie eine Vorschau für die Codeausschnitte anzeigen, indem Sie die **Vorschau** öffnen. Die Vorschau ist nicht interaktiv, und es werden keine Hervorhebungen dargestellt.
 
-- Einbeziehung zentralisierter Codebeispiele bzw. -ausschnitte aus einem externen Repository
-- Benutzeroberfläche mit Registerkarten zur Anzeige mehrerer Versionen von Codebeispielen in verschiedenen Sprachen
+> [!NOTE]
+> Die Erweiterung unterstützt das interne Inlineeinfügen von Codeinhalten nicht. Dieser Vorgang muss über die Markdownkonvention ``` (drei Backticks) erfolgen.
+
+#### <a name="code-from-current-repository"></a>Code aus dem aktuellen Repository
+
+1. Drücken Sie in Visual Studio Code **ALT+M** oder **WAHLTASTE+M**, und klicken Sie auf „Codeausschnitt“.
+2. Nachdem Sie auf „Codeausschnitt“ geklickt haben, werden Sie dazu aufgefordert, zwischen „Full Search“ (Vollständige Suche), „Scoped Search“ (Bereichsbezogene Suche) oder „Cross-Repository Reference“ (Repositoryübergreifender Verweis) auszuwählen. Wählen Sie „Full Local Search“ (Vollständige lokale Suche) aus, wenn Sie lokal suchen möchten.
+3. Geben Sie einen Suchbegriff ein, um nach der Datei zu suchen. Wählen Sie die Datei aus, wenn sie gefunden wurde.
+4. Wählen Sie dann eine Option aus, um festzulegen, welche Codezeile(n) im Codeausschnitt enthalten sein sollen. Folgende Optionen sind verfügbar: **ID**, **Range** (Bereich) und **None** (Keine).
+5. Geben Sie je nach Auswahl in Schritt 4 einen Wert an.
+
+Die gesamte Codedatei wird angezeigt:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+Ein Teil einer Codedatei wird durch Angabe von Zeilennummern angezeigt:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Ein Teil einer Codedatei wird durch einen Codeausschnittnamen angezeigt:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>Code aus einem anderen Repository
+
+1. Drücken Sie in Visual Studio Code **ALT+M** oder **WAHLTASTE+M**, und klicken Sie auf „Codeausschnitt“.
+2. Nachdem Sie auf „Codeausschnitt“ geklickt haben, werden Sie dazu aufgefordert, zwischen „Full Search“ (Vollständige Suche), „Scoped Search“ (Bereichsbezogene Suche) oder „Cross-Repository Reference“ (Repositoryübergreifender Verweis) auszuwählen. Wählen Sie „Cross-Repository Reference“ (Repositoryübergreifender Verweis) aus, um repositoryübergreifend zu suchen.
+3. Daraufhin wird eine Auswahl der Repositorys angezeigt, die sich in *.openpublishing.publish.config.json* befinden. Wählen Sie ein Repository aus.
+3. Geben Sie einen Suchbegriff ein, um nach der Datei zu suchen. Wählen Sie die Datei aus, wenn sie gefunden wurde.
+4. Wählen Sie dann eine Option aus, um festzulegen, welche Codezeile(n) im Codeausschnitt enthalten sein sollen. Folgende Optionen sind verfügbar: **ID**, **Range** (Bereich) und **None** (Keine).
+5. Geben Sie je nach Auswahl in Schritt 5 einen Wert an.
+
+Ihr Codeausschnittverweis sieht folgendermaßen aus:
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>Pfad zur Codedatei
+
+Beispiel:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Das Beispiel stammt aus der Artikeldatei [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md) des ASP.NET-Dokumentenrepositorys. Auf die Codedatei wird über einen relativen Pfad zu [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) im selben Repository verwiesen.
+
+#### <a name="selected-line-numbers"></a>Ausgewählte Zeilennummern
+
+Beispiel:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+In diesem Beispiel werden nur die Zeilen 2–24 und 26 der Codedatei *StudentController.cs* angezeigt.
+
+Bevorzugen Sie Ausschnitte gegenüber hartcodierten Zeilennummern, wie im nächsten Abschnitt erläutert.
+
+#### <a name="named-snippet"></a>Benannter Codeausschnitt
+
+Beispiel:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+Verwenden Sie für den Namen nur Buchstaben und Unterstriche.
+
+Das Beispiel zeigt den Abschnitt `snippet_Create` der Codedatei. Die Codedatei für dieses Beispiel verfügt über einen C#-Bereich namens `snippet_Create`:
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+Wenn möglich, sollten Sie immer auf einen benannten Abschnitt verweisen anstatt Zeilennummern anzugeben. Zeilennummernverweise sind fehleranfällig, weil sich Codedateien zwangsläufig in einer Weise ändern, die die Zeilennummern verändern.
+Über solche Änderungen werden Sie nicht unbedingt informiert. In Ihrem Artikel werden dann die falschen Zeilen angezeigt, und Sie haben keine Ahnung, dass sich überhaupt etwas geändert hat.
+
+#### <a name="highlighting-selected-lines"></a>Hervorheben ausgewählter Zeilen
+
+Beispiel:
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+Im Beispiel werden die Zeilen 2 und 5 hervorgehoben, gezählt vom Anfang des angezeigten Ausschnitts. (Bei hervorzuhebenden Zeilennummern wird mit dem Zählen nicht am Anfang der Codedatei begonnen.) Die Zeilen 3 und 6 der Codedatei werden also hervorgehoben.
+
+#### <a name="interactive-code-snippets"></a>Interaktive Codeausschnitte
+
+Sie können den interaktiven Modus für Codeausschnitte aktivieren, die per Verweis eingebunden werden. Hier finden Sie Beispiele:
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+Verwenden Sie das Attribut `interactive`, um dieses Feature für einen bestimmten Codeblock zu aktivieren. Folgende Attributwerte sind verfügbar:
+
+- `cloudshell-powershell`: Aktiviert wie im vorherigen Beispiel PowerShell für Azure Cloud Shell
+- `cloudshell-bash`: Aktiviert Azure Cloud Shell
+- `try-dotnet`: Aktiviert Try .NET
+- `try-dotnet-class`: Aktiviert Try .NET mit Klassengerüsten
+- `try-dotnet-method`: Aktiviert Try .NET mit Methodengerüsten
+
+Es gibt kompatible Kombinationen von `language` und `interactive`. Wenn `interactive` beispielsweise den Wert `try-dotnet` aufweist, muss die Sprache `csharp` sein. Ebenso funktioniert `cloudshell-powershell` nur mit `powershell`, und `cloudshell-bash` würde nur mit `bash` als Sprache funktionieren.
+
+Für Azure Cloud Shell und PowerShell Cloud Shell können Benutzer Befehle nur für ihr eigenes Azure-Konto ausführen.
+
+[Try .NET](https://github.com/dotnet/try) aktiviert die interaktive Ausführung von .NET-Code (C#) im Browser. Für Try .NET gibt es drei Interaktivitätsoptionen: `try-dotnet`, `try-dotnet-class` und `try-dotnet-method`. Wenn Sie diese Optionen verwenden, ist keine zusätzliche Konfiguration im Codeausschnitt erforderlich. Folgende Namespaces sind derzeit standardmäßig verfügbar:
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+Mit dem Attributwert `try-dotnet` können Benutzer C#-Code im Browser ausführen, ohne den Code mit benutzerdefiniertem Code zu umschließen.
+
+Beispiel:
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+Der Wert `try-dotnet-class` wendet ein Klassengerüst auf den Code an, der an die interaktive Komponente übergeben wird.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+Beispiel:
+
+Codeausschnitt ohne Klassengerüst
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Codeausschnitt mit Klassengerüst
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Der Wert `try-dotnet-method` wendet ein Methodengerüst auf den Code an, der an die interaktive Komponente übergeben wird.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+Beispiel:
+
+Codeausschnitt ohne Methodengerüst
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+Codeausschnitt mit Methodengerüst
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>Verweissyntax für Codeausschnitte
+
+Sie können auf Codeausschnitte verweisen, die in Ihrem Repository gespeichert sind, indem Sie die angegebene Codesprache verwenden. Die Inhalte des angegebenen Codepfads werden erweitert und in Ihre Datei eingebunden.
+
+Für die Ordnerstruktur von Codeausschnitten gibt es keinerlei Einschränkungen. Sie können die Codeausschnitte als normalen Quellcode verwalten.
+
+Syntax:
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> Diese Syntax ist ein Blockmarkdown-Erweiterung. Sie muss in einer eigenen Zeile verwendet werden.
+
+- `<language>` (*optional*)
+  - Sprache des Codeausschnitts. Weitere Informationen finden Sie im Abschnitt [Unterstützte Sprachen](#supported-languages) weiter unten in diesem Artikel.
+
+- `<path>` (*obligatorisch*)
+  - Relativer Pfad im Dateisystem, der die Codeausschnittdatei angibt, auf die verwiesen wird.
+
+- `<attribute>` und `<attribute-value>` (*optional*)
+  - Zusammen verwendet, um anzugeben, wie der Code aus der Datei abgerufen werden sollen:
+    - `range`: `1,3-5` Ein Bereich von Zeilen. Dieses Beispiel enthält die Zeilen 1, 3, 4 und 5.
+    - `id`: `snippet_Create`: Die ID des Codeausschnitts, der aus der Codedatei eingefügt werden soll. Dieser Wert kann nicht gleichzeitig mit „range“ vorhanden sein.
+    - `highlight`: `2-4,6`: Der Bereich und/oder die Zeilennummern, die im generierten Codeausschnitt hervorgehoben werden sollen. Die Nummerierung ist relativ zum Codeausschnitt, nicht zum importierten Bereich.
+    - `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method`: Der Zeichenfolgenwert legt fest, welche Arten von Interaktivität aktiviert sind.
+
+#### <a name="supported-languages"></a>Unterstützte Sprachen
+
+|Name|Markdownbezeichnung|
+|-----|-------|
+|.NET Core-CLI|`dotnetcli`|
+|ASP.NET mit C#|`aspx-csharp`|
+|ASP.NET mit VB|`aspx-vb`|
+|Azure CLI|`azurecli`|
+|Azure CLI im Browser|`azurecli-interactive`|
+|Azure PowerShell im Browser|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|C# im Browser|`csharp-interactive`|
+|Konsole|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Kusto-Abfragesprache|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|Power Query M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>Codeerweiterungen
+
+|Name|Markdownbezeichnung|Dateierweiterung|
+|-----|-------|-----|
+|C#|csharp|.cs, .csx|
+|C++|cpp|.cpp, .h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xaml|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>Häufige Fehler und Problembehandlung
 
