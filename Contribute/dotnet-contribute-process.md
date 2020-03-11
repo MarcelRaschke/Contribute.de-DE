@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288348"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331763"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Mitwirken an der .NET-Dokumentation
 
@@ -169,7 +169,7 @@ Wenn es nicht anders angegeben ist, werden alle Beispiele auf von .NET Core unte
 
 ## <a name="the-c-interactive-experience"></a>Die interaktive C#-Benutzeroberfläche
 
-Für alle Beispiele, die in einem Artikel enthalten sind, wird ein [Sprachtag](how-to-write-use-markdown.md#code-snippets) verwendet, um die Quellsprache anzugeben. Für kurze Codebeispiele in C# kann das Sprachtag `csharp-interactive` verwendet werden, um ein C#-Beispiel anzugeben, das im Browser ausgeführt wird. (Für Inlinecodebeispiele wird das Tag `csharp-interactive` verwendet und für Codebeispiele, die über die Quelle hinzugefügt werden, das Tag `code-csharp-interactive`.) Diese Codebeispiele stellen im Artikel ein Codefenster und ein Ausgabefenster dar. Das Ausgabefenster zeigt die Ausgabe an, die aus dem interaktiven Code entsteht, sobald der Benutzer das Beispiel ausgeführt hat.
+Für alle Beispiele, die in einem Artikel enthalten sind, wird ein [Sprachtag](code-in-docs.md) verwendet, um die Quellsprache anzugeben. Für kurze Codebeispiele in C# kann das Sprachtag `csharp-interactive` verwendet werden, um ein C#-Beispiel anzugeben, das im Browser ausgeführt wird. (Für Inlinecodebeispiele wird das Tag `csharp-interactive` verwendet und für Codebeispiele, die über die Quelle hinzugefügt werden, das Tag `code-csharp-interactive`.) Diese Codebeispiele stellen im Artikel ein Codefenster und ein Ausgabefenster dar. Das Ausgabefenster zeigt die Ausgabe an, die aus dem interaktiven Code entsteht, sobald der Benutzer das Beispiel ausgeführt hat.
 
 Durch die interaktive C#-Benutzeroberfläche wird das Arbeiten mit Beispielen verändert und verbessert. Leser können das Beispiel ausführen, um die Ergebnisse anzuzeigen. Es gibt einige Faktoren, anhand derer Sie entscheiden können, ob das Beispiel oder der zugehörige Text Informationen zur Ausgabe enthalten sollte.
 
