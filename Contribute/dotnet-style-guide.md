@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288360"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331744"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metadaten und Markdownvorlage für .NET-Dokumentationen
 
@@ -43,7 +43,7 @@ An jeden Artikel werden weitere Metadaten angefügt, allerdings werden die meist
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>Grundlegendes Markdown, GFM und Sonderzeichen
 
-Die Grundlagen von Markdown, GFM (GitHub Flavored Markdown) und OPS-spezifischen Erweiterungen können Sie anhand des allgemeinen Artikels zu [Markdown](how-to-write-use-markdown.md) und der [Markdownreferenz](markdown-reference.md) erlernen.
+Die Grundlagen von Markdown, GFM (GitHub Flavored Markdown) und OPS-spezifischen Erweiterungen können Sie anhand des Artikels [Markdownreferenz](markdown-reference.md) erlernen.
 
 Markdown nutzt Sonderzeichen wie \*, \` und \# für die Formatierung. Wenn Sie eines dieser Zeichen in Ihren Inhalt einfügen möchten, müssen Sie eine der folgenden Vorgehensweisen anwenden:
 
@@ -126,7 +126,7 @@ Verwenden Sie zum Verknüpfen eines generischen Typs (z.B. [System.Collections.G
 
 ## <a name="code"></a>Code
 
-Die beste Methode zum Einfügen von Code besteht darin, Ausschnitte aus einem funktionstüchtigen Beispiel einzufügen. Erstellen Sie Ihr Beispiel anhand der Anweisungen im Artikel [Contributing to .NET (Mitwirken an .NET)](dotnet-contribute-process.md#contributing-to-samples). Die grundlegenden Regeln zum Einfügen von Code finden Sie im allgemeinen Leitfaden für [Code](how-to-write-use-markdown.md#code-snippets).
+Die beste Methode zum Einfügen von Code besteht darin, Ausschnitte aus einem funktionstüchtigen Beispiel einzufügen. Erstellen Sie Ihr Beispiel anhand der Anweisungen im Artikel [Contributing to .NET (Mitwirken an .NET)](dotnet-contribute-process.md#contributing-to-samples). Die grundlegenden Regeln zum Einfügen von Code finden Sie im allgemeinen Leitfaden für [Code](code-in-docs.md).
 
 Sie können den Code mithilfe der folgenden Syntax einfügen:
 
@@ -145,7 +145,7 @@ Sie können den Code mithilfe der folgenden Syntax einfügen:
 
 * `<queryoption>` (*optional*)
   * Wird verwendet, um anzugeben, wie der Code aus der Datei abgerufen werden soll:
-    * `#`: `#{tagname}` (Tagname) *oder*`#L{startlinenumber}-L{endlinenumber}` (Zeilenbereich).
+    * `#`: `#{tagname}` (Tagname) *oder* `#L{startlinenumber}-L{endlinenumber}` (Zeilenbereich).
     Von der Verwendung von Zeilennummern wird abgeraten, da sie sehr fehleranfällig sind. Zum Referenzieren von Codeausschnitten werden Tagnamen empfohlen. Verwenden Sie aussagekräftige Tagnamen. (Viele Codeausschnitte wurden aus einer vorherigen Plattform migriert, und die Tags haben Namen wie `Snippet1`, `Snippet2` usw. Diese Vorgehensweise ist weitaus schwerer zu verwalten.)
     * `range`: `?range=1,3-5` Ein Bereich von Zeilen. Dieses Beispiel enthält die Zeilen 1, 3, 4 und 5.
 

@@ -3,30 +3,30 @@ title: Markdownreferenz für docs.microsoft.com
 description: Lernen Sie die in der Microsoft-Dokumentation-Plattform verwendeten Markdownfeatures und -syntax kennen.
 author: meganbradley
 ms.author: mbradley
-ms.date: 05/18/2018
+ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188260"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331959"
 ---
-# <a name="markdown-reference"></a>Markdownreferenz
+# <a name="docs-markdown-reference"></a>Docs Markdown-Referenz
 
-Markdown ist eine schlanke Markupsprache mit Nur-Text-Formatierungssyntax. Die Dokumentationsplattform unterstützt den CommonMark-Standard für Markdown sowie einige Markdownerweiterungen, die umfangreicheren Inhalt auf docs.microsoft.com bereitstellen können. In diesem Artikel werden die wichtigsten Konzepte bezüglich Markdown für doc.microsoft.com in alphabetischer Reihenfolge erläutert.
+In diesem Artikel werden die wichtigsten Konzepte zum Schreiben von Markdown für doc.microsoft.com (Docs) in alphabetischer Reihenfolge erläutert.
 
-Sie können Markdown in einem beliebigen Text-Editor schreiben. Wenn Sie einen Editor verwenden möchten, der das Einfügen von Markdownstandardsyntax und von benutzerdefinierten Dokumentationserweiterungen unterstützt, wird [VS Code](https://code.visualstudio.com/) mit installiertem [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) empfohlen.
+[Markdown](https://daringfireball.net/projects/markdown/) ist eine schlanke Markupsprache mit Nur-Text-Formatierungssyntax. Docs unterstützt ein kompatibles [CommonMark](https://commonmark.org/)-Markdown, das von der [Markdig](https://github.com/lunet-io/markdig)-Analyse-Engine analysiert wird. Docs unterstützt auch benutzerdefinierte Markdownerweiterungen, die umfangreicheren Inhalt auf der Docs-Website bereitstellen.
 
-Microsoft-Dokumentation nutzt die Markdown-Engine von Markdig. Unter [https://babelmark.github.io/](https://babelmark.github.io/) können Sie das Rendern von Markdown in Markdig und mit anderen Engines testen.
+Sie können Markdown in einem beliebigen Text-Editor schreiben, es wird jedoch empfohlen, [Visual Studio Code](https://code.visualstudio.com/) mit dem [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) zu verwenden. Das Docs Authoring Pack bietet Bearbeitungstools und Vorschaufunktionen, mit denen Sie sehen können, wie Ihre Artikel beim Rendern auf Docs aussehen werden.
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Warnungen (Hinweis, Tipp, Wichtig, Achtung, Warnung)
 
-Damit wird eine Markdownerweiterungen für Microsoft-Dokumentation angewiesen, Blockzitate zu erzeugen, die auf docs.microsoft.com mit anderen Hintergrundfarben und Symbolen gerendert werden, die den Inhalt hervorheben. Die folgenden Warnungstypen werden unterstützt:
+Warnungen sind eine Markdownerweiterung zum Erstellen von Blockzitaten, die auf docs.microsoft.com mit Farben und Symbolen gerendert werden, die die Bedeutung des Inhalts anzeigen. Die folgenden Warnungstypen werden unterstützt:
 
-```md
+```markdown
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,21 +45,134 @@ Damit wird eine Markdownerweiterungen für Microsoft-Dokumentation angewiesen, B
 
 Diese Warnungen sehen auf docs.microsoft.com folgendermaßen aus:
 
-![Hier wird dargestellt, wie Warnungen im vorherigen Beispiel auf der veröffentlichten Dokumentationsseite mit unterschiedlichen Symbolen und Farben aussieht.](media/alerts-rendering.png)
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
+
+### <a name="angle-brackets"></a>Spitze Klammern
+
+Wenn Sie in Ihrer Datei spitze Klammern im Text verwenden, z. B. zur Bezeichnung eines Platzhalters, müssen Sie die spitzen Klammern manuell codieren. Andernfalls interpretiert Markdown sie als HTML-Tag.
+
+Codieren Sie `<script name>` z. B. als `&lt;script name&gt;` oder `\<script name>`.
+
+Spitze Klammern müssen in Text, der als Inlinecode oder in Codeblöcken formatiert ist, nicht mit einem Escapezeichen versehen werden.
+
+## <a name="apostrophes-and-quotation-marks"></a>Apostrophe und Anführungszeichen
+
+Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s
+
+Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
+
+- Linkes (öffnendes) Anführungszeichen: `&#8220;`
+- Rechtes (schließendes) Anführungszeichen: `&#8221;`
+- Rechtes (schließendes) einzelnes Anführungszeichen oder Apostroph: `&#8217;`
+- Linkes (öffnendes) einzelnes Anführungszeichen (selten verwendet): `&#8216;`
+
+## <a name="blockquotes"></a>Blockzitate
+
+Blockzitate werden mit dem `>`-Zeichen generiert:
+
+```md
+> This is a blockquote. It is usually rendered indented and with a different background color.
+```
+
+Das vorherige Beispiel wird wie folgt gerendert:
+
+> Dies ist ein Blockzitat. Es wird normalerweise eingerückt und mit einer anderen Hintergrundfarbe gerendert.
+
+## <a name="bold-and-italic-text"></a>Fetter und kursiver Text
+
+Um Text **fett** zu formatieren, schließen Sie ihn in vier Sternchen ein:
+
+```markdown
+This text is **bold**.
+```
+
+Um Text *kursiv* zu formatieren, schließen Sie ihn in zwei Sternchen ein:
+
+```markdown
+This text is *italic*.
+```
+
+Um Text ***fett und kursiv*** zu formatieren, schließen Sie ihn in sechs Sternchen ein:
+
+```markdown
+This text is both ***bold and italic***.
+```
 
 ## <a name="code-snippets"></a>Codeausschnitte
 
-Sie können Codeausschnitte in Ihre Markdowndatei einbetten:
+Docs Markdown unterstützt die Platzierung von Codeausschnitten sowohl inline in einem Satz als auch als separater „umgrenzter“ Block zwischen Sätzen. Weitere Informationen finden Sie unter [Hinzufügen von Code zu Dokumenten](code-in-docs.md).
 
-```md
-[!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
+## <a name="columns"></a>Spalten
+
+Die Markdownerweiterung **columns** ermöglicht es Dokumentationsautoren, spaltenbasierte Inhaltslayouts hinzuzufügen, die flexibler und leistungsfähiger als einfache Markdowntabellen sind, die sich nur für echte Tabellendaten eignen. Sie können bis zu vier Spalten hinzufügen und das optionale Attribut `span` verwenden, um zwei oder mehr Spalten zusammenzuführen.
+
+Die Syntax für Spalten sieht wie folgt aus:
+
+```markdown
+:::row:::
+   :::column span="":::
+      Content...
+   :::column-end:::
+   :::column span="":::
+      More content...
+   :::column-end:::
+:::row-end:::
 ```
+
+Spalten sollten nur einfaches Markdown, einschließlich Bildern, enthalten. Überschriften, Tabellen, Registerkarten und andere komplexe Strukturen sollten nicht eingeschlossen werden. Eine Zeile darf keinen Inhalt außerhalb der Spalte enthalten.
+
+Beispielsweise erstellt das folgende Markdown eine Spalte, die zwei Spaltenbreiten umfasst, sowie eine Standardspalte (ohne `span`):
+
+```markdown
+:::row:::
+   :::column span="2":::
+      **This is a 2-span column with lots of text.**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc
+      ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec
+      rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **This is a single-span column with an image in it.**
+
+      ![Doc.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
+```
+
+Dies wird wie folgt gerendert:
+
+:::row:::
+   :::column span="2":::
+      **Spalte mit doppelter Spaltenbreite und viel Text**
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mollis nunc ornare commodo. Nullam ac metus imperdiet, rutrum justo vel, vulputate leo. Donec rutrum non eros eget consectetur.
+   :::column-end:::
+   :::column span="":::
+      **Spalte mit einfacher Spaltenbreite und einem Bild**
+
+      ![Dok.U.Ment](media/markdown-reference/document.png)
+   :::column-end:::
+:::row-end:::
 
 ## <a name="headings"></a>Überschriften
 
 Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 
-```md
+```markdown
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -70,182 +183,134 @@ Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 ```
 
 - Zwischen dem letzten `#` und dem Überschriftentext muss ein Leerzeichen stehen.
-- Jede Markdowndatei darf lediglich eine H1 aufweisen.
-- Die H1 muss nach dem YML-Metadatenblock der erste Inhalt in der Datei sein.
-- H2s werden automatisch rechts in einem Navigationsmenü der veröffentlichten Datei angezeigt. Dies gilt nicht für Überschriften auf niedrigeren Ebenen. Verwenden Sie H2s an sinnvollen Stellen, damit Leser gut durch Ihre Artikel navigieren können.
+- Jede Markdowndatei darf lediglich eine H1-Überschrift aufweisen.
+- Die H1-Überschrift muss nach dem YML-Metadatenblock der erste Inhalt in der Datei sein.
+- H2-Überschriften werden automatisch rechts in einem Navigationsmenü der veröffentlichten Datei angezeigt. Überschriften auf niedrigeren Ebenen werden nicht angezeigt. Verwenden Sie H2s an sinnvollen Stellen, damit Leser gut durch Ihre Artikel navigieren können.
 - HTML-Überschriften, wie z. B. `<h1>`, werden nicht empfohlen und führen in einigen Fällen zu Buildwarnungen.
-- Über [Lesezeichenlinks](#bookmark-links) können Sie Links zu einzelnen Überschriften einer Datei einfügen.
+- Über [Lesezeichenlinks](how-to-write-links.md#links-to-anchors) können Sie Links zu einzelnen Überschriften einer Datei einfügen.
 
 ## <a name="html"></a>HTML
 
-Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Microsoft-Dokumentation nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen).
+Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Docs nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen). 
 
 ## <a name="images"></a>Bilder
 
-Verwenden Sie zum Einbetten eines Bilds die folgende Syntax:
+Die folgenden Dateitypen werden standardmäßig für Bilder unterstützt:
 
-```md
-![[alt text]](<folderPath>)
+- .jpg
+- .png
+
+### <a name="standard-conceptual-images-default-markdown"></a>Standarddarstellung von Bildern (standardmäßiges Markdown)
+
+Die grundlegende Markdownsyntax zum Einbetten eines Bilds sieht wie folgt aus:
+
+```Markdown
+![<alt text>](<folderPath>)
 
 Example:
 ![alt text for image](../images/Introduction.png)
 ```
 
-`alt text` ist eine kurze Beschreibung des Bilds, und `<folder path>` ist ein relativer Pfad zum Bild. Für visuell eingeschränkte Menschen ist Alternativtext erforderlich. Dieser Text ist zudem nützlich bei einem Seitenladefehler, durch den ein Bild nicht gerendert wird.
+`<alt text>` ist eine kurze Beschreibung des Bilds, und `<folder path>` ist ein relativer Pfad zum Bild. Für visuell eingeschränkte Menschen ist Alternativtext erforderlich. Dieser Text ist zudem nützlich bei einem Seitenladefehler, durch den ein Bild nicht gerendert wird.
 
-Bilder sollten in einem `/media`-Ordner in Ihrem Docset gespeichert werden. Die folgenden Dateitypen werden standardmäßig für Bilder unterstützt:
+Unterstriche in Alternativtext werden nicht korrekt gerendert, es sei denn, Sie stellen ihnen einen umgekehrten Schrägstrich (`\_`) als Escapezeichen voran. Kopieren Sie jedoch keine Dateinamen zur Verwendung als Alternativtext. Schreiben Sie beispielsweise nicht Folgendes:
 
-- .jpg
-- .png
+```markdown
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
 
-Andere Bildtypen werden unterstützt, wenn Sie diese als Ressourcen zur „docfx.json“-Datei<!--add link to reference when available--> für Ihr Docset hinzufügen.
+Schreiben Sie stattdessen Folgendes:
+
+```markdown
+![Active Directory extension for two-factor authentication, step 4: Configure](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+```
+
+### <a name="standard-conceptual-images-docs-markdown"></a>Standarddarstellung von Bildern (Docs Markdown)
+
+Die benutzerdefinierte Docs-Erweiterung `:::image:::`unterstützt Standardbilder, komplexe Bilder und Symbole.
+
+Bei Standardbildern funktioniert die ältere Markdownsyntax weiterhin, doch wird die neue Erweiterung empfohlen, da sie leistungsfähigere Funktionen unterstützt, wie z. B. das Angeben eines Lokalisierungsbereichs, der sich vom übergeordneten Thema unterscheidet. Weitere erweiterte Funktionen, z. B. das Auswählen aus der Shared Image Gallery statt Angabe eines lokalen Bilds, werden in Zukunft verfügbar sein. Die neue Syntax sieht wie folgt aus:
+
+```Markdown
+:::image type="content" source="<folderPath>" alt-text="<alt text>":::
+```
+
+Wenn `type="content"` (Standard), sind sowohl `source` als auch `alt-text` erforderlich.
+
+### <a name="complex-images-with-long-descriptions"></a>Komplexe Bilder mit langen Beschreibungen
+
+Sie können diese Erweiterung auch zum Hinzufügen eines Bilds mit einer langen Beschreibung verwenden, die von Sprachausgaben gelesen, aber nicht visuell auf der veröffentlichten Seite gerendert wird. Lange Beschreibungen sind eine Anforderung hinsichtlich der Barrierefreiheit bei komplexen Bildern, z. B. Diagrammen. Die Syntax sieht wie folgt aus:
+
+```Markdown
+:::image type="complex" source="<folderPath>" alt-text="<alt text>":::
+   <long description here>
+:::image-end:::
+```
+
+Wenn `type="complex"`, sind `source`, `alt-text`, eine lange Beschreibung und das `:::image-end:::`-Tag erforderlich.
+
+### <a name="specifying-loc-scope"></a>Festlegen des Lokalisierungsbereichs
+
+Manchmal unterscheidet sich der Lokalisierungsbereich eines Bilds von dem des Artikels oder Moduls, in dem es enthalten ist. Dies kann zu einer falschen globalen Darstellung führen, wenn z. B. der Screenshot eines Produkts versehentlich in eine Sprache lokalisiert wird, in der das Produkt nicht verfügbar ist. Um das zu verhindern, können Sie das optionale Attribut `loc-scope` in Bildern vom Typ `content` und `complex` angeben.
+
+### <a name="icons"></a>Symbole
+
+Die Bilderweiterung unterstützt Symbole, bei denen es sich um dekorative Bilder handelt und die keinen Alternativtext aufweisen sollten. Die Syntax für Symbole sieht wie folgt aus:
+
+```Markdown
+:::image type="icon" source="<folderPath>":::
+```
+
+Wenn `type="icon"`, sollte nur `source` angegeben werden.
+
+## <a name="included-markdown-files"></a>Einbezogene Markdowndateien
+
+Wenn Markdowndateien in mehreren Artikeln wiederholt werden müssen, können Sie eine Includedatei verwenden. Die Einbeziehungsfunktion weist Docs an, den Verweis zum Zeitpunkt der Erstellung durch den Inhalt der Includedatei zu ersetzen. Sie können Einbeziehungen auf folgende Arten verwenden:
+
+- Inline: Verwenden Sie einen häufig verwendeten Textausschnitt inline innerhalb eines Satzes wieder.
+- Block: Verwenden Sie eine gesamte Markdowndatei als ein im Abschnitt eines Artikels geschachtelten Block wieder.
+
+Inline- oder Blockincludedateien sind Markdowndateien (.md). Sie können jeglichen gültigen Markdowncode enthalten. Includedateien befinden sich normalerweise in einem allgemeinen Unterverzeichnis *includes* im Stammverzeichnis des Repositorys. Bei Veröffentlichung des Artikels wird die einbezogene Datei nahtlos integriert.
+
+### <a name="includes-syntax"></a>Einbeziehungssyntax
+
+Blockeinbeziehungen befinden sich in einer eigenen Zeile:
+
+```markdown
+[!INCLUDE [<title>](<filepath>)]
+```
+
+Inlineeinbeziehungen befinden sich innerhalb einer Zeile:
+
+```markdown
+Text before [!INCLUDE [<title>](<filepath>)] and after.
+```
+
+Dabei ist `<title>` der Name der Datei, und `<filepath>` ist der relative Pfad zur Datei. `INCLUDE` muss groß geschrieben werden, und es muss ein Leerzeichen vor `<title>` vorhanden sein.
+
+Die Anforderungen und Überlegungen zu Includedateien lauten wie folgt:
+
+- Verwenden Sie Blockeinbeziehungen für umfangreiche Inhaltsmengen, d.h. ein oder zwei Absätze, ein gemeinsames Verfahren oder ein gemeinsamer Abschnitt. Verwenden Sie sie nicht für Inhalte, die kleiner sind als ein Satz.
+- Einbeziehungen werden in der GitHub-Ansicht Ihres Artikels nicht gerendert, da sie von Docs-Erweiterungen abhängig sind. Sie werden erst nach der Veröffentlichung gerendert.
+- Stellen Sie sicher, dass sämtlicher Text in einer Includedatei in vollständigen Sätzen oder Ausdrücken geschrieben ist, die nicht vom vorhergehenden oder nachfolgenden Text in dem Artikel, der auf die Includedatei verweist, abhängig sind. Wenn Sie diese Vorgabe ignorieren, wird eine unübersetzbare Zeichenfolge im Artikel erstellt.
+- Betten Sie keine Includedateien in andere Includedateien ein.
+- Platzieren Sie Mediendateien in einem Medienordner, der für das Includeunterverzeichnis bestimmt ist (z. B. der Ordner `<repo>` */includes/media*). Der Stamm des *media*-Verzeichnisses darf keine Bilder enthalten. Wenn das Includeverzeichnis keine Bilder enthält, ist kein entsprechendes *media*-Verzeichnis erforderlich.
+- Geben Sie Medien wie reguläre Artikel nicht zur gemeinsamen Nutzung durch Includedateien frei. Verwenden Sie eine separate Datei mit einem eindeutigen Namen für jede Einbeziehung und jeden Artikel. Speichern Sie die Mediendatei in dem Medienordner, der der Einbeziehung zugeordnet ist.
+- Verwenden Sie eine Einbeziehung nicht als ausschließlichen Inhalt eines Artikels.  Einbeziehungen sind als Ergänzung des übrigen Artikelinhalts gedacht.
 
 ## <a name="links"></a>Links
 
-In den meisten Fällen verwendet Microsoft-Dokumentation Standardmarkdownlinks zu anderen Dateien und Seiten. Die Linktypen werden weiter unten erläutert.
-
-> [!TIP]
-> Mit dem Docs Authoring Pack für VS Code können Sie relative Links und Lesezeichenlinks problemlos einfügen, ohne sich um den Pfad Gedanken machen zu müssen.
-
-> [!IMPORTANT]
-> Beziehen Sie in die Links zu Microsoft-Seiten keine Gebietsschemacodes ein (z.B. „de-de“). Hartcodierte Gebietsschemacodes verhindern, dass lokalisierter Inhalt gerendert wird. So wird die Benutzung für Leser in anderen Gebietsschemas erschwert und führt zu hohen Lokalisierungskosten. Wenn Sie eine URL aus dem Browser kopieren, wird der Gebietsschemacode standardmäßig mit kopiert. Deshalb müssen Sie diesen manuell löschen, wenn Sie einen Link erstellen. Verwenden Sie z.B. Folgendes:
->
-> `[Microsoft](https://www.microsoft.com)`
->
-> Und nicht:
->
-> `[Microsoft](https://www.microsoft.com/en-us/)`
-
-### <a name="relative-links-to-files-in-the-same-doc-set"></a>Relative Links im gleichen Docset
-
-Ein relativer Pfad ist ein Pfad zu einer Zieldatei, der in einem relativen Verhältnis zur aktuellen Datei steht. Auf Microsoft-Dokumentation können Sie einen relativen Pfad verwenden, um einen Link zu einer anderen Datei im gleichen Docset einzufügen. Die Syntax für einen relativen Pfad sieht wie folgt aus:
-
-```md
-[link text](../../folder/filename.md)
-```
-
-`../` gibt eine höhere Ebene in der Hierarchie an.
-
-- Der relative Pfad wird während des Builds aufgelöst. Auch die Erweiterung „.md“ wird entfernt.
-- Sie können „../“ verwenden, um einen Link zu einer Datei im übergeordneten Ordner zu erstellen. Diese Datei muss sich allerdings im gleichen Docset befinden. Sie können „../“ nicht zum Erstellen eines Links zu einer Datei in einem anderen Docset verwenden.
-- Microsoft-Dokumentation unterstützt zudem eine Sonderform von relativen Pfaden, die mit „~“ beginnt (z.B. ~/foo/bar.md). Diese Syntax gibt eine Datei an, die abhängig vom Stammordner eines Docsets ist. Diese Art von Pfad wird ebenfalls während des Erstellungsvorgangs überprüft und aufgelöst.
-
-> [!IMPORTANT]
-> Beziehen Sie die Erweiterung mit in den relativen Pfad ein. Der Build prüft das Vorhandensein der Zieldatei dieses relativen Pfads. Wenn der relative Pfad keine Erweiterung enthält, ist es wahrscheinlich, dass der Build einen fehlerhaften Link meldet. Verwenden Sie z.B. Folgendes:
->
-> `[link text](../../folder/filename.md)`
->
-> Und nicht:
->
-> `[link text](../../folder/filename)`
-
-### <a name="site-relative-links-to-other-files-on-docs"></a>Links relativ zur Website zu anderen Dateien auf Microsoft-Dokumentation
-
-```md
-[Azure and Linux](/articles/virtual-machines/linux/overview)
-```
-
-Beziehen Sie nicht die Erweiterung (.md) ein. Dadurch wird ein Link zur Linux-Übersichtsdatei außerhalb des Docsets mit Azure-Artikeln erstellt.
-
-### <a name="links-to-external-sites"></a>Links zu externen Websites
-
-```md
-[Microsoft](https://www.microsoft.com)
-```
-
-Ein URL-basierter Link zu einer anderen Webseite (muss „https://“ enthalten).
-
-### <a name="bookmark-links"></a>Lesezeichenlinks
-
-Lesezeichenlink zu Überschriften in einer anderen Datei im gleichen Repository. Beispiel:
-
-```md
-[Managed Disks](../../linux/overview.md#managed-disks)
-```
-
-Lesezeichenlink zu einer Überschrift in der aktuellen Datei:
-
-```md
-[Managed Disks](#managed-disks)
-```
-
-Verwenden Sie ein Rautenzeichen (`#`) gefolgt von der Überschrift. So ändern Sie den Text der Überschrift in Linktext:
-- Verwenden Sie nur Kleinbuchstaben.
-- Entfernen Sie alle Satzzeichen.
-- Ersetzen Sie Leerzeichen durch Bindestriche.
-
-Wenn die Überschrift beispielsweise „2.2 Security concerns“ lautet, entspricht der Linktext des Lesezeichens „#22-security-concerns“.
-
-### <a name="explicit-anchor-links"></a>Explizite Ankerlinks
-
-Explizite Ankerlinks mit dem HTML-Tag `<a>`**sind nicht erforderlich und werden nicht empfohlen** (Ausnahmen: im Hub und auf der Landing Page). Verwenden Sie Lesezeichenlinks wie oben beschrieben in allgemeinen Markdowndateien. Verwenden Sie für den Hub und die Landing Page Anker. Orientieren Sie sich dafür an folgendem Format:
-
-`## <a id="AnchorText"> </a>Header text` oder `## <a name="AnchorText"> </a>Header text`
-
-Verwenden Sie die folgende Syntax, um Links zu expliziten Ankern herzustellen:
-
-```md
-To go to a section on the same page:
-[text](#AnchorText)
-
-To go to a section on another page.
-[text](FileName.md#AnchorText)
-```
-
-### <a name="xref-cross-reference-links"></a>Xref-Links
-
-Verwenden Sie Xref-Links mit einer eindeutigen ID (UID), um automatisch generierte Links zu API-Referenzen im aktuellen Docset oder in anderen Docsets hinzuzufügen.
-
-> [!NOTE]
-> Fügen Sie die Konfiguration `xrefService` in der Datei `docfx.json` hinzu, um auf API-Referenzseiten in anderen Docsets zu verweisen.
-> ```
-> "build": {
->   ...
->   "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
-> }
-> ```
-
-Die UID entspricht dem vollqualifizierten Klassen- und Membernamen. Wenn Sie ein Sternchen (*) hinter der UID hinzufügen, steht der Link für die Überladungsseite und nicht für eine bestimmte API. Verwenden Sie z.B. `List<T>.BinarySearch*`, um einen Link zur Seite der BinarySearch-Methode statt einen Link zu einer bestimmten Überladung wie `List<T>.BinarySearch(T, IComparer<T>)` hinzuzufügen.
-
-Sie können eine der folgenden Syntaxvarianten auswählen:
-
-- Automatischer Link: `<xref:UID> or <xref:UID?displayProperty=nameWithType>`
-
-  Der optionale Abfrageparameter `displayProperty` erzeugt einen vollqualifizierten Linktext. Standardmäßig zeigt der Linktext nur den Member- oder Typnamen an.
-
-- Markdownlink: `[link text](xref:UID)`
-  
-  Verwenden Sie den Markdownlink, wenn Sie den angezeigten Linktext anpassen möchten.
-
-Beispiele:
-
-- `<xref:System.String>` wird als „String“ gerendert.
-- `<xref:System.String?displayProperty=nameWithType>` wird als „System.String“ gerendert.
-- `[String class](xref:System.String)` wird als „String class“ gerendert.
-
-Im Moment gibt es keine einfache Möglichkeit, die UIDs zu suchen. <!-- ? -->Die beste Möglichkeit, die UID für eine API zu suchen, ist die Anzeige der Quelle für die API-Seite, zu der Sie eine Verknüpfung herstellen möchten, und den Wert „ms.assetid“ zu suchen. Einzelne Überladungswerte werden in der Quelle nicht angezeigt. Wir erarbeiten ein besseres System für die Zukunft.
-
-Wenn die UID die Sonderzeichen \`, \# oder \* enthält, muss der UID-Wert als `%60`, `%23` und `%2A` im HTML-Format codiert werden. Manchmal sehen Sie die Codierung mit Klammern, aber dies ist nicht erforderlich.
-
-Beispiele:
-
-- System.Threading.Tasks.Task\`1 wird `System.Threading.Tasks.Task%601`
-- System.Exception.\#ctor wird `System.Exception.%23ctor`
-- System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) wird `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
-
-<!-- leave out of Contributor Guide for now
-Using XREF may require some configuration. For more information, see XREF Service.
--->
+Weitere Informationen zur Syntax von Links finden Sie unter [Verwenden von Links in der Dokumentation](how-to-write-links.md).
 
 ## <a name="lists-numbered-bulleted-checklist"></a>Listen (Nummeriert, Aufzählungszeichen, Checkliste)
 
 ### <a name="numbered-list"></a>Nummerierte Liste
 
-Für eine nummerierte Liste können Sie für alle Punkte Einsen verwenden. Diese werden bei der Veröffentlichung als aufsteigende Zahlenfolge gerendert. Für eine bessere Lesbarkeit der Quelle können Sie Ihre Listen inkrementieren.
+Zum Erstellen einer nummerierten Liste können Sie für alle Punkte Einsen verwenden. Die Zahlen werden bei der Veröffentlichung in aufsteigender Reihenfolge als sequenzielle Liste gerendert. Für eine bessere Lesbarkeit der Quelle können Sie Ihre Listen manuell inkrementieren.
 
-Verwenden Sie keine Buchstaben für Listen, auch nicht für geschachtelte Listen. Diese werden nicht fehlerfrei gerendert, wenn sie auf der Seite von Microsoft-Dokumentation veröffentlicht werden. Geschachtelte nummerierte Listen werden mit Kleinbuchstaben gerendert, wenn sie veröffentlicht werden. Beispiel:
+Verwenden Sie keine Buchstaben für Listen, auch nicht für geschachtelte Listen. Diese werden bei der Veröffentlichung auf Docs nicht fehlerfrei gerendert. Geschachtelte nummerierte Listen werden mit Kleinbuchstaben gerendert, wenn sie veröffentlicht werden. Beispiel:
 
-```md
+```markdown
 1. This is
 1. a parent numbered list
    1. and this is
@@ -263,9 +328,9 @@ Dies wird wie folgt gerendert:
 
 ### <a name="bulleted-list"></a>Liste mit Aufzählungszeichen
 
-Verwenden Sie für eine Liste mit Aufzählungszeichen `-` gefolgt von einem Leerzeichen am Anfang jeder Zeile:
+Verwenden Sie für eine Liste mit Aufzählungszeichen `-` oder `*` gefolgt von einem Leerzeichen am Anfang jeder Zeile:
 
-```md
+```markdown
 - This is
 - a parent bulleted list
   - and this is
@@ -281,18 +346,20 @@ Dies wird wie folgt gerendert:
   - a nested bulleted list
 - All done!
 
+Unabhängig davon, welche Syntax Sie verwenden (`-` oder `*`), verwenden Sie diese jeweils konsistent innerhalb eines Artikels.
+
 ### <a name="checklist"></a>Checkliste
 
-Checklisten können (nur) auf docs.microsoft.com mit einer benutzerdefinierten Markdownerweiterung verwendet werden:
+Checklisten können auf Docs mit einer benutzerdefinierten Markdownerweiterung verwendet werden:
 
-```md
+```markdown
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
 > * List item 3
 ```
 
-Dieses Beispiel wird auf docs.microsoft.com folgendermaßen gerendert:
+Dieses Beispiel wird auf Docs folgendermaßen gerendert:
 
 > [!div class="checklist"]
 > * List item 1
@@ -300,38 +367,89 @@ Dieses Beispiel wird auf docs.microsoft.com folgendermaßen gerendert:
 > * List item 3
 
 Verwenden Sie Checklisten am Anfang oder Ende eines Artikels, um zusammenzufassen, was der Leser lernen wird bzw. gelernt hat. Fügen Sie keine sinnlosen Checklisten in der Mitte des Artikels ein.
-<!-- is this guidance still accurate? -->
 
 ## <a name="next-step-action"></a>Aktion „Nächste Schritte“
 
-Sie können eine benutzerdefinierte Erweiterung verwenden, um eine Schaltfläche für weitere Schritte hinzuzufügen (nur auf docs.microsoft.com).
+Sie können eine benutzerdefinierte Erweiterung verwenden, um eine Schaltfläche für weitere Schritte hinzuzufügen.
 
 Die Syntax sieht wie folgt aus:
 
-```md
+```markdown
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 Beispiel:
 
-```md
+```markdown
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Learn about adding code to articles](code-in-docs.md)
 ```
 
 Dies wird wie folgt gerendert:
 
 > [!div class="nextstepaction"]
-> [Learn about basic style](style-quick-start.md)
+> [Informationen zum Hinzufügen von Code zu Artikeln](code-in-docs.md)
 
 Sie können für nächste Schritte jede unterstützte Linkart verwenden, auch einen Markdownlink zu einer anderen Webseite. In den meisten Fällen ist der Link für die nächsten Schritte ein relativer Link zu einer anderen Datei im gleichen Docset.
 
-## <a name="section-definition"></a>Definition von Abschnitten
+## <a name="non-localized-strings"></a>Nicht lokalisierte Zeichenfolgen
 
-<!-- more info about this would be helpful! -->
-Gelegentlich müssen Sie Abschnitte definieren. Diese Syntax wird in den meisten Fällen für Codetabellen verwendet.
-Sehen Sie sich folgendes Beispiel an:
+Sie können die benutzerdefinierte Markdownerweiterung `no-loc` verwenden, um Inhaltszeichenfolgen anzugeben, die beim Lokalisierungsprozess ignoriert werden sollen.
+
+Bei allen angegebenen Zeichenfolgen wird die Groß-/Kleinschreibung beachtet. Das heißt, die Zeichenfolge muss genau übereinstimmen, um bei der Lokalisierung ignoriert zu werden.
+
+Verwenden Sie die folgende Syntax, um eine einzelne Zeichenfolge als nicht lokalisierbar zu markieren:
+
+```markdown
+:::no-loc text="String":::
+```
+
+Im folgenden Beispiel wird nur die einzelne Instanz von `Document` während des Lokalisierungsprozesses ignoriert:
+
+```markdown
+# Heading 1 of the Document
+
+Markdown content within the :::no-loc text="Document":::.  The are multiple instances of Document, document, and documents.
+```
+
+> [!NOTE]
+> Verwenden Sie `\`, um Sonderzeichen mit Escapezeichen zu versehen:
+> ```markdown
+> Lorem :::no-loc text="Find a \"Quotation\""::: Ipsum.
+> ```
+
+Sie können auch Metadaten im YAML-Header verwenden, um alle Instanzen einer Zeichenfolge innerhalb der aktuellen Markdowndatei als nicht lokalisierbar zu markieren:
+
+```yml
+author: cillroy
+no-loc: [Global, Strings, to be, Ignored]
+```
+
+> [!NOTE]
+> Die „no-loc“-Metadaten werden in der Datei *docfx.json* nicht als globale Metadaten unterstützt. Die Lokalisierungspipeline liest die Datei *docfx.json* nicht, sodass die „no-loc“-Metadaten in jeder einzelnen Quelldatei hinzugefügt werden müssen.
+
+Im folgenden Beispiel werden sowohl in `title` der Metadaten als auch im Markdownheader das Wort `Document` während des Lokalisierungsprozesses ignoriert.
+
+In `description` der Metadaten und im Markdownhauptinhalt wird das Wort `document` lokalisiert, da es nicht mit dem Großbuchstaben `D` beginnt.
+
+```markdown
+---
+title: Title of the Document
+author: author-name
+description: Description for the document
+no-loc: [Title, Document]
+---
+# Heading 1 of the Document
+
+Markdown content within the document.
+```
+
+<!-- commenting out for now because no one knows what this means
+## Section definition
+
+You might need to define a section. This syntax is mostly used for code tables.
+See the following example:
 
 ````
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
@@ -343,7 +461,7 @@ Sehen Sie sich folgendes Beispiel an:
 > ```
 ````
 
-Dieser blockquote-Markdowntext wird folgendermaßen gerendert:
+The preceding blockquote Markdown text will be rendered as:
 > [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
 > ```cs
 > <cs code text>
@@ -351,76 +469,99 @@ Dieser blockquote-Markdowntext wird folgendermaßen gerendert:
 > ```javascript
 > <js code text>
 > ```
+-->
 
 ## <a name="selectors"></a>Selektoren
 
-<!-- could be more clear! -->
-Sie können einen Selektor verwenden, wenn Sie für denselben Artikel verschiedene Seiten verbinden möchten. Dann können die Leser zwischen diesen Seiten wechseln.
+Selektoren sind Elemente der Benutzeroberfläche, mit denen der Benutzer zwischen mehreren Varianten desselben Artikels wechseln kann. Sie werden in einigen Docsets verwendet, um unterschiedlichen Implementierungen bei verschiedenen Technologien oder Plattformen zu entsprechen. Selektoren sind in der Regel besonders für unsere Inhalte für mobile Plattformen geeignet, die sich an Entwickler richten.
 
-> [!NOTE]
-> Diese Erweiterung funktioniert in docs.microsoft.com und MSDN unterschiedlich. <!-- should we keep info about MSDN? If so say how they differ?-->
+Da derselbe Markdownselektor in jeder Artikeldatei enthalten ist, die diesen Selektor verwendet, wird empfohlen, dass Sie den Selektor Ihres Artikels in einer Includedatei platzieren. Dann können Sie auf diese Includedatei in allen Artikeldateien, die denselben Selektor verwenden, verweisen.
+
+Es gibt zwei Selektortypen: einen einfachen und einen Mehrfachselektor.
 
 ### <a name="single-selector"></a>Einfache Auswahl
 
-```
+```markdown
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](../articles/notification-hubs-windows-store-dotnet-get-started/)
+> - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+> - [iOS](../articles/notification-hubs-ios-get-started/)
+> - [Android](../articles/notification-hubs-android-get-started/)
+> - [Kindle](../articles/notification-hubs-kindle-get-started/)
+> - [Baidu](../articles/notification-hubs-baidu-get-started/)
+> - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+> - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
 ```
 
 Dieser Code wird wie folgt gerendert:
 
 > [!div class="op_single_selector"]
-> - [Universal Windows](how-to-write-use-markdown.md)
-> - [Windows Phone](how-to-write-use-markdown.md)
-> - [iOS](how-to-write-use-markdown.md)
-> - [Android](how-to-write-use-markdown.md)
-> - [Kindle](how-to-write-use-markdown.md)
-> - [Baidu](how-to-write-use-markdown.md)
-> - [Xamarin.iOS](how-to-write-use-markdown.md)
-> - [Xamarin.Android](how-to-write-use-markdown.md)
+> - [Universal Windows](how-to-write-links.md)
+> - [Windows Phone](how-to-write-links.md)
+> - [iOS](how-to-write-links.md)
+> - [Android](how-to-write-links.md)
+> - [Kindle](how-to-write-links.md)
+> - [Baidu](how-to-write-links.md)
+> - [Xamarin.iOS](how-to-write-links.md)
+> - [Xamarin.Android](how-to-write-links.md)
 
 ### <a name="multi-selector"></a>Mehrfachauswahl
 
-```
+```markdown
 > [!div class="op_multi_selector" title1="Platform" title2="Backend"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | Javascript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | Javascript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+> - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+> - [(Windows universal C# | .NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows universal C# | Javascript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+> - [(Windows Phone | .NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+> - [(Windows Phone | Javascript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+> - [(Android | .NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+> - [(Android | Javascript)](./mobile-services-javascript-backend-android-get-started-push.md)
+> - [(Xamarin iOS | Javascript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+> - [(Xamarin Android | Javascript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 ```
 
 Dieser Code wird wie folgt gerendert:
 
 > [!div class="op_multi_selector" title1="Plattform" title2="Back-End"]
-> - [(iOS | .NET)](how-to-write-workflows-major.md)
-> - [(iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows universal C# | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Universal C# | JavaScript)](how-to-write-workflows-major.md)
-> - [(Windows Phone | .NET)](how-to-write-workflows-major.md)
-> - [(Windows Phone | JavaScript)](how-to-write-workflows-major.md)
-> - [(Android | .NET)](how-to-write-workflows-major.md)
-> - [(Android | JavaScript)](how-to-write-workflows-major.md)
-> - [(Xamarin iOS | JavaScript)](how-to-write-workflows-major.md)
-> - [(Xamarin Android | JavaScript)](how-to-write-workflows-major.md)
+> - [(iOS | .NET)](how-to-write-links.md)
+> - [(iOS | JavaScript)](how-to-write-links.md)
+> - [(Windows universal C# | .NET)](how-to-write-links.md)
+> - [(Windows Universal C# | JavaScript)](how-to-write-links.md)
+> - [(Windows Phone | .NET)](how-to-write-links.md)
+> - [(Windows Phone | JavaScript)](how-to-write-links.md)
+> - [(Android | .NET)](how-to-write-links.md)
+> - [(Android | JavaScript)](how-to-write-links.md)
+> - [(Xamarin iOS | JavaScript)](how-to-write-links.md)
+> - [(Xamarin Android | JavaScript)](how-to-write-links.md)
 
-## <a name="tables"></a>Tables
+## <a name="subscript-and-superscript"></a>Tiefgestellt und Hochgestellt
+
+Sie sollten tief- und hochgestelle Zeichen nur verwenden, wenn dies aus Gründen der technischen Genauigkeit erforderlich ist, z. B. beim Schreiben mathematischer Formeln. Verwenden Sie diesen Zeichentyp nicht für nicht standardmäßige Stile, wie z. B. Fußnoten.
+
+Verwenden Sie sowohl für tiefgestellte als auch hochgestellte Zeichen HTML:
+
+```html
+Hello <sub>This is subscript!</sub>
+```
+
+Dies wird wie folgt gerendert:
+
+Hello <sub>This is subscript!</sub>
+
+```html
+Goodbye <sup>This is superscript!</sup>
+```
+
+Dies wird wie folgt gerendert:
+
+Goodbye <sup>This is superscript!</sup>
+
+## <a name="tables"></a>Tabellen
 
 Die einfachste Möglichkeit zum Erstellen einer Tabelle in Markdown ist die Verwendung von senkrechten Strichen und Unterstrichen. Fügen Sie unter der ersten Zeile Unterstriche ein, um eine Standardtabelle mit Kopfzeile zu erstellen:
 
-```md
+```markdown
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -434,55 +575,38 @@ Dies wird wie folgt gerendert:
 |table     |data       |here        |
 |it doesn't|actually   |have to line up nicely!||
 
-Sie können eine Tabelle auch ohne Kopfzeile erstellen. Mit folgendem Code können Sie z.B. eine Liste mit mehreren Spalten erstellen:
-
-```md
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
-```
-
-Dieser Code wird folgendermaßen gerendert:
-
-|   |   |
-| - | - |
-| This | table |
-| has no | header |
-
 Sie können die Spalten mithilfe von Doppelpunkten ausrichten:
 
-```md
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
+```markdown
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 ```
 
 Dieser Code wird folgendermaßen gerendert:
 
-|                  |
-|------------------|
-|    right aligned:|
-|:left aligned     |
-|:centered        :|
+| Fun                  | With                 | Tables          |
+| :------------------- | -------------------: |:---------------:|
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 
 > [!TIP]
 > Mit der Erweiterung „Docs Authoring Pack“ für VS Code können Sie einfache Tabellen unkompliziert hinzufügen.
 >
 > Sie können auch den [Tables Generator](http://www.tablesgenerator.com/markdown_tables) verwenden.
 
-### <a name="mx-tdbreakall"></a>mx-tdBreakAll
+### <a name="line-breaks-within-words-in-any-table-cell"></a>Zeilenumbrüche innerhalb von Wörtern in einer Tabellenzelle
 
-> [!IMPORTANT]
-> Das funktioniert nur auf docs.microsoft.com.
-
-Wenn Sie eine Tabelle in Markdown erstellen, kann diese in den rechten Navigationsbereich hineinreichen und damit nicht lesbar sein. Dieses Problem lässt sich lösen, indem Sie bei der Dokumentausgabe zulassen, dass Tabellen bei Bedarf umbrochen werden. Dafür müssen Sie die Tabelle nur mit der benutzerdefinierten Klasse `[!div class="mx-tdBreakAll"]` umschließen.
+Lange Wörter in einer Markdowntabelle können dazu führen, dass die Tabelle in den rechten Navigationsbereich hineinreicht und nicht mehr lesbar ist. Sie können dieses Problem lösen, indem Sie beim Rendern auf Docs zulassen, dass bei Bedarf automatisch Zeilenumbrüche in Wörter eingefügt werden. Dafür müssen Sie die Tabelle nur mit der benutzerdefinierten Klasse `[!div class="mx-tdBreakAll"]` umschließen.
 
 Im Folgenden finden Sie ein Markdownbeispiel einer Tabelle mit drei Zeilen, die von einem `div`-Element mit dem Klassennamen `mx-tdBreakAll` umschlossen wird.
 
-```md
+```markdown
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -500,84 +624,10 @@ Dieser Code wird wie folgt gerendert:
 > |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
 > |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
-### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
+### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Zeilenumbrüche innerhalb von Wörtern in Tabellenzellen der zweiten Spalte
 
-> [!IMPORTANT]
-> Das funktioniert nur auf docs.microsoft.com.
-
-Von Zeit zu Zeit enthält die zweite Spalte einer Tabelle sehr lange Wörter. Um sicherzustellen, dass lange Wörter sinnvoll unterteilt werden, können Sie die Klasse `mx-tdCol2BreakAll` wie oben gezeigt mithilfe der `div`-Wrappersyntax anwenden.
+Möglicherweise möchten Sie, dass Zeilenumbrüche innerhalb von Wörtern nur in der zweiten Spalte einer Tabelle automatisch eingefügt werden. Um Zeilenumbrüche auf die zweite Spalte zu beschränken, wenden Sie die Klasse `mx-tdCol2BreakAll` wie oben gezeigt mithilfe der `div`-Wrappersyntax an.
 
 ### <a name="html-tables"></a>HTML-Tabellen
 
 HTML-Tabellen werden für docs.microsoft.com nicht empfohlen. Sie können in der Quelle nicht von Menschen gelesen werden, was jedoch ein wichtiges Merkmal von Markdown ist.
-
-<!--If you use HTML tables and your Markdown is not being rendered between the two tables, you need to add a closing `br` tag after the closing `table` tag.
-
-![break HTML tables](media/break-tables.png)
--->
-
-## <a name="videos"></a>Videos
-
-### <a name="embedding-videos-into-a-markdown-page"></a>Einbetten von Videos in eine Markdownseite
-
-Momentan unterstützt Microsoft-Dokumentation Videos, die auf einer der folgenden Plattformen veröffentlicht wurden:
-
-- YouTube
-- Channel 9
-- OnePlayer von Microsoft
-
-Sie können mit der folgenden Syntax ein Video einbetten, das von Microsoft-Dokumentation gerendert wird.
-
-```md
-> [!VIDEO <embedded_video_link>]
-```
-
-Beispiel:
-
-```md
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-```
-
-Dieser Code wird folgendermaßen gerendert:
-
-```html
-<iframe src="https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-
-<iframe src="https://www.youtube-nocookie.com/embed/iAtwVM-Z7rY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-<iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-```
-
-Auf veröffentlichten Seiten wird er wie folgt angezeigt:
-
-> [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
-
-> [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-
-> [!IMPORTANT]
-> Die URL für ein CH9-Video muss mit `https` beginnen und mit `/player` enden. Andernfalls wird nicht nur das Video, sondern die gesamte Seite eingebettet.
-
-### <a name="uploading-new-videos"></a>Hochladen neuer Videos
-
-Es wird empfohlen, neue Videos folgendermaßen hochzuladen:
-
-1. Treten Sie der Gruppe **docs_video_users** auf IDWEB bei.
-1. Navigieren Sie zu https://aka.ms/VideoUploadRequest, und machen Sie Angaben zu Ihrem Video. Sie müssen Folgendes angeben (diese Informationen werden später nicht öffentlich verfügbar sein):
-    1. Einen Videotitel.
-    1. Eine Liste der Produkte/Dienste, mit denen Ihr Video in Zusammenhang steht.
-    1. Die Zielseite oder das Zieldocset (wenn Sie noch keine Seite haben), wo Ihr Video gehostet werden soll.
-    1. Einen Link zur MP4-Datei des Videos (wenn Sie nicht wissen, wo Sie die Datei speichern sollen, können Sie sie vorübergehend hier speichern: `\\scratch2\scratch\apex`). MP4-Dateien sollten mindestens eine Auflösung von 720p haben.
-    1. Eine Beschreibung des Videos.
-1. Übermitteln (speichern) Sie die Aufgabe.
-1. Das Video wird innerhalb von zwei Werktagen hochgeladen. Der Link, den Sie zur Einbettung benötigen, wird im Arbeitselement platziert. Dann wird das Arbeitselement *wieder Ihnen zugewiesen*.
-1. Sie können das Arbeitselement schließen, sobald Sie den Link kopiert haben.
-1. Der Videolink kann dann mit der folgenden Syntax in Ihrem Beitrag eingefügt werden:
-
-   ```md
-   > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
-   ```

@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288448"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331881"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Grundlegende Informationen zu Git und GitHub für die Dokumentation
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
 Sie interagieren als Mitwirkender an Dokumentationsinhalten mit verschiedenen Tools und Vorgängen. Sie arbeiten mit anderen Mitwirkenden parallel an demselben Projekt zusammen – teilweise sogar an denselben Inhalten und zur selben Zeit. Möglich wird all dies durch die Software Git und GitHub.
 
@@ -61,7 +61,7 @@ Jedes Artikelverzeichnis enthält ein Unterverzeichnis `/media` für entsprechen
 
 Wenn es wiederverwendbaren Inhalt gibt, der von mindestens einem Artikeln genutzt wird, wird dieser im Unterverzeichnis `/includes` des `articles`-Hauptartikelverzeichnisses abgelegt. In einer Markdowndatei, die die Includedatei verwenden soll, wird die entsprechende Markdownerweiterung „include“ an die Stelle platziert, an der auf die Includedatei verwiesen werden soll.
 
-Weitere Anleitungen finden Sie unter [Verwenden von Markdown für das Schreiben von Dokumentationsartikeln: Includedateien](how-to-write-use-markdown.md#include-files).
+Weitere Anweisungen finden Sie unter [Markdownreferenz: Includedateien](markdown-reference.md#included-markdown-files).
 
 ### <a name="markdown-file-template"></a>Markdowndateivorlage
 

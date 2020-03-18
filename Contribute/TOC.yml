@@ -14,18 +14,40 @@
       href: how-to-write-workflows-major.md
 - name: Grundlegendes zum Schreiben
   items:
-    - name: Markdown
-      href: how-to-write-use-markdown.md
     - name: Markdownreferenz
       href: markdown-reference.md
+      displayName: alerts notes tips important caution warnings apostrophes quotation marks quotes blockquotes bold italic code snippets columns headings html images includes links lists bullets bulleted checklist numbered next steps button localize non-localized section selector superscript subscript table tables tabs tabbed videos icons
     - name: Stil und Sprache – Schnellstart
       href: style-quick-start.md
     - name: Styleguide
       href: /style-guide/
+    - name: Hinzufügen von Code zu Artikeln
+      href: code-in-docs.md
+      displayName: 'backtick, code blocks, inline code blocks, repo snippet reference, !code-, interactive code snippets, programming languages, languages, code extensions, extensions'
+    - name: Formatieren von Text
+      href: text-formatting-guidelines.md
     - name: Links
       href: how-to-write-links.md
     - name: Docs Authoring Pack
-      href: how-to-write-docs-auth-pack.md
+      items:
+        - name: Überblick
+          href: how-to-write-docs-auth-pack.md
+        - name: Funktionen
+          items:
+            - name: Vervollständigung von Entwicklungssprachen
+              href: docs-authoring/dev-lang-completion.md
+            - name: Bildkomprimierung
+              href: docs-authoring/image-compression.md
+            - name: Metadatenaktualisierungen
+              href: docs-authoring/metadata-updates.md
+            - name: Neuformatieren von Markdowntabellen
+              href: docs-authoring/reformat-table.md
+            - name: Austausch typografischer Anführungszeichen
+              href: docs-authoring/smart-quote-replacement.md
+            - name: Sortieren von Umleitungen
+              href: docs-authoring/sort-redirects.md
+            - name: Sortierauswahl
+              href: docs-authoring/sort-selection.md
 - name: Dokumentationsspezifische Leitfäden
   items:
     - name: .NET-Dokumentation
