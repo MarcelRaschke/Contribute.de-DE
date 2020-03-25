@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331959"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070075"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown-Referenz
 
@@ -60,7 +60,7 @@ Diese Warnungen sehen auf docs.microsoft.com folgendermaßen aus:
 > [!WARNING]
 > Dangerous certain consequences of an action.
 
-### <a name="angle-brackets"></a>Spitze Klammern
+### <a name="angle-brackets"></a>Geschweifte Klammern
 
 Wenn Sie in Ihrer Datei spitze Klammern im Text verwenden, z. B. zur Bezeichnung eines Platzhalters, müssen Sie die spitzen Klammern manuell codieren. Andernfalls interpretiert Markdown sie als HTML-Tag.
 
@@ -557,7 +557,7 @@ Dies wird wie folgt gerendert:
 
 Goodbye <sup>This is superscript!</sup>
 
-## <a name="tables"></a>Tabellen
+## <a name="tables"></a>Tables
 
 Die einfachste Möglichkeit zum Erstellen einer Tabelle in Markdown ist die Verwendung von senkrechten Strichen und Unterstrichen. Fügen Sie unter der ersten Zeile Unterstriche ein, um eine Standardtabelle mit Kopfzeile zu erstellen:
 
@@ -627,6 +627,19 @@ Dieser Code wird wie folgt gerendert:
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Zeilenumbrüche innerhalb von Wörtern in Tabellenzellen der zweiten Spalte
 
 Möglicherweise möchten Sie, dass Zeilenumbrüche innerhalb von Wörtern nur in der zweiten Spalte einer Tabelle automatisch eingefügt werden. Um Zeilenumbrüche auf die zweite Spalte zu beschränken, wenden Sie die Klasse `mx-tdCol2BreakAll` wie oben gezeigt mithilfe der `div`-Wrappersyntax an.
+
+### <a name="data-matrix-tables"></a>Datenmatrixtabellen
+
+Eine Datenmatrixtabelle weist sowohl einen Header als auch eine gewichtete erste Spalte auf, sodass eine Matrix mit einer leeren Zelle in der oberen linken Ecke erstellt wird. Die Dokumente enthalten benutzerdefiniertes Markdown für Datenmatrixtabellen:
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+In der ersten Spalte muss jeder Eintrag fett formatiert sein (`**bold**`). Andernfalls sind die Tabellen für die Sprachausgabe nicht zugänglich und für Dokumente ungültig.
 
 ### <a name="html-tables"></a>HTML-Tabellen
 
