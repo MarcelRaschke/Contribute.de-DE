@@ -53,28 +53,16 @@
     - name: .NET-Dokumentation
       items:
         - name: Wie Sie an der .NET-Dokumentation mitwirken
-          href: dotnet-contribute.md
-        - name: Mitwirken an der .NET-Dokumentation
-          href: dotnet-contribute-process.md
+          href: dotnet/dotnet-contribute.md
+        - name: Roadmap für Bezeichnungen und Projekte
+          href: dotnet/labels-projects.md
         - name: Schreibkonventionen für die .NET-Dokumentation
-          href: dotnet-style-guide.md
+          href: dotnet/dotnet-style-guide.md
         - name: Richtlinien für Sprache und Stil
-          href: dotnet-voice-tone.md
+          href: dotnet/dotnet-voice-tone.md
         - name: Pull Request-Überprüfungsprozess
-          href: dotnet-pr-review.md
+          href: dotnet/dotnet-pr-review.md
     - name: PowerShell-Dokumentation
-      items:
-        - name: Wie Sie an der PowerShell-Dokumentation mitwirken
-          href: powershell\powershell-contribute.md
-        - name: Mitwirken an PowerShell
-          href: powershell\powershell-contribute-process.md
-        - name: Schnellstart zum Schreiben von PowerShell-Artikeln
-          href: powershell\powershell-style-basic-markdown.md
-        - name: 'Azure PowerShell-Skriptbeispiel : Styleguide'
-          href: powershell\powershell-style-code.md
-        - name: 'PowerShell-Cmdlet-Referenz: Styleguide'
-          href: powershell\powershell-style-reference.md
-        - name: Eine Pull Request für PowerShell senden
-          href: powershell\powershell-pull-requests.md
+      href: powershell-overview.md
 - name: Zusätzliche Ressourcen
   href: additional-resources.md
