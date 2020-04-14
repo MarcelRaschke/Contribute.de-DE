@@ -3,16 +3,16 @@ title: Markdownreferenz für docs.microsoft.com
 description: Lernen Sie die in der Microsoft-Dokumentation-Plattform verwendeten Markdownfeatures und -syntax kennen.
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070075"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624730"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown-Referenz
 
@@ -70,7 +70,7 @@ Spitze Klammern müssen in Text, der als Inlinecode oder in Codeblöcken formati
 
 ## <a name="apostrophes-and-quotation-marks"></a>Apostrophe und Anführungszeichen
 
-Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ€™s
+Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ&euro;&trade;s
 
 Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 
@@ -187,11 +187,11 @@ Microsoft-Dokumentation unterstützt sechs Markdownüberschriftenebenen:
 - Die H1-Überschrift muss nach dem YML-Metadatenblock der erste Inhalt in der Datei sein.
 - H2-Überschriften werden automatisch rechts in einem Navigationsmenü der veröffentlichten Datei angezeigt. Überschriften auf niedrigeren Ebenen werden nicht angezeigt. Verwenden Sie H2s an sinnvollen Stellen, damit Leser gut durch Ihre Artikel navigieren können.
 - HTML-Überschriften, wie z. B. `<h1>`, werden nicht empfohlen und führen in einigen Fällen zu Buildwarnungen.
-- Über [Lesezeichenlinks](how-to-write-links.md#links-to-anchors) können Sie Links zu einzelnen Überschriften einer Datei einfügen.
+- Über [Lesezeichenlinks](how-to-write-links.md#explicit-anchor-links) können Sie Links zu einzelnen Überschriften einer Datei einfügen.
 
 ## <a name="html"></a>HTML
 
-Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Docs nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen). 
+Markdown unterstützt zwar Inline-HTML, aber HTML wird für die Veröffentlichung auf Docs nicht empfohlen. HTML führt zu Buildfehlern oder -warnungen (einige Werte sind davon ausgenommen).
 
 ## <a name="images"></a>Bilder
 
