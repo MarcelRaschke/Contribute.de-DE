@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d52d681987e26fddc89a33075b3d35279608ac04
-ms.sourcegitcommit: bf2f4c7d9050b480d4db306df19d4c9f8714eff0
+ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "80759582"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784311"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -203,6 +203,10 @@ Durch die interaktive C#-Benutzeroberfläche wird das Arbeiten mit Beispielen ve
 
 > [!NOTE]
 > Sie werden feststellen, dass einige Artikel den hier ausgeführten Richtlinien nicht entsprechen. Wir arbeiten an der Konsistenz der Website. Hier finden Sie die Liste der [offenen Issues](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22), die derzeit auf diesen Punkt überprüft werden.
+
+### <a name="contributing-to-international-content"></a>Mitwirken an internationalen Inhalten   
+
+Beiträge für maschinell übersetzte (MT) Inhalte werden zurzeit nicht akzeptiert. Um die Qualität der maschinell übersetzten Inhalte zu verbessern, haben wir eine Umstellung auf eine neuronale MT-Engine durchgesetzt. Wir akzeptieren und ermutigen Beiträge für die von Menschen übersetzte Inhalte (Human Translation, HT), die zum Trainieren der neuronalen MT-Engine verwendet werden. Im Laufe der Zeit verbessern Beiträge zu HT-Inhalten die Qualität der menschlichen als auch der maschinellen Übersetzung. In maschinell übersetzten Themen wird ein Haftungsausschluss angezeigt, der besagt, dass ein Teil des Themas maschinell übersetzt ist, und die Schaltfläche **Bearbeiten** wird nicht angezeigt, da die Bearbeitung deaktiviert ist.   
 
 ## <a name="contributor-license-agreement"></a>Lizenzvereinbarung für Mitwirkende
 

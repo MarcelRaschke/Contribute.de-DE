@@ -7,12 +7,12 @@ ms.date: 02/19/2019
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3efe66a71a4a61b84ff513a6253777cb2d21bc9e
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288652"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "81784271"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
@@ -68,7 +68,7 @@ Das Bearbeiten im Browser eignet sich am besten für geringfügige oder seltene 
 > Falls aktiviert, können Sie einen Artikel in einer **beliebigen Sprache** bearbeiten und, je nach Typ der Bearbeitung, geschieht Folgendes:
 > 1. Jede sprachliche Änderung, die genehmigt wird, dient auch der Verbesserung unserer Maschinenübersetzungs-Engine.
 > 2. Jede Bearbeitung, die den Inhalt des Artikels signifikant ändert, wird intern verarbeitet, um eine Änderung desselben Artikels in Englisch zu übermitteln, sodass sie bei Genehmigung in allen Sprachen lokalisiert wird.
-> Die von Ihnen vorgeschlagenen Verbesserungen haben also nicht nur positive Auswirkungen auf Artikel in Ihrer eigenen, sondern in allen verfügbaren Sprachen.
+> Die von Ihnen vorgeschlagenen Verbesserungen haben nicht nur positive Auswirkungen auf Artikel in Ihrer eigenen, sondern in allen verfügbaren Sprachen.
 
 ## <a name="review-open-prs"></a>Prüfen offener PRs
 
