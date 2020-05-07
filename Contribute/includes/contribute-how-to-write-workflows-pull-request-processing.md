@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9cb0ba651d40d2834081d32443a8fd2b1152003d
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "53285968"
+---
 ## <a name="pull-request-processing"></a>Verarbeitung des Pull Requests
 
 Im vorherigen Abschnitt wurden Sie durch den Prozess zur Übermittlung vorgeschlagener Änderungen durch Bündeln dieser Änderungen in einem neuen Pull Request (PR) geführt, der zur PR-Warteschlange des Zielrepositorys hinzugefügt wurde. Ein Pull Request aktiviert das Modell der Zusammenarbeit von GitHub, indem er anfordert, dass die Änderungen von Ihrem Arbeitsbranch mithilfe von Pull in einen anderen Branch übertragen und darin zusammengeführt werden. In den meisten Fällen ist dieser andere Branch der Standard-/„Master“-Branch im Hauptrepository.

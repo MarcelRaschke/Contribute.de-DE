@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: b64e8dd4c62ca05b6e04ef404ebf98a618d0171e
-ms.sourcegitcommit: 2563918217ba0760a4f3877af2272a0a4b2c3052
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "66391364"
 ---
 Durch die Kommentarautomatisierung können Benutzer mit Leserechten (Benutzer, die keine Schreibrechte für ein Repository haben) eine Aktion mit Schreibrechten durchführen, indem Sie die entsprechende Bezeichnung einem Pull Request zuweisen. Wenn Sie in einem Repository arbeiten, in dem die Kommentarautomatisierung implementiert wurde, verwenden Sie die Hashtagkommentare, die in der folgenden Tabelle aufgeführt sind, um Bezeichnungen zuzuweisen, zu ändern, oder um einen Pull Request zu schließen. Microsoft-Mitarbeiter werden auch per E-Mail über die Überprüfung und Freigabe öffentlicher Repository-Pull Requests informiert, wenn Änderungen für Artikel vorgeschlagen werden, für die Sie der Autor sind.

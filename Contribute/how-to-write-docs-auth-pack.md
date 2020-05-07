@@ -8,10 +8,10 @@ author: meganbradley
 ms.author: mbradley
 ms.date: 03/05/2020
 ms.openlocfilehash: 5bbf51af52069d5636715ffb2bd3f59bf459d5b9
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336389"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Pack zur Dokumenterstellung für VS Code
@@ -84,7 +84,7 @@ Die Symbolleiste zur Dokumenterstellung aus dem Erweiterungscode „Gauntlet“ 
 
 1. Navigieren Sie in VS Code zu **Datei** > **Einstellungen** > **Einstellungen**, oder drücken Sie <kbd>STRG+,</kbd>.
 1. Wählen Sie **Benutzereinstellungen** aus, um die Einstellungen für sämtliche VS Code-Arbeitsbereiche zu ändern, oder **Arbeitsbereichseinstellungen**, um nur die Einstellungen für den aktuellen Arbeitsbereich zu ändern.
-1. Wählen Sie **Erweiterungen** > **Docs Markdown-Erweiterungskonfiguration** und dann die Option zum **Anzeigen der Symbolleiste der Vorgängerversion in der Statusleiste am unteren Rand aus**.
+1. Wählen Sie **Erweiterungen** > **Docs Markdown-Erweiterungskonfiguration** und dann die Option zum**Anzeigen der Symbolleiste der Vorgängerversion in der Statusleiste am unteren Rand aus**.
 
    ![Einstellung für das Anzeigen der Symbolleiste der Vorgängerversion in VS Code](docs-authoring/media/show-gauntlet-bar.png)
 

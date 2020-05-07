@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 7b6927918c81fdc41e3c3887f94339b225e2a6e6
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336494"
 ---
 # <a name="text-formatting-guidelines"></a>Richtlinien zum Formatieren von Text

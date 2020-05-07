@@ -8,10 +8,10 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 4aa34196f59a69651dd19add35a0351dd9b5d59b
-ms.sourcegitcommit: dbc2c48194e29bfa0c88d33f50f94b9ee26be2da
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78336468"
 ---
 # <a name="how-to-include-code-in-docs"></a>Gewusst wie: Einbinden von Code in Dokumenten
@@ -533,7 +533,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | PowerShell (Interactive)       | `powershell-interactive`                                                       |
 | Processing                     | `processing`                                                                   |
 | Prolog                         | `prolog`                                                                       |
-| Properties                     | `properties`                                                                   |
+| Eigenschaften                     | `properties`                                                                   |
 | Protocol Buffers               | `protobuf`                                                                     |
 | Puppet                         | `puppet`, `pp`                                                                 |
 | Python                         | `python`, `py`, `gyp`                                                          |

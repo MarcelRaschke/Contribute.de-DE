@@ -6,10 +6,10 @@ ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
 ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 05/04/2020
 ms.locfileid: "78331904"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-Beitragsworkflow für größere oder langfristige Änderungen
@@ -19,7 +19,7 @@ ms.locfileid: "78331904"
 >
 > Für kleinere Korrekturen oder Klarstellungen zu Dokumentation und Codebeispielen in öffentlichen Repositorys gelten die [Nutzungsbestimmungen zu docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Neue oder signifikante Änderungen haben einen Kommentar im Pull Request zur Folge, in dem Sie gebeten werden, online eine Lizenzvereinbarung für Beiträge (Contribution License Agreement, CLA) zu akzeptieren. Dies gilt, wenn Sie kein Mitarbeiter von Microsoft sind. Sie müssen das Onlineformular ausfüllen, damit wir Ihren Pull Request zusammenführen können.
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Dieser Workflow eignet sich für Mitwirkende, die eine größere Änderung vornehmen müssen oder häufig an einem Repository mitwirken werden. Häufig Mitwirkende befassen sich in der Regel mit laufenden (langfristigen) Änderungen, die vor der Genehmigung des Pull Requests und Zusammenführung der Änderungen mehrere Build-/Validierungs-/Stagingzyklen durchlaufen oder sich über mehrere Tage erstrecken.
 
@@ -31,7 +31,7 @@ Zu den Beispielen für diese Arten von Beiträgen zählen:
 
 Bevor Sie beginnen, betrachten wir einige der in diesem Workflow verwendeten Git-/GitHub-Begriffe und Moniker. Es macht nichts, wenn Sie sie jetzt noch nicht verstehen. Sie werden sie kennenlernen. Und sollten Sie einmal eine Definition überprüfen wollen, können Sie auf diesen Abschnitt zurückgreifen.
 
-| Name | Beschreibung |
+| Name | Description |
 |-----------|-------------|
 |Fork|Wird beim Verweis auf eine Kopie des GitHub-Repositorys normalerweise als Substantiv verwendet. Praktisch ist ein Fork einfach ein anderes Repository. Aber das Besondere daran ist, dass GitHub eine Verbindung zurück zum Haupt-/übergeordneten Repository aufrechterhält. Der Begriff wird manchmal als Verb verwendet, wie in „Sie müssen zuerst das Repositorys forken“.|
 |Remote|Eine benannte Verbindung mit einem Remoterepository, wie ein „Origin“- oder „Uppstreamremote“. Git bezeichnet diese als „Remotes“, weil sie zum Verweis auf ein Repository verwendet wird, das auf einem anderen Computer gehostet wird. In diesem Workflow ist ein Remote immer ein GitHub-Repository.|
@@ -64,13 +64,13 @@ Jeder Git-Client ist anders, informieren Sie sich also in der Hilfe über die An
 
 ## <a name="making-your-changes"></a>Durchführen von Änderungen
 
-Da Sie nun eine Kopie („Klon“) des Microsoft-Repositorys besitzen und Sie einen Branch erstellt haben, können Sie nun in einem Text- oder Markdown-Editor beliebige Änderungen durchführen, von denen Sie denken, dass sie für die Community vorteilhaft sein könnten. Weitere Informationen hierzu finden Sie auf der Seite [Installieren von Tools für die Inhaltsentwicklung](get-started-setup-tools.md).  Sie können Ihre Änderungen lokal speichern und müssen sie nicht an Microsoft übermitteln, wenn Sie noch nicht fertig sind.
+Da Sie nun eine Kopie („Klon“) des Microsoft-Repositorys besitzen und Sie einen Branch erstellt haben, können Sie in einem Text- oder Markdown-Editor beliebige Änderungen durchführen, von denen Sie denken, dass sie für die Community vorteilhaft sein könnten. Weitere Informationen hierzu finden Sie auf der Seite [Installieren von Tools für die Inhaltsentwicklung](get-started-setup-tools.md).  Sie können Ihre Änderungen lokal speichern und müssen sie nicht an Microsoft übermitteln, wenn Sie noch nicht fertig sind.
 
 ## <a name="saving-changes-to-your-repository"></a>Speichern von Änderungen in Ihrem Repository
 
 Bevor Sie Ihre Änderungen an den Autor übermitteln, müssen Sie sie zunächst in Ihrem GitHub-Repository speichern.  Da sich alle Tools voneinander unterscheiden, sind nur ein paar einfache Schritte nötig, wenn Sie die Git Bash-Befehlszeile verwenden.
 
-Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _bereitstellen_, sodass diese committet werden.  Dies kann folgendermaßen geschehen:
+Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _stagen_, sodass diese committet werden.  Dies kann folgendermaßen geschehen:
 
 ````
 git add --all
@@ -82,16 +82,16 @@ Als Nächstes müssen Sie Ihre gespeicherten Änderungen in Ihr lokales Reposito
 git commit -m "Short Description of Changes Made"
 ````
 
-Nachdem Sie diesen Branch auf Ihrem lokalen Computer erstellt haben, müssen Sie schließlich die Verzweigung in Ihrem GitHub.com-Konto darüber informieren.  Wenn Sie Git Bash verwenden, kann dies folgendermaßen durchgeführt werden:
+Nachdem Sie diesen Branch auf Ihrem lokalen Computer erstellt haben, müssen Sie schließlich den Fork in Ihrem GitHub.com-Konto darüber informieren.  Wenn Sie Git Bash verwenden, kann dies folgendermaßen durchgeführt werden:
 
 ````
 git push --set-upstream origin <branchname>
 ````
 
-Sie haben es geschafft.  Ihr Code ist nun in Ihrem GitHub-Repository verfügbar, und Sie können damit nun einen Pull Request erstellen.  
+Sie haben es geschafft.  Ihr Code ist jetzt in Ihrem GitHub-Repository verfügbar, und Sie können damit einen Pull Request erstellen.  
 
 >[!TIP]
-> Obwohl Ihre Änderungen in Ihrem persönlichen GitHub-Konto sichtbar werden, wenn Sie sie mithilfe von Push übertragen, besteht keine Regel, dass Sie sofort einen Pull Request übermitteln müssen.  Wenn Sie zu einem späteren Zeitpunkt zurückkehren möchten, um zusätzliche Anpassungen vorzunehmen, ist das ebenfalls in Ordnung.
+> Obwohl Ihre Änderungen in Ihrem persönlichen GitHub-Konto sichtbar werden, wenn Sie sie pushen, besagt keine Regel, dass Sie sofort einen Pull Request übermitteln müssen.  Wenn Sie zu einem späteren Zeitpunkt zurückkehren möchten, um zusätzliche Anpassungen vorzunehmen, ist das ebenfalls in Ordnung.
 
 Müssen Sie etwas beheben, das Sie übermittelt haben?  Kein Problem.  Führen Sie Ihre Änderungen einfach im selben Branch durch, und führen Sie noch mal einen Commit und einen Pushvorgang durch (der Upstreamserver muss für nachfolgende Pushvorgänge vom selben Branch nicht festgelegt werden).
 
@@ -102,7 +102,7 @@ git checkout master
 git checkout -b "branchname"
 ````
 
-Sie befinden sich nun in einem neuen Branch und sind nun auf dem besten Weg, ein wichtiger Mitwirkender zu werden.
+Sie befinden sich nun in einem neuen Branch und sind auf dem besten Weg, ein wichtiger Mitwirkender zu werden.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 
