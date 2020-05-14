@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: d97d72e8458a53ab11b01cbd4bb5df3b8458b048
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
+ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784311"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203065"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -69,7 +69,11 @@ Wenn Sie nur kleine Änderungen vornehmen müssen, finden Sie die entsprechenden
 
 Wenn es sich um einen neuen Artikel handelt, können Sie diese [Vorlage](dotnet-style-guide.md) als Ausgangspunkt verwenden. Diese enthält die Richtlinien für das Schreiben und erläutert die Metadaten, die für jeden Artikel erforderlich sind, z.B. Informationen zum Autor.
 
-Navigieren Sie zu dem Ordner, der der Position im Inhaltsverzeichnis entspricht, die Sie in Schritt 1 für Ihren Artikel festgelegt haben. Dieser Ordner enthält die Markdowndateien für alle Artikel in diesem Abschnitt. Erstellen Sie bei Bedarf einen neuen Ordner, in dem Sie die Dateien speichern können, aus denen Ihr Inhalt besteht. Der Hauptartikel für diesen Abschnitt heißt *index.md*. Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei). Beispielcode sollte sich im Repository `dotnet/samples` befinden. Dies wird im Abschnitt zu [Beispielen](#contributing-to-samples) erläutert.
+Navigieren Sie zu dem Ordner, der der Position im Inhaltsverzeichnis entspricht, die Sie in Schritt 1 für Ihren Artikel festgelegt haben. Dieser Ordner enthält die Markdowndateien für alle Artikel in diesem Abschnitt. Erstellen Sie bei Bedarf einen neuen Ordner, in dem Sie die Dateien speichern können, aus denen Ihr Inhalt besteht. Der Hauptartikel für diesen Abschnitt heißt *index.md*.
+
+Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei). 
+
+Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Verwenden sie der Einfachheit halber den Ordner **snippets** für Ihr Projekt im C#-Leitfaden, im F#-Leitfaden und im Visual Basic-Leitfaden. Diese Bereiche verfügen in der Regel über Ausschnitte für eine Sprache. Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contributing-to-samples) behandelt.
 
 Stellen Sie sicher, dass Sie die richtige Markdownsyntax verwenden. Beispiele zu bewährten Methoden finden Sie im [Spickzettel zu Vorlagen und Markdown](dotnet-style-guide.md).
 
@@ -83,6 +87,24 @@ Stellen Sie sicher, dass Sie die richtige Markdownsyntax verwenden. Beispiele zu
           /media
             /porting-overview
                 portability_report.png
+          /snippets
+            /porting-overview
+              /csharp
+                porting.csproj
+                porting-overview.cs
+                Program.cs
+              /fsharp
+                porting.fsproj
+                porting-overview.fs
+                Program.fs
+               /vb
+                porting.vbproj
+                porting-overview.vb
+                Program.vb
+
+In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.png*) sowie drei Codeprojekte, die **Codeausschnitte** enthalten. Diese Codeausschnitte sind wiederum im Artikel *porting-overview.md* zu finden. Eine akzeptierte alternative Struktur enthält ein Projekt pro Sprache, das alle Ausschnitte für alle Artikel in diesem Ordner enthält. Diese Alternative wurde in den Sprachreferenzbeispielen aufgrund sehr kleiner Ausschnitte verwendet, um die Sprachsyntax zu veranschaulichen. In anderen Bereichen wird davon abgeraten.
+
+Aus historischen Gründen werden viele der enthaltenen Ausschnitte im Ordner */samples* des *dotnet/docs*-Repositorys gespeichert. Wenn Sie wesentliche Änderungen an einem Artikel vornehmen, sollten diese Ausschnitte in die neue Struktur verschoben werden. Verschieben Sie keine Ausschnitt für nur kleine Änderungen.
 
 **Schritt 4:** Senden Sie einen Pull Request (PR) von Ihrem Branch zum Masterbranch.
 
@@ -105,16 +127,14 @@ Wir pushen alle Commits an den Masterbranch regelmäßig in den Livebranch. Dann
 
 Das Repository [dotnet/samples](https://github.com/dotnet/samples) enthält den Beispielcode für alle Artikel in der .NET-Dokumentation. Es gibt einige verschiedene Projekte, die in Unterordnern organisiert sind. Die Organisation dieser Unterordner ähnelt der Organisation der Dokumente für die .NET-Dokumentation.
 
-Der Code in unserem Repository wird folgendermaßen kategorisiert:
+Für Code, der unsere Inhalte unterstützt, wird Folgendes unterschieden:
 
 - Samples (Beispiele): Leser können die Beispiele herunterladen und ausführen. Bei den Beispielen sollte es sich immer um vollständige Anwendungen oder Bibliotheken handeln. Wenn ein Beispiel eine Bibliothek erstellt, sollte dieses Komponententests oder eine Anwendung enthalten, mit denen der Leser den Code ausführen kann. Häufig werden mehrere Technologien, Features oder Toolkits verwendet. Die Datei „readme.md“ für jedes Beispiel verweist auf den Artikel, sodass Sie sich über die Konzepte informieren können, mit denen sich die Beispiele befassen.
 - Snippets (Codeausschnitte): Diese stellen weniger umfangreiche Konzepte oder Tasks dar. Sie können zwar kompiliert werden, sind jedoch keine vollständigen Anwendungen. Sie sollten ordnungsgemäß ausgeführt werden können, sind jedoch keine Beispielanwendungen für ein bestimmtes Szenario. Codeausschnitte sollen so klein wie möglich sein, um ein einzelnes Konzept oder Feature zu veranschaulichen. Dabei sollte nicht mehr Code enthalten sein, als auf einen üblichen Bildschirm passt.
 
-Der Code befindet sich im Repository [dotnet/samples](https://github.com/dotnet/samples). Wir arbeiten an einer Lösung, damit die Struktur des Ordners „samples“ zukünftig der Struktur des Ordners „docs“ entspricht. Es gibt folgende Standards zu beachten:
+Beispiele befinden sich im Repository [dotnet/samples](https://github.com/dotnet/samples). Wir arbeiten an einer Lösung, damit die Struktur des Ordners „samples“ zukünftig der Struktur des Ordners „docs“ entspricht. Es gibt folgende Standards zu beachten:
 
-- Der Ordner *snippets* auf oberster Ebene enthält Codeausschnitte für kleine, präzise Beispiele.
-- Beispiele für API-Referenzen werden in einem Ordner gespeichert, der folgendem Muster entspricht: *snippets/\<Sprache>/api/\<Namespace>/\<API-Name>* .
-- Die anderen Ordner auf oberster Ebene entsprechen den Ordnern, die sich im Repository *docs* auf oberster Ebene befinden. Das Repository „docs“ enthält beispielsweise den Ordner *machine-learning/tutorials*, und die Beispiele für diese Tutorials für das maschinelle Lernen befinden sich im Ordner *samples/machine-learning/tutorials*.
+- Die Ordner auf oberster Ebene entsprechen den Ordnern, die sich im Repository *docs* auf oberster Ebene befinden. Das Repository „docs“ enthält beispielsweise den Ordner *machine-learning/tutorials*, und die Beispiele für diese Tutorials für das maschinelle Lernen befinden sich im Ordner *samples/machine-learning/tutorials*.
 
 Außerdem sollten alle Beispiele, die sich in den Ordnern *core* und *standard* befinden, auf allen Plattformen, die .NET Core unterstützt, erstellt und ausgeführt werden können. Dies wird durch unser CI-Buildsystem erzwungen. Der Ordner *framework* auf oberster Ebene enthält Beispiele, die nur unter Windows erstellt und überprüft werden.
 
@@ -126,7 +146,9 @@ Jedes vollständige Beispiel sollte die Datei *readme.md* enthalten. In dieser D
 
 Ihr Artikel sollte zudem Links zum Beispiel enthalten. Der Link sollte direkt zu dem Ordner auf GitHub führen, in dem sich das Beispiel befindet.
 
-### <a name="writing-a-new-snippet-or-sample"></a>Schreiben eines neuen Codeausschnitts oder Beispiels
+### <a name="writing-a-new-sample"></a>Schreiben eines neuen Beispiels
+
+Beispiele sind vollständige Programme und Bibliotheken, die zum Download bereit stehen. Sie sind möglicherweise sehr klein, aber sie veranschaulichen Konzepte auf eine Weise, die es den Benutzern ermöglicht, selbst zu forschen und zu experimentieren. Die Richtlinien für diese Beispiele stellen sicher, dass Leser diese herunterladen und erkunden können. Sehen Sie sich die Beispiele zu [Paralleles LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) als Beispiel für jede Richtlinie an.
 
 1. Ihr Beispiel **muss Teil eines erstellbaren Projekts sein**. Die Projekte sollten nach Möglichkeit auf allen Plattformen erstellt werden können, die von .NET Core unterstützt werden. Davon ausgenommen sind Beispiele, die plattformspezifische Features oder Tools veranschaulichen.
 
@@ -179,7 +201,29 @@ Codeausschnitte oder Beispiele für .NET Core werden mithilfe der .NET Core-CLI 
 
 3. Fügen Sie die Datei „readme.md“ zum Stammverzeichnis Ihres Beispiels hinzu.
 
-   Diese sollte eine kurze Beschreibung des Codes und einen Verweis auf den Artikel enthalten, zu dem das Beispiel gehört.
+   Diese sollte eine kurze Beschreibung des Codes und einen Verweis auf den Artikel enthalten, zu dem das Beispiel gehört. Der obere Bereich der *readme.md*-Datei muss über die erforderlichen Metadaten für den [Beispielbrowser](https://docs.microsoft.com/samples) verfügen. Der Headerblock muss folgende Felder enthalten:
+
+   ```yml
+   ---
+   name: "really cool sample"
+   description: "Learn everything about this really cool sample."
+   page_type: sample
+   languages:
+     - csharp
+     - fsharp
+     - vbnet
+   products:
+     - dotnet-core
+     - dotnet
+     - dotnet-standard
+     - aspnet
+     - aspnet-core
+     - ef-core
+   ---
+   ```
+
+   - Die `languages`-Sammlung sollte nur die Sprachen enthalten, die für Ihr Beispiel verfügbar sind.
+   - Die `products`-Sammlung sollte nur die für Ihr Beispiel relevanten Produkte enthalten.
 
 Wenn es nicht anders angegeben ist, werden alle Beispiele auf von .NET Core unterstützten Plattformen über die Befehlszeile erstellt. Es gibt einige Beispiele, die speziell für Visual Studio erstellt wurden. Für diese ist Visual Studio 2017 oder höher erforderlich. Außerdem behandeln einige Beispiele plattformspezifische Features. Für diese ist eine bestimmte Plattform erforderlich. Andere Beispiele und Codeausschnitte werden unter Windows ausgeführt und benötigen .NET Framework sowie das Developer Pack für die Zielversion des Frameworks.
 
@@ -204,9 +248,9 @@ Durch die interaktive C#-Benutzeroberfläche wird das Arbeiten mit Beispielen ve
 > [!NOTE]
 > Sie werden feststellen, dass einige Artikel den hier ausgeführten Richtlinien nicht entsprechen. Wir arbeiten an der Konsistenz der Website. Hier finden Sie die Liste der [offenen Issues](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22), die derzeit auf diesen Punkt überprüft werden.
 
-### <a name="contributing-to-international-content"></a>Mitwirken an internationalen Inhalten   
+### <a name="contributing-to-international-content"></a>Mitwirken an internationalen Inhalten
 
-Beiträge für maschinell übersetzte (MT) Inhalte werden zurzeit nicht akzeptiert. Um die Qualität der maschinell übersetzten Inhalte zu verbessern, haben wir eine Umstellung auf eine neuronale MT-Engine durchgesetzt. Wir akzeptieren und ermutigen Beiträge für die von Menschen übersetzte Inhalte (Human Translation, HT), die zum Trainieren der neuronalen MT-Engine verwendet werden. Im Laufe der Zeit verbessern Beiträge zu HT-Inhalten die Qualität der menschlichen als auch der maschinellen Übersetzung. In maschinell übersetzten Themen wird ein Haftungsausschluss angezeigt, der besagt, dass ein Teil des Themas maschinell übersetzt ist, und die Schaltfläche **Bearbeiten** wird nicht angezeigt, da die Bearbeitung deaktiviert ist.   
+Beiträge für maschinell übersetzte (MT) Inhalte werden zurzeit nicht akzeptiert. Um die Qualität der maschinell übersetzten Inhalte zu verbessern, haben wir eine Umstellung auf eine neuronale MT-Engine durchgesetzt. Wir akzeptieren und ermutigen Beiträge für die von Menschen übersetzte Inhalte (Human Translation, HT), die zum Trainieren der neuronalen MT-Engine verwendet werden. Im Laufe der Zeit verbessern Beiträge zu HT-Inhalten die Qualität der menschlichen als auch der maschinellen Übersetzung. In maschinell übersetzten Themen wird ein Haftungsausschluss angezeigt, der besagt, dass ein Teil des Themas maschinell übersetzt ist, und die Schaltfläche **Bearbeiten** wird nicht angezeigt, da die Bearbeitung deaktiviert ist.
 
 ## <a name="contributor-license-agreement"></a>Lizenzvereinbarung für Mitwirkende
 
