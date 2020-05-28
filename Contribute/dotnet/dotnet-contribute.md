@@ -4,13 +4,13 @@ description: In diesem Artikel wird beschrieben, wie Personen zu Artikeln und Co
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 11/07/2018
-ms.openlocfilehash: 948c96a63754566fc73e54c722998739984977d6
-ms.sourcegitcommit: 43a4f52ab827a7cf4609cc592483595efde3ceae
+ms.date: 05/14/2020
+ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
+ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "83203065"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "83404131"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -73,7 +73,7 @@ Navigieren Sie zu dem Ordner, der der Position im Inhaltsverzeichnis entspricht,
 
 Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei). 
 
-Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Verwenden sie der Einfachheit halber den Ordner **snippets** für Ihr Projekt im C#-Leitfaden, im F#-Leitfaden und im Visual Basic-Leitfaden. Diese Bereiche verfügen in der Regel über Ausschnitte für eine Sprache. Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contributing-to-samples) behandelt.
+Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden).  Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Verwenden sie der Einfachheit halber den Ordner **snippets** für Ihr Projekt im C#-Leitfaden, im F#-Leitfaden und im Visual Basic-Leitfaden. Diese Bereiche verfügen in der Regel über Ausschnitte für eine Sprache. Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contributing-to-samples) behandelt.
 
 Stellen Sie sicher, dass Sie die richtige Markdownsyntax verwenden. Beispiele zu bewährten Methoden finden Sie im [Spickzettel zu Vorlagen und Markdown](dotnet-style-guide.md).
 
