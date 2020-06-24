@@ -3,16 +3,16 @@ title: 'Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht'
 description: In diesem Leitfaden erfahren Sie, wie Sie an der Dokumentationswebsite von Microsoft unter docs.microsoft.com mitwirken können.
 author: billwagner
 ms.author: wiwagn
-ms.date: 02/19/2019
+ms.date: 06/23/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 95dadff41bb31e0b34ee34f85ae47708297954f1
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 084da0320514b3a4551ce130d8d17e3040a35f29
+ms.sourcegitcommit: 6a7c9b5e9538ed588bd2da772ae319c09e545a74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "81784271"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85279345"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
@@ -35,7 +35,7 @@ Die Benutzeroberfläche auf [docs.microsoft.com](https://docs.microsoft.com) bez
 
 Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumenten. Trotz aller Bemühungen kommt es zu _geringfügigen_ Grammatik- und Rechtschreibfehlern in unseren Dokumenten. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen, wenn diese Option verfügbar ist.
 
-1. Einige Seiten der Dokumentation ermöglichen es Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** (Stiftsymbol ohne Text) fehlt, bedeutet dies, dass die Dokumentationsseite nicht bearbeitet werden kann.
+1. Einige Seiten der Dokumentation ermöglichen es Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** fehlt, bedeutet dies, dass die Dokumentationsseite nicht für Änderungen verfügbar ist.
 
    ![Ort des Links „Bearbeiten“](./media/index/edit-article.png)
 
@@ -58,7 +58,7 @@ Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehler
 
 6. Das ist alles! Das Inhaltsteam sieht sich Ihren PR an und mergt ihn bei Bedarf. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
 
-Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubID\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
+Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubId\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
 
 Wir verwenden Pull Requests für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der `master`-Branch geschützt, damit Änderungen als Pull Requests vorgeschlagen werden.
 

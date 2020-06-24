@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 03/31/2020
-ms.openlocfilehash: ca29d4b9e81f8af3b680367b210bd1734860687d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 94ba4cefd9aff70b38502aa397a3761127c8089f
+ms.sourcegitcommit: 9852045bac75fd5d90c0ffc88d2a17dd45ba015f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624745"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "85107111"
 ---
 # <a name="use-links-in-documentation"></a>Verwenden von Links in der Dokumentation
 
@@ -241,7 +241,7 @@ Hier finden Sie eine vollständige Liste der [Prozentcodierungen](https://en.wik
 
 Codierungsbeispiele:
 
-- `System.Threading.Tasks.Task``1` wird als `System.Threading.Tasks.Task%601` codiert (Vergleich: [Abschnitt zu generischen Typen](#generic-types)).
+- ``System.Threading.Tasks.Task`1`` wird als `System.Threading.Tasks.Task%601` codiert (Vergleich: [Abschnitt zu generischen Typen](#generic-types)).
 
 - `System.Exception.#ctor` wird als `System.Exception.%23ctor` codiert.
 
