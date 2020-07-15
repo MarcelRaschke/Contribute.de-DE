@@ -30,7 +30,7 @@
       href: how-to-write-links.md
     - name: Docs Authoring Pack
       items:
-        - name: Übersicht
+        - name: Überblick
           href: how-to-write-docs-auth-pack.md
         - name: Funktionen
           items:
@@ -52,11 +52,11 @@
   items:
     - name: .NET-Dokumentation
       items:
-        - name: Wie Sie an der .NET-Dokumentation mitwirken
+        - name: Beitragen
           href: dotnet/dotnet-contribute.md
         - name: Roadmap für Bezeichnungen und Projekte
           href: dotnet/labels-projects.md
-        - name: Schreibkonventionen für die .NET-Dokumentation
+        - name: Konventionen hinsichtlich der Schreibweise
           href: dotnet/dotnet-style-guide.md
         - name: Richtlinien für Sprache und Stil
           href: dotnet/dotnet-voice-tone.md
