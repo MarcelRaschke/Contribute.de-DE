@@ -4,21 +4,21 @@ description: Für die .NET-Dokumentationsartikel sind die PR-Zusammenführungswe
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 01/04/2019
-ms.openlocfilehash: 80877a93dc410454c939bcd5be5588861682ed11
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.date: 06/24/2020
+ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625118"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290978"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Pull Request-Überprüfungsprozess für die Repositorys der .NET-Dokumentationsartikel
 
-Für viele Repositorys sind keine PR-Zusammenführungswebhooks aktiviert, die automatisch kleinere PRs zusammenführen. In diesem Artikel ist der PR-Überprüfungsprozess für diese Repositorys beschrieben. Der PR-Überprüfungsprozess wurde mit diesen Zielen konzipiert:
+Für einige Repositorys, einschließlich .NET-Repositorys, ist kein Webhook für die PR-Zusammenführung („PR Merger“) aktiviert, der automatisch kleinere Pull Requests (PRs) zusammengeführt. In diesem Artikel ist der PR-Überprüfungsprozess für diese Repositorys beschrieben. Der PR-Überprüfungsprozess wurde mit diesen Zielen konzipiert:
 
-1. Veröffentlichen hochwertiger Inhalte von unserem Team, den Mitgliedern des Produktteams und den Communitymitgliedern
-1. Zeitnahe und konsistente Weitergabe von umsetzbarem Feedback an die Autoren
-1. Erleichtern der Diskussion zwischen Autoren und Reviewern
+- Veröffentlichen hochwertiger Inhalte von unserem Team, den Mitgliedern des Produktteams und den Communitymitgliedern
+- Zeitnahe und konsistente Weitergabe von umsetzbarem Feedback an die Autoren
+- Erleichtern der Diskussion zwischen Autoren und Reviewern
 
 Während die Teams Innovationen für eine immer ausgereiftere Plattform bereitstellen, entwickeln sich auch die Prozesse weiter.
 
@@ -34,7 +34,7 @@ Communitymitglieder können PRs überprüfen und auch Feedback geben. Mindestens
 
 - **Kleine PRs**: Kleine PRs sind einzelne Fehlerkorrekturen: Tippfehler, fehlerhafte Links, kleine Codeänderungen oder ähnliche Änderungen.
 - **Hauptbeiträge**: Hauptbeiträge sind bedeutende Änderungen an einem bestehenden Artikel, neue Artikel oder Änderungen an einer Reihe von Artikeln.
-- **In Bearbeitung**: Autoren können eine Überprüfung für einen in der Bearbeitung befindlichen Artikel anfordern, indem sie einen PR mit der Bezeichnung „[WIP]“ im Titel öffnen. Die Bezeichnung „WIP“ steht für „Work in Progress“ (In Bearbeitung). 
+- **In Bearbeitung**: Autoren können einen PR erstellen, der als noch nicht für die Überprüfung bereit gekennzeichnet ist, indem Sie einen Pull Request-*Entwurf* öffnen.
 
 Die Verarbeitung durch den Contributor License Agreement-Bot (CLA) ist eine gute Richtlinie für die Unterscheidung zwischen „kleinen“ und „großen“ Beiträgen. PRs, die keine Unterzeichnung der CLA erfordern, sind wahrscheinlich „klein“. PRs, die die CLA erfordern, sind wahrscheinlich „groß“.
 
@@ -58,15 +58,13 @@ Die Mitglieder des Inhaltsteams werden den PR überprüfen und das Ergebnis mit 
 
 Wenn die Änderungen eine technische Überprüfung erfordern, wird der Reviewer des Inhaltsteams eine Überprüfung vom entsprechenden Produktteammitglied anfordern.
 
-### <a name="review-wip-pull-requests"></a>Überprüfen von „WIP“-Pull Requests
+### <a name="review-draft-pull-requests"></a>Überprüfen von Pull Request-Entwürfen
 
-Neue Autoren wünschen sich vielleicht schon früher ein Feedback. Sie können einen PR öffnen und zu dessen Titel die Bezeichnung „[WIP]“ hinzufügen. In einem Kommentar können sie eine vorzeitige Überprüfung anfordern.
-
-Diese Vorabüberprüfungen sind nicht so gründlich wie eine vollständige PR-Überprüfung. Das Inhaltsteam wird zwar Kommentare abgeben, den Artikel aber nicht über das GitHub-Überprüfungsfeature „genehmigen“ oder „Änderungen anfordern“. Solche Vorabüberprüfungen konzentrieren sich auf die Struktur des Artikels: die Gliederung, den Gesamtinhalt und die Beispiele. Diese Überprüfungen beinhalten keine gründliche Prüfung auf Grammatik und korrekte Links.
+Sie wünschen sich vielleicht schon früher ein Feedback. Öffnen Sie einen Pull Request-Entwurf, und fügen Sie einen Kommentar hinzu, der eine frühzeitige Überprüfung anfordert. Solche Vorabüberprüfungen konzentrieren sich auf die Struktur des Artikels: die Gliederung, den Gesamtinhalt und die Beispiele. Diese Überprüfungen beinhalten keine gründliche Prüfung auf Grammatik und korrekte Links.
 
 ## <a name="respond-to-reviews"></a>Reagieren auf Überprüfungen
 
-Der Autor aktualisiert den PR, um auf Kommentare zu antworten. Dabei kennzeichnet er jeden abgearbeiteten Kommentar mit „+1“, um zu zeigen, dass er diesen gesehen hat. Wenn der Autor mit dem Kommentar nicht einverstanden ist, oder er einen anderen Vorschlag hat, fügt er einen Kommentar hinzu, in dem er die Änderung erklärt.
+Der Autor aktualisiert den PR, um auf Kommentare zu antworten. Dabei kennzeichnet er jeden abgearbeiteten Kommentar mit „+1“, um zu zeigen, dass er diesen gesehen hat. Wenn der Autor mit dem Kommentar nicht einverstanden ist, oder den Kommentar in einem anderen Pull Request bearbeitet, fügt er einen Kommentar hinzu, in dem er die Änderung erklärt.
 
 Der Autor @-mentions den ursprünglichen Reviewer (d.h., er erwähnt dessen Namen hinter einem @-Zeichen) in einem Kommentar, um eine neue Überprüfung anzufordern. 
 

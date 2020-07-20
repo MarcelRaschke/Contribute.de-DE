@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: c4382a66035a10debb2a0aa05f61c549a3f97ee6
-ms.sourcegitcommit: 300ce72ffc8596213e82ae511b1b314c850841c9
+ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "83404131"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290955"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -20,7 +20,7 @@ In diesem Artikel erfahren Sie, wie Sie an Artikeln und Codebeispielen der [.NET
 
 Die .NET-Dokumentation besteht aus mehreren Repositorys:
 
-- [Konzeptionelle Artikel zu .NET](https://github.com/dotnet/docs)
+- [Konzeptionelle .NET-Artikel und -Codeausschnitte](https://github.com/dotnet/docs)
 - [Codebeispiele und -ausschnitte](https://github.com/dotnet/samples)
 - [Referenz zu .NET Standard, .NET Core und der .NET Framework-API](https://github.com/dotnet/dotnet-api-docs)
 - [Referenz zum .NET Compiler Platform SDK](https://github.com/dotnet/roslyn-api-docs)
@@ -37,29 +37,25 @@ Wir schätzen Beiträge zur Dokumentation, die aus der Community kommen. Im Folg
 - **Verwenden Sie** die [Vorlage](dotnet-style-guide.md) als Ausgangspunkt für Ihre Arbeit.
 - **Erstellen Sie** einen separaten Branch in Ihrer Fork, bevor Sie an einem Artikel arbeiten.
 - **Befolgen Sie** den [Workflow für GitHub Flow](https://guides.github.com/introduction/flow/).
-- **Bloggen oder twittern Sie** regelmäßig über Ihre Beiträge.
+- **Bloggen oder twittern Sie** über Ihre Beiträge.
 
 Durch diese Richtlinien wird der Ablauf für Sie und für uns erleichtert.
 
 ## <a name="make-a-contribution-to-net-docs"></a>So tragen Sie zur .NET-Dokumentation bei
 
-**Schritt 1:** Überspringen Sie diesen Schritt, wenn es sich um kleine Änderungen handelt. Wenn Sie neue Inhalte erstellen oder bestehenden Inhalt überprüfen, öffnen Sie ein [Issue](https://github.com/dotnet/docs/issues), in dem Sie beschreiben, was Sie vorhaben.
-
-Der Inhalt im Ordner **docs** ist in Abschnitte unterteilt, die im Inhaltsverzeichnis erfasst werden. Definieren Sie, wo im Inhaltsverzeichnis sich das Thema befinden soll. Holen Sie Feedback zu Ihrem Vorschlag ein.
+**Schritt 1:** Wenn Sie neue Inhalte erstellen oder bestehenden Inhalt überprüfen, öffnen Sie ein [Issue](https://github.com/dotnet/docs/issues), in dem Sie beschreiben, was Sie vorhaben. Der Inhalt im Ordner **docs** ist in Abschnitte unterteilt, die im Inhaltsverzeichnis erfasst werden. Definieren Sie, wo im Inhaltsverzeichnis sich das Thema befinden soll. Holen Sie Feedback zu Ihrem Vorschlag ein.
 
 Alternative:
 
-Sie können ein bestehendes Issue auswählen, für das Beiträge aus der Community gewünscht werden. Unter [Projects for .NET Community contributors (Projekte für Mitwirkende aus der .NET-Community)](https://github.com/dotnet/docs/projects/35) finden Sie viele Issues, die für Mitwirkende aus der Community verfügbar sind. Je nachdem, was Sie interessiert und wie viel Zeit Sie investieren möchten, können Sie Issues aus folgenden Kategorien auswählen:
+Wählen Sie ein vorhandenes Issue aus, und beheben Sie es. Sie können ebenfalls die Liste [open issues (Offene Issues)](https://github.com/dotnet/docs/issues) ansehen und an einem Issue mitwirken, der Sie interessiert.
 
-- **Korrekturen:** Zu dieser Kategorie zählen einfache Beiträge, z.B. das Korrigieren von fehlerhaften Links, das Hinzufügen von fehlenden Codebeispielen oder das Beheben von Problemen mit beschränktem Inhalt. Manchmal können diese Probleme viele Dateien betreffen. In diesem Fall sollten Sie uns darüber informieren, woran Sie arbeiten möchten, bevor Sie damit beginnen. Fügen Sie einen Kommentar zum Issue hinzu, um uns mitzuteilen, dass Sie daran arbeiten.
+- Filtern Sie nach der Bezeichnung [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue), um nach guten ersten Issues zu suchen.
+- Filtern Sie nach der Bezeichnung [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs), um nach Issues zu suchen, die für einen Communitybeitrag geeignet sind. Diese Issues erfordern in der Regel nur minimalen Kontext.
+- Erfahrene Mitwirkende können beliebige relevante Issues lösen.
 
-- **Inhaltsaktualisierung:** Durch die Größe der Dokumentation kann der Inhalt schnell veralten und muss überprüft werden. Außerdem sind manche Inhalte doppelt oder dreifach vorhanden. Beim Aktualisieren des Inhalts müssen Sie sicherstellen, dass einzelne Artikel aktuell sind oder den Inhalt in einem Featurebereich überprüfen, um Duplizierungen zu entfernen und sicherzustellen, dass einmaliger Inhalt in der kleineren Dokumentation beibehalten wird.
+Wenn Sie ein entsprechendes Issue finden, fügen Sie einen Kommentar hinzu, um zu fragen, ob es noch offen ist.
 
-- **Erstellen neuer Inhalte:** Wenn Sie einen neuen Artikel erstellen möchten, finden Sie in diesen Issues die Themen, von denen bekannt ist, dass sie in einem Docset noch fehlen. Sie sollten uns allerdings mitteilen, dass Sie an einem Artikel arbeiten möchten, bevor Sie damit beginnen. Wenn Sie einen Artikel erstellen möchten, der nicht aufgeführt ist, eröffnen Sie ein Issue.
-
-Sie können ebenfalls die Liste [open issues (Offene Issues)](https://github.com/dotnet/docs/issues) ansehen und an einem Issue mitwirken, der Sie interessiert. Mit der Bezeichnung [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) werden Issues gekennzeichnet, an denen die Community mitwirken kann. Für diese ist normalerweise nicht viel Kontext erforderlich, wodurch sie für den Einstieg gut geeignet sind. Erfahrenen Mitwirkenden aus der Community wird empfohlen, die Issues durchzugehen, die für sie von Interesse sind. Wenn Sie ein entsprechendes Issue finden, fügen Sie einen Kommentar hinzu, um zu fragen, ob es noch offen ist.
-
-Sobald Sie einen Artikel ausgewählt haben, an dem Sie arbeiten möchten, befolgen Sie den [Leitfaden für die ersten Schritte](../get-started-setup-github.md), um ein GitHub-Konto zu erstellen und Ihre Umgebung einzurichten.
+Sobald Sie eine Aufgabe ausgewählt haben, an der Sie arbeiten möchten, befolgen Sie den [Leitfaden für die ersten Schritte](../get-started-setup-github.md), um ein GitHub-Konto zu erstellen und Ihre Umgebung einzurichten.
 
 **Schritt 2:** Forken Sie nach Bedarf die Repositorys `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` oder `dotnet/ml-api-docs`, und erstellen Sie einen Branch für Ihre Änderungen.
 
@@ -67,40 +63,19 @@ Wenn Sie nur kleine Änderungen vornehmen müssen, finden Sie die entsprechenden
 
 **Schritt 3:** Nehmen Sie Änderungen an diesem neuen Branch vor.
 
-Wenn es sich um einen neuen Artikel handelt, können Sie diese [Vorlage](dotnet-style-guide.md) als Ausgangspunkt verwenden. Diese enthält die Richtlinien für das Schreiben und erläutert die Metadaten, die für jeden Artikel erforderlich sind, z.B. Informationen zum Autor.
+Wenn es sich um einen neuen Artikel handelt, können Sie diese [Vorlage](dotnet-style-guide.md) als Ausgangspunkt verwenden. Diese enthält die Richtlinien für das Schreiben und erläutert die Metadaten, die für jeden Artikel erforderlich sind, z.B. Informationen zum Autor. Weitere Informationen zur Markdownsyntax, die auf der docs.microsoft.com-Website verwendet wird, finden Sie in der [Markdownreferenz](../markdown-reference.md).
 
 Navigieren Sie zu dem Ordner, der der Position im Inhaltsverzeichnis entspricht, die Sie in Schritt 1 für Ihren Artikel festgelegt haben. Dieser Ordner enthält die Markdowndateien für alle Artikel in diesem Abschnitt. Erstellen Sie bei Bedarf einen neuen Ordner, in dem Sie die Dateien speichern können, aus denen Ihr Inhalt besteht. Der Hauptartikel für diesen Abschnitt heißt *index.md*.
 
-Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei). 
+Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei).
 
-Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden).  Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Verwenden sie der Einfachheit halber den Ordner **snippets** für Ihr Projekt im C#-Leitfaden, im F#-Leitfaden und im Visual Basic-Leitfaden. Diese Bereiche verfügen in der Regel über Ausschnitte für eine Sprache. Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contributing-to-samples) behandelt.
+Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Wenn Sie einen Codeausschnitt für einen Artikel unter den Ordnern [docs/csharp](https://github.com/dotnet/docs/tree/master/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/master/docs/fsharp) oder [docs/visual-basic](https://github.com/dotnet/docs/tree/master/docs/visual-basic) erstellen, wird der Ausschnitt nur in einer Sprache angezeigt, sodass Sie den Sprachordner weglassen können.
 
-Stellen Sie sicher, dass Sie die richtige Markdownsyntax verwenden. Beispiele zu bewährten Methoden finden Sie im [Spickzettel zu Vorlagen und Markdown](dotnet-style-guide.md).
+Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contribute-to-samples) behandelt.
 
-## <a name="example-structure"></a>Beispielstruktur
+## <a name="example-folder-structure"></a>Beispiel für die Paketordnerstruktur
 
-    docs
-      /about
-      /core
-        /porting
-          porting-overview.md
-          /media
-            /porting-overview
-                portability_report.png
-          /snippets
-            /porting-overview
-              /csharp
-                porting.csproj
-                porting-overview.cs
-                Program.cs
-              /fsharp
-                porting.fsproj
-                porting-overview.fs
-                Program.fs
-               /vb
-                porting.vbproj
-                porting-overview.vb
-                Program.vb
+docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
 
 In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.png*) sowie drei Codeprojekte, die **Codeausschnitte** enthalten. Diese Codeausschnitte sind wiederum im Artikel *porting-overview.md* zu finden. Eine akzeptierte alternative Struktur enthält ein Projekt pro Sprache, das alle Ausschnitte für alle Artikel in diesem Ordner enthält. Diese Alternative wurde in den Sprachreferenzbeispielen aufgrund sehr kleiner Ausschnitte verwendet, um die Sprachsyntax zu veranschaulichen. In anderen Bereichen wird davon abgeraten.
 
@@ -121,11 +96,9 @@ Das .NET-Team überprüft Ihren Pull Request anschließend und teilt Ihnen mit, 
 
 Die Verwalter mergen Ihren Pull Request in den Masterbranch, sobald das Feedback umgesetzt und die Änderung genehmigt wurde.
 
-Wir pushen alle Commits an den Masterbranch regelmäßig in den Livebranch. Dann können Sie Ihren Beitrag unter https://docs.microsoft.com/dotnet/ ansehen. Diese Veröffentlichungen finden werktags in der Regel täglich statt. Durch Wartungsaktivitäten können sich diese jedoch um einige Tage verzögern.
+Wir pushen alle Commits an den Masterbranch regelmäßig in den Livebranch. Dann können Sie Ihren Beitrag unter https://docs.microsoft.com/dotnet/ ansehen. Diese Veröffentlichungen finden werktags in der Regel täglich statt.
 
-## <a name="contributing-to-samples"></a>So tragen Sie zu den Beispielen bei
-
-Das Repository [dotnet/samples](https://github.com/dotnet/samples) enthält den Beispielcode für alle Artikel in der .NET-Dokumentation. Es gibt einige verschiedene Projekte, die in Unterordnern organisiert sind. Die Organisation dieser Unterordner ähnelt der Organisation der Dokumente für die .NET-Dokumentation.
+## <a name="contribute-to-samples"></a>Beispiele für die Mitwirkung
 
 Für Code, der unsere Inhalte unterstützt, wird Folgendes unterschieden:
 
@@ -146,7 +119,7 @@ Jedes vollständige Beispiel sollte die Datei *readme.md* enthalten. In dieser D
 
 Ihr Artikel sollte zudem Links zum Beispiel enthalten. Der Link sollte direkt zu dem Ordner auf GitHub führen, in dem sich das Beispiel befindet.
 
-### <a name="writing-a-new-sample"></a>Schreiben eines neuen Beispiels
+### <a name="write-a-new-sample"></a>Schreiben eines neuen Beispiels
 
 Beispiele sind vollständige Programme und Bibliotheken, die zum Download bereit stehen. Sie sind möglicherweise sehr klein, aber sie veranschaulichen Konzepte auf eine Weise, die es den Benutzern ermöglicht, selbst zu forschen und zu experimentieren. Die Richtlinien für diese Beispiele stellen sicher, dass Leser diese herunterladen und erkunden können. Sehen Sie sich die Beispiele zu [Paralleles LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) als Beispiel für jede Richtlinie an.
 
@@ -154,7 +127,7 @@ Beispiele sind vollständige Programme und Bibliotheken, die zum Download bereit
 
 2. Ihr Beispiel sollte aus Gründen der Konsistenz dem [corefx-Codierungsstil](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) entsprechen.
 
-    - Zudem sollten Sie `static`-Methoden anstelle von Instanzmethoden verwenden, wenn Sie etwas veranschaulichen möchten, für das die Instanziierung von Objekten nicht erforderlich ist.
+   Zudem sollten Sie `static`-Methoden anstelle von Instanzmethoden verwenden, wenn Sie etwas veranschaulichen möchten, für das die Instanziierung von Objekten nicht erforderlich ist.
 
 3. Ihre Beispiele sollten eine **angemessene Ausnahmebehandlung** umfassen. Diese sollte alle Ausnahmen behandeln, die im Kontext des Beispiels wahrscheinlich ausgelöst werden. In ein Beispiel, in dem die Methode [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) aufgerufen wird, um die Benutzereingabe abzurufen, sollte beispielsweise eine angemessene Ausnahmebehandlung eingefügt werden, die verwendet werden kann, wenn die Eingabezeichenfolge als Argument an eine Methode übergeben wird. Wenn ihr Beispiel erwartet, dass ein Methodenaufruf fehlschlägt, muss ebenfalls die Ausnahme behandelt werden, die ausgelöst wird. Sie sollten immer die Ausnahmen behandeln, die von der Methode ausgelöst werden, nicht die Ausnahmen der Basisklassen wie [Exception](https://docs.microsoft.com/dotnet/api/system.exception) oder [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception).
 

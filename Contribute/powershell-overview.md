@@ -1,20 +1,20 @@
 ---
-title: Mitwirken an der PowerShell-Dokumentation
+title: Wie Sie an der PowerShell-Dokumentation mitwirken
 description: Dieser Artikel dient als Einstiegsleitfaden für Mitwirkende an der PowerShell-Dokumentation.
-ms.date: 03/05/2020
+ms.date: 07/10/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
-ms.openlocfilehash: df7bad93dfc7b75c2d4fcb6bd3344dd787246cab
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 7845838405599d30e59ff790f8286be3df22496e
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625164"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290840"
 ---
-# <a name="contributing-to-powershell-documentation"></a>Mitwirken an der PowerShell-Dokumentation
+# <a name="how-to-contribute-to-powershell-documentation"></a>Wie Sie an der PowerShell-Dokumentation mitwirken
 
 In diesem Leitfaden für Mitwirkende wurden einige Artikel gesammelt, die die Tools und Prozesse erläutern, mit denen Microsoft-Dokumentationen erstellt werden. Einige dieser Leitfäden enthalten Informationen, die für alle Dokumentationen gelten, die auf docs.microsoft.com veröffentlicht werden. Einige Leitfäden gelten speziell für die PowerShell-Dokumentation.
 

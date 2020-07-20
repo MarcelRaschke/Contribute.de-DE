@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 4108019ac50d703c6dd509eca7a6394cc1c9dc18
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 49b0e60ec9f4368bf50317dfe4a6b17bd30a82a5
+ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80625187"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "86290817"
 ---
 # <a name="voice-and-tone-guidelines"></a>Richtlinien für Sprache und Stil
 
-Eine große Anzahl an Personen, darunter IT-Experten und Entwickler, lesen Ihre Dokumentationen, um .NET zu erlernen und für ihre reguläre Arbeit zu verwenden. Ihr Ziel ist es, eine großartige Dokumentation zu erstellen, die den Lesern hilft. Diese Richtlinien sollen Ihnen dabei helfen. Der Styleguide enthält folgende Empfehlungen:
+Eine große Anzahl an Personen, darunter IT-Experten und Entwickler, lesen Ihre .NET-Dokumentationen, um .NET zu erlernen und für ihre reguläre Arbeit zu verwenden. Ihr Ziel ist es, eine großartige Dokumentation zu erstellen, die den Lesern hilft. Diese Richtlinien sollen Ihnen dabei helfen. Der Styleguide enthält folgende Empfehlungen:
 
 In diesem Styleguide sind Beispiele zu den einzelnen Empfehlungen enthalten. Dieser Leitfaden wurde gemäß der Richtlinien verfasst, um Ihnen Beispiele zu bieten, an denen Sie sich beim Erstellen einer .NET-Dokumentation orientieren können. Außerdem werden Beispiele gegenübergestellt, damit Sie sehen können, wie Artikel aussehen, die sich nicht an den Richtlinien orientieren.
 
