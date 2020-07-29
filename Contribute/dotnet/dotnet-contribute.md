@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: fa905d17a39b5fa7737e06fce38659b7e1563635
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
+ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290955"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "87264807"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -75,7 +75,30 @@ Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel
 
 ## <a name="example-folder-structure"></a>Beispiel für die Paketordnerstruktur
 
-docs /about /core /porting porting-overview.md /media /porting-overview portability_report.png /snippets /porting-overview /csharp porting.csproj porting-overview.cs Program.cs /fsharp porting.fsproj porting-overview.fs Program.fs /vb porting.vbproj porting-overview.vb Program.vb
+```
+docs
+  /about
+  /core
+    /porting
+      porting-overview.md
+      /media
+        /porting-overview
+          portability_report.png
+      /snippets
+        /porting-overview
+          /csharp
+            porting.csproj
+            porting-overview.cs
+            Program.cs
+          /fsharp
+            porting.fsproj
+            porting-overview.fs
+            Program.fs
+          /vb
+            porting.vbproj
+            porting-overview.vb
+            Program.vb
+```
 
 In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.png*) sowie drei Codeprojekte, die **Codeausschnitte** enthalten. Diese Codeausschnitte sind wiederum im Artikel *porting-overview.md* zu finden. Eine akzeptierte alternative Struktur enthält ein Projekt pro Sprache, das alle Ausschnitte für alle Artikel in diesem Ordner enthält. Diese Alternative wurde in den Sprachreferenzbeispielen aufgrund sehr kleiner Ausschnitte verwendet, um die Sprachsyntax zu veranschaulichen. In anderen Bereichen wird davon abgeraten.
 
