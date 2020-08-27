@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: e73c60c439285f901c5c83e538f8971d795bd6c4
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 60da6e3d5db1486025643d5a5030402a5f2987d3
+ms.sourcegitcommit: 0d49b27c43974f6fecf4c92a659ec3c44ca55f7c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "72288593"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88799796"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Lokales Einrichten von Git für die Dokumentation
 
@@ -133,7 +133,7 @@ Wenn Sie die neueste Version von Git für Windows installiert und der Standardin
 ## <a name="configure-remote-upstream"></a>Konfigurieren von Remoteupstream
 Richten Sie nach dem Klonen des Repositorys eine Remoteverbindung mit Lesezugriff zum Hauptrepository namens **Upstream** ein. Die Upstream-URL wird genutzt, um Ihr lokales Repository mit den letzten Änderungen anderer Benutzer zu synchronisieren. Der Befehl **git remote** wird zum Festlegen der Konfigurationswerte verwendet. Verwenden Sie den Befehl **fetch**, um die Branchinformationen des Upstreamrepositorys zu aktualisieren.
 
-1. Wenn Sie **Git Credential Manager** verwenden, nutzen Sie folgende Befehle. Ersetzen Sie die Platzhalter \<repo\> und \<organization\>.
+1. Wenn Sie **Git Credential Manager** verwenden, nutzen Sie folgende Befehle. Ersetzen Sie die Platzhalter \<repo\> und \<organization\> .
    ```bash
    cd <repo>
    git remote add upstream https://github.com/<organization>/<repo>.git

@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: d1631f34ef9a3ceb10178792842421376fea97b0
-ms.sourcegitcommit: 3774d06ddc1f92b2bdb4c1d8babbd18357229298
+ms.openlocfilehash: 810a1335bf3c93b79952c701c44470d3e72fb124
+ms.sourcegitcommit: 940c84d6bc23a8fbec780244563af188d2620ed1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87264807"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "88668641"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -100,6 +100,9 @@ docs
             Program.vb
 ```
 
+> [!NOTE]
+> Die Sprachordner unter „snippets“ werden im Sprachleitfaden nicht benötigt. Dort wird nur eine Sprache angenommen.
+
 In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.png*) sowie drei Codeprojekte, die **Codeausschnitte** enthalten. Diese Codeausschnitte sind wiederum im Artikel *porting-overview.md* zu finden. Eine akzeptierte alternative Struktur enthält ein Projekt pro Sprache, das alle Ausschnitte für alle Artikel in diesem Ordner enthält. Diese Alternative wurde in den Sprachreferenzbeispielen aufgrund sehr kleiner Ausschnitte verwendet, um die Sprachsyntax zu veranschaulichen. In anderen Bereichen wird davon abgeraten.
 
 Aus historischen Gründen werden viele der enthaltenen Ausschnitte im Ordner */samples* des *dotnet/docs*-Repositorys gespeichert. Wenn Sie wesentliche Änderungen an einem Artikel vornehmen, sollten diese Ausschnitte in die neue Struktur verschoben werden. Verschieben Sie keine Ausschnitt für nur kleine Änderungen.
@@ -154,14 +157,6 @@ Beispiele sind vollständige Programme und Bibliotheken, die zum Download bereit
 
 3. Ihre Beispiele sollten eine **angemessene Ausnahmebehandlung** umfassen. Diese sollte alle Ausnahmen behandeln, die im Kontext des Beispiels wahrscheinlich ausgelöst werden. In ein Beispiel, in dem die Methode [Console.ReadLine](https://docs.microsoft.com/dotnet/api/system.console.readline) aufgerufen wird, um die Benutzereingabe abzurufen, sollte beispielsweise eine angemessene Ausnahmebehandlung eingefügt werden, die verwendet werden kann, wenn die Eingabezeichenfolge als Argument an eine Methode übergeben wird. Wenn ihr Beispiel erwartet, dass ein Methodenaufruf fehlschlägt, muss ebenfalls die Ausnahme behandelt werden, die ausgelöst wird. Sie sollten immer die Ausnahmen behandeln, die von der Methode ausgelöst werden, nicht die Ausnahmen der Basisklassen wie [Exception](https://docs.microsoft.com/dotnet/api/system.exception) oder [SystemException](https://docs.microsoft.com/dotnet/api/system.systemexception).
 
-4. Wenn Ihr Beispiel ein eigenständiges Paket erstellt, müssen Sie die Runtimes einfügen, die von unserem CI-Buildsystem verwendet werden, und alle Runtimes, die von Ihrem Beispiel verwendet werden:
-    - `win7-x64`
-    - `win8-x64`
-    - `win81-x64`
-    - `ubuntu.16.04-x64`
-
-Bald ist ein CI-System verfügbar, um diese Projekte zu erstellen.
-
 So erstellen Sie ein Beispiel:
 
 1. Eröffnen Sie ein [Issue](https://github.com/dotnet/docs/issues), oder fügen Sie einen Kommentar zu einem vorhandenen Issue hinzu, der aussagt, dass Sie an diesem arbeiten.
@@ -186,12 +181,13 @@ Codeausschnitte oder Beispiele für .NET Core werden mithilfe der .NET Core-CLI 
 
 1. Navigieren Sie zum Ordner des Beispiels, und führen Sie „dotnet build“ aus, um diesen auf Fehler zu überprüfen:
 
-    ```console
+    ```dotnetcli
     dotnet build
     ```
+
 2. Führen Sie Ihr Beispiel aus:
 
-    ```console
+    ```dotnetcli
     dotnet run
     ```
 
