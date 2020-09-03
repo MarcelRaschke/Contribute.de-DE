@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/24/2020
-ms.openlocfilehash: 7a494b00c05251e70b74d874d13653db9ba9f6e9
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: b2c0cbb0ed72948ba49a7456e16df5659057f5e6
+ms.sourcegitcommit: 56505b3f7e670f6387d2c919f0326e9f4c571c8a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290978"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "89201125"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Pull Request-Überprüfungsprozess für die Repositorys der .NET-Dokumentationsartikel
 
@@ -61,6 +61,10 @@ Wenn die Änderungen eine technische Überprüfung erfordern, wird der Reviewer 
 ### <a name="review-draft-pull-requests"></a>Überprüfen von Pull Request-Entwürfen
 
 Sie wünschen sich vielleicht schon früher ein Feedback. Öffnen Sie einen Pull Request-Entwurf, und fügen Sie einen Kommentar hinzu, der eine frühzeitige Überprüfung anfordert. Solche Vorabüberprüfungen konzentrieren sich auf die Struktur des Artikels: die Gliederung, den Gesamtinhalt und die Beispiele. Diese Überprüfungen beinhalten keine gründliche Prüfung auf Grammatik und korrekte Links.
+
+## <a name="explain-suggestions"></a>Erläutern von Vorschlägen
+
+In GitHub können Sie Kommentare in Blöcken mit drei Backtickzeichen vom Typ `suggestion` eingeben. Diese Blöcke werden als „Diff“ angezeigt und können durch Klicken auf eine Schaltfläche zusammengeführt werden. Bei kurzen Zeilen kann GitHub die Änderungen problemlos hervorheben. Bei längeren Zeilen (z. B. einem langen Absatz auf einer Textzeile) hebt GitHub die Änderungen nicht hervor. Wenn Sie einen Vorschlag für eine lange Zeile eingeben, achten Sie darauf, ob Ihre Änderungen deutlich hervorgehoben werden. Wenn die Änderungen nicht hervorgehoben werden, fügen Sie außerhalb des Vorschlagsblocks Kommentare ein, um zu erklären, was Sie geändert haben. Ohne Erläuterung müssen nachfolgende Reviewer oder der Autor des Pull Requests häufig lange suchen, bis sie die Änderungen gefunden haben.
 
 ## <a name="respond-to-reviews"></a>Reagieren auf Überprüfungen
 
