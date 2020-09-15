@@ -5,20 +5,20 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 49b0e60ec9f4368bf50317dfe4a6b17bd30a82a5
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: 6f74eb9107612edfff76831fa4dea4f90e73d050
+ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290817"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89559215"
 ---
 # <a name="voice-and-tone-guidelines"></a>Richtlinien für Sprache und Stil
 
 Eine große Anzahl an Personen, darunter IT-Experten und Entwickler, lesen Ihre .NET-Dokumentationen, um .NET zu erlernen und für ihre reguläre Arbeit zu verwenden. Ihr Ziel ist es, eine großartige Dokumentation zu erstellen, die den Lesern hilft. Diese Richtlinien sollen Ihnen dabei helfen. Der Styleguide enthält folgende Empfehlungen:
 
-In diesem Styleguide sind Beispiele zu den einzelnen Empfehlungen enthalten. Dieser Leitfaden wurde gemäß der Richtlinien verfasst, um Ihnen Beispiele zu bieten, an denen Sie sich beim Erstellen einer .NET-Dokumentation orientieren können. Außerdem werden Beispiele gegenübergestellt, damit Sie sehen können, wie Artikel aussehen, die sich nicht an den Richtlinien orientieren.
-
 ## <a name="use-a-conversational-tone"></a>Verwenden eines Gesprächstons
+
+Der folgende Abschnitt ist im Gesprächston gehalten. Der Abschnitt danach weist einen eher wissenschaftlichen Schreibstil auf.
 
 ### <a name="appropriate-style"></a>Angemessener Stil
 
@@ -28,19 +28,17 @@ Die Dokumentation soll in einem Gesprächston geschrieben werden. Sie sollen sic
 
 Im Kontrast zum Gesprächsstil steht der Stil, der für gewöhnlich bei wissenschaftlichen Behandlungen technischer Themen verwendet wird. Diese Ressourcen sind zwar sehr hilfreich, allerdings schreiben die Autoren solcher Artikel in einem Stil, der sich stark von Microsoft-Dokumentationen unterscheidet. Wenn man eine wissenschaftliche Zeitschrift liest, trifft man auf einen ganz anderen Schreibstil. Man fühlt sich eher, als würde man einen langweiligen Bericht zu einer trockenen Thematik lesen.  
 
-Der erste Paragraph oben hält sich an den empfohlenen Gesprächsstil. Der zweite hält sich eher an einen akademischen Stil. Sie sehen den Unterschied sofort. 
-
 ## <a name="write-in-second-person"></a>Schreiben in der zweiten Person
+
+Der folgende Absatz ist in der zweiten Person geschrieben. Der darauffolgende Absatz verwendet die dritte Person. Schreiben Sie in der zweiten Person.
 
 ### <a name="appropriate-style"></a>Angemessener Stil
 
-Sie sollten Ihre Artikel schreiben, als würden Sie direkt mit dem Leser reden. Wie in diesen zwei Sätzen sollten Sie die zweite Person häufig verwenden. Das heißt nicht, dass Sie immer das Wort „Sie“ verwenden sollen. Schreiben Sie direkt an den Leser. Schreiben Sie Sätze im Imperativ. Erzählen Sie dem Leser, was er lernen soll.
+Schreiben Sie Ihre Artikel so, dass Sie Ihre Leser direkt ansprechen. Verwenden Sie häufig die zweite Person (wie in diesen beiden Sätzen). Das heißt nicht, dass Sie immer das Wort „Sie“ verwenden sollen. Schreiben Sie direkt an den Leser. Schreiben Sie Sätze im Imperativ. Erzählen Sie dem Leser, was er lernen soll.
 
 ### <a name="inappropriate-style"></a>Unangemessener Stil
 
 Ein Autor könnte sich auch dazu entscheiden, in dritter Person zu schreiben. In diesem Modell, muss der Autor ein Pronomen oder Nomen finden, mit dem er sich auf den Leser beziehen kann. Leser empfinden diesen Stil meist als weniger ansprechend und weniger unterhaltsam.
-
-Im ersten Paragraph wird der empfohlene Stil verwendet. Im zweiten wird die dritte Person verwendet. Schreiben Sie in der zweiten Person. Sie fanden dies vermutlich viel einfacher zu lesen.
 
 ## <a name="use-active-voice"></a>Verwenden von Aktiv
 
@@ -54,13 +52,13 @@ Im ersten Satz wird das Aktiv verwendet. Der zweite Satz wurde im Passiv geschri
 
 Das Aktiv wird empfohlen, da es einfacher zu lesen ist. Das Passiv kann schwerer zu lesen sein.
 
-## <a name="target-a-fifth-grade-reading-level"></a>Schreiben auf Fünftklässlerniveau
+## <a name="write-for-readers-who-may-have-a-limited-vocabulary"></a>Schreiben für Leser, die möglicherweise nur über ein begrenztes Vokabular verfügen
 
-Diese letzte Richtlinie wird verordnet, weil die Muttersprache vieler Leser nicht Englisch ist. Ihre Artikel erreichen eine internationale Zielgruppe. Denken Sie daran, dass sie möglicherweise nicht über das gleiche Vokabular wie Sie verfügen.
+Ihre Artikel erreichen eine internationale Zielgruppe. Viele Ihrer Leser sind keine Muttersprachler und verfügen möglicherweise nicht über dasselbe Vokabular wie Sie.
 
-Allerdings schreiben Sie für technische Experten. Sie können davon ausgehen, dass Ihre Leser über Programmierkenntnisse und das spezifische Vokabular von Programmierbegriffen verfügen. Die Begriffe objektorientierte Programmierung, Klasse, Objekt, Funktion und Methode sind alle bekannt. Dennoch besitzt nicht jeder Leser einen Abschluss als Diplominformatiker. Begriffe wie „idempotent“ sollten Sie definieren, wenn Sie sie verwenden:
+Allerdings schreiben Sie für technische Experten. Sie können davon ausgehen, dass Ihre Leser über Programmierkenntnisse und das spezifische Vokabular von Programmierbegriffen verfügen. Begriffe wie „objektorientierte Programmierung“, „Klasse“, „Objekt“, „Funktion“ und „Methode“ können als bekannt vorausgesetzt werden. Dennoch besitzt nicht jeder Leser einen Abschluss als Diplominformatiker. Wenn Sie Begriffe wie „idempotent“ verwenden, sollten Sie diese definieren, beispielsweise folgendermaßen:
 
->Die Methode `Close()` ist idempotent, das heißt, wenn Sie sie wiederholt aufrufen, bleibt die Auswirkung unverändert.
+> Die Methode `Close()` ist idempotent, das heißt, wenn Sie sie wiederholt aufrufen, bleibt die Auswirkung unverändert.
 
 ## <a name="avoid-future-tense"></a>Vermeiden von Futur
 

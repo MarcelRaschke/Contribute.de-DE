@@ -1,97 +1,97 @@
 ---
-title: Roadmap für Bezeichnungen und Projekte
-description: In diesem Artikel wird erläutert, wie Bezeichnungen und Projekte im dotnet/docs-Repository verwendet werden.
+title: Erläuterung der Bezeichnungen, Projekte und Meilensteine
+description: In diesem Artikel wird erläutert, wie Bezeichnungen, Projekte und Meilensteine im dotnet/docs-Repository verwendet werden.
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 03/24/2020
-ms.openlocfilehash: 0dcac28db04378730b186c0f23064c1433d9f80e
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.date: 08/06/2020
+ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
+ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80760374"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "89559261"
 ---
-# <a name="labels-and-projects-roadmap"></a>Roadmap für Bezeichnungen und Projekte
+# <a name="labels-projects-and-milestones-roadmap"></a>Erläuterung der Bezeichnungen, Projekte und Meilensteine
 
-Das .NET-Dokumentationsteam macht umfassend Gebrauch von [GitHub-Bezeichnungen](https://github.com/dotnet/docs/labels), um die Arbeit zu organisieren. Indem wir nach Bezeichnungen filtern, können wir uns schnell auf wichtige Bereiche auf der [.NET-Dokumentationswebsite](https://docs.microsoft.com/dotnet) konzentrieren.
+Das .NET-Dokumentationsteam macht umfassend Gebrauch von [GitHub-Bezeichnungen](https://github.com/dotnet/docs/labels), um die Arbeit zu organisieren. Indem wir nach Bezeichnungen filtern, können wir uns schnell auf wichtige Bereiche auf der [.NET-Dokumentationswebsite](https://docs.microsoft.com/dotnet) konzentrieren. Wir könnten beispielsweise mit folgender Abfrage nach allen offenen `P1`-Issues (Priorität 1) filtern: [is:issue is:open label:":books: Area - .NET Architecture Guide"](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3A%22%3Abooks%3A+Area+-+.NET+Architecture+Guide%22).
 
-Außerdem verwenden wir [GitHub-Projekte](https://github.com/dotnet/docs/projects), um Sprints und andere zielorientierte Epics zu organisieren.
+Wir verwenden [GitHub-Projekte](https://github.com/dotnet/docs/projects), um Sprints und andere zielorientierte Epics zu organisieren. Wir verwenden auch [GitHub-Meilensteine](https://github.com/dotnet/docs/milestones), um die Arbeit nachzuverfolgen. Projekte dienen der Planung (Issues), Meilensteine der laufenden Arbeit (Pull Requests).
 
-In dieser Roadmap wird erläutert, wie wir diese Organisationstools nutzen. Zudem sind Links zu praktischen Filtern enthalten, mit denen wir nach relevanten Bereichen suchen.
+Diese Roadmap erläutert, wie wir diese Organisationstools verwenden und enthält Links zu praktischen Filtern, die wir verwenden, um relevante Bereiche zu finden.
 
 ## <a name="labels"></a>Bezeichnungen
 
-Wenn Sie zum ersten Mal an [dotnet/docs](https://github.com/dotnet/docs) mitwirken, sollten Sie mit den [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs)-Issues beginnen. Diese Issues haben bereits einen klaren Umfang. Sie sind gut für Ihren ersten Beitrag geeignet. In der up-for-grabs-Ansicht können Sie die Issues weiter nach Bereich und Priorität filtern. Wir haben für Einsteiger geeignete Issues mit [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) gekennzeichnet, falls Sie sich zunächst an einem kleineren Beitrag versuchen möchten.
+Wenn Sie zum ersten Mal etwas zu [dotnet/docs](https://github.com/dotnet/docs) beitragen, sollten Sie mit den [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs)-Issues beginnen. Dabei handelt es sich um Issues, die sich stärker auf einen Bereich konzentrieren. Sie eignen sich besonders für Ihren ersten Beitrag. In der Ansicht „up-for-grabs“ können Sie basierend auf Bereich und Priorität nach Issues filtern. Mithilfe von [good-first-issue](https://github.com/dotnet/docs/labels/good-first-issue) konnten wir Issues identifizieren, die sich für Anfänger eignen und mit denen Sie Ihren ersten kleinen Beitrag leisten können.
 
-Wir verwenden Bezeichnungen, um Issues unter anderem nach folgenden Kriterien zu klassifizieren:
+Wir verwenden Bezeichnungen, um Issues auf verschiedene Art und Weise zu klassifizieren:
 
 - [.NET-Leitfäden](#find-a-single-net-guide) und [Abschnitte eines Leitfadens](#search-one-section-of-a-guide)
 - [Zielrelease](#releases)
-- [Priorität](#priority)
+- [Priority](#priority)
 
-Sie können eine Bezeichnung jeder Kategorie (Leitfaden, Release, Priorität) kombinieren, um Ihren Fokus für Issues zu präzisieren, an denen Sie arbeiten möchten.
+Sie können eine Bezeichnung aus jedem Bereich kombinieren (guide, release, priority), um genau die Issues zu finden, an denen Sie arbeiten möchten.
 
-### <a name="find-a-single-net-guide"></a>Suchen eines einzelnen .NET-Leitfadens
+### <a name="find-a-single-net-guide"></a>Suchen nach einzelnem .NET-Leitfaden
 
-Für verwenden Bezeichnungen für jedes Architektur-E-Book und jeden .NET-Leitfaden.
+Wir verwenden Bezeichnungen für die einzelnen Architektur-E-Books und für jeden .NET-Leitfaden.
 
-![„:book: guide“ auf hellgrünem Hintergrund](./media/labels-projects/guide.png "Präfix für Bezeichnungen für Architekturleitfäden")
+![:book: Leitfaden auf hellgrünem Hintergrund](./media/labels-projects/guide.png "Präfix für Architekturleitfadenbezeichnungen")
 
-Architektur-E-Books erkennen Sie am Präfix `:book: guide` und einem hellgrünen Hintergrund. Hierbei handelt es sich um die übergeordneten Bereiche, in denen empfohlene Architekturen behandelt werden. Hier finden Sie aktuelle Issues, die nach den einzelnen .NET-Architekturleitfäden gefiltert wurden:
+Architektur-E-Books enthalten das Präfix `:book: guide` und weisen einen hellgrünen Hintergrund auf. Dies sind die langen Bereiche , die empfohlene Architektur abdecken. Hier werden aktuelle Issues für die einzelnen .NET-Architekturleitfäden gefiltert.
 
 - [ASP.NET Core web apps](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20ASP.NET%20Core%20web%20apps)
 - [Blazor](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Blazor)
 - [Cloud Native](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Cloud%20Native)
-- [Docker lifecycle](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Docker%20lifecycle)
+- [Docker-Lebenszyklus](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Docker%20lifecycle)
 - [gRPC](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20gRPC)
-- [Modernizing w/ Windows containers](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Modernizing%20w%2F%20Windows%20containers)
+- [Modernisieren von w/ Windows-Containern](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Modernizing%20w%2F%20Windows%20containers)
 - [.NET Microservices](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20.NET%20Microservices)
-- [Serverless apps](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
+- [Serverlose Apps](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Serverless%20apps)
 
-Diese Bezeichnungen werden auch auf [Leitfäden zum Frameworkentwurf](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines) angewendet. Die Bezeichnungen in diesem Bereich sind gleich gestaltet, es wird jedoch von PRs aus der Community abgeraten. Dieses Material wird mit Genehmigung neu herausgegeben und sollte nicht bearbeitet werden.
+Diese Bezeichnung wird auch für die [Framework-Entwurfsrichtlinien](https://github.com/dotnet/docs/labels/%3Abook%3A%20guide%20-%20Framework%20Design%20Guidelines) angewendet. Dieser Bereich weist das gleiche Bezeichnungsdesign auf, Community-PRs wird davon aber abgeraten. Dies ist mit der Berechtigung neu gedrucktes Material und sollte nicht bearbeitet werden.
 
-![„:books: Area“ auf dunkelblauem Hintergrund](./media/labels-projects/area.png "Präfix für Bezeichnungen für .NET-Leitfäden")
+![„:books: Area“ auf dunkelblauem Hintergrund](./media/labels-projects/area.png "Präfix für .NET-Leitfadenbereichsbezeichnungen")
 
-.NET-Leitfäden erkennen Sie am Präfix `:books: Area` und einem dunkelblauen Hintergrund. Hier finden Sie aktuelle Issues, die nach den einzelnen .NET-Leitfäden gefiltert wurden:
+Jeder .NET-Leitfaden ist mit dem Präfix `:books: Area` versehen und weist einen dunkelblauen Hintergrund auf. Hier werden aktuelle Issues für die einzelnen .NET-Leitfäden gefiltert.
 
-- [API Reference](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
+- [API-Referenz](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20API%20Reference)
 - [Azure .NET SDK](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Azure%20.NET%20SDk)
-- [C# Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
-- [Desktop Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
-- [F# Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20F%23%20Guide)
-- [ML.NET Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20ML.NET%20Guide)
-- [.NET Architecture Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) (wird möglicherweise entfernt)
-- [.NET Core Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Core%20Guide)
+- [Leitfaden für C#](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20C%23%20Guide)
+- [Desktopleitfaden](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Desktop%20Guide)
+- [Leitfaden für F#](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20F%23%20Guide)
+- [Leitfaden für ML.NET](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20ML.NET%20Guide)
+- [.NET-Architekturleitfaden:](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Architecture%20Guide) Kann entfernt werden
+- [Leitfaden für .NET Core](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Core%20Guide)
 - [.NET for Apache Spark Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20for%20Apache%20Spark%20Guide)
-- [.NET Framework Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Framework%20Guide)
-- [.NET Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Guide)
-- [Roslyn API Reference](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) (wird möglicherweise entfernt)
-- [Visual Basic Guide](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Visual%20Basic%20Guide)
+- [Leitfaden für .NET Framework](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Framework%20Guide)
+- [.NET Guide (Leitfaden für .NET)](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20.NET%20Guide)
+- [Roslyn-API-Referenz:](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Roslyn%20API%20Reference) Kann entfernt werden
+- [Leitfaden für Visual Basic](https://github.com/dotnet/docs/labels/%3Abooks%3A%20Area%20-%20Visual%20Basic%20Guide)
 
 #### <a name="search-one-section-of-a-guide"></a>Durchsuchen eines Abschnitts eines Leitfadens
 
-![„:card_file_box: Area“ auf hellblauem Hintergrund](./media/labels-projects/technology.png "Präfix für Bezeichnungen für Unterbereiche von .NET-Leitfäden")
+![„:card_file_box: Area“ auf hellblauem Hintergrund](./media/labels-projects/technology.png "Präfix für Unterbereichbezeichnungen in .NET-Leitfäden")
 
-Die .NET-Leitfäden sind sehr umfangreich, deshalb schränken diese Bezeichnungen den Umfang nach Abschnitt eines Leitfadens ein. Unterbereiche eines .NET-Leitfadens erkennen Sie am Präfix `:card_file_box: Technology` und einem hellblauen Hintergrund. Viele dieser Bezeichnungen gelten für mehrere Leitfäden, während andere in nur einem Leitfaden aufgeführt sind. Wenn Sie nach einem Bereich gefiltert haben, können Sie eine dieser Bezeichnungen hinzufügen, um den Bereich der Issues weiter einzugrenzen.
+Die .NET-Leitfäden sind groß, sodass diese Bezeichnungen den Bereich durch einen Abschnitt eines Leitfadens weiter einschränken. Jeder Unterbereich eines .NET-Leitfadens ist mit dem Präfix `:card_file_box: Technology` versehen und weist einen mittelblauen Hintergrund auf. Viele dieser Bezeichnungen gelten für mehrere Leitfäden, während andere in nur einem Leitfaden aufgeführt sind. Fügen Sie nach dem Filtern nach einem Bereich eine dieser Bezeichnungen hinzu, um den Umfang des Issues weiter einzuschränken.
 
 - AppCompat
-- Async Task
-- C# Advanced concepts
-- C# compiler
-- C# Fundamentals
-- C# Get Started
-- C# Language Reference
-- C# Null safety
-- C# What's new
-- CLI
-- Data Access
+- asynchrone Aufgabe
+- erweiterte C#-Konzepte
+- C#-Compiler
+- C#-Grundlagen
+- Erste Schritte mit C#
+- C#-Programmiersprachenreferenz
+- C# Null-Sicherheit
+- Neuerungen in C#
+- Befehlszeilenschnittstelle (CLI)
+- Datenzugriff
 - Docker
-- Installers
+- Installer
 - LINQ
 - NCL
 - .NET Standard
-- Roslyn APIs
+- Roslyn-APIs
 - Sicherheit
 - WCF
 - WF
@@ -101,9 +101,9 @@ Die .NET-Leitfäden sind sehr umfangreich, deshalb schränken diese Bezeichnunge
 
 ### <a name="releases"></a>Releases
 
-![„:checkered_flag: Release:“ auf dunkelgelbem Hintergrund](./media/labels-projects/release.png "Präfix für Bezeichnungen für Releases")
+![„:checkered_flag: Release:“ auf dunkelgelbem Hintergrund](./media/labels-projects/release.png "Präfix für Releasebezeichnungen")
 
-Issues, die für ein bestimmtes Release gekennzeichnet sind, erkennen Sie am Präfix `:checkered_flag: Release:` und einem dunkelgelben Hintergrund.
+Issues, die für ein bestimmtes Release gekennzeichnet sind, werden mit dem Präfix `:checkered_flag: Release:` versehen und weisen einen dunkelgelben Hintergrund auf.
 
 - .NET Core 2.2
 - .NET Core 3.0
@@ -112,20 +112,28 @@ Issues, die für ein bestimmtes Release gekennzeichnet sind, erkennen Sie am Pr�
 
 ### <a name="priority"></a>Priorität
 
-Prioritätsbezeichnungen weisen das Format `P` gefolgt von einer einzelnen Ziffer auf. Je niedriger die Zahl, desto höher die Priorität:
+Bei Prioritätsbezeichnungen folgt auf `P` eine einzelne Ziffer. Niedrigere Zahlen stehen für eine höhere Priorität.
 
-- P0
-- P1
-- P2
-- P3
+- P0: Issues oder Pull Requests mit kritischer Priorität
+- P1: hohe Priorität
+- P2: mittlere Priorität
+- P3: niedrige Priorität
 
 ### <a name="what-about-the-other-labels"></a>Weitere Bezeichnungen
 
-Es gibt viele weitere Bezeichnungen, die von den Inhaltsteams verwendet werden, um unterschiedliche Klassifizierungen für Issues zu verwalten. Wenn Sie kein Mitglied des Inhaltsteams sind, können Sie diese anderen Bezeichnungen ignorieren.
+Es gibt viele andere Bezeichnungen, die von den Inhaltsteams verwendet werden, um unterschiedliche Klassifizierungen von Issues zu verwalten. Wenn Sie nicht Teil des Inhaltsteams sind, können Sie diese anderen Bezeichnungen ignorieren.
 
 ## <a name="projects"></a>Projekte
 
+Projekte dienen Planungszwecken, und die priorisierten Arbeitsaufgaben sind dabei über ein Kanban-Board automatisiert. Projekte dürfen immer nur GitHub-Issues enthalten, _niemals_ Pull Requests. In dieser Beziehung unterscheiden sich Projekte von Meilensteinen: Meilensteine enthalten nur Pull Requests.
+
 Projekte werden auf diese beiden Arten verwendet:
 
-- Projekttypen nach „Monat JJJJ“: Dabei handelt es sich um Scrum-Boards für den Arbeitsplan jedes Monats.
+- Projekte vom Typ `Month YYYY`: Dies sind Kanban-Boards für den Arbeitsplan jedes einzelnen Monats.
+  - Beispiele: [July 2020](https://github.com/dotnet/docs/projects/103), [August 2020](https://github.com/dotnet/docs/projects/117) usw.
 - Epics mit langer Laufzeit: Diese werden verwendet, um Aufgaben für ein Ziel zu organisieren, wenn die Arbeit sich über mehrere Monate erstreckt.
+  - Beispiele: [.NET 5 Wave - Reorganization](https://github.com/dotnet/docs/projects/105), [.NET Languages (.NET 5 wave) ](https://github.com/dotnet/docs/projects/106) usw.
+
+## <a name="milestones"></a>Meilensteine
+
+Meilensteine folgen in der Regel derselben Namenskonvention wie Projekte (`Month YYYY`), unterscheiden sich aber von Projekten. Meilensteine dienen zum Nachverfolgen abgeschlossener Arbeitsaufgaben. Meilensteine dürfen _keine_ Issues (potenzielle Arbeitsaufgaben) enthalten, sondern ausschließlich Pull Requests. Der aktuelle Meilenstein wird automatisch auf neue Pull Requests angewendet.
