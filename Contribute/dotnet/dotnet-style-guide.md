@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 926516895798757bde0861a345e0b5d0f95218a4
-ms.sourcegitcommit: 5f5fc0fc2ff64610cc19a4b40cb3313adbc152cd
+ms.openlocfilehash: 15288ccb1831e994fd078f47788ad4c2f502775c
+ms.sourcegitcommit: 92d06515af1d9d0e5abf632fc3b6425c487174d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "86290909"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90837210"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Metadaten und Markdownvorlage für .NET-Dokumentationen
 
@@ -129,48 +129,9 @@ Verwenden Sie zum Verknüpfen eines generischen Typs (z. B. [System.Collections
 
 ## <a name="code"></a>Code
 
-Die beste Methode zum Einfügen von Code besteht darin, Ausschnitte aus einem funktionstüchtigen Beispiel einzufügen. Erstellen Sie Ihr Beispiel anhand der Anweisungen im Artikel [Contributing to .NET (Mitwirken an .NET)](dotnet-contribute.md#contribute-to-samples). Die grundlegenden Regeln zum Einfügen von Code finden Sie im allgemeinen Leitfaden für [Code](../code-in-docs.md).
+Die beste Methode zum Einfügen von Code besteht darin, Ausschnitte aus einem funktionstüchtigen Beispiel einzufügen. Erstellen Sie Ihr Beispiel anhand der Anweisungen im Artikel [Contributing to .NET (Mitwirken an .NET)](dotnet-contribute.md#contribute-to-samples). Durch Einfügen von Ausschnitten aus vollständigen Programmen wird sichergestellt, dass der gesamte Code das CI-System (Continuous Integration) durchläuft. Wenn Sie jedoch etwas veranschaulichen müssen, das zu Fehlern zur Kompilier- oder Laufzeit führt, können Sie Inlinecodeblöcke verwenden.
 
-Sie können den Code mithilfe der folgenden Syntax einfügen:
-
-```markdown
-[!code-<language>[<name>](<pathToFile><queryoption><queryoptionvalue>)]
-```
-
-* `-<language>` (*optional*, aber *empfohlen*)
-  * Sprache des referenzierten Codeausschnitts.
-
-* `<name>` (*optional*)
-  * Name des Codeausschnitts. Er wirkt sich nicht auf die HTML-Ausgabe aus, Sie können ihn jedoch verwenden, um die Lesbarkeit Ihrer Markdownquelle zu verbessern.
-
-* `<pathToFile>` (*obligatorisch*)
-  * Relativer Pfad im Dateisystem, der die Codeausschnittdatei angibt, auf die verwiesen wird. Dies kann sich aufgrund der verschiedenen Repositorys, aus denen die .NET-Dokumentation besteht, als kompliziert erweisen. Die .NET-Beispiele befinden sich im Repository „dotnet/samples“. Alle Pfade für Codeausschnitte beginnen mit `~/samples`, der Rest ist der Pfad vom Stamm zur Quelle des Repositorys.
-
-* `<queryoption>` (*optional*)
-  * Wird verwendet, um anzugeben, wie der Code aus der Datei abgerufen werden soll:
-    * `#`: `#{tagname}` (Tagname) *oder* `#L{startlinenumber}-L{endlinenumber}` (Zeilenbereich).
-    Von der Verwendung von Zeilennummern wird abgeraten, da sie sehr fehleranfällig sind. Zum Referenzieren von Codeausschnitten werden Tagnamen empfohlen. Verwenden Sie aussagekräftige Tagnamen. (Viele Codeausschnitte wurden aus einer vorherigen Plattform migriert, und die Tags haben Namen wie `Snippet1`, `Snippet2` usw. Diese Vorgehensweise ist weitaus schwerer zu verwalten.)
-    * `range`: `?range=1,3-5` Ein Bereich von Zeilen. Dieses Beispiel enthält die Zeilen 1, 3, 4 und 5.
-
-Es wird empfohlen, wenn möglich die Option zum Benennen der Tags zu verwenden. Der Tagname ist der Name eines Bereichs oder eines Codekommentars im im Quellcode enthaltenen Format `Snippettagname`. Im folgenden Beispiel wird veranschaulicht, wie der Tagname `BasicThrow` referenziert wird:
-
-```markdown
-[!code-csharp[csrefKeyword#1](~/samples/snippets/snippets/csharp/language-reference/operators/ConditionalExamples.csConditionalRef)]
-```
-
-Der relative Pfad zur Quelle im Repository **dotnet/samples** folgt dem Pfad `~/samples`.
-
-In [dieser Quelldatei](https://github.com/dotnet/samples/blob/master/snippets/csharp/language-reference/operators/ConditionalExamples.cs) wird dargestellt, wie Tags von Ausschnitten strukturiert sind. Details zur Darstellung des Tagnamens in den Quelldateien des Codeausschnitts pro Sprache finden Sie unter [DocFX-Richtlinien](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#tag-name-representation-in-code-snippet-source-file).
-
-Im folgenden Beispiel wird Code in allen drei .NET-Sprachen gezeigt:
-
-```markdown
-[!code-fsharp[ToPigLatin](../../../samples/snippets/fsharp/getting-started/pig-latin.fs#L1-L14)]
- [!code-csharp[ADCreateDomain#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS/source2.cs#2)]
- [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]
-```
-
-Durch Einfügen von Ausschnitten aus vollständigen Programmen wird sichergestellt, dass der gesamte Code das CI-System (Continuous Integration) durchläuft. Wenn Sie jedoch etwas veranschaulichen müssen, das zu Fehlern zur Kompilier- oder Laufzeit führt, können Sie Inlinecodeblöcke verwenden.
+Informationen zur Markdownsyntax zum Anzeigen von Code in Dokumenten finden Sie unter [Gewusst wie: Einbinden von Code in Dokumenten](../code-in-docs.md).
 
 ## <a name="images"></a>Bilder
 
