@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 4e57af6a1fe9a9d3799f09cb04f3bd3f0b9b712d
-ms.sourcegitcommit: 59e77d2fb9c38cccbacde9d2a7df61ae58c38fa4
+ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
+ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84421043"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91953648"
 ---
 # <a name="how-to-include-code-in-docs"></a>Gewusst wie: Einbinden von Code in Dokumenten
 
@@ -354,11 +354,17 @@ Verwenden Sie das Attribut `interactive`, um dieses Feature für einen bestimmte
 
 * `cloudshell-powershell`: Aktiviert wie im vorherigen Beispiel PowerShell für Azure Cloud Shell
 * `cloudshell-bash`: Aktiviert Azure Cloud Shell
-* `try-dotnet`: Aktiviert Try .NET
-* `try-dotnet-class`: Aktiviert Try .NET mit Klassengerüsten
-* `try-dotnet-method`: Aktiviert Try .NET mit Methodengerüsten
+* `try-dotnet`: Aktiviert .NET Interactive
+* `try-dotnet-class`: Aktiviert .NET Interactive mit Klassengerüst
+* `try-dotnet-method`: Aktiviert .NET Interactive mit Methodengerüst
 
 Für Azure Cloud Shell und PowerShell Cloud Shell können Benutzer Befehle nur für ihr eigenes Azure-Konto ausführen.
+
+Für die .NET Interactive-Erfahrung hängt der Inhalt Ihres Codeblocks davon ab, welche der drei Gerüstumgebungen Sie auswählen:
+
+* *Kein Gerüstbau* (`try-dotnet`): Der Codeblock sollte einen vollständigen Programmtext darstellen. Die Datei *Program.cs*, die von `dotnet new console` generiert wird, wäre z. B. gültig. Diese sind am nützlichsten, um ein ganzes kleines Programm anzuzeigen, einschließlich der erforderlichen `using`-Direktiven. Anweisungen auf oberster Ebene werden derzeit nicht unterstützt.
+* *Methodengerüst* (`try-dotnet-method`): Der Codeblock sollte den Inhalt einer `Main`-Methode in einer Konsolenanwendung darstellen. Sie können die von der `dotnet new console`-Vorlage hinzugefügten `using`-Direktiven annehmen. Diese Einstellung ist am nützlichsten für kurze Codeausschnitte, die ein Feature veranschaulichen.
+* *Klassengerüst* (`try-dotnet-class`): Der Codeblock sollte eine Klasse mit einer `Main`-Methode als Programmeinstiegspunkt darstellen. Diese können verwendet werden, um zu zeigen, wie die Member einer Klasse interagieren.
 
 ## <a name="snippet-syntax-reference"></a>Verweissyntax für Codeausschnitte
 
@@ -398,7 +404,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | .NET Core-CLI                  | `dotnetcli`                                                                    |
 | 1C                             | `1c`                                                                           |
 | ABNF                           | `abnf`                                                                         |
-| Access logs                    | `accesslog`                                                                    |
+| Zugriffsprotokolle                    | `accesslog`                                                                    |
 | Ada                            | `ada`                                                                          |
 | ARM assembler                  | `armasm`, `arm`                                                                |
 | ARM assembler                  | `avrasm`                                                                       |
@@ -424,7 +430,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | Azure Powershell               | `azurepowershell`                                                              |
 | Azure Powershell (Interactive) | `azurepowershell-interactive`                                                  |
 | Bash                           | `bash`, `sh`, `zsh`                                                            |
-| Basic                          | `basic`                                                                        |
+| Standard                          | `basic`                                                                        |
 | BNF                            | `bnf`                                                                          |
 | C                              | `c`                                                                            |
 | C#                             | `csharp`, `cs`                                                                 |
@@ -464,7 +470,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | Excel                          | `excel`, `xls`, `xlsx`                                                         |
 | Extempore                      | `extempore`, `xtlang`, `xtm`                                                   |
 | F#                             | `fsharp`, `fs`                                                                 |
-| FIX                            | `fix`                                                                          |
+| BEHEBUNG                            | `fix`                                                                          |
 | Fortran                        | `fortran`, `f90`, `f95`                                                        |
 | G-Code                         | `gcode`, `nc`                                                                  |
 | Gams                           | `gams`, `gms`                                                                  |
@@ -479,7 +485,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | HTML                           | `html`, `xhtml`                                                                |
 | HTTP                           | `http`, `https`                                                                |
 | Haml                           | `haml`                                                                         |
-| Handlebars                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
+| Lenkstangen                     | `handlebars`, `hbs`, `html.hbs`, `html.handlebars`                             |
 | Haskell                        | `haskell`, `hs`                                                                |
 | Haxe                           | `haxe`, `hx`                                                                   |
 | Hy                             | `hy`, `hylang`                                                                 |
@@ -493,7 +499,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | Kusto                          | `kusto`                                                                        |
 | Leaf                           | `leaf`                                                                         |
 | Lasso                          | `lasso`, `ls`, `lassoscript`                                                   |
-| Less                           | `less`                                                                         |
+| Kleiner                           | `less`                                                                         |
 | LDIF                           | `ldif`                                                                         |
 | Lisp                           | `lisp`                                                                         |
 | LiveCode Server                | `livecodeserver`                                                               |
@@ -519,7 +525,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | Nimrod                         | `nimrod`, `nim`                                                                |
 | Nix                            | `nix`                                                                          |
 | OCaml                          | `ocaml`, `ml`                                                                  |
-| Objective C                    | `objectivec`, `mm`, `objc`, `obj-c`                                            |
+| Objective-C                    | `objectivec`, `mm`, `objc`, `obj-c`                                            |
 | OpenGL Shading Language        | `glsl`                                                                         |
 | OpenSCAD                       | `openscad`, `scad`                                                             |
 | Oracle Rules Language          | `ruleslanguage`                                                                |
@@ -533,10 +539,10 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | PostgreSQL & PL/pgSQL          | `pgsql`, `postgres`, `postgresql`                                              |
 | PowerShell                     | `powershell`, `ps`                                                             |
 | PowerShell (Interactive)       | `powershell-interactive`                                                       |
-| Processing                     | `processing`                                                                   |
+| Verarbeitung                     | `processing`                                                                   |
 | Prolog                         | `prolog`                                                                       |
 | Eigenschaften                     | `properties`                                                                   |
-| Protocol Buffers               | `protobuf`                                                                     |
+| Protokollpuffer               | `protobuf`                                                                     |
 | Puppet                         | `puppet`, `pp`                                                                 |
 | Python                         | `python`, `py`, `gyp`                                                          |
 | Python profiler results        | `profile`                                                                      |
@@ -558,7 +564,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | SQL                            | `sql`                                                                          |
 | STEP Part 21                   | `p21`, `step`, `stp`                                                           |
 | Scala                          | `scala`                                                                        |
-| Scheme                         | `scheme`                                                                       |
+| Schema                         | `scheme`                                                                       |
 | Scilab                         | `scilab`, `sci`                                                                |
 | Shape Expressions              | `shexc`                                                                        |
 | Shell                          | `shell`, `console`                                                             |
@@ -568,7 +574,7 @@ Das [Docs Authoring Pack](how-to-write-docs-auth-pack.md) enthält eine Funktion
 | Stan                           | `stan`                                                                         |
 | Stata                          | `stata`                                                                        |
 | Structured Text                | `iecst`, `scl`, `stl`, `structured-text`                                       |
-| Stylus                         | `stylus`, `styl`                                                               |
+| Eingabestift                         | `stylus`, `styl`                                                               |
 | SubUnit                        | `subunit`                                                                      |
 | Supercollider                  | `supercollider`, `sc`                                                          |
 | Swift                          | `swift`                                                                        |

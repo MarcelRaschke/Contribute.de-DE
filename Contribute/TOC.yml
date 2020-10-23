@@ -54,6 +54,8 @@
       items:
         - name: Beitragen
           href: dotnet/dotnet-contribute.md
+        - name: Dokumente zur Codeanalyse
+          href: dotnet/dotnet-contribute-code-analysis.md
         - name: 'Erläuterung der Bezeichnungen, Projekte und Meilensteine'
           href: dotnet/labels-projects.md
         - name: Konventionen hinsichtlich der Schreibweise
