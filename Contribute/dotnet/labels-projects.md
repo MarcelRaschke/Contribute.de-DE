@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/06/2020
-ms.openlocfilehash: b8e9f2a33f9b4a8025aa36a890bff1017cf132c6
-ms.sourcegitcommit: abcc67cb3ec1f635a6374d7c47a4831e3eee9050
+ms.openlocfilehash: 059ed8297956589a281cf11e4f7244e972565160
+ms.sourcegitcommit: 11228bd1d3dc1496820355096453f1eb2d28b33e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89559261"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "92523468"
 ---
 # <a name="labels-projects-and-milestones-roadmap"></a>Erläuterung der Bezeichnungen, Projekte und Meilensteine
 
@@ -114,10 +114,21 @@ Issues, die für ein bestimmtes Release gekennzeichnet sind, werden mit dem Prä
 
 Bei Prioritätsbezeichnungen folgt auf `P` eine einzelne Ziffer. Niedrigere Zahlen stehen für eine höhere Priorität.
 
-- P0: Issues oder Pull Requests mit kritischer Priorität
+- P0: kritische Priorität
+
+  Sicherheitsissue oder aus Compliancegründen gesetzlich vorgeschrieben. Wir kümmern uns mit oberster Priorität um eine Lösung.
+  
 - P1: hohe Priorität
+
+  Essenziell für gängige Szenarien oder ein auffälliger Fehler in einem häufig aufgerufenen Artikel. Solche Issues korrigieren wir, bevor wir an P2- oder P3-Issues arbeiten.
+  
 - P2: mittlere Priorität
+
+  Hilfreich für gängige Szenarien, aber kein Issue, das Prozesse blockiert.  Wir korrigieren solche Issues entweder schnell zwischendurch oder während im gleichen Artikel ein P1-Issue behoben wird.
+  
 - P3: niedrige Priorität
+
+  Hilfreich für Grenzfälle, einfache Korrekturen für gängige Szenarien, nicht sehr häufig aufgerufene Artikel oder veraltete Technologien. Solche Korrekturen überlassen wir Communitybeiträgen. Ein P3-Issue kann geschlossen werden, wenn nach zwei Monaten keine Reaktion erfolgt ist.
 
 ### <a name="what-about-the-other-labels"></a>Weitere Bezeichnungen
 

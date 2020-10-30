@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 0661191c64d2f8aa29973e96e98445d070424beb
+ms.sourcegitcommit: 344c3c74c317350a00f91e3e7019a545d5c3c5a2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78331904"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92689312"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 
@@ -70,7 +70,7 @@ Da Sie nun eine Kopie („Klon“) des Microsoft-Repositorys besitzen und Sie ei
 
 Bevor Sie Ihre Änderungen an den Autor übermitteln, müssen Sie sie zunächst in Ihrem GitHub-Repository speichern.  Da sich alle Tools voneinander unterscheiden, sind nur ein paar einfache Schritte nötig, wenn Sie die Git Bash-Befehlszeile verwenden.
 
-Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _stagen_, sodass diese committet werden.  Dies kann folgendermaßen geschehen:
+Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _stagen_ , sodass diese committet werden.  Dies kann folgendermaßen geschehen:
 
 ````
 git add --all
@@ -95,14 +95,17 @@ Sie haben es geschafft.  Ihr Code ist jetzt in Ihrem GitHub-Repository verfügba
 
 Müssen Sie etwas beheben, das Sie übermittelt haben?  Kein Problem.  Führen Sie Ihre Änderungen einfach im selben Branch durch, und führen Sie noch mal einen Commit und einen Pushvorgang durch (der Upstreamserver muss für nachfolgende Pushvorgänge vom selben Branch nicht festgelegt werden).
 
-Müssen Sie darüber hinaus weitere Änderungen durchführen?  Wechseln Sie zurück zum Masterbranch, und führen Sie einen Checkout auf einen anderen neuen Branch durch. Mit Git Bash ist alles ganz einfach:
+## <a name="making-your-next-change"></a>Durchführen der nächsten Änderung
+
+Müssen Sie darüber hinaus weitere Änderungen durchführen? Kehren Sie zum Masterbranch zurück, führen Sie einen Pullvorgang aus dem Upstreamrepository durch, um sicherzustellen, dass Ihr Fork auf dem neuesten Stand ist, und checken Sie einen neuen Branch aus.  Führen Sie in GitBash die folgenden Befehle aus:
 
 ````
 git checkout master
+git pull upstream master
 git checkout -b "branchname"
 ````
 
-Sie befinden sich nun in einem neuen Branch und sind auf dem besten Weg, ein wichtiger Mitwirkender zu werden.
+Sie befinden sich nun in einem neuen Branch und sind nun auf dem besten Weg, ein wichtiger Mitwirkender zu werden.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 
