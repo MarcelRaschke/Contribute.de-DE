@@ -1,6 +1,5 @@
 {
-  "docsets_to_publish": [
-    {
+    "docsets_to_publish": [{
       "docset_name": "ContributionGuide",
       "build_source_folder": "Contribute",
       "build_output_subfolder": "ContributionGuide",
@@ -26,11 +25,11 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.de-DE",
-  "git_repository_branch_open_to_public_contributors": "live",
-  "dependent_repositories": [
-    {
+    "need_pr_comments": false,
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
+    "dependent_repositories": [{
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.de-DE",
       "branch": "master",
@@ -67,6 +66,8 @@
     }
   },
   "need_generate_pdf_url_template": true,
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/Contribute.de-DE",
+  "git_repository_branch_open_to_public_contributors": "live",
   "docs_build_engine": {
     "name": "docfx_v3"
   }
