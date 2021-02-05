@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
-ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
+ms.openlocfilehash: bc8b510c291341cf03a1ce45cd12d47704aad05e
+ms.sourcegitcommit: fefd2a05daeb6af6b9f377003da70c2e34e9c6cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91953648"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99081511"
 ---
 # <a name="how-to-include-code-in-docs"></a>Gewusst wie: Einbinden von Code in Dokumenten
 
@@ -305,6 +305,67 @@ Im Repository *azure-functions-durable-extension* befindet sich diese Codedatei 
 
 > [!NOTE]
 > Der Name, den Sie dem abhängigen Repository zuweisen, ist relativ zum Stamm des Hauptrepositorys, aber die Tilde (~) verweist auf den Stamm des Docsets. Der Stamm des Docsets wird durch `build_source_folder` in *.openpublishing.publish.config.json* bestimmt. Der Pfad zum Codeausschnitt im vorherigen Beispiel wird im Repository „azure-docs“ verwendet, da `build_source_folder` auf den Repositorystamm (`.`) verweist. Wenn für `build_source_folder` der Wert `articles` angegeben wäre, würde der Pfad mit `~/../samples-durable-functions` anstelle von `~/samples-durable-functions` beginnen.
+
+## <a name="snippets-in-a-jupyter-notebook"></a>Codeausschnitte in einem Jupyter-Notebook
+
+Sie können auf eine Zelle in einem Jupyter-Notebook als Codeausschnitt verweisen. So verweisen Sie auf die Zelle:
+
+1. Fügen Sie dem Notebook Zellenmetadaten hinzu, auf die Sie verweisen möchten.
+1. Richten Sie den Zugriff auf das Repository ein.
+1. Verwenden Sie die Syntax für den Jupyter-Notebook-Ausschnitt in Ihrer Markdowndatei.
+
+### <a name="add-metadata-to-notebook"></a>Hinzufügen von Metadaten zur Notebook-Instanz
+
+1. Benennen Sie die Zelle, indem Sie Zellenmetadaten im Jupyter-Notebook hinzufügen.  
+
+    * In Jupyter können Sie [Zellmetadaten bearbeiten](https://jupyterbook.org/advanced/advanced.html#adding-tags-using-notebook-interfaces), indem Sie zuerst die Zellensymbolleiste aktivieren:  **Ansicht > Zellensymbolleiste > Metadaten bearbeiten**
+    * Nachdem die Zellensymbolleiste aktiviert ist, wählen Sie **Metadaten bearbeiten** in der Zelle aus, die Sie benennen möchten.
+    * Alternativ können Sie die Metadaten direkt in der JSON-Struktur des Notebooks bearbeiten.
+
+1.  Fügen Sie in den Zellenmetadaten ein „name“-Attribut hinzu:
+ 
+    ```json
+    "metadata": {"name": "<name>"},
+    ```
+  
+    Beispiel:
+
+    ```json
+    "metadata": {"name": "workspace"},
+    ```
+
+    > [!TIP]
+    > Sie können weitere Metadaten hinzufügen, die Ihnen helfen können, nachzuverfolgen, wo die Zelle verwendet wird.  Beispiel:
+    >
+    > ```json
+    >     "metadata": {
+    >       "name": "workspace",
+    >       "msdoc": "how-to-track-experiments.md"
+    >     },
+    > ```
+
+### <a name="set-up-repository-access"></a>Einrichten des Repositoryzugriffs
+
+Wenn sich die die Notebook-Datei, auf die verwiesen werden soll, in einem anderen Repository befindet, richten Sie das Coderepository als [abhängiges Repository](#out-of-repo-snippet-references) ein.
+
+### <a name="jupyter-notebook-snippet-syntax-reference"></a>Referenz zur Syntax für den Jupyter-Notebook-Ausschnitt
+
+ Wenn Ihr Notebook die erforderlichen Metadaten enthält, verweisen Sie in Ihrer Markdowndatei darauf. Verwenden Sie den `<cell-name-value>`, den Sie dem Notebook hinzugefügt haben, sowie den `<path>` (Pfad), den Sie als Ihr abhängiges Repository eingerichtet haben.
+
+```markdown
+[!notebook-<language>[] (<path>/<notebook-name.ipynb>?name=<cell-name-value>)]
+```
+
+Beispiel:
+
+```markdown
+[!notebook-python[] (~/MachineLearningNotebooks/train-on-local.ipynb?name=workspace)]
+```
+
+> [!IMPORTANT]
+> Diese Syntax ist ein Blockmarkdown-Erweiterung. Sie muss in einer eigenen Zeile verwendet werden.
+
+Verwenden Sie für den `<language>`-Bezeichner eine der [unterstützten Programmiersprachen](#supported-languages).
 
 ## <a name="interactive-code-snippets"></a>Interaktive Codeausschnitte
 
