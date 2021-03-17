@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: bc8b510c291341cf03a1ce45cd12d47704aad05e
-ms.sourcegitcommit: fefd2a05daeb6af6b9f377003da70c2e34e9c6cd
+ms.openlocfilehash: ddd0463840769f02724423583efaa6ffa69d5d33
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99081511"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481358"
 ---
 # <a name="how-to-include-code-in-docs"></a>Gewusst wie: Einbinden von Code in Dokumenten
 
@@ -118,7 +118,7 @@ Dies sind nur einige der Gründe, warum IDE-Screenshots nicht als Methode zum Ei
 
 ### <a name="code-validation"></a>Codeüberprüfung
 
-In einigen Repositorys wird der gesamte Beispielcode durch implementierte Prozesse automatisch kompiliert, um ihn auf Fehler zu prüfen. Dies ist beim .NET-Repository der Fall. Weitere Informationen finden Sie im .NET-Repository unter [Contributing](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) (Beitrag).
+In einigen Repositorys wird der gesamte Beispielcode durch implementierte Prozesse automatisch kompiliert, um ihn auf Fehler zu prüfen. Dies ist beim .NET-Repository der Fall. Weitere Informationen finden Sie im .NET-Repository unter [Contributing](https://github.com/dotnet/docs/blob/main/CONTRIBUTING.md) (Beitrag).
 
 Wenn Sie Codeblöcke aus einem anderen Repository einbinden, erarbeiten Sie zusammen mit den Besitzern eine Wartungsstrategie für den Code, damit Ihr eingebundener Code nicht unterbrochen wird oder veraltet, sobald neue Versionen der vom Code verwendeten Bibliotheken geliefert werden.
 
@@ -220,7 +220,7 @@ Beispiel:
 :::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
 ```
 
-Das Beispiel stammt aus der Artikeldatei [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md) des ASP.NET-Dokumentenrepositorys. Auf die Codedatei wird über einen relativen Pfad zu [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) im selben Repository verwiesen.
+Das Beispiel stammt aus der Artikeldatei [aspnetcore/data/ef-mvc/crud.md](https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/data/ef-mvc/crud.md) des ASP.NET-Dokumentenrepositorys. Auf die Codedatei wird über einen relativen Pfad zu [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) im selben Repository verwiesen.
 
 ### <a name="selected-line-numbers"></a>Ausgewählte Zeilennummern
 
