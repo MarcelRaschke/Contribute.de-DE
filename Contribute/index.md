@@ -7,12 +7,12 @@ ms.date: 01/13/2021
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 9687c2c7acd0bcf57edeb27db306b216f9b3f06a
-ms.sourcegitcommit: 6d193fea0621ac29e3f941276dbfe09762e5eca2
+ms.openlocfilehash: 1ff248f352427cd5d38fca112cbb187de20e4d00
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98191312"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481259"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
@@ -62,7 +62,7 @@ Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehler
 
 Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubId\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
 
-Wir verwenden Pull Requests für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der `master`-Branch geschützt, damit Änderungen als Pull Requests vorgeschlagen werden.
+Wir verwenden Pull Requests für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der Standardbranch geschützt, damit Änderungen als Pull Requests gesendet werden.
 
 Das Bearbeiten im Browser eignet sich am besten für geringfügige oder seltene Änderungen. Wenn Sie umfangreichere Änderungen vornehmen oder erweiterte Git-Features verwenden (z.B die Branchverwaltung oder erweiterte Auflösung von Mergekonflikten), müssen Sie [einen Fork für das Repository erstellen und lokal arbeiten](how-to-write-workflows-major.md).
 

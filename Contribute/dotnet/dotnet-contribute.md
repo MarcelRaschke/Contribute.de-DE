@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 05/14/2020
-ms.openlocfilehash: 810a1335bf3c93b79952c701c44470d3e72fb124
-ms.sourcegitcommit: 940c84d6bc23a8fbec780244563af188d2620ed1
+ms.openlocfilehash: 36004387bece3ca4e2e05ea0f7d43fbf563215c5
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88668641"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481214"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -69,7 +69,7 @@ Navigieren Sie zu dem Ordner, der der Position im Inhaltsverzeichnis entspricht,
 
 Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei).
 
-Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Wenn Sie einen Codeausschnitt für einen Artikel unter den Ordnern [docs/csharp](https://github.com/dotnet/docs/tree/master/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/master/docs/fsharp) oder [docs/visual-basic](https://github.com/dotnet/docs/tree/master/docs/visual-basic) erstellen, wird der Ausschnitt nur in einer Sprache angezeigt, sodass Sie den Sprachordner weglassen können.
+Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Wenn Sie einen Codeausschnitt für einen Artikel unter den Ordnern [docs/csharp](https://github.com/dotnet/docs/tree/main/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/main/docs/fsharp) oder [docs/visual-basic](https://github.com/dotnet/docs/tree/main/docs/visual-basic) erstellen, wird der Ausschnitt nur in einer Sprache angezeigt, sodass Sie den Sprachordner weglassen können.
 
 Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contribute-to-samples) behandelt.
 
@@ -107,7 +107,7 @@ In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.
 
 Aus historischen Gründen werden viele der enthaltenen Ausschnitte im Ordner */samples* des *dotnet/docs*-Repositorys gespeichert. Wenn Sie wesentliche Änderungen an einem Artikel vornehmen, sollten diese Ausschnitte in die neue Struktur verschoben werden. Verschieben Sie keine Ausschnitt für nur kleine Änderungen.
 
-**Schritt 4:** Senden Sie einen Pull Request (PR) von Ihrem Branch zum Masterbranch.
+**Schritt 4:** Senden Sie einen Pull Request (PR) von Ihrem Branch zum Standardbranch.
 
 > [!IMPORTANT]
 > Die [Kommentarautomatisierung](../how-to-write-workflows-major.md#review-and-sign-off) ist derzeit nicht für die Repositorys für die .NET-Dokumentation verfügbar. Die Mitglieder des Teams für die .NET-Dokumentation überprüfen und mergen Ihren Pull Request.
@@ -120,9 +120,9 @@ Das .NET-Team überprüft Ihren Pull Request anschließend und teilt Ihnen mit, 
 
 **Schritt 5:** Nehmen Sie gemäß der Absprache mit dem Team die erforderlichen Änderungen an Ihrem Branch vor.
 
-Die Verwalter mergen Ihren Pull Request in den Masterbranch, sobald das Feedback umgesetzt und die Änderung genehmigt wurde.
+Die Verwalter mergen Ihren Pull Request in den Standardbranch, sobald das Feedback umgesetzt und die Änderung genehmigt wurde.
 
-Wir pushen alle Commits an den Masterbranch regelmäßig in den Livebranch. Dann können Sie Ihren Beitrag unter https://docs.microsoft.com/dotnet/ ansehen. Diese Veröffentlichungen finden werktags in der Regel täglich statt.
+Alle Commits werden mithilfe von Push regelmäßig vom Standardbranch in den Livebranch übertragen. Dann können Sie Ihren Beitrag unter https://docs.microsoft.com/dotnet/ ansehen. Diese Veröffentlichungen finden werktags in der Regel täglich statt.
 
 ## <a name="contribute-to-samples"></a>Beispiele für die Mitwirkung
 
@@ -147,11 +147,11 @@ Ihr Artikel sollte zudem Links zum Beispiel enthalten. Der Link sollte direkt zu
 
 ### <a name="write-a-new-sample"></a>Schreiben eines neuen Beispiels
 
-Beispiele sind vollständige Programme und Bibliotheken, die zum Download bereit stehen. Sie sind möglicherweise sehr klein, aber sie veranschaulichen Konzepte auf eine Weise, die es den Benutzern ermöglicht, selbst zu forschen und zu experimentieren. Die Richtlinien für diese Beispiele stellen sicher, dass Leser diese herunterladen und erkunden können. Sehen Sie sich die Beispiele zu [Paralleles LINQ (PLINQ)](https://github.com/dotnet/samples/tree/master/csharp/parallel/PLINQ) als Beispiel für jede Richtlinie an.
+Beispiele sind vollständige Programme und Bibliotheken, die zum Download bereit stehen. Sie sind möglicherweise sehr klein, aber sie veranschaulichen Konzepte auf eine Weise, die es den Benutzern ermöglicht, selbst zu forschen und zu experimentieren. Die Richtlinien für diese Beispiele stellen sicher, dass Leser diese herunterladen und erkunden können. Sehen Sie sich die Beispiele zu [Paralleles LINQ (PLINQ)](https://github.com/dotnet/samples/tree/main/csharp/parallel/PLINQ) als Beispiel für jede Richtlinie an.
 
 1. Ihr Beispiel **muss Teil eines erstellbaren Projekts sein**. Die Projekte sollten nach Möglichkeit auf allen Plattformen erstellt werden können, die von .NET Core unterstützt werden. Davon ausgenommen sind Beispiele, die plattformspezifische Features oder Tools veranschaulichen.
 
-2. Ihr Beispiel sollte aus Gründen der Konsistenz dem [corefx-Codierungsstil](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/coding-style.md) entsprechen.
+2. Ihr Beispiel sollte aus Gründen der Konsistenz dem [corefx-Codierungsstil](https://github.com/dotnet/corefx/blob/main/Documentation/coding-guidelines/coding-style.md) entsprechen.
 
    Zudem sollten Sie `static`-Methoden anstelle von Instanzmethoden verwenden, wenn Sie etwas veranschaulichen möchten, für das die Instanziierung von Objekten nicht erforderlich ist.
 
@@ -248,6 +248,6 @@ Beiträge für maschinell übersetzte (MT) Inhalte werden zurzeit nicht akzeptie
 
 Sie müssen die [Lizenzvereinbarung der .NET Foundation für Mitwirkende (Contribution License Agreement, CLA)](https://cla.dotnetfoundation.org) unterschreiben, bevor Ihr Pull Request gemergt wird. Für Projekte der .NET Foundation ist dies nur einmalig nötig. Weitere Informationen zu [Lizenzvereinbarungen für Mitwirkende (Contribution License Agreement, CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) finden Sie auf Wikipedia.
 
-Hier finden Sie die Lizenzvereinbarung: [net-foundation-contribution-license-agreement.pdf](https://github.com/dotnet/home/blob/master/guidance/net-foundation-contribution-license-agreement.pdf)
+Hier finden Sie die Lizenzvereinbarung: [net-foundation-contribution-license-agreement.pdf](https://github.com/dotnet/home/blob/main/guidance/net-foundation-contribution-license-agreement.pdf)
 
 Sie müssen diese nicht im Voraus unterschreiben. Sie können Ihren Pull Request wie gewohnt klonen, forken und senden. Wenn Ihr Pull Request erstellt wird, wird dieser von einem CLA-Bot klassifiziert. Wenn es sich nur um eine geringfügige Änderung handelt (z.B. das Korrigieren eines Tippfehlers), wird der Pull Request mit `cla-not-required` gekennzeichnet. Andernfalls wird er als `cla-required` klassifiziert. Sobald Sie die Lizenzvereinbarung für Mitwirkende (CLA) unterschrieben haben, werden alle aktuellen und zukünftigen Pull Requests als `cla-signed` gekennzeichnet.

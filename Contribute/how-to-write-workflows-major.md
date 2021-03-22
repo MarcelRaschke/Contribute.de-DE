@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 0661191c64d2f8aa29973e96e98445d070424beb
-ms.sourcegitcommit: 344c3c74c317350a00f91e3e7019a545d5c3c5a2
+ms.openlocfilehash: bdfbcdcd4e5daf5b10e875f99ac6017384b3beaf
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92689312"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481270"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>GitHub-Beitragsworkflow für größere oder langfristige Änderungen
 
@@ -47,12 +47,12 @@ In diesem Workflow fließen Änderungen in einen Wiederholungszyklus ein. Vom lo
 
 ### <a name="use-github-flow"></a>Verwenden des GitHub-Flows
 
-In [Git and GitHub essentials (Git- und GitHub-Grundlagen)](git-github-fundamentals.md#git) haben Sie gelernt, dass ein Git-Repository einen Masterbranch sowie einige zusätzliche Branches in Bearbeitung enthält, die nicht in den Masterbranch integriert wurden. Immer dann, wenn Sie mehrere logisch verknüpfte Änderungen vornehmen, sollten Sie einen *Arbeitsbranch* erstellen, um Ihre Änderungen über den Workflow zu verwalten. Wir verwenden hier die Bezeichnung Arbeitsbranch, weil es sich um einen Arbeitsbereich zum Durchlaufen bzw. Optimieren von Änderungen handelt, bis diese wieder in den Masterbranch integriert werden können.
+In [Git- und GitHub-Grundlagen](git-github-fundamentals.md#git) haben Sie gelernt, dass ein Git-Repository einen Standardbranch sowie einige zusätzliche Branches in Bearbeitung enthält, die nicht in den Standardbranch integriert wurden. Immer dann, wenn Sie mehrere logisch verknüpfte Änderungen vornehmen, sollten Sie einen *Arbeitsbranch* erstellen, um Ihre Änderungen über den Workflow zu verwalten. Hier wird die Bezeichnung „Arbeitsbranch“ verwendet, weil es sich um einen Arbeitsbereich zum Durchlaufen bzw. Optimieren von Änderungen handelt, bis diese wieder in den Standardbranch integriert werden können.
 
 Mit der Isolation zugehöriger Änderungen in einem bestimmten Branch können Sie diese Änderungen unabhängig steuern und einführen und zu einem bestimmten Zeitpunkt im Veröffentlichungszyklus freigeben. Sie könnten abhängig vom Typ Ihrer Arbeit mühelos über mehrere Arbeitsbranches in Ihrem Repository verfügen. Es ist nicht ungewöhnlich, mit mehreren Branches gleichzeitig zu arbeiten, wobei jeder Branch für ein Projekt steht.
 
 >[!TIP]
->Änderungen im Masterbranch vorzunehmen, ist *keine* bewährte Methode. Stellen Sie sich vor, Sie wurden den Masterbranch verwenden, um mehrere Änderungen für die Freigabe von Features zu einem bestimmten Zeitpunkt einzuführen. Sie schließen die Änderungen ab und warten auf ihre Freigabe. Dann erhalten Sie in der Zwischenzeit die dringende Anfrage, ein Problem zu beheben, also nehmen Sie die Änderung in einer Datei im Masterbranch vor und veröffentlichen dann die Änderung. In diesem Beispiel veröffentlichen Sie unabsichtlich die Problembehebung *und* die Änderungen, die Sie zur Freigabe zu einem bestimmten Datum zurückgehalten haben.
+>Es ist *keine* bewährte Methode, Änderungen im Standardbranch vorzunehmen. Stellen Sie sich vor, Sie verwenden den Standardbranch, um mehrere Änderungen für die Freigabe von Features zu einem bestimmten Zeitpunkt einzuführen. Sie schließen die Änderungen ab und warten auf ihre Freigabe. Dann erhalten Sie in der Zwischenzeit die dringende Anfrage, ein Problem zu beheben, also nehmen Sie die Änderung an einer Datei im Standardbranch vor und veröffentlichen dann die Änderung. In diesem Beispiel veröffentlichen Sie unabsichtlich die Problembehebung *und* die Änderungen, die Sie zur Freigabe zu einem bestimmten Datum zurückgehalten haben.
 
 Nun erstellen wir einen neuen Arbeitsbranch in Ihrem lokalen Repository, um die von Ihnen vorgeschlagenen Änderungen zu erfassen. Wenn Sie Git Bash eingerichtet haben (Informationen finden Sie unter [Installieren von Tools für die Inhaltsentwicklung](get-started-setup-tools.md)), können Sie einen neuen Branch erstellen und diesen mit nur einem Befehl innerhalb Ihres geklonten Repositorys „auschecken“:
 
@@ -70,7 +70,7 @@ Da Sie nun eine Kopie („Klon“) des Microsoft-Repositorys besitzen und Sie ei
 
 Bevor Sie Ihre Änderungen an den Autor übermitteln, müssen Sie sie zunächst in Ihrem GitHub-Repository speichern.  Da sich alle Tools voneinander unterscheiden, sind nur ein paar einfache Schritte nötig, wenn Sie die Git Bash-Befehlszeile verwenden.
 
-Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _stagen_ , sodass diese committet werden.  Dies kann folgendermaßen geschehen:
+Sie müssen zunächst innerhalb des Repositorys alle Ihre Änderungen _stagen_, sodass diese committet werden.  Dies kann folgendermaßen geschehen:
 
 ````
 git add --all
@@ -97,15 +97,18 @@ Müssen Sie etwas beheben, das Sie übermittelt haben?  Kein Problem.  Führen S
 
 ## <a name="making-your-next-change"></a>Durchführen der nächsten Änderung
 
-Müssen Sie darüber hinaus weitere Änderungen durchführen? Kehren Sie zum Masterbranch zurück, führen Sie einen Pullvorgang aus dem Upstreamrepository durch, um sicherzustellen, dass Ihr Fork auf dem neuesten Stand ist, und checken Sie einen neuen Branch aus.  Führen Sie in GitBash die folgenden Befehle aus:
+Müssen Sie darüber hinaus weitere Änderungen durchführen? Kehren Sie zum Standardbranch zurück, führen Sie einen Pullvorgang aus dem Upstreamrepository durch, um sicherzustellen, dass Ihr Fork auf dem neuesten Stand ist, und checken Sie einen neuen Branch aus.  Führen Sie in GitBash die folgenden Befehle aus:
 
 ````
-git checkout master
-git pull upstream master
+git checkout main
+git pull upstream main
 git checkout -b "branchname"
 ````
 
-Sie befinden sich nun in einem neuen Branch und sind nun auf dem besten Weg, ein wichtiger Mitwirkender zu werden.
+> [!NOTE]
+> Bei den obigen Befehlen wird davon ausgegangen, dass das Repository, mit dem Sie arbeiten, `main` als Standardbranch verwendet. Wenn beim ersten Befehl ein Fehler ausgegeben wird, liegt dies wahrscheinlich daran, dass der Standardbranch nicht umbenannt wurde. Ersetzen Sie `main` in den ersten beiden Befehlen durch `master`, um dies zu überprüfen.
+
+Sie befinden sich nun in einem neuen Branch und sind auf dem besten Weg, ein kompetenter Mitwirkender zu werden.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 

@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 038b181fee8465c9503f8a157ea90346b72d273f
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "78331881"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481347"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Grundlegende Informationen zu Git und GitHub für die Dokumentation
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Sie interagieren als Mitwirkender an Dokumentationsinhalten mit verschiedenen Tools und Vorgängen. Sie arbeiten mit anderen Mitwirkenden parallel an demselben Projekt zusammen – teilweise sogar an denselben Inhalten und zur selben Zeit. Möglich wird all dies durch die Software Git und GitHub.
 
@@ -28,8 +28,8 @@ Wenn Ihnen die Arbeit mit zentralen Versionskontrollsystemen (z.B. Team Foundati
 
 Git basiert ebenfalls auf einer mehrstufigen Struktur zur Speicherung und Verwaltung von Inhalten für ein Projekt:
 
-- *Repository*: Das *Repository* ist die größte Speichereinheit. Ein Repository enthält mindestens einen Branch.
-- *Branch*: Diese Speichereinheit enthält die Dateien und Ordner, die den gesamten Inhalt eines Projekts bilden. Branches werden zur Trennung der Streams (in der Regel als Versionen bezeichnet) verwendet. Beiträge werden immer für einen bestimmten Branch erstellt und diesem zugeordnet. Alle Repositorys enthalten einen Standardbranch, der in der Regel als „Masterbranch“ bezeichnet wird, und mindestens einen Branch, der mit dem Masterbranch zusammengeführt werden soll. Der Masterbranch dient für das Projekt als aktuelle und allgemeingültige Version. Er ist der übergeordnete Branch, aus dem alle anderen Branches in dem Repository erstellt werden.
+- Repository: Dies ist die größte Speichereinheit. Ein Repository enthält mindestens einen Branch.
+- *Branch*: Diese Speichereinheit enthält die Dateien und Ordner, die den gesamten Inhalt eines Projekts bilden. Branches werden zur Trennung der Streams (in der Regel als Versionen bezeichnet) verwendet. Beiträge werden immer für einen bestimmten Branch erstellt und diesem zugeordnet. Alle Repositorys enthalten einen Standardbranch, der in der Regel als „Mainbranch“ bezeichnet wird, und mindestens einen weiteren Branch, der mit dem Standardbranch zusammengeführt werden soll. Der Standardbranch dient für das Projekt als aktuelle und allgemeingültige Version. Er ist der übergeordnete Branch, aus dem alle anderen Branches in dem Repository erstellt werden.
 
 Mit Git aktualisieren und bearbeiten Mitwirkende Repositorys auf der lokalen und der GitHub-Ebene:
 
@@ -47,7 +47,7 @@ Alle Workflows beginnen und enden auf GitHub-Ebene, auf der das Hauptrepository 
 
 ### <a name="directory-organization"></a>Organisation von Verzeichnissen
 
-Wie zuvor bereits erwähnt wurde, stellt der Standard- bzw. Masterbranch eines Projekts die aktuelle Version der Projektinhalte dar. Der Inhalt im Masterbranch (und in den daraus erstellten Branches) wird mit der Organisation der Artikel auf den entsprechenden Dokumentationsseiten abgestimmt. Unterverzeichnisse werden zur Trennung von ähnlichen Inhalten (z.B. Diensten), Medieninhalten (z.B. Bilddateien) und „Include“-Dateien verwendet, die eine Wiederverwendung der Inhalte ermöglichen.
+Wie zuvor bereits erwähnt wurde, stellt der Standardbranch eines Projekts die aktuelle Version der Projektinhalte dar. Der Inhalt im Standardbranch (und in den daraus erstellten Branches) wird mit der Organisation der Artikel auf den entsprechenden Dokumentationsseiten abgestimmt. Unterverzeichnisse werden zur Trennung von ähnlichen Inhalten (z.B. Diensten), Medieninhalten (z.B. Bilddateien) und „Include“-Dateien verwendet, die eine Wiederverwendung der Inhalte ermöglichen.
 
 Üblicherweise finden Sie ein `articles`-Hauptverzeichnis des Repositorystamms. Das Artikelverzeichnis enthält einige Unterverzeichnisse. Artikel in den Unterverzeichnissen werden als Markdowndateien mit *MD*-Erweiterung formatiert. Einige Repositorys, die mehrere Dienste unterstützen, verwenden ein generisches `/articles`-Unterverzeichnis, z.B. das Repository [Azure-Docs](https://github.com/MicrosoftDocs/Azure-Docs). Andere verwenden möglicherweise einen dienstspezifischen Namen, z.B. das Repository [IntuneDocs](https://github.com/MicrosoftDocs/IntuneDocs), das `/IntuneDocs` verwendet.
 
@@ -61,13 +61,13 @@ Jedes Artikelverzeichnis enthält ein Unterverzeichnis `/media` für entsprechen
 
 Wenn es wiederverwendbaren Inhalt gibt, der von mindestens einem Artikeln genutzt wird, wird dieser im Unterverzeichnis `/includes` des `articles`-Hauptartikelverzeichnisses abgelegt. In einer Markdowndatei, die die Includedatei verwenden soll, wird die entsprechende Markdownerweiterung „include“ an die Stelle platziert, an der auf die Includedatei verwiesen werden soll.
 
-Weitere Anweisungen finden Sie unter [Markdownreferenz: Includedateien](markdown-reference.md#included-markdown-files).
+Weitere Anleitungen finden Sie unter [Einbezogene Markdowndateien](markdown-reference.md#included-markdown-files).
 
-### <a name="markdown-file-template"></a>Markdowndateivorlage
+### <a name="markdown-file-template"></a>Markdown-Vorlagendatei
 
 Der Einfachheit halber enthält das Stammverzeichnis jedes Repositorys üblicherweise eine Markdownvorlagendatei namens `template.md`. Sie können diese Vorlagendatei als Ausgangsdatei nutzen, wenn Sie einen neuen Artikel für die Übermittlung an das Repository erstellen müssen. Die Datei enthält Folgendes:
 
-- Einen **Metadatenheader** am Anfang der Datei, der durch zwei Zeilen mit drei Bindestrichen getrennt wird. Er enthält die verschiedenen Tags, die zur Nachverfolgung von Informationen verwendet werden, die im Zusammenhang mit dem Artikel stehen. Metadaten zu Artikeln sind Voraussetzungen für bestimmte Funktionen wie die Zuordnung von Autoren und Mitwirkenden, die Brotkrümelnavigation und Beschreibungen von Artikeln. Zudem enthalten Sie SEO-Optimierungen und Vorgänge zur Berichterstattung, die Microsoft verwendet, um die Leistung eines Inhalts zu bewerten. Daher spielen die Metadaten eine wichtige Rolle.
+- Einen **Metadatenheader** am Anfang der Datei, der durch zwei Zeilen mit drei Bindestrichen getrennt wird. Er enthält die verschiedenen Tags, die zur Nachverfolgung von Informationen verwendet werden, die im Zusammenhang mit dem Artikel stehen. Metadaten zu Artikeln sind Voraussetzungen für bestimmte Funktionen wie die Zuordnung von Autoren und Mitwirkenden, die Brotkrümelnavigation und Beschreibungen von Artikeln. Zudem enthalten Sie SEO-Optimierungen und Vorgänge zur Berichterstattung, die Microsoft verwendet, um die Leistung eines Inhalts zu bewerten. Daher sind die Metadaten wichtig.
 - Den **Abschnitt „Metadaten“** , in dem die verschiedenen Metadatentags und Werte beschrieben werden. Wenn Sie nicht sicher sind, welche Werte in den Metadatenabschnitt gehören, können Sie sie leer lassen oder mit einem führenden Hashtag (#) kommentieren. Der Prüfer des Pull Requests für das Repository überprüft bzw. vervollständigt diese anschließend.
 - Verschiedene **Beispiele für die Verwendung des Markdownformats** zum Formatieren der Elemente eines Artikels.
 - Allgemeine **Anweisungen für die Verwendung von Markdownerweiterungen**, die für verschiedene Arten von Benachrichtigungen verwendet werden können
