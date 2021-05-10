@@ -7,12 +7,12 @@ ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 2a0595e03e145c560df701f3db8a43bbb76ef724
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "80624730"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481186"
 ---
 # <a name="docs-markdown-reference"></a>Docs Markdown-Referenz
 
@@ -58,7 +58,7 @@ Diese Warnungen sehen auf docs.microsoft.com folgendermaßen aus:
 > Negative potential consequences of an action.
 
 > [!WARNING]
-> Dangerous certain consequences of an action.
+> Gefährliche Folgen einer Aktion.
 
 ### <a name="angle-brackets"></a>Geschweifte Klammern
 
@@ -70,7 +70,7 @@ Spitze Klammern müssen in Text, der als Inlinecode oder in Codeblöcken formati
 
 ## <a name="apostrophes-and-quotation-marks"></a>Apostrophe und Anführungszeichen
 
-Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ&euro;&trade;s
+Wenn Sie aus Word in einen Markdowneditor kopieren, könnte der Text typografische Apostrophe oder Anführungszeichen enthalten. Diese müssen codiert oder in einfache Apostrophe und Anführungszeichen geändert werden. Andernfalls wird beim Veröffentlichen der Datei möglicherweise Folgendes ausgegeben: Itâ&euro;&trade;s.
 
 Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 
@@ -79,7 +79,7 @@ Hier sind die Codierungen für die typografischen Versionen dieser Satzzeichen:
 - Rechtes (schließendes) einzelnes Anführungszeichen oder Apostroph: `&#8217;`
 - Linkes (öffnendes) einzelnes Anführungszeichen (selten verwendet): `&#8216;`
 
-## <a name="blockquotes"></a>Blockzitate
+## <a name="blockquotes"></a>Blockquotes
 
 Blockzitate werden mit dem `>`-Zeichen generiert:
 
@@ -372,7 +372,7 @@ Verwenden Sie Checklisten am Anfang oder Ende eines Artikels, um zusammenzufasse
 
 Sie können eine benutzerdefinierte Erweiterung verwenden, um eine Schaltfläche für weitere Schritte hinzuzufügen.
 
-Die Syntax sieht wie folgt aus:
+Die Syntax ist wie folgt:
 
 ```markdown
 > [!div class="nextstepaction"]
@@ -557,7 +557,7 @@ Dies wird wie folgt gerendert:
 
 Goodbye <sup>This is superscript!</sup>
 
-## <a name="tables"></a>Tables
+## <a name="tables"></a>Tabellen
 
 Die einfachste Möglichkeit zum Erstellen einer Tabelle in Markdown ist die Verwendung von senkrechten Strichen und Unterstrichen. Fügen Sie unter der ersten Zeile Unterstriche ein, um eine Standardtabelle mit Kopfzeile zu erstellen:
 
@@ -572,8 +572,8 @@ Dies wird wie folgt gerendert:
 
 |This is   |a simple   |table header|
 |----------|-----------|------------|
-|table     |data       |here        |
-|it doesn't|actually   |have to line up nicely!||
+|Tisch     |data       |hier        |
+|it doesn't|actually   |have to line up nicely!|
 
 Sie können die Spalten mithilfe von Doppelpunkten ausrichten:
 
@@ -588,11 +588,11 @@ Sie können die Spalten mithilfe von Doppelpunkten ausrichten:
 
 Dieser Code wird folgendermaßen gerendert:
 
-| Fun                  | With                 | Tables          |
+| Fun                  | With                 | Tabellen          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
 | $100                 | $100                 | $100            |
-| $10                  | $10                  | $10             |
+| 10 USD                  | 10 USD                  | 10 USD             |
 | $1                   | $1                   | $1              |
 
 > [!TIP]
@@ -618,11 +618,11 @@ Im Folgenden finden Sie ein Markdownbeispiel einer Tabelle mit drei Zeilen, die 
 Dieser Code wird wie folgt gerendert:
 
 > [!div class="mx-tdBreakAll"]
-> |Name|Syntax|Mandatory for silent installation?|Description|
+> |Name|Syntax|Erforderlich für die unbeaufsichtigte Installation?|Beschreibung|
 > |-------------|----------|---------|---------|
-> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
-> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
-> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
+> |Quiet|/quiet|Ja|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Unterdrückt alle Neustartversuche. Standardmäßig wird vor dem Neustart auf der Benutzeroberfläche eine Eingabeaufforderung angezeigt.|
+> |Hilfe|/help|Nein|Stellt Hilfe und eine Kurzübersicht bereit. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Zeilenumbrüche innerhalb von Wörtern in Tabellenzellen der zweiten Spalte
 

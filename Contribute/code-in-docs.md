@@ -7,12 +7,12 @@ ms.date: 03/03/2020
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: b33333a49df11f0234193ca84fc2c3accdb6894d
-ms.sourcegitcommit: f1535713b66ff9b840f1138583746bc2bf182b4f
+ms.openlocfilehash: ddd0463840769f02724423583efaa6ffa69d5d33
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91953648"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481358"
 ---
 # <a name="how-to-include-code-in-docs"></a>Gewusst wie: Einbinden von Code in Dokumenten
 
@@ -118,7 +118,7 @@ Dies sind nur einige der Gründe, warum IDE-Screenshots nicht als Methode zum Ei
 
 ### <a name="code-validation"></a>Codeüberprüfung
 
-In einigen Repositorys wird der gesamte Beispielcode durch implementierte Prozesse automatisch kompiliert, um ihn auf Fehler zu prüfen. Dies ist beim .NET-Repository der Fall. Weitere Informationen finden Sie im .NET-Repository unter [Contributing](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) (Beitrag).
+In einigen Repositorys wird der gesamte Beispielcode durch implementierte Prozesse automatisch kompiliert, um ihn auf Fehler zu prüfen. Dies ist beim .NET-Repository der Fall. Weitere Informationen finden Sie im .NET-Repository unter [Contributing](https://github.com/dotnet/docs/blob/main/CONTRIBUTING.md) (Beitrag).
 
 Wenn Sie Codeblöcke aus einem anderen Repository einbinden, erarbeiten Sie zusammen mit den Besitzern eine Wartungsstrategie für den Code, damit Ihr eingebundener Code nicht unterbrochen wird oder veraltet, sobald neue Versionen der vom Code verwendeten Bibliotheken geliefert werden.
 
@@ -220,7 +220,7 @@ Beispiel:
 :::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
 ```
 
-Das Beispiel stammt aus der Artikeldatei [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md) des ASP.NET-Dokumentenrepositorys. Auf die Codedatei wird über einen relativen Pfad zu [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) im selben Repository verwiesen.
+Das Beispiel stammt aus der Artikeldatei [aspnetcore/data/ef-mvc/crud.md](https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/data/ef-mvc/crud.md) des ASP.NET-Dokumentenrepositorys. Auf die Codedatei wird über einen relativen Pfad zu [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) im selben Repository verwiesen.
 
 ### <a name="selected-line-numbers"></a>Ausgewählte Zeilennummern
 
@@ -305,6 +305,67 @@ Im Repository *azure-functions-durable-extension* befindet sich diese Codedatei 
 
 > [!NOTE]
 > Der Name, den Sie dem abhängigen Repository zuweisen, ist relativ zum Stamm des Hauptrepositorys, aber die Tilde (~) verweist auf den Stamm des Docsets. Der Stamm des Docsets wird durch `build_source_folder` in *.openpublishing.publish.config.json* bestimmt. Der Pfad zum Codeausschnitt im vorherigen Beispiel wird im Repository „azure-docs“ verwendet, da `build_source_folder` auf den Repositorystamm (`.`) verweist. Wenn für `build_source_folder` der Wert `articles` angegeben wäre, würde der Pfad mit `~/../samples-durable-functions` anstelle von `~/samples-durable-functions` beginnen.
+
+## <a name="snippets-in-a-jupyter-notebook"></a>Codeausschnitte in einem Jupyter-Notebook
+
+Sie können auf eine Zelle in einem Jupyter-Notebook als Codeausschnitt verweisen. So verweisen Sie auf die Zelle:
+
+1. Fügen Sie dem Notebook Zellenmetadaten hinzu, auf die Sie verweisen möchten.
+1. Richten Sie den Zugriff auf das Repository ein.
+1. Verwenden Sie die Syntax für den Jupyter-Notebook-Ausschnitt in Ihrer Markdowndatei.
+
+### <a name="add-metadata-to-notebook"></a>Hinzufügen von Metadaten zur Notebook-Instanz
+
+1. Benennen Sie die Zelle, indem Sie Zellenmetadaten im Jupyter-Notebook hinzufügen.  
+
+    * In Jupyter können Sie [Zellmetadaten bearbeiten](https://jupyterbook.org/advanced/advanced.html#adding-tags-using-notebook-interfaces), indem Sie zuerst die Zellensymbolleiste aktivieren:  **Ansicht > Zellensymbolleiste > Metadaten bearbeiten**
+    * Nachdem die Zellensymbolleiste aktiviert ist, wählen Sie **Metadaten bearbeiten** in der Zelle aus, die Sie benennen möchten.
+    * Alternativ können Sie die Metadaten direkt in der JSON-Struktur des Notebooks bearbeiten.
+
+1.  Fügen Sie in den Zellenmetadaten ein „name“-Attribut hinzu:
+ 
+    ```json
+    "metadata": {"name": "<name>"},
+    ```
+  
+    Beispiel:
+
+    ```json
+    "metadata": {"name": "workspace"},
+    ```
+
+    > [!TIP]
+    > Sie können weitere Metadaten hinzufügen, die Ihnen helfen können, nachzuverfolgen, wo die Zelle verwendet wird.  Beispiel:
+    >
+    > ```json
+    >     "metadata": {
+    >       "name": "workspace",
+    >       "msdoc": "how-to-track-experiments.md"
+    >     },
+    > ```
+
+### <a name="set-up-repository-access"></a>Einrichten des Repositoryzugriffs
+
+Wenn sich die die Notebook-Datei, auf die verwiesen werden soll, in einem anderen Repository befindet, richten Sie das Coderepository als [abhängiges Repository](#out-of-repo-snippet-references) ein.
+
+### <a name="jupyter-notebook-snippet-syntax-reference"></a>Referenz zur Syntax für den Jupyter-Notebook-Ausschnitt
+
+ Wenn Ihr Notebook die erforderlichen Metadaten enthält, verweisen Sie in Ihrer Markdowndatei darauf. Verwenden Sie den `<cell-name-value>`, den Sie dem Notebook hinzugefügt haben, sowie den `<path>` (Pfad), den Sie als Ihr abhängiges Repository eingerichtet haben.
+
+```markdown
+[!notebook-<language>[] (<path>/<notebook-name.ipynb>?name=<cell-name-value>)]
+```
+
+Beispiel:
+
+```markdown
+[!notebook-python[] (~/MachineLearningNotebooks/train-on-local.ipynb?name=workspace)]
+```
+
+> [!IMPORTANT]
+> Diese Syntax ist ein Blockmarkdown-Erweiterung. Sie muss in einer eigenen Zeile verwendet werden.
+
+Verwenden Sie für den `<language>`-Bezeichner eine der [unterstützten Programmiersprachen](#supported-languages).
 
 ## <a name="interactive-code-snippets"></a>Interaktive Codeausschnitte
 

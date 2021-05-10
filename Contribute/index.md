@@ -1,18 +1,18 @@
 ---
 title: 'Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht'
 description: In diesem Leitfaden erfahren Sie, wie Sie an der Dokumentationswebsite von Microsoft unter docs.microsoft.com mitwirken können.
-author: billwagner
-ms.author: wiwagn
-ms.date: 06/23/2020
+author: Jim-Parker
+ms.author: jimpark
+ms.date: 01/13/2021
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 084da0320514b3a4551ce130d8d17e3040a35f29
-ms.sourcegitcommit: 6a7c9b5e9538ed588bd2da772ae319c09e545a74
+ms.openlocfilehash: a9ba55fddf1e54cb23e091a23797f2afeddb17b0
+ms.sourcegitcommit: c7e0bd481861d401f6ac9e364e79c4d782fd3e09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85279345"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108215205"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
@@ -35,11 +35,13 @@ Die Benutzeroberfläche auf [docs.microsoft.com](https://docs.microsoft.com) bez
 
 Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehlern und Auslassungen in Dokumenten. Trotz aller Bemühungen kommt es zu _geringfügigen_ Grammatik- und Rechtschreibfehlern in unseren Dokumenten. Sie können Tickets erstellen, um Fehler zu melden – es ist jedoch schneller und einfacher, einen Pull Request (PR) zum Beheben des Fehlers zu erstellen, wenn diese Option verfügbar ist.
 
-1. Einige Seiten der Dokumentation ermöglichen es Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** fehlt, bedeutet dies, dass die Dokumentationsseite nicht für Änderungen verfügbar ist.
+1. **Einige** Seiten der Dokumentation ermöglichen Ihnen, Inhalte direkt im Browser zu bearbeiten. Wenn dies der Fall ist, wird eine Schaltfläche **Bearbeiten** angezeigt, wie unten gezeigt. Wenn Sie auf **Bearbeiten** klicken, werden Sie zur Quelldatei auf GitHub weitergeleitet. Wenn die Schaltfläche **Bearbeiten** fehlt, bedeutet dies, dass die Dokumentationsseite nicht für Änderungen verfügbar ist.
 
    ![Ort des Links „Bearbeiten“](./media/index/edit-article.png)
 
-2. Klicken Sie anschließend auf das Stiftsymbol, um den Artikel wie gezeigt zu bearbeiten. Wenn das Stiftsymbol abgeblendet ist, müssen Sie sich mit Ihrem GitHub-Konto anmelden oder ein neues Konto erstellen. 
+   Wenn die Schaltfläche **Bearbeiten** nicht angezeigt wird, bedeutet dies, dass der Inhalt nicht für öffentliche Beiträge freigegeben ist.
+
+2. Wählen Sie das Stiftsymbol aus, um den Artikel zu bearbeiten. Wenn das Stiftsymbol abgeblendet ist, müssen Sie sich mit Ihrem GitHub-Konto anmelden oder ein neues Konto erstellen. 
 
    ![Ort des Bleistiftsymbols](./media/index/edit-icon.png)
 
@@ -50,17 +52,17 @@ Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehler
 
    ![Propose file change](./media/index/submit-pull-request.png)
 
-5. Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie in der oberen Abbildung auf **Propose file change** geklickt haben, müssten Sie zu einer neuen Seite gelangt sein, die folgender Abbildung entspricht:
+5. Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie **Propose file change** (Dateiänderung vorschlagen) auswählen, wird eine neue Seite ähnlich der folgenden angezeigt:
 
    ![Pull Request erstellen](media/index/create-pull-request.png)
 
-   Klicken Sie auf **Create pull request** (Pull Request erstellen), geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken erneut auf **Create pull request**. (Wenn Sie neu bei GitHub sind, finden Sie unter [About Pull Requests (Über Pull Requests)](https://help.github.com/en/articles/about-pull-requests) wichtige Informationen zum Einstieg.)
+   Wählen Sie **Create pull request** aus (Pull Request erstellen), geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie auf **Create pull request**. Wenn Sie neu bei GitHub sind, finden Sie unter [About Pull Requests (Über Pull Requests)](https://help.github.com/en/articles/about-pull-requests) wichtige Informationen zum Einstieg.
 
-6. Das ist alles! Das Inhaltsteam sieht sich Ihren PR an und mergt ihn bei Bedarf. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
+6. Das ist alles! Das Inhaltsteam sieht sich Ihren PR an und mergt ihn bei Bedarf. Möglicherweise können Gebühren anfallen.
 
 Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubId\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
 
-Wir verwenden Pull Requests für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der `master`-Branch geschützt, damit Änderungen als Pull Requests vorgeschlagen werden.
+Wir verwenden Pull Requests für alle Änderungen, auch für Mitwirkende mit Schreibberechtigungen. In den meisten Repositorys ist der Standardbranch geschützt, damit Änderungen als Pull Requests gesendet werden.
 
 Das Bearbeiten im Browser eignet sich am besten für geringfügige oder seltene Änderungen. Wenn Sie umfangreichere Änderungen vornehmen oder erweiterte Git-Features verwenden (z.B die Branchverwaltung oder erweiterte Auflösung von Mergekonflikten), müssen Sie [einen Fork für das Repository erstellen und lokal arbeiten](how-to-write-workflows-major.md).
 

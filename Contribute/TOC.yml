@@ -48,6 +48,8 @@
               href: docs-authoring/sort-redirects.md
             - name: Sortierauswahl
               href: docs-authoring/sort-selection.md
+            - name: Jupyter Notebooks
+              href: docs-authoring/jupyter-notebooks.md
 - name: Dokumentationsspezifische Leitfäden
   items:
     - name: .NET-Dokumentation
@@ -64,6 +66,8 @@
           href: dotnet/dotnet-voice-tone.md
         - name: Pull Request-Überprüfungsprozess
           href: dotnet/dotnet-pr-review.md
+        - name: .NET-Benennung in Dokumenten
+          href: dotnet/net-core-5-naming.md
     - name: PowerShell-Dokumentation
       href: powershell-overview.md
 - name: Zusätzliche Ressourcen

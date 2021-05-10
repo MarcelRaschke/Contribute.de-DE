@@ -43,8 +43,8 @@
         "Contribute"
       ],
       "hideScope": false,
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Contribute.de-de",
+      "feedback_system": "None",
+      "feedback_github_repo": "",
       "feedback_product_url": "https://aka.ms/sitefeedback",
       "author": "billwagner",
       "ms.author": "wiwagn",

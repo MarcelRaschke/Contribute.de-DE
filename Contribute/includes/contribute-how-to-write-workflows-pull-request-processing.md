@@ -1,25 +1,25 @@
 ---
-ms.openlocfilehash: 9cb0ba651d40d2834081d32443a8fd2b1152003d
-ms.sourcegitcommit: cfba5ad25b898bfed76046126ce8ff4871910701
+ms.openlocfilehash: 7de30ed1debc659d5785112735a5fc18957e0ace
+ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "53285968"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103481317"
 ---
 ## <a name="pull-request-processing"></a>Verarbeitung des Pull Requests
 
-Im vorherigen Abschnitt wurden Sie durch den Prozess zur Übermittlung vorgeschlagener Änderungen durch Bündeln dieser Änderungen in einem neuen Pull Request (PR) geführt, der zur PR-Warteschlange des Zielrepositorys hinzugefügt wurde. Ein Pull Request aktiviert das Modell der Zusammenarbeit von GitHub, indem er anfordert, dass die Änderungen von Ihrem Arbeitsbranch mithilfe von Pull in einen anderen Branch übertragen und darin zusammengeführt werden. In den meisten Fällen ist dieser andere Branch der Standard-/„Master“-Branch im Hauptrepository.
+Im vorherigen Abschnitt wurden Sie durch den Prozess zur Übermittlung vorgeschlagener Änderungen durch Bündeln dieser Änderungen in einem neuen Pull Request (PR) geführt, der zur PR-Warteschlange des Zielrepositorys hinzugefügt wurde. Ein Pull Request aktiviert das Modell der Zusammenarbeit von GitHub, indem er anfordert, dass die Änderungen von Ihrem Arbeitsbranch mithilfe von Pull in einen anderen Branch übertragen und darin zusammengeführt werden. In den meisten Fällen ist dieser andere Branch der Standardbranch im Hauptrepository.
 
-### <a name="validation"></a>Überprüfung
+### <a name="validation"></a>Überprüfen
 
 Bevor Ihr Pull Request in seinem Zielbranch zusammengeführt werden kann, ist es möglicherweise notwendig, einen oder mehrere PR-Überprüfungsvorgänge zu durchlaufen. Überprüfungsprozesse können je nach Umfang der vorgeschlagenen Änderungen und den Regeln des Zielrepositorys variieren. Nachdem Ihr Pull Request übermittelt wurde, können Sie erwarten, dass eines der folgenden Ereignisse eintritt:
 
-- **Zusammenführbarkeit:** Ein grundlegender Test für GitHub wird zunächst durchgeführt,bei dem geprüft wird, ob das Mergen möglich ist. Es wird überprüft, ob die vorgeschlagenen Änderungen in Ihrem Branch in Konflikt mit dem Zielbranch stehen oder nicht. Wenn der Pull Request darauf hinweist, dass der Test fehlgeschlagen ist, müssen Sie den Inhalt ausgleichen, der den Konflikt beim Zusammenführen verursacht, bevor die Verarbeitung fortgeführt werden kann.
-- **CLA:** Wenn Sie zu einem öffentlichen Repository beitragen und nicht bei Microsoft angestellt sind, werden Sie je nach Ausmaß der vorgeschlagenen Änderungen möglicherweise aufgefordert, eine kurze Lizenzvereinbarung für Mitwirkende (Contribution License Agreement, CLA) abzuschließen, wenn Sie das erste Mal einen Pull Request für dieses Repository absenden. Nachdem der CLA-Schritt gelöscht wurde, wird Ihr Pull Request verarbeitet.
-- **Bezeichnung:** Bezeichnungen werden automatisch Ihrem Pull Request zugeordnet. Diese werden verwendet, um den Status Ihres Pull Requests anzugeben, wenn er den Validierungsworkflow durchläuft. Beispielsweise erhalten neue Pull Requests womöglich automatisch die Bezeichnung „do-not-merge“ (nicht zusammenführen), was anzeigt, dass der Pull Request die Schritte zur Validierung, Überprüfung und Abmeldung noch nicht abgeschlossen hat.
-- **Prüfung und Erstellung:** Automatische Prüfungen verifizieren, ob Ihre Änderungen die Validierungstests bestehen. Die Validierungstests ergeben womöglich Warnungen oder Fehler. Sie müssen deshalb Änderungen an mindestens einer Datei in Ihrem Pull Request vornehmen, bevor dieser zusammengeführt werden kann. Die Testergebnisse der Validierung werden Ihrem Pull Request als Kommentar zur Überprüfung hinzugefügt und werden Ihnen möglicherweise auch via E-Mail übermittelt.
-- **Staging:** Die Artikelseiten, die von Ihren Änderungen betroffen sind, können bei erfolgreicher Validierung und Erstellung automatisch in einer Stagingumgebung zur Überprüfung bereitgestellt werden. Vorschau-URLs erscheinen in einem PR-Kommentar.
-- **Automatisch mergen:** Der Pull Request wird möglicherweise automatisch gemergt, wenn er die Validierungstests besteht und bestimmte Kriterien erfüllt. In diesem Fall sind keine weiteren Schritte nötig.
+- **Zusammenführbarkeit**: Zunächst wird ein grundlegender Test für GitHub durchgeführt, bei dem geprüft wird, ob das Zusammenführen möglich ist. Es wird überprüft, ob die vorgeschlagenen Änderungen in Ihrem Branch nicht in Konflikt mit dem Zielbranch stehen. Wenn der Pull Request darauf hinweist, dass der Test fehlgeschlagen ist, müssen Sie den Inhalt ausgleichen, der den Konflikt beim Zusammenführen verursacht, bevor die Verarbeitung fortgeführt werden kann.
+- **CLA**: Wenn Sie zu einem öffentlichen Repository beitragen und nicht bei Microsoft angestellt sind, werden Sie je nach Ausmaß der vorgeschlagenen Änderungen möglicherweise aufgefordert, eine kurze Lizenzvereinbarung für Mitwirkende (Contribution License Agreement, CLA) abzuschließen, wenn Sie das erste Mal einen Pull Request für dieses Repository absenden. Nachdem der CLA-Schritt gelöscht wurde, wird Ihr Pull Request verarbeitet.
+- **Bezeichnungen**: Bezeichnungen werden automatisch Ihrem Pull Request zugeordnet. Diese werden verwendet, um den Status Ihres Pull Requests anzugeben, wenn er den Validierungsworkflow durchläuft. Beispielsweise erhalten neue Pull Requests womöglich automatisch die Bezeichnung „do-not-merge“ (nicht zusammenführen), was anzeigt, dass der Pull Request die Schritte zur Validierung, Überprüfung und Abmeldung noch nicht abgeschlossen hat.
+- **Validierung und Erstellung**: Automatische Prüfungen verifizieren, ob Ihre Änderungen die Validierungstests bestehen. Die Validierungstests ergeben womöglich Warnungen oder Fehler. Sie müssen deshalb Änderungen an mindestens einer Datei in Ihrem Pull Request vornehmen, bevor dieser zusammengeführt werden kann. Die Testergebnisse der Validierung werden Ihrem Pull Request als Kommentar zur Überprüfung hinzugefügt und werden Ihnen möglicherweise auch via E-Mail übermittelt.
+- **Staging**: Die Artikelseiten, die von Ihren Änderungen betroffen sind, können bei erfolgreicher Validierung und Erstellung automatisch in einer Stagingumgebung zur Überprüfung bereitgestellt werden. Vorschau-URLs erscheinen in einem PR-Kommentar.
+- **Automatisch zusammenführen**: Der Pull Request wird möglicherweise automatisch zusammengeführt, wenn er die Validierungstests besteht und bestimmte Kriterien erfüllt. In diesem Fall sind keine weiteren Schritte nötig.
 
 ### <a name="review-and-sign-off"></a>Überprüfen und Abmelden
 
