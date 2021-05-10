@@ -7,12 +7,12 @@ ms.date: 01/13/2021
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 1ff248f352427cd5d38fca112cbb187de20e4d00
-ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
+ms.openlocfilehash: a9ba55fddf1e54cb23e091a23797f2afeddb17b0
+ms.sourcegitcommit: c7e0bd481861d401f6ac9e364e79c4d782fd3e09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103481259"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108215205"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Leitfaden für Mitwirkende an der Microsoft-Dokumentation: Übersicht
 
@@ -41,7 +41,7 @@ Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehler
 
    Wenn die Schaltfläche **Bearbeiten** nicht angezeigt wird, bedeutet dies, dass der Inhalt nicht für öffentliche Beiträge freigegeben ist.
 
-2. Klicken Sie anschließend auf das Stiftsymbol, um den Artikel wie gezeigt zu bearbeiten. Wenn das Stiftsymbol abgeblendet ist, müssen Sie sich mit Ihrem GitHub-Konto anmelden oder ein neues Konto erstellen. 
+2. Wählen Sie das Stiftsymbol aus, um den Artikel zu bearbeiten. Wenn das Stiftsymbol abgeblendet ist, müssen Sie sich mit Ihrem GitHub-Konto anmelden oder ein neues Konto erstellen. 
 
    ![Ort des Bleistiftsymbols](./media/index/edit-icon.png)
 
@@ -52,13 +52,13 @@ Schnelle Änderungen optimieren das Melden und Beheben von geringfügigen Fehler
 
    ![Propose file change](./media/index/submit-pull-request.png)
 
-5. Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie in der oberen Abbildung auf **Propose file change** geklickt haben, müssten Sie zu einer neuen Seite gelangt sein, die folgender Abbildung entspricht:
+5. Jetzt haben Sie Ihre Änderungen vorgeschlagen und müssen die Besitzer des Repositorys bitten, Ihre Änderungen in ihr Repository zu „pullen“. Dies erfolgt mit einem sogenannten „Pull Request“. Wenn Sie **Propose file change** (Dateiänderung vorschlagen) auswählen, wird eine neue Seite ähnlich der folgenden angezeigt:
 
    ![Pull Request erstellen](media/index/create-pull-request.png)
 
-   Klicken Sie auf **Create pull request** (Pull Request erstellen), geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken erneut auf **Create pull request**. (Wenn Sie neu bei GitHub sind, finden Sie unter [About Pull Requests (Über Pull Requests)](https://help.github.com/en/articles/about-pull-requests) wichtige Informationen zum Einstieg.)
+   Wählen Sie **Create pull request** aus (Pull Request erstellen), geben Sie einen Titel (und optional eine Beschreibung) für den Pull Request ein, und klicken Sie auf **Create pull request**. Wenn Sie neu bei GitHub sind, finden Sie unter [About Pull Requests (Über Pull Requests)](https://help.github.com/en/articles/about-pull-requests) wichtige Informationen zum Einstieg.
 
-6. Das ist alles! Das Inhaltsteam sieht sich Ihren PR an und mergt ihn bei Bedarf. Wenn Sie größere Änderungen vorgeschlagen haben, erhalten Sie möglicherweise eine Anfrage zum Vornehmen von Änderungen.
+6. Das ist alles! Das Inhaltsteam sieht sich Ihren PR an und mergt ihn bei Bedarf. Möglicherweise können Gebühren anfallen.
 
 Die GitHub-Benutzeroberfläche zum Bearbeiten spiegelt Ihre Berechtigungen für das Repository wider. Die oben aufgeführten Abbildungen gelten für Mitwirkende, die keine Schreibberechtigungen für das Zielrepository haben. GitHub erstellt automatisch einen Fork des Zielrepositorys in Ihrem Konto. Wenn Sie Schreibberechtigungen für das Zielrepository haben, erstellt GitHub einen neuen Branch im Zielrepository. Der Branchname folgt dem Format **\<GitHubId\>-patch-n** mit Ihrer GitHub-ID und einem numerischen Bezeichner für den Patchbranch.
 

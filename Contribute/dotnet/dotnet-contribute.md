@@ -4,13 +4,13 @@ description: In diesem Artikel wird beschrieben, wie Personen zu Artikeln und Co
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.date: 05/14/2020
-ms.openlocfilehash: 36004387bece3ca4e2e05ea0f7d43fbf563215c5
-ms.sourcegitcommit: 48d9a16cd3854cdf3c8c492dab1675edcdfbbd7a
+ms.date: 04/08/2021
+ms.openlocfilehash: a312f8d2bc50dfdfd47fcc9fd749c270f4729280
+ms.sourcegitcommit: c7e0bd481861d401f6ac9e364e79c4d782fd3e09
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103481214"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108215174"
 ---
 # <a name="learn-how-to-contribute-to-the-net-docs-repositories"></a>Erfahren Sie, wie Sie an den Repositorys der .NET-Dokumentation mitwirken können.
 
@@ -67,11 +67,28 @@ Wenn es sich um einen neuen Artikel handelt, können Sie diese [Vorlage](dotnet-
 
 Navigieren Sie zu dem Ordner, der der Position im Inhaltsverzeichnis entspricht, die Sie in Schritt 1 für Ihren Artikel festgelegt haben. Dieser Ordner enthält die Markdowndateien für alle Artikel in diesem Abschnitt. Erstellen Sie bei Bedarf einen neuen Ordner, in dem Sie die Dateien speichern können, aus denen Ihr Inhalt besteht. Der Hauptartikel für diesen Abschnitt heißt *index.md*.
 
-Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei).
+Erstellen Sie für Bilder und andere statische Ressourcen einen Unterordner namens **media** in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **media** einen Unterordner mit dem Namen des Artikels (außer für die Indexdatei). Weitere Informationen zum Speicherort Ihrer Dateien finden Sie im Abschnitt [Beispielordnerstruktur](#example-folder-structure).
 
-Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Wenn Sie einen Codeausschnitt für einen Artikel unter den Ordnern [docs/csharp](https://github.com/dotnet/docs/tree/main/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/main/docs/fsharp) oder [docs/visual-basic](https://github.com/dotnet/docs/tree/main/docs/visual-basic) erstellen, wird der Ausschnitt nur in einer Sprache angezeigt, sodass Sie den Sprachordner weglassen können.
+Erstellen Sie für **Codeausschnitte** einen Unterordner namens **snippets** (Codeausschnitte) in dem Ordner, der Ihren Artikel enthält (falls noch nicht vorhanden). Erstellen Sie im Ordner **snippets** einen Unterordner mit dem Artikelnamen. In den meisten Fällen haben Sie Codeausschnitte für die wichtigsten drei .NET-Hauptsprachen C#, F# und Visual Basic. Erstellen Sie in diesem Fall Unterordner namens **csharp**, **fsharp** und **vb** für jedes der drei Projekte. Wenn Sie einen Codeausschnitt für einen Artikel unter den Ordnern [docs/csharp](https://github.com/dotnet/docs/tree/main/docs/csharp), [docs/fsharp](https://github.com/dotnet/docs/tree/main/docs/fsharp) oder [docs/visual-basic](https://github.com/dotnet/docs/tree/main/docs/visual-basic) erstellen, wird der Ausschnitt nur in einer Sprache angezeigt, sodass Sie den Sprachordner weglassen können. Weitere Informationen zum Speicherort Ihrer Dateien finden Sie im Abschnitt [Beispielordnerstruktur](#example-folder-structure).
 
 Codeausschnitte sind kleine fokussierte Codebeispiele, die die in diesem Artikel behandelten Konzepte veranschaulichen. Größere Programme, die für den Download und die Durchsuchung vorgesehen sind, sollten sich im [dotnet/samples](https://github.com/dotnet/samples)-Repository befinden. Vollständige Beispiele werden im Abschnitt zum [Beitrag zu Beispielen](#contribute-to-samples) behandelt.
+
+**Schritt 4:** Senden Sie einen Pull Request (PR) von Ihrem Branch zum Standardbranch.
+
+> [!IMPORTANT]
+> Die [Kommentarautomatisierung](../how-to-write-workflows-major.md#review-and-sign-off) ist derzeit nicht für die Repositorys für die .NET-Dokumentation verfügbar. Die Mitglieder des Teams für die .NET-Dokumentation überprüfen und mergen Ihren Pull Request.
+
+Jeder PR sollte in der Regel jeweils ein Issue behandeln, es sei denn, mehrere Issues beziehen sich auf den gleiche PR-Fix. Mit einem Pull Request können eine oder mehrere Dateien geändert werden. Wenn Sie mehrere Probleme in verschiedenen Dateien beheben, sollten Sie mehrere Pull Requests erstellen.
+
+Wenn Ihr Pull Request ein vorhandenes Problem behebt, fügen Sie das Schlüsselwort `Fixes #Issue_Number` zur Beschreibung des Pull Requests hinzu. Dadurch wird das Issue automatisch geschlossen, wenn der Pull Request gemerget wurde. Weitere Informationen finden Sie unter [Verknüpfen eines Pull Requests mit einem Problem mithilfe eines Schlüsselworts](https://docs.github.com/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
+
+Das .NET-Team überprüft Ihren Pull Request anschließend und teilt Ihnen mit, ob weitere Änderungen nötig sind, um diesen zu genehmigen.
+
+**Schritt 5:** Nehmen Sie gemäß der Absprache mit dem Team die erforderlichen Änderungen an Ihrem Branch vor.
+
+Die Verwalter mergen Ihren Pull Request in den Standardbranch, sobald das Feedback umgesetzt und die Änderung genehmigt wurde.
+
+Alle Commits werden mithilfe von Push regelmäßig vom Standardbranch in den Livebranch übertragen. Dann können Sie Ihren Beitrag unter https://docs.microsoft.com/dotnet/ ansehen. Diese Veröffentlichungen finden werktags in der Regel täglich statt.
 
 ## <a name="example-folder-structure"></a>Beispiel für die Paketordnerstruktur
 
@@ -84,6 +101,7 @@ docs
       /media
         /porting-overview
           portability_report.png
+        /shared ...
       /snippets
         /porting-overview
           /csharp
@@ -98,31 +116,23 @@ docs
             porting.vbproj
             porting-overview.vb
             Program.vb
+        /shared
+          /csharp ...
+          /fsharp ...
+          /vb ...
 ```
 
 > [!NOTE]
-> Die Sprachordner unter „snippets“ werden im Sprachleitfaden nicht benötigt. Dort wird nur eine Sprache angenommen.
+> Die Sprachordner unter „snippets“ werden im Sprachleitfaden nicht benötigt. Dort wird nur eine Sprache angenommen. Im C#-Leitfaden wird beispielsweise davon ausgegangen, dass alle Codeausschnitte in der Sprache C# sind.
 
-In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.png*) sowie drei Codeprojekte, die **Codeausschnitte** enthalten. Diese Codeausschnitte sind wiederum im Artikel *porting-overview.md* zu finden. Eine akzeptierte alternative Struktur enthält ein Projekt pro Sprache, das alle Ausschnitte für alle Artikel in diesem Ordner enthält. Diese Alternative wurde in den Sprachreferenzbeispielen aufgrund sehr kleiner Ausschnitte verwendet, um die Sprachsyntax zu veranschaulichen. In anderen Bereichen wird davon abgeraten.
+In der oben dargestellten Struktur ist ein Image enthalten (*portability_report.png*) sowie drei Codeprojekte, die **Codeausschnitte** enthalten. Diese Codeausschnitte sind wiederum im Artikel *porting-overview.md* zu finden. 
 
-Aus historischen Gründen werden viele der enthaltenen Ausschnitte im Ordner */samples* des *dotnet/docs*-Repositorys gespeichert. Wenn Sie wesentliche Änderungen an einem Artikel vornehmen, sollten diese Ausschnitte in die neue Struktur verschoben werden. Verschieben Sie keine Ausschnitt für nur kleine Änderungen.
+Der Ordner *snippets/shared* wird für Codeausschnitte verwendet, die mehrere Artikel innerhalb desselben übergeordneten Ordners umfassen, zum Beispiel den *Portierungsordner* im vorherigen Beispiel. Verwenden Sie nur den Ordner *shared*, wenn Sie dafür einen Grund haben, wie etwa XAML-Code, auf den von mehreren Artikeln verwiesen wird und der im *artikelspezifischen* Ordner nicht kompiliert werden kann.
 
-**Schritt 4:** Senden Sie einen Pull Request (PR) von Ihrem Branch zum Standardbranch.
+Medien können auch artikelübergreifend freigegeben werden, wenn sich diese Artikel im selben übergeordneten Ordner befinden, zum Beispiel der *Portierungsordner* im vorherigen Beispiel. Dieser *freigegebene* Ordner (shared) sollte nach Möglichkeit vermieden werden, wenn es sinnvoll ist. Es kann beispielsweise sinnvoll sein, einen gemeinsamen Ladebildschirm für die zu demonstrierende App freizugeben oder Visual Studio-Dialoge, die in mehreren Artikeln wiederverwendet werden.
 
 > [!IMPORTANT]
-> Die [Kommentarautomatisierung](../how-to-write-workflows-major.md#review-and-sign-off) ist derzeit nicht für die Repositorys für die .NET-Dokumentation verfügbar. Die Mitglieder des Teams für die .NET-Dokumentation überprüfen und mergen Ihren Pull Request.
-
-Jeder Pull Request sollte in der Regel nur ein Problem beheben. Mit einem Pull Request können eine oder mehrere Dateien geändert werden. Wenn Sie mehrere Probleme in verschiedenen Dateien beheben, sollten Sie mehrere Pull Requests erstellen. Wenn Sie Beispiele erstellen und Markdown aktualisieren, müssen Sie für die Beispiele einen separaten Pull Request erstellen.
-
-Wenn Ihr Pull Request ein vorhandenes Problem behebt, fügen Sie das Schlüsselwort `Fixes #Issue_Number` zur Commitnachricht oder zur Beschreibung des Pull Requests hinzu. Dadurch wird das Issue automatisch geschlossen, wenn der Pull Request gemerget wurde. Weitere Informationen finden Sie unter [Closing issues via commit messages (Schließen von Issues über Commitnachrichten)](https://help.github.com/articles/closing-issues-via-commit-messages/).
-
-Das .NET-Team überprüft Ihren Pull Request anschließend und teilt Ihnen mit, ob weitere Änderungen nötig sind, um diesen zu genehmigen.
-
-**Schritt 5:** Nehmen Sie gemäß der Absprache mit dem Team die erforderlichen Änderungen an Ihrem Branch vor.
-
-Die Verwalter mergen Ihren Pull Request in den Standardbranch, sobald das Feedback umgesetzt und die Änderung genehmigt wurde.
-
-Alle Commits werden mithilfe von Push regelmäßig vom Standardbranch in den Livebranch übertragen. Dann können Sie Ihren Beitrag unter https://docs.microsoft.com/dotnet/ ansehen. Diese Veröffentlichungen finden werktags in der Regel täglich statt.
+> Aus historischen Gründen werden viele der enthaltenen Ausschnitte im Ordner */samples* des *dotnet/docs*-Repositorys gespeichert. Wenn Sie wesentliche Änderungen an einem Artikel vornehmen, sollten diese Ausschnitte in die neue Struktur verschoben werden. Machen Sie sich jedoch keine Gedanken über die Verschiebung von Codeausschnitten für kleinere Änderungen.
 
 ## <a name="contribute-to-samples"></a>Beispiele für die Mitwirkung
 
@@ -221,21 +231,21 @@ Wenn es nicht anders angegeben ist, werden alle Beispiele auf von .NET Core unte
 
 ## <a name="the-c-interactive-experience"></a>Die interaktive C#-Benutzeroberfläche
 
-Für alle Beispiele, die in einem Artikel enthalten sind, wird ein [Sprachtag](../code-in-docs.md) verwendet, um die Quellsprache anzugeben. Für kurze Codebeispiele in C# kann das Sprachtag `csharp-interactive` verwendet werden, um ein C#-Beispiel anzugeben, das im Browser ausgeführt wird. (Für Inlinecodebeispiele wird das Tag `csharp-interactive` verwendet und für Codebeispiele, die über die Quelle hinzugefügt werden, das Tag `code-csharp-interactive`.) Diese Codebeispiele stellen im Artikel ein Codefenster und ein Ausgabefenster dar. Das Ausgabefenster zeigt die Ausgabe an, die aus dem interaktiven Code entsteht, sobald der Benutzer das Beispiel ausgeführt hat.
+Für alle Codeausschnitte, die in einem Artikel enthalten sind, wird ein [Sprachtag](../code-in-docs.md) verwendet, um die Quellsprache anzugeben. Für kurze Codeausschnitte in C# kann das Sprachtag `csharp-interactive` verwendet werden, um einen C#-Codeausschnitt anzugeben, der im Browser ausgeführt wird. (Für Inlinecodeausschnitte wird das Tag `csharp-interactive` verwendet und für Codeausschnitte, die über die Quelle hinzugefügt werden, das Tag `code-csharp-interactive`.) Diese Codeausschnitte stellen im Artikel ein **Codefenster** und ein **Ausgabefenster** dar. Das **Ausgabefenster** zeigt die Ausgabe an, die aus dem interaktiven Code entsteht, sobald der Benutzer den Codeausschnitt ausgeführt hat.
 
-Durch die interaktive C#-Benutzeroberfläche wird das Arbeiten mit Beispielen verändert und verbessert. Leser können das Beispiel ausführen, um die Ergebnisse anzuzeigen. Es gibt einige Faktoren, anhand derer Sie entscheiden können, ob das Beispiel oder der zugehörige Text Informationen zur Ausgabe enthalten sollte.
+Durch die interaktive C#-Benutzeroberfläche wird das Arbeiten mit Ausschnitten verändert und verbessert. Leser können den Codeausschnitt ausführen, um die Ergebnisse anzuzeigen. Es gibt einige Faktoren, anhand derer Sie entscheiden können, ob der Codeausschnitt oder der zugehörige Text Informationen zur Ausgabe enthalten sollte.
 
-### <a name="when-to-display-the-expected-output-without-running-the-sample"></a>Wann die erwartete Ausgabe ohne Ausführung des Beispiels erkennbar sein sollte
+### <a name="when-to-display-the-expected-output-without-running-the-snippet"></a>Wann die erwartete Ausgabe ohne Ausführung des Codeausschnitts erkennbar sein sollte
 
 - In Artikeln für Einsteiger sollte die Ausgabe enthalten sein, sodass die Leser die Ausgabe Ihres Codes mit der erwarteten Ausgabe vergleichen können.
-- In Beispielen, bei denen die Ausgabe eine wichtige Rolle für den Artikel spielt, sollte diese enthalten sein. Bei Artikeln über formatierten Text sollte das Textformat ersichtlich sein, ohne das Beispiel auszuführen.
-- Wenn das Beispiel und die erwartete Ausgabe kurz sind, sollten Sie die Ausgabe ebenfalls einfügen. Das spart dem Leser etwas Zeit.
+- In Codeausschnitten, bei denen die Ausgabe eine wichtige Rolle für den Artikel spielt, sollte diese enthalten sein. Bei Artikeln über formatierten Text sollte das Textformat ersichtlich sein, ohne den Codeausschnitt auszuführen.
+- Wenn der Codeausschnitt und die erwartete Ausgabe kurz sind, sollten Sie die Ausgabe ebenfalls einfügen. Das spart dem Leser etwas Zeit.
 - In Artikeln, die thematisieren, wie die aktuelle Kultur oder invariante Kultur sich auf die Ausgabe auswirken, sollte die erwartete Ausgabe erläutert werden. Die interaktive REPL (read–eval–print-Loop) wird auf einem Linux-basierten Host ausgeführt. Die Standardkultur und die invariante Kultur erzeugen auf unterschiedlichen Betriebssystemen und Computern verschiedene Ausgaben. Die Ausgabe sollte in solchen Artikeln für Windows-, Linux- und Mac-Systeme erläutert werden.
 
-### <a name="when-to-exclude-expected-output-from-the-sample"></a>Wann die erwartete Ausgabe nicht im Beispiel enthalten sein sollte
+### <a name="when-to-exclude-expected-output-from-the-snippet"></a>Wann die erwartete Ausgabe nicht im Codeausschnitt enthalten sein sollte
 
-- Bei Artikeln mit einem Beispiel, das eine große Ausgabe generiert, sollte diese nicht in den Kommentaren enthalten sein. Der Code wird dadurch unübersichtlich, sobald das Beispiel ausgeführt wurde.
-- Bei Artikeln mit einem Beispiel, das ein Thema veranschaulicht, bei dem die Ausgabe für das Verständnis nicht relevant ist. Wenn beispielsweise Code enthalten ist, der eine LINQ-Abfrage ausführt, um die Syntax von Abfragen zu veranschaulichen, muss nicht jedes in der Ausgabe vorhandene Element aufgeführt werden.
+- Bei Artikeln mit einem Codeausschnitt, der eine große Ausgabe generiert, sollte diese nicht in den Kommentaren enthalten sein. Der Code wird dadurch unübersichtlich, sobald der Codeausschnitt ausgeführt wurde.
+- Bei Artikeln mit einem Codeausschnitt, der ein Thema veranschaulicht, bei dem die Ausgabe für das Verständnis nicht relevant ist. Wenn beispielsweise Code enthalten ist, der eine LINQ-Abfrage ausführt, um die Syntax von Abfragen zu veranschaulichen, muss nicht jedes in der Ausgabe vorhandene Element aufgeführt werden.
 
 > [!NOTE]
 > Sie werden feststellen, dass einige Artikel den hier ausgeführten Richtlinien nicht entsprechen. Wir arbeiten an der Konsistenz der Website. Hier finden Sie die Liste der [offenen Issues](https://github.com/dotnet/docs/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3Abookmark_tabs%3A+Information+Architecture%22), die derzeit auf diesen Punkt überprüft werden.

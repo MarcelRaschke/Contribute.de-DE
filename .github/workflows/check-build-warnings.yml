@@ -1,0 +1,22 @@
+### YamlMime:Yaml
+ms.openlocfilehash: 574fc7bfbb74f91b0965ec3b1740d093cd44bc06
+ms.sourcegitcommit: c7e0bd481861d401f6ac9e364e79c4d782fd3e09
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "108217155"
+name: Statusüberprüfung
+on:
+  pull_request_target:
+    types:
+    - opened
+    - synchronize
+    - reopened
+jobs:
+  status_checker_job:
+    name: Suche nach Buildwarnungen
+    runs-on: ubuntu-latest
+    steps:
+    - uses: dotnet/samples/.github/actions/status-checker@main
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
